@@ -61,12 +61,16 @@ std::pair<cv::Mat, cv::Point> trans_matrix(
 	return {matrix, {static_cast<int>(w)*1'000, static_cast<int>(h)*1'000}};
 }
 
-void perspective_trans(
+cv::Mat perspective_trans(
 	cv::Mat& frame,
 	cv::Mat& matrix,
-	
+	cv::Point& size
 ) {
+	cv::Mat output;
 
+	cv::warpPerspective(frame, output, matrix, size);
+
+	return output;
 }
 
 int main(int argc, char* argv[])
