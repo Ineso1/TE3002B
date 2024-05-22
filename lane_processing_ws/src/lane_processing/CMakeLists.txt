@@ -1,18 +1,59 @@
-cmake_minimum_required(VERSION 3.5)
-project(cppOpencv_test)
+cmake_minimum_required(VERSION 3.8)
+project(lane_processing)
 
-find_package(OpenCV REQUIRED)
+if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
+  add_compile_options(-Wall -Wextra -Wpedantic)
+endif()
 
+# find dependencies
+find_package(ament_cmake REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(cv_bridge REQUIRED)
+find_package(image_transport REQUIRED)
+find_package(sensor_msgs REQUIRED)
+
+# Include directories
 include_directories(
-    ${OpenCV_INCLUDE_DIRS}
-    ${CMAKE_SOURCE_DIR}/src/lib 
+  include
+  ${cv_bridge_INCLUDE_DIRS}
+  ${image_transport_INCLUDE_DIRS}
+  ${sensor_msgs_INCLUDE_DIRS}
 )
-
 
 add_executable(
-    main src/main.cpp 
-    src/lib/perspective.cpp
-    src/lib/cv_wrapper.cpp
-
+  lane_detection src/lane_detection.cpp
+  src/lane_control.cpp 
+  src/lib/cv_wrapper.cpp 
+  src/lib/perspective.cpp
 )
-target_link_libraries(main ${OpenCV_LIBS})
+
+target_include_directories(lane_detection PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>
+)
+target_compile_features(lane_detection PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
+
+# Link libraries
+ament_target_dependencies(lane_control
+  rclcpp
+  cv_bridge
+  image_transport
+  sensor_msgs
+)
+
+install(TARGETS lane_detection
+  DESTINATION lib/${PROJECT_NAME})
+
+if(BUILD_TESTING)
+  find_package(ament_lint_auto REQUIRED)
+  # the following line skips the linter which checks for copyrights
+  # comment the line when a copyright and license is added to all source files
+  set(ament_cmake_copyright_FOUND TRUE)
+  # the following line skips cpplint (only works in a git repo)
+  # comment the line when this package is in a git repo and when
+  # a copyright and license is added to all source files
+  set(ament_cmake_cpplint_FOUND TRUE)
+  ament_lint_auto_find_test_dependencies()
+endif()
+
+ament_package()

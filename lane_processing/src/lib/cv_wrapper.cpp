@@ -1,19 +1,11 @@
-#include "lane_detection/cv_wrapper.h"
+#include "cv_wrapper.h"
 
 
 cv::Mat crop_frame(cv::Mat& frame, int y_start, int height, int width) {
-    //int frame_height = frame.rows;
+    int frame_height = frame.rows;
     int frame_width = frame.cols;
     int x_start = std::max(0, frame_width / 2 - width / 2);
     cv::Rect roi(x_start, y_start, width, height);
-    return cv::Mat(frame, roi);
-}
-
-cv::Mat crop_frame(cv::Mat& frame, CropParams& crop) {
-    //int frame_height = frame.rows;
-    int frame_width = frame.cols;
-    int x_start = std::max(0, frame_width / 2 - crop.width / 2);
-    cv::Rect roi(x_start, crop.y_start, crop.width, crop.height);
     return cv::Mat(frame, roi);
 }
 
