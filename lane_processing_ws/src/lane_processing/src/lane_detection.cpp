@@ -6,12 +6,19 @@
 #include <opencv2/opencv.hpp>
 #include <chrono>
 
-#include "lane_detection/cv_wrapper.h"
-#include "lane_detection/perspective.h"
-#include "lane_detection/lane_params.h"
+#include "lane_processing/cv_wrapper.h"
+#include "lane_processing/perspective.h"
+#include "lane_processing/lane_params.h"
 #include <deque>
 #include <utility>
 #include <functional>
+
+const PerspectiveConfig PERSPECTIVE_CONFIG = {1086, 270, 200};
+const RealCartesianConfig REAL_CARTESIAN_CONFIG = {0.3, 0.3, 0.4};
+std::map<std::string, CropParams> CROP_PARAMS = {
+    {"lane_detection", {0, 150, 60}},
+    {"crossing_line_detection", {0, 150, 280}}
+};
 
 using namespace std::chrono_literals;
 
@@ -53,11 +60,11 @@ private:
     void image_callback(const sensor_msgs::msg::Image::SharedPtr msg) {
         cv_bridge::CvImagePtr cv_ptr = cv_bridge::toCvCopy(msg, sensor_msgs::image_encodings::BGR8);
         cv::Mat color_frame = cv_ptr->image;
-        cv::Mat frame;
+        cv::Mat frame, fliped_frame;
         cv::cvtColor(color_frame, frame, cv::COLOR_BGR2GRAY);
-        cv::flip(frame, frame, 1);
+        cv::flip(frame, fliped_frame, 0);
 
-        double angle = process_frame(frame);
+        double angle = process_frame(fliped_frame);
         last_angle_ = angle;
 
     }
@@ -96,7 +103,7 @@ private:
         cv::Mat blurred = apply_gaussian_blur(cropped_frame);
         cv::Mat closed = apply_closing(blurred, cv::Size(5, 5), 3);
         cv::Mat thresholded = apply_otsu_threshold(closed);
-        //publish_processed_image(thresholded);
+        publish_processed_image(thresholded);
 
         return 0.0;  // Dummy return // FERCHOOOO
     }

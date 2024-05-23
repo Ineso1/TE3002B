@@ -21,27 +21,28 @@ include_directories(
 )
 
 add_executable(
-  lane_detection src/lane_detection.cpp
-  src/lane_control.cpp 
+  lane_processing
+  src/lane_detection.cpp 
   src/lib/cv_wrapper.cpp 
   src/lib/perspective.cpp
+  src/lib/lane_funcs.cpp
 )
 
-target_include_directories(lane_detection PUBLIC
+target_include_directories(lane_processing PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>
 )
-target_compile_features(lane_detection PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
+target_compile_features(lane_processing PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
 
 # Link libraries
-ament_target_dependencies(lane_control
+ament_target_dependencies(lane_processing
   rclcpp
   cv_bridge
   image_transport
   sensor_msgs
 )
 
-install(TARGETS lane_detection
+install(TARGETS lane_processing
   DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)

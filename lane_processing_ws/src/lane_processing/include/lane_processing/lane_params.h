@@ -29,12 +29,8 @@ struct CropParams {
     int height;
 };
 
-const PerspectiveConfig PERSPECTIVE_CONFIG = {1046, 200, 300};
-const RealCartesianConfig REAL_CARTESIAN_CONFIG = {0.3, 0.3, 0.4};
-
-std::map<std::string, CropParams> CROP_PARAMS = {
-    {"lane_detection", {0, 150, 60}},
-    {"crossing_line_detection", {0, 150, 280}}
-};
+extern const PerspectiveConfig PERSPECTIVE_CONFIG;
+extern const RealCartesianConfig REAL_CARTESIAN_CONFIG;
+extern std::map<std::string, CropParams> CROP_PARAMS;
 
 #endif // LANE_PARAMS_H

@@ -3,7 +3,7 @@
 
 #include <opencv2/imgproc.hpp>
 #include <opencv2/calib3d.hpp>
-#include "lane_detection/lane_params.h"
+#include "lane_processing/lane_params.h"
 
 
 cv::Mat crop_frame(cv::Mat& frame, int y_start, int height, int width);
