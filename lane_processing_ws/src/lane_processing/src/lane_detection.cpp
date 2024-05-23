@@ -11,6 +11,9 @@
 #include "lane_detection/lane_params.h"
 #include <deque>
 #include <utility>
+#include <functional>
+
+using namespace std::chrono_literals;
 
 class LaneProcessingNode : public rclcpp::Node {
 public:
@@ -34,13 +37,13 @@ public:
 
         // Timers
         angle_timer_ = this->create_wall_timer(
-            std::chrono::milliseconds(10),
-            std::bind(&LaneProcessingNode::publish_angle, this, 0.0)
+            10ms,
+            std::bind(&LaneProcessingNode::publish_angle, this)
         );
 
         distance_timer_ = this->create_wall_timer(
-            std::chrono::milliseconds(10), 
-            std::bind(&LaneProcessingNode::publish_distance, this, 0.0)
+            10ms, 
+            std::bind(&LaneProcessingNode::publish_distance, this)
         );
 
         RCLCPP_INFO(this->get_logger(), "Lane Processing Node has started :)");
@@ -72,21 +75,28 @@ private:
     }
 
     void publish_processed_image(const cv::Mat &frame) {
-        //auto msg = cv_bridge::CvImage(std_msgs::msg::Header(), "mono8", frame).toImageMsg();
-        //processed_image_publisher_->publish(msg);
+        cv_bridge::CvImage cv_image;
+        cv_image.header.stamp = this->now();
+        cv_image.header.frame_id = "camera";
+        cv_image.encoding = "mono8";
+        cv_image.image = frame;
+
+        sensor_msgs::msg::Image::SharedPtr msg = cv_image.toImageMsg();
+        processed_image_publisher_->publish(*msg);
     }
 
 
     double process_frame(cv::Mat &frame) {
-        //std::pair<cv::Mat, cv::Size> transform_data = trans_matrix(frame, PERSPECTIVE_CONFIG, REAL_CARTESIAN_CONFIG);
-        //cv::Mat transformed = perspective_trans(frame, transform_data.first, transform_data.second);
+        std::pair<cv::Mat, cv::Size> transform_data = trans_matrix(frame, PERSPECTIVE_CONFIG, REAL_CARTESIAN_CONFIG);
+        cv::Mat transformed = perspective_trans(frame, transform_data.first, transform_data.second);
         
-        //CropParams crop_params = CROP_PARAMS["lane_detection"];
-        //cv::Mat cropped_frame = crop_frame(transformed, crop_params)
-        //cv::Mat blurred = apply_gaussian_blur(cropped_frame);
-        //cv::Mat thresholded = apply_otsu_threshold(blurred);
-        //cv::Mat closed = apply_closing(thresholded, cv::Size(5, 5), 3);
-        //publish_processed_image(frame);
+        CropParams crop_params = CROP_PARAMS["crossing_line_detection"];
+        
+        cv::Mat cropped_frame = crop_frame(transformed, crop_params);
+        cv::Mat blurred = apply_gaussian_blur(cropped_frame);
+        cv::Mat closed = apply_closing(blurred, cv::Size(5, 5), 3);
+        cv::Mat thresholded = apply_otsu_threshold(closed);
+        //publish_processed_image(thresholded);
 
         return 0.0;  // Dummy return // FERCHOOOO
     }

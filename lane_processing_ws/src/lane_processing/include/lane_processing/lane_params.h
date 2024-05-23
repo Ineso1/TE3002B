@@ -32,7 +32,7 @@ struct CropParams {
 const PerspectiveConfig PERSPECTIVE_CONFIG = {1046, 200, 300};
 const RealCartesianConfig REAL_CARTESIAN_CONFIG = {0.3, 0.3, 0.4};
 
-const std::map<std::string, CropParams> CROP_PARAMS = {
+std::map<std::string, CropParams> CROP_PARAMS = {
     {"lane_detection", {0, 150, 60}},
     {"crossing_line_detection", {0, 150, 280}}
 };
