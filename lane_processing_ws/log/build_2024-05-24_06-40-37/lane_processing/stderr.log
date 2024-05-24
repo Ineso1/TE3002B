@@ -1,0 +1,22 @@
+[01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:[m[K In member function ‘[01m[Kdouble LaneProcessingNode::detect_lane_center(cv::Mat&)[m[K’:
+[01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:109:56:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kcv::Vec<double, 4>&[m[K’ to an rvalue of type ‘[01m[Kcv::Vec<double, 4>[m[K’
+             double angle_error = calculate_angle_error([01;31m[Kselected_line[m[K, cropped_frame.cols, cropped_frame.rows);
+                                                        [01;31m[K^~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+                 from [01m[K/opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge.h:43[m[K,
+                 from [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:2[m[K:
+[01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1103:1:[m[K [01;36m[Knote: [m[K  after user-defined conversion: ‘[01m[Kcv::Vec<_Tp, cn>::operator cv::Vec<T2, cn>() const [with T2 = double; _Tp = int; int cn = 4][m[K’
+ [01;36m[KVec<_Tp, cn>[m[K::operator Vec<T2, cn>() const
+ [01;36m[K^~~~~~~~~~~~[m[K
+In file included from [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:12[m[K:
+[01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/include/lane_processing/lane_funcs.h:50:8:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kdouble calculate_angle_error(cv::Vec<double, 4>&, int, int)[m[K’
+ double [01;36m[Kcalculate_angle_error[m[K(
+        [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:[m[K In member function ‘[01m[Kdouble LaneProcessingNode::process_frame(cv::Mat&)[m[K’:
+[01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:132:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kangle_error_calc[m[K’ [[01;35m[K-Wunused-variable[m[K]
+         double [01;35m[Kangle_error_calc[m[K = detect_lane_center(thresholded);
+                [01;35m[K^~~~~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/lane_processing.dir/build.make:63: CMakeFiles/lane_processing.dir/src/lane_detection.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/lane_processing.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -13,7 +13,16 @@
 
 #include "lane_processing/lane_params.h"
 
+extern cv::Vec<double, 4> lane_history;
+
+struct Line {
+    int x1, y1, x2, y2;
+    double angle;
+    double avgCoordinate;
+};
+
 template<typename Type, std::size_t Index>
+
 Type vector_sum(const std::vector<cv::Vec<Type, 6>>& vec)
 {
     Type sum{0.0};
@@ -23,9 +32,7 @@ Type vector_sum(const std::vector<cv::Vec<Type, 6>>& vec)
     return sum;
 }
 
-cv::Mat crop_frame(cv::Mat& frame, int y_start, int height, int width);
-
-std::vector<cv::Vec4i> detect_lines_hough(cv::Mat& cropped_frame);
+cv::Vec4i average_lines(const std::vector<Line>& lines);
 
 std::vector<cv::Vec4i> group_similar_lines(
     std::vector<cv::Vec4i>& lines,
@@ -35,17 +42,23 @@ std::vector<cv::Vec4i> group_similar_lines(
     bool x_axis = true
 );
 
-cv::Vec<double, 4> select_relevant_line(
-    std::vector<cv::Vec<double, 4>>& lines, cv::Vec<double, 4>& previous_line);
+cv::Vec4i select_relevant_line(
+    std::vector<cv::Vec4i>& lines, 
+    cv::Vec4i& previous_line
+);
 
-double calculate_angle_error(cv::Vec<double, 4>& line, int frame_width, int frame_height);
+double calculate_angle_error(
+    cv::Vec<double, 4>& line, 
+    int frame_width, 
+    int frame_height
+);
 
 cv::Mat draw_hough_lines(
-    cv::Mat& frame_src, std::vector<cv::Vec<double, 4>>& lines,
-    cv::Scalar color = 255, int thickness = 2);
+    cv::Mat& frame_src, 
+    const std::vector<cv::Vec4i>& lines,
+    cv::Scalar color = cv::Scalar(255), 
+    int thickness = 2
+);
 
-cv::Vec<double, 4> lane_history;
-
-double detect_lane_center(cv::Mat& frame);
 
 #endif // LANE_FUNCS_H

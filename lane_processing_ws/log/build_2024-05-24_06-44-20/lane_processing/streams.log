@@ -1,0 +1,37 @@
+[1.325s] Invoking command in '/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing': CMAKE_PREFIX_PATH=/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:/home/puzzlebot/ros2_packages_ws/install/ros_deep_learning:/home/puzzlebot/ros2_packages_ws/install/micro_ros_setup:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs:/home/puzzlebot/ros2_packages_ws/install/camera_info_publisher /usr/bin/cmake --build /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing -- -j4 -l4
+[1.524s] [35m[1mScanning dependencies of target lane_processing[0m
+[1.789s] [ 20%] [32mBuilding CXX object CMakeFiles/lane_processing.dir/src/lane_detection.cpp.o[0m
+[15.496s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:[m[K In member function ‘[01m[Kdouble LaneProcessingNode::detect_lane_center(cv::Mat&)[m[K’:
+[15.496s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:105:19:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kprevious_line[m[K’ set but not used [[01;35m[K-Wunused-but-set-variable[m[K]
+[15.496s]          cv::Vec4i [01;35m[Kprevious_line[m[K = lane_history_.empty() ? cv::Vec4i(0, 0, 0, 0) : lane_history_.back();
+[15.497s]                    [01;35m[K^~~~~~~~~~~~~[m[K
+[15.497s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:123:5:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+[15.497s]      [01;35m[K}[m[K
+[15.498s]      [01;35m[K^[m[K
+[15.504s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:[m[K In member function ‘[01m[Kdouble LaneProcessingNode::process_frame(cv::Mat&)[m[K’:
+[15.505s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:137:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kangle_error_calc[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[15.505s]          double [01;35m[Kangle_error_calc[m[K = detect_lane_center(thresholded);
+[15.506s]                 [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[41.205s] [ 40%] [32m[1mLinking CXX executable lane_processing[0m
+[44.331s] [100%] Built target lane_processing
+[44.498s] Invoked command in '/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing' returned '0': CMAKE_PREFIX_PATH=/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:/home/puzzlebot/ros2_packages_ws/install/ros_deep_learning:/home/puzzlebot/ros2_packages_ws/install/micro_ros_setup:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs:/home/puzzlebot/ros2_packages_ws/install/camera_info_publisher /usr/bin/cmake --build /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing -- -j4 -l4
+[44.639s] Invoking command in '/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing': CMAKE_PREFIX_PATH=/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:/home/puzzlebot/ros2_packages_ws/install/ros_deep_learning:/home/puzzlebot/ros2_packages_ws/install/micro_ros_setup:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs:/home/puzzlebot/ros2_packages_ws/install/camera_info_publisher /usr/bin/cmake --install /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing
+[44.674s] -- Install configuration: ""
+[44.686s] -- Installing: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib/lane_processing/lane_processing
+[44.694s] -- Set runtime path of "/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib/lane_processing/lane_processing" to ""
+[44.695s] -- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/ament_index/resource_index/package_run_dependencies/lane_processing
+[44.696s] -- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/ament_index/resource_index/parent_prefix_path/lane_processing
+[44.696s] -- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/environment/ament_prefix_path.sh
+[44.697s] -- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/environment/ament_prefix_path.dsv
+[44.698s] -- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/environment/path.sh
+[44.698s] -- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/environment/path.dsv
+[44.699s] -- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/local_setup.bash
+[44.699s] -- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/local_setup.sh
+[44.699s] -- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/local_setup.zsh
+[44.700s] -- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/local_setup.dsv
+[44.700s] -- Installing: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/package.dsv
+[44.701s] -- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/ament_index/resource_index/packages/lane_processing
+[44.701s] -- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/cmake/lane_processingConfig.cmake
+[44.702s] -- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/cmake/lane_processingConfig-version.cmake
+[44.702s] -- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/package.xml
+[44.707s] Invoked command in '/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing' returned '0': CMAKE_PREFIX_PATH=/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:/home/puzzlebot/ros2_packages_ws/install/ros_deep_learning:/home/puzzlebot/ros2_packages_ws/install/micro_ros_setup:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs:/home/puzzlebot/ros2_packages_ws/install/camera_info_publisher /usr/bin/cmake --install /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing

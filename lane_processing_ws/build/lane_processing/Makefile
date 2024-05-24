@@ -260,6 +260,33 @@ src/lib/cv_wrapper.cpp.s:
 	$(MAKE) -f CMakeFiles/lane_processing.dir/build.make CMakeFiles/lane_processing.dir/src/lib/cv_wrapper.cpp.s
 .PHONY : src/lib/cv_wrapper.cpp.s
 
+src/lib/lane_funcs.o: src/lib/lane_funcs.cpp.o
+
+.PHONY : src/lib/lane_funcs.o
+
+# target to build an object file
+src/lib/lane_funcs.cpp.o:
+	$(MAKE) -f CMakeFiles/lane_processing.dir/build.make CMakeFiles/lane_processing.dir/src/lib/lane_funcs.cpp.o
+.PHONY : src/lib/lane_funcs.cpp.o
+
+src/lib/lane_funcs.i: src/lib/lane_funcs.cpp.i
+
+.PHONY : src/lib/lane_funcs.i
+
+# target to preprocess a source file
+src/lib/lane_funcs.cpp.i:
+	$(MAKE) -f CMakeFiles/lane_processing.dir/build.make CMakeFiles/lane_processing.dir/src/lib/lane_funcs.cpp.i
+.PHONY : src/lib/lane_funcs.cpp.i
+
+src/lib/lane_funcs.s: src/lib/lane_funcs.cpp.s
+
+.PHONY : src/lib/lane_funcs.s
+
+# target to generate assembly for a file
+src/lib/lane_funcs.cpp.s:
+	$(MAKE) -f CMakeFiles/lane_processing.dir/build.make CMakeFiles/lane_processing.dir/src/lib/lane_funcs.cpp.s
+.PHONY : src/lib/lane_funcs.cpp.s
+
 src/lib/perspective.o: src/lib/perspective.cpp.o
 
 .PHONY : src/lib/perspective.o
@@ -309,6 +336,9 @@ help:
 	@echo "... src/lib/cv_wrapper.o"
 	@echo "... src/lib/cv_wrapper.i"
 	@echo "... src/lib/cv_wrapper.s"
+	@echo "... src/lib/lane_funcs.o"
+	@echo "... src/lib/lane_funcs.i"
+	@echo "... src/lib/lane_funcs.s"
 	@echo "... src/lib/perspective.o"
 	@echo "... src/lib/perspective.i"
 	@echo "... src/lib/perspective.s"

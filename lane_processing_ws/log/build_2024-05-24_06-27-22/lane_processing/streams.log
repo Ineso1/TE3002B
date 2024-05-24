@@ -1,0 +1,36 @@
+[1.345s] Invoking command in '/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing': CMAKE_PREFIX_PATH=/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:/home/puzzlebot/ros2_packages_ws/install/ros_deep_learning:/home/puzzlebot/ros2_packages_ws/install/micro_ros_setup:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs:/home/puzzlebot/ros2_packages_ws/install/camera_info_publisher /usr/bin/cmake --build /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing -- -j4 -l4
+[1.549s] [35m[1mScanning dependencies of target lane_processing[0m
+[2.019s] [ 20%] [32mBuilding CXX object CMakeFiles/lane_processing.dir/src/lane_detection.cpp.o[0m
+[15.822s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:[m[K In member function ‘[01m[Kdouble LaneProcessingNode::detect_lane_center(cv::Mat&)[m[K’:
+[15.823s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:101:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kgroup_similar_lines[m[K’ was not declared in this scope
+[15.823s]          lines = [01;31m[Kgroup_similar_lines[m[K(lines);
+[15.824s]                  [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[15.852s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:104:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kselect_relevant_line[m[K’ was not declared in this scope
+[15.852s]          cv::Vec4i selected_line = [01;31m[Kselect_relevant_line[m[K(lines, previous_line);
+[15.853s]                                    [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[15.879s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:104:35:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kselected_line[m[K’
+[15.880s]          cv::Vec4i selected_line = [01;36m[Kselect_relevant_line[m[K(lines, previous_line);
+[15.881s]                                    [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[15.881s]                                    [32m[Kselected_line[m[K
+[15.882s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:107:34:[m[K [01;31m[Kerror: [m[K‘[01m[Kcalculate_angle_error[m[K’ was not declared in this scope
+[15.882s]              double angle_error = [01;31m[Kcalculate_angle_error[m[K(selected_line, cropped_frame.rows, cropped_frame.cols);
+[15.883s]                                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[15.908s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:107:34:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kangle_error[m[K’
+[15.909s]              double angle_error = [01;36m[Kcalculate_angle_error[m[K(selected_line, cropped_frame.rows, cropped_frame.cols);
+[15.909s]                                   [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[15.910s]                                   [32m[Kangle_error[m[K
+[15.910s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:108:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kdraw_hough_lines[m[K’ was not declared in this scope
+[15.910s]              cv::Mat hough_lines_frame = [01;31m[Kdraw_hough_lines[m[K(cropped_frame, std::vector<cv::Vec4i>{selected_line});
+[15.911s]                                          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[15.937s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:108:41:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kprevious_line[m[K’
+[15.938s]              cv::Mat hough_lines_frame = [01;36m[Kdraw_hough_lines[m[K(cropped_frame, std::vector<cv::Vec4i>{selected_line});
+[15.938s]                                          [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[15.939s]                                          [32m[Kprevious_line[m[K
+[15.947s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:[m[K In member function ‘[01m[Kdouble LaneProcessingNode::process_frame(cv::Mat&)[m[K’:
+[15.948s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:129:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kangle_error_calc[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[15.948s]          double [01;35m[Kangle_error_calc[m[K = detect_lane_center(thresholded);
+[15.949s]                 [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[27.305s] make[2]: *** [CMakeFiles/lane_processing.dir/build.make:63: CMakeFiles/lane_processing.dir/src/lane_detection.cpp.o] Error 1
+[27.306s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/lane_processing.dir/all] Error 2
+[27.306s] make: *** [Makefile:141: all] Error 2
+[27.317s] Invoked command in '/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing' returned '2': CMAKE_PREFIX_PATH=/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:/home/puzzlebot/ros2_packages_ws/install/ros_deep_learning:/home/puzzlebot/ros2_packages_ws/install/micro_ros_setup:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs:/home/puzzlebot/ros2_packages_ws/install/camera_info_publisher /usr/bin/cmake --build /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing -- -j4 -l4

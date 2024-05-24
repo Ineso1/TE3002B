@@ -1,0 +1,40 @@
+[1.377s] Invoking command in '/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing': CMAKE_PREFIX_PATH=/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:/home/puzzlebot/ros2_packages_ws/install/ros_deep_learning:/home/puzzlebot/ros2_packages_ws/install/micro_ros_setup:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs:/home/puzzlebot/ros2_packages_ws/install/camera_info_publisher /usr/bin/cmake --build /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing -- -j4 -l4
+[1.693s] [35m[1mScanning dependencies of target lane_processing[0m
+[2.015s] [ 20%] [32mBuilding CXX object CMakeFiles/lane_processing.dir/src/lane_detection.cpp.o[0m
+[16.278s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:[m[K In member function ‘[01m[Kdouble LaneProcessingNode::detect_lane_center(cv::Mat&)[m[K’:
+[16.278s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:106:56:[m[K [01;31m[Kerror: [m[Kinvalid initialization of reference of type ‘[01m[Kstd::vector<cv::Vec<double, 4> >&[m[K’ from expression of type ‘[01m[Kstd::vector<cv::Vec<int, 4> >[m[K’
+[16.279s]          cv::Vec4i selected_line = select_relevant_line([01;31m[Klines[m[K, previous_line);
+[16.279s]                                                         [01;31m[K^~~~~[m[K
+[16.280s] In file included from [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:12[m[K:
+[16.280s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/include/lane_processing/lane_funcs.h:45:20:[m[K [01;36m[Knote: [m[Kin passing argument 1 of ‘[01m[Kcv::Vec<double, 4> select_relevant_line(std::vector<cv::Vec<double, 4> >&, cv::Vec<double, 4>&)[m[K’
+[16.281s]  cv::Vec<double, 4> [01;36m[Kselect_relevant_line[m[K(
+[16.281s]                     [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[16.282s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:109:56:[m[K [01;31m[Kerror: [m[Kcannot bind non-const lvalue reference of type ‘[01m[Kcv::Vec<double, 4>&[m[K’ to an rvalue of type ‘[01m[Kcv::Vec<double, 4>[m[K’
+[16.282s]              double angle_error = calculate_angle_error([01;31m[Kselected_line[m[K, cropped_frame.rows, cropped_frame.cols);
+[16.283s]                                                         [01;31m[K^~~~~~~~~~~~~[m[K
+[16.288s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K,
+[16.288s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[16.289s]                  from [01m[K/opt/ros/humble/include/cv_bridge/cv_bridge/cv_bridge.h:43[m[K,
+[16.289s]                  from [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:2[m[K:
+[16.289s] [01m[K/usr/include/opencv4/opencv2/core/matx.hpp:1103:1:[m[K [01;36m[Knote: [m[K  after user-defined conversion: ‘[01m[Kcv::Vec<_Tp, cn>::operator cv::Vec<T2, cn>() const [with T2 = double; _Tp = int; int cn = 4][m[K’
+[16.290s]  [01;36m[KVec<_Tp, cn>[m[K::operator Vec<T2, cn>() const
+[16.290s]  [01;36m[K^~~~~~~~~~~~[m[K
+[16.291s] In file included from [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:12[m[K:
+[16.291s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/include/lane_processing/lane_funcs.h:50:8:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kdouble calculate_angle_error(cv::Vec<double, 4>&, int, int)[m[K’
+[16.292s]  double [01;36m[Kcalculate_angle_error[m[K(
+[16.292s]         [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[16.293s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:110:78:[m[K [01;31m[Kerror: [m[Kinvalid initialization of non-const reference of type ‘[01m[Kstd::vector<cv::Vec<double, 4> >&[m[K’ from an rvalue of type ‘[01m[Kstd::vector<cv::Vec<int, 4> >[m[K’
+[16.293s]              cv::Mat hough_lines_frame = draw_hough_lines(cropped_frame, std::[01;31m[Kvector<cv::Vec4i>{selected_line}[m[K);
+[16.293s]                                                                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[16.294s] In file included from [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:12[m[K:
+[16.294s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/include/lane_processing/lane_funcs.h:56:9:[m[K [01;36m[Knote: [m[Kin passing argument 2 of ‘[01m[Kcv::Mat draw_hough_lines(cv::Mat&, std::vector<cv::Vec<double, 4> >&, cv::Scalar, int)[m[K’
+[16.295s]  cv::Mat [01;36m[Kdraw_hough_lines[m[K(
+[16.295s]          [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[16.295s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:[m[K In member function ‘[01m[Kdouble LaneProcessingNode::process_frame(cv::Mat&)[m[K’:
+[16.296s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:132:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kangle_error_calc[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[16.296s]          double [01;35m[Kangle_error_calc[m[K = detect_lane_center(thresholded);
+[16.297s]                 [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[27.815s] make[2]: *** [CMakeFiles/lane_processing.dir/build.make:63: CMakeFiles/lane_processing.dir/src/lane_detection.cpp.o] Error 1
+[27.816s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/lane_processing.dir/all] Error 2
+[27.816s] make: *** [Makefile:141: all] Error 2
+[27.822s] Invoked command in '/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing' returned '2': CMAKE_PREFIX_PATH=/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:/home/puzzlebot/ros2_packages_ws/install/ros_deep_learning:/home/puzzlebot/ros2_packages_ws/install/micro_ros_setup:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs:/home/puzzlebot/ros2_packages_ws/install/camera_info_publisher /usr/bin/cmake --build /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing -- -j4 -l4

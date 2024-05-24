@@ -9,6 +9,8 @@
 #include "lane_processing/cv_wrapper.h"
 #include "lane_processing/perspective.h"
 #include "lane_processing/lane_params.h"
+#include "lane_processing/lane_funcs.h"
+
 #include <deque>
 #include <utility>
 #include <functional>
@@ -93,6 +95,34 @@ private:
     }
 
 
+    double detect_lane_center(cv::Mat& frame)
+    {
+        CropParams params = CROP_PARAMS["lane_detection"];
+        cv::Mat cropped_frame = crop_frame(frame, params);
+        std::vector<cv::Vec4i> lines = detect_lines_hough(cropped_frame);
+        lines = group_similar_lines(lines);
+
+        cv::Vec4i previous_line = lane_history_.empty() ? cv::Vec4i(0, 0, 0, 0) : lane_history_.back();
+        /*
+        cv::Vec4i selected_line = select_relevant_line(lines, previous_line);
+        
+        if (selected_line != cv::Vec4i(0, 0, 0, 0)) {
+
+            
+            //AQUI NO JALA XD
+            
+            //double angle_error = calculate_angle_error(selected_line, cropped_frame.cols, cropped_frame.rows);
+            //cv::Mat hough_lines_frame = draw_hough_lines(cropped_frame, std::vector<cv::Vec4i>{selected_line});
+            //return angle_error;
+        }
+        else {
+            std::cerr << "No valid line detected, using previous line if available.\n";
+            return 0; 
+        }
+        */
+    }
+
+
     double process_frame(cv::Mat &frame) {
         std::pair<cv::Mat, cv::Size> transform_data = trans_matrix(frame, PERSPECTIVE_CONFIG, REAL_CARTESIAN_CONFIG);
         cv::Mat transformed = perspective_trans(frame, transform_data.first, transform_data.second);
@@ -103,6 +133,8 @@ private:
         cv::Mat blurred = apply_gaussian_blur(cropped_frame);
         cv::Mat closed = apply_closing(blurred, cv::Size(5, 5), 3);
         cv::Mat thresholded = apply_otsu_threshold(closed);
+        
+        double angle_error_calc = detect_lane_center(thresholded); 
         publish_processed_image(thresholded);
 
         return 0.0;  // Dummy return // FERCHOOOO

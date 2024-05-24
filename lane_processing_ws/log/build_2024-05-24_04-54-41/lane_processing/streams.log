@@ -1,0 +1,94 @@
+[1.311s] Invoking command in '/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing': CMAKE_PREFIX_PATH=/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:/home/puzzlebot/ros2_packages_ws/install/ros_deep_learning:/home/puzzlebot/ros2_packages_ws/install/micro_ros_setup:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs:/home/puzzlebot/ros2_packages_ws/install/camera_info_publisher /usr/bin/cmake --build /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing -- -j4 -l4
+[1.479s] [35m[1mScanning dependencies of target lane_processing[0m
+[1.608s] [ 20%] [32mBuilding CXX object CMakeFiles/lane_processing.dir/src/lib/lane_funcs.cpp.o[0m
+[5.096s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/lane_funcs.cpp:[m[K In function ‘[01m[Kstd::vector<cv::Vec<int, 4> > group_similar_lines(std::vector<cv::Vec<int, 4> >&, int, double, int, bool)[m[K’:
+[5.097s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/lane_funcs.cpp:48:29:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kcv::Vec<double, 6>[m[K’ to ‘[01m[Kdouble[m[K’ in initialization
+[5.098s]              double x1 = it[0[01;31m[K][m[K, y1 = it[1], x2 = it[2], y2 = it[3], angle = it[4], avg_coordinate = it[5];
+[5.098s]                              [01;31m[K^[m[K
+[5.099s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/lane_funcs.cpp:48:41:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kcv::Vec<double, 6>[m[K’ to ‘[01m[Kdouble[m[K’ in initialization
+[5.099s]              double x1 = it[0], y1 = it[1[01;31m[K][m[K, x2 = it[2], y2 = it[3], angle = it[4], avg_coordinate = it[5];
+[5.099s]                                          [01;31m[K^[m[K
+[5.100s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/lane_funcs.cpp:48:53:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kcv::Vec<double, 6>[m[K’ to ‘[01m[Kdouble[m[K’ in initialization
+[5.100s]              double x1 = it[0], y1 = it[1], x2 = it[2[01;31m[K][m[K, y2 = it[3], angle = it[4], avg_coordinate = it[5];
+[5.101s]                                                      [01;31m[K^[m[K
+[5.101s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/lane_funcs.cpp:48:65:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kcv::Vec<double, 6>[m[K’ to ‘[01m[Kdouble[m[K’ in initialization
+[5.102s]              double x1 = it[0], y1 = it[1], x2 = it[2], y2 = it[3[01;31m[K][m[K, angle = it[4], avg_coordinate = it[5];
+[5.102s]                                                                  [01;31m[K^[m[K
+[5.103s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/lane_funcs.cpp:48:80:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kcv::Vec<double, 6>[m[K’ to ‘[01m[Kdouble[m[K’ in initialization
+[5.104s]              double x1 = it[0], y1 = it[1], x2 = it[2], y2 = it[3], angle = it[4[01;31m[K][m[K, avg_coordinate = it[5];
+[5.105s]                                                                                 [01;31m[K^[m[K
+[5.105s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/lane_funcs.cpp:48:104:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kcv::Vec<double, 6>[m[K’ to ‘[01m[Kdouble[m[K’ in initialization
+[5.106s]              double x1 = it[0], y1 = it[1], x2 = it[2], y2 = it[3], angle = it[4], avg_coordinate = it[5[01;31m[K][m[K;
+[5.107s]                                                                                                         [01;31m[K^[m[K
+[5.108s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/lane_funcs.cpp:53:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kavg_coordiante[m[K’ was not declared in this scope
+[5.108s]                  (std::abs([01;31m[Kavg_coordiante[m[K - last_avg_coordinate) <= distance_threshold)
+[5.108s]                            [01;31m[K^~~~~~~~~~~~~~[m[K
+[5.109s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/lane_funcs.cpp:53:27:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kavg_coordinate[m[K’
+[5.109s]                  (std::abs([01;36m[Kavg_coordiante[m[K - last_avg_coordinate) <= distance_threshold)
+[5.110s]                            [01;36m[K^~~~~~~~~~~~~~[m[K
+[5.110s]                            [32m[Kavg_coordinate[m[K
+[5.110s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/lane_funcs.cpp:55:80:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::vector<cv::Vec<double, 6> >::push_back(<brace-enclosed initializer list>)[m[K’
+[5.111s]                  current_group.push_back({x1, y1, x2, y2, angle, avg_coordiante}[01;31m[K)[m[K;
+[5.111s]                                                                                 [01;31m[K^[m[K
+[5.111s] In file included from [01m[K/usr/include/c++/8/vector:64[m[K,
+[5.112s]                  from [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/include/lane_processing/lane_funcs.h:8[m[K,
+[5.112s]                  from [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/lane_funcs.cpp:1[m[K:
+[5.112s] [01m[K/usr/include/c++/8/bits/stl_vector.h:1074:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = cv::Vec<double, 6>; _Alloc = std::allocator<cv::Vec<double, 6> >; std::vector<_Tp, _Alloc>::value_type = cv::Vec<double, 6>][m[K’
+[5.113s]        [01;36m[Kpush_back[m[K(const value_type& __x)
+[5.113s]        [01;36m[K^~~~~~~~~[m[K
+[5.114s] [01m[K/usr/include/c++/8/bits/stl_vector.h:1074:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kconst value_type&[m[K’ {aka ‘[01m[Kconst cv::Vec<double, 6>&[m[K’}
+[5.114s] [01m[K/usr/include/c++/8/bits/stl_vector.h:1090:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid std::vector<_Tp, _Alloc>::push_back(std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = cv::Vec<double, 6>; _Alloc = std::allocator<cv::Vec<double, 6> >; std::vector<_Tp, _Alloc>::value_type = cv::Vec<double, 6>][m[K’
+[5.115s]        [01;36m[Kpush_back[m[K(value_type&& __x)
+[5.115s]        [01;36m[K^~~~~~~~~[m[K
+[5.115s] [01m[K/usr/include/c++/8/bits/stl_vector.h:1090:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K<brace-enclosed initializer list>[m[K’ to ‘[01m[Kstd::vector<cv::Vec<double, 6> >::value_type&&[m[K’ {aka ‘[01m[Kcv::Vec<double, 6>&&[m[K’}
+[5.116s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/lane_funcs.cpp:63:77:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kavg_x1[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kdouble[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+[5.116s]                      grouped_lines.push_back({avg_x1, avg_y1, avg_x2, avg_y2}[01;35m[K)[m[K;
+[5.117s]                                                                              [01;35m[K^[m[K
+[5.117s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/lane_funcs.cpp:63:77:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kavg_x1[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kdouble[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+[5.118s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/lane_funcs.cpp:63:77:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kavg_y1[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kdouble[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+[5.118s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/lane_funcs.cpp:63:77:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kavg_y1[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kdouble[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+[5.119s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/lane_funcs.cpp:63:77:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kavg_x2[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kdouble[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+[5.119s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/lane_funcs.cpp:63:77:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kavg_x2[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kdouble[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+[5.119s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/lane_funcs.cpp:63:77:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kavg_y2[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kdouble[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+[5.120s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/lane_funcs.cpp:63:77:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kavg_y2[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kdouble[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+[5.120s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/lane_funcs.cpp:48:83:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kavg_coordinate[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[5.121s]              double x1 = it[0], y1 = it[1], x2 = it[2], y2 = it[3], angle = it[4], [01;35m[Kavg_coordinate[m[K = it[5];
+[5.121s]                                                                                    [01;35m[K^~~~~~~~~~~~~~[m[K
+[5.121s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/lane_funcs.cpp:75:69:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kavg_x1[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kdouble[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+[5.122s]              grouped_lines.push_back({avg_x1, avg_y1, avg_x2, avg_y2}[01;35m[K)[m[K;
+[5.122s]                                                                      [01;35m[K^[m[K
+[5.122s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/lane_funcs.cpp:75:69:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kavg_x1[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kdouble[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+[5.123s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/lane_funcs.cpp:75:69:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kavg_y1[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kdouble[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+[5.123s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/lane_funcs.cpp:75:69:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kavg_y1[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kdouble[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+[5.123s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/lane_funcs.cpp:75:69:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kavg_x2[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kdouble[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+[5.124s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/lane_funcs.cpp:75:69:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kavg_x2[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kdouble[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+[5.124s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/lane_funcs.cpp:75:69:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kavg_y2[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kdouble[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+[5.125s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/lane_funcs.cpp:75:69:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kavg_y2[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kdouble[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+[5.125s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/lane_funcs.cpp:77:17:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kstd::vector<cv::Vec<int, 4> >[m[K’ and ‘[01m[Kstd::vector<cv::Vec<double, 4> >[m[K’)
+[5.125s]          lines = [01;31m[Kgrouped_lines[m[K;
+[5.126s]                  [01;31m[K^~~~~~~~~~~~~[m[K
+[5.126s] In file included from [01m[K/usr/include/c++/8/vector:69[m[K,
+[5.126s]                  from [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/include/lane_processing/lane_funcs.h:8[m[K,
+[5.127s]                  from [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/lane_funcs.cpp:1[m[K:
+[5.127s] [01m[K/usr/include/c++/8/bits/vector.tcc:186:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = cv::Vec<int, 4>; _Alloc = std::allocator<cv::Vec<int, 4> >][m[K’
+[5.127s]      [01;36m[Kvector<_Tp, _Alloc>[m[K::
+[5.128s]      [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[5.128s] [01m[K/usr/include/c++/8/bits/vector.tcc:186:5:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<cv::Vec<double, 4> >[m[K’ to ‘[01m[Kconst std::vector<cv::Vec<int, 4> >&[m[K’
+[5.129s] In file included from [01m[K/usr/include/c++/8/vector:64[m[K,
+[5.129s]                  from [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/include/lane_processing/lane_funcs.h:8[m[K,
+[5.129s]                  from [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/lane_funcs.cpp:1[m[K:
+[5.130s] [01m[K/usr/include/c++/8/bits/stl_vector.h:596:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::vector<_Tp, _Alloc>&&) [with _Tp = cv::Vec<int, 4>; _Alloc = std::allocator<cv::Vec<int, 4> >][m[K’
+[5.130s]        [01;36m[Koperator[m[K=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())
+[5.130s]        [01;36m[K^~~~~~~~[m[K
+[5.131s] [01m[K/usr/include/c++/8/bits/stl_vector.h:596:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<cv::Vec<double, 4> >[m[K’ to ‘[01m[Kstd::vector<cv::Vec<int, 4> >&&[m[K’
+[5.131s] [01m[K/usr/include/c++/8/bits/stl_vector.h:617:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::initializer_list<_Tp>) [with _Tp = cv::Vec<int, 4>; _Alloc = std::allocator<cv::Vec<int, 4> >][m[K’
+[5.131s]        [01;36m[Koperator[m[K=(initializer_list<value_type> __l)
+[5.132s]        [01;36m[K^~~~~~~~[m[K
+[5.132s] [01m[K/usr/include/c++/8/bits/stl_vector.h:617:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<cv::Vec<double, 4> >[m[K’ to ‘[01m[Kstd::initializer_list<cv::Vec<int, 4> >[m[K’
+[5.132s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/lane_funcs.cpp:84:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kgrouped_lines[m[K’ was not declared in this scope
+[5.133s]      return [01;31m[Kgrouped_lines[m[K;
+[5.133s]             [01;31m[K^~~~~~~~~~~~~[m[K
+[5.645s] make[2]: *** [CMakeFiles/lane_processing.dir/build.make:102: CMakeFiles/lane_processing.dir/src/lib/lane_funcs.cpp.o] Error 1
+[5.647s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/lane_processing.dir/all] Error 2
+[5.647s] make: *** [Makefile:141: all] Error 2
+[5.653s] Invoked command in '/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing' returned '2': CMAKE_PREFIX_PATH=/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:/home/puzzlebot/ros2_packages_ws/install/ros_deep_learning:/home/puzzlebot/ros2_packages_ws/install/micro_ros_setup:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs:/home/puzzlebot/ros2_packages_ws/install/camera_info_publisher /usr/bin/cmake --build /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing -- -j4 -l4

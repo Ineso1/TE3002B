@@ -44,8 +44,15 @@ cv::Mat apply_closing(cv::Mat& image, cv::Size kernel_size, int iterations) {
     return closed_image;
 }
 
-std::vector<cv::Vec4i> detect_lines_hough(cv::Mat& frame) {
+std::vector<cv::Vec4i> detect_lines_hough(cv::Mat& frame)
+{
+    int rho = 1;
+    int theta = CV_PI/180;
+    int threshold = 40;
+    int max_line_length = 25;
+    int max_line_gap = 20;
+
     std::vector<cv::Vec4i> lines;
-    cv::HoughLinesP(frame, lines, 1, CV_PI / 180, 40, 25, 20);
+    cv::HoughLinesP(frame, lines, rho, theta, threshold, max_line_length, max_line_gap);
     return lines;
 }
