@@ -1,0 +1,20 @@
+[01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/cv_wrapper.cpp:[m[K In function ‘[01m[Kcv::Mat crop_frame(cv::Mat&, int, int, int)[m[K’:
+[01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/cv_wrapper.cpp:5:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kframe_height[m[K’ [[01;35m[K-Wunused-variable[m[K]
+     int [01;35m[Kframe_height[m[K = frame.rows;
+         [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:[m[K In member function ‘[01m[Kdouble LaneProcessingNode::detect_lane_center(cv::Mat&)[m[K’:
+[01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:102:55:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcrop_frame(cv::Mat&, <unresolved overloaded function type>)[m[K’
+         cv::Mat cropped = crop_frame(frame, crop_frame[01;31m[K)[m[K;
+                                                       [01;31m[K^[m[K
+In file included from [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:9[m[K:
+[01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/include/lane_processing/cv_wrapper.h:9:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat crop_frame(cv::Mat&, int, int, int)[m[K’
+ cv::Mat [01;36m[Kcrop_frame[m[K(
+         [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/include/lane_processing/cv_wrapper.h:9:9:[m[K [01;36m[Knote: [m[K  candidate expects 4 arguments, 2 provided
+[01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/include/lane_processing/cv_wrapper.h:16:9:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kcv::Mat crop_frame(cv::Mat&, CropParams&)[m[K’
+ cv::Mat [01;36m[Kcrop_frame[m[K(
+         [01;36m[K^~~~~~~~~~[m[K
+[01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/include/lane_processing/cv_wrapper.h:16:9:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[K<unresolved overloaded function type>[m[K’ to ‘[01m[KCropParams&[m[K’
+make[2]: *** [CMakeFiles/lane_processing.dir/build.make:63: CMakeFiles/lane_processing.dir/src/lane_detection.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/lane_processing.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,39 @@
+[1.649s] Invoking command in '/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing': CMAKE_PREFIX_PATH=/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:/home/puzzlebot/ros2_packages_ws/install/ros_deep_learning:/home/puzzlebot/ros2_packages_ws/install/micro_ros_setup:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs:/home/puzzlebot/ros2_packages_ws/install/camera_info_publisher /usr/bin/cmake --build /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing -- -j4 -l4
+[1.965s] [35m[1mScanning dependencies of target lane_processing[0m
+[2.395s] [ 20%] [32mBuilding CXX object CMakeFiles/lane_processing.dir/src/lane_detection.cpp.o[0m
+[2.436s] [ 40%] [32mBuilding CXX object CMakeFiles/lane_processing.dir/src/lib/lane_funcs.cpp.o[0m
+[7.402s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/lane_funcs.cpp:[m[K In function ‘[01m[Kdouble calculate_angle_error(cv::Vec<double, 4>&, int, int)[m[K’:
+[7.403s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/lane_funcs.cpp:169:43:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Katan2(double)[m[K’
+[7.404s]          angle_radians = std::atan2(dx / dy[01;31m[K)[m[K;
+[7.404s]                                            [01;31m[K^[m[K
+[7.404s] In file included from [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/include/lane_processing/lane_funcs.h:5[m[K,
+[7.405s]                  from [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/lane_funcs.cpp:2[m[K:
+[7.405s] [01m[K/usr/include/c++/8/cmath:144:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr float std::atan2(float, float)[m[K’
+[7.406s]    [01;36m[Katan2[m[K(float __y, float __x)
+[7.406s]    [01;36m[K^~~~~[m[K
+[7.407s] [01m[K/usr/include/c++/8/cmath:144:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[7.407s] [01m[K/usr/include/c++/8/cmath:148:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr long double std::atan2(long double, long double)[m[K’
+[7.408s]    [01;36m[Katan2[m[K(long double __y, long double __x)
+[7.408s]    [01;36m[K^~~~~[m[K
+[7.408s] [01m[K/usr/include/c++/8/cmath:148:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[7.409s] [01m[K/usr/include/c++/8/cmath:155:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr typename __gnu_cxx::__promote_2<_Tp, _Up>::__type std::atan2(_Tp, _Up)[m[K’
+[7.409s]      [01;36m[Katan2[m[K(_Tp __y, _Up __x)
+[7.410s]      [01;36m[K^~~~~[m[K
+[7.410s] [01m[K/usr/include/c++/8/cmath:155:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[7.426s] [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/lane_funcs.cpp:169:43:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[7.427s]          angle_radians = std::atan2(dx / dy[01;36m[K)[m[K;
+[7.427s]                                            [01;36m[K^[m[K
+[7.428s] In file included from [01m[K/usr/include/features.h:461[m[K,
+[7.428s]                  from [01m[K/usr/include/aarch64-linux-gnu/c++/8/bits/os_defines.h:39[m[K,
+[7.428s]                  from [01m[K/usr/include/aarch64-linux-gnu/c++/8/bits/c++config.h:508[m[K,
+[7.429s]                  from [01m[K/usr/include/c++/8/cstddef:49[m[K,
+[7.429s]                  from [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lib/lane_funcs.cpp:1[m[K:
+[7.430s] [01m[K/usr/include/aarch64-linux-gnu/bits/mathcalls.h:59:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kdouble atan2(double, double)[m[K’
+[7.439s]  [01;36m[K__MATHCALL[m[K (atan2,, (_Mdouble_ __y, _Mdouble_ __x));
+[7.440s]  [01;36m[K^~~~~~~~~~[m[K
+[7.441s] [01m[K/usr/include/aarch64-linux-gnu/bits/mathcalls.h:59:1:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[8.251s] make[2]: *** [CMakeFiles/lane_processing.dir/build.make:102: CMakeFiles/lane_processing.dir/src/lib/lane_funcs.cpp.o] Error 1
+[8.251s] make[2]: *** Waiting for unfinished jobs....
+[49.599s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/lane_processing.dir/all] Error 2
+[49.625s] make: *** [Makefile:141: all] Error 2
+[50.032s] Invoked command in '/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing' returned '2': CMAKE_PREFIX_PATH=/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:/home/puzzlebot/ros2_packages_ws/install/ros_deep_learning:/home/puzzlebot/ros2_packages_ws/install/micro_ros_setup:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs:/home/puzzlebot/ros2_packages_ws/install/camera_info_publisher /usr/bin/cmake --build /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing -- -j4 -l4

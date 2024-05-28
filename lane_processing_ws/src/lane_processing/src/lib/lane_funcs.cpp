@@ -1,107 +1,156 @@
+#include <cstddef>
 #include "lane_processing/lane_funcs.h"
+#include "lane_processing/cv_wrapper.h"
 
+double point_distance(const cv::Point2d& p1, const cv::Point2d& p2) {
+    return cv::norm(p1 - p2);
+}
 
-std::vector<cv::Vec4i> group_similar_lines(
-    std::vector<cv::Vec4i>& lines,
-    int distance_threshold,
-    double angle_threshold,
-    int iterations,
-    bool x_axis
+std::vector<cv::Vec<double, 2>> group_similar_lines(
+    const std::vector<cv::Vec4d>& lines, 
+    double eps, 
+    std::size_t minPts
 ) {
-    if (lines.empty()) {
-        return {};
+    std::vector<cv::Point2d> midpoints;
+    for (const auto& line : lines) {
+        midpoints.emplace_back((line[0] + line[2]) / 2.0, (line[1] + line[3]) / 2.0);
     }
 
-    std::vector<cv::Vec4i> grouped_lines;
-    for (int iter = 0; iter < iterations; ++iter) {
-        std::vector<Line> prepared_lines;
-        for (std::vector<cv::Vec4i>::size_type i = 0; i < lines.size(); ++i) {
-            int x1 = lines[i][0], y1 = lines[i][1], x2 = lines[i][2], y2 = lines[i][3];
-            double angle = std::atan2(static_cast<double>(y2 - y1), static_cast<double>(x2 - x1));
-            double avgCoordinate = x_axis ? (x1 + x2) / 2.0 : (y1 + y2) / 2.0;
-            Line line = {x1, y1, x2, y2, angle, avgCoordinate};
-            prepared_lines.push_back(line);
-        }
+    std::vector<int> labels(midpoints.size(), -1);
+    int clusterId = 0;
 
-        std::vector<Line> current_group;
-        double last_angle = prepared_lines[0].angle;
-        double last_avg_coordinate = prepared_lines[0].avgCoordinate;
-        current_group.push_back(prepared_lines[0]);
+    for (std::size_t i = 0; i < midpoints.size(); ++i) {
+        if (labels[i] != -1) continue;
 
-        for (std::vector<Line>::size_type i = 1; i < prepared_lines.size(); ++i) {
-            Line line = prepared_lines[i];
-            if (std::abs(line.angle - last_angle) <= angle_threshold &&
-                std::abs(line.avgCoordinate - last_avg_coordinate) <= distance_threshold) {
-                current_group.push_back(line);
-            } else {
-                if (!current_group.empty()) {
-                    grouped_lines.push_back(average_lines(current_group));
-                    current_group.clear();
-                }
-                last_angle = line.angle;
-                last_avg_coordinate = line.avgCoordinate;
-                current_group.push_back(line);
+        std::vector<int> neighbors;
+        for (std::size_t j = 0; j < midpoints.size(); ++j) {
+            if (point_distance(midpoints[i], midpoints[j]) < eps) {
+                neighbors.push_back(j);
             }
         }
 
-        if (!current_group.empty()) {
-            grouped_lines.push_back(average_lines(current_group));
+        if (neighbors.size() < minPts) {
+            labels[i] = -2; // Mark as noise
+            continue;
         }
 
-        lines = grouped_lines;
-        grouped_lines.clear();
+        labels[i] = clusterId;
+        std::vector<int> seeds = neighbors;
+        std::size_t index = 0;
+        while (index < seeds.size()) {
+            int currentPoint = seeds[index++];
+            if (labels[currentPoint] == -2) labels[currentPoint] = clusterId;
+            if (labels[currentPoint] != -1) continue;
+            labels[currentPoint] = clusterId;
+
+            neighbors.clear();
+            for (std::size_t j = 0; j < midpoints.size(); ++j) {
+                if (point_distance(midpoints[currentPoint], midpoints[j]) < eps) {
+                    neighbors.push_back(j);
+                }
+            }
+
+            if (neighbors.size() >= minPts) {
+                seeds.insert(seeds.end(), neighbors.begin(), neighbors.end());
+            }
+        }
+        clusterId++;
     }
 
-    return lines;
-}
-
-cv::Vec4i average_lines(const std::vector<Line>& lines) {
-    int total_x1 = 0, total_y1 = 0, total_x2 = 0, total_y2 = 0;
-    for (std::vector<Line>::size_type i = 0; i < lines.size(); ++i) {
-        total_x1 += lines[i].x1;
-        total_y1 += lines[i].y1;
-        total_x2 += lines[i].x2;
-        total_y2 += lines[i].y2;
-    }
-    int count = static_cast<int>(lines.size());
-    return cv::Vec4i(total_x1 / count, total_y1 / count, total_x2 / count, total_y2 / count);
-}
-
-cv::Vec4i select_relevant_line(const std::vector<cv::Vec4i>& lines, const cv::Vec4i& previous_line) {
-    if (lines.empty()) {
-        return previous_line;
-    }
-
-    if (previous_line == cv::Vec4i(0, 0, 0, 0)) {
-        return lines[0];
-    }
-
-    double prev_mid_x = (previous_line[0] + previous_line[2]) / 2.0;
-    double prev_mid_y = (previous_line[1] + previous_line[3]) / 2.0;
-    double prev_angle = std::atan2(static_cast<double>(previous_line[3] - previous_line[1]), static_cast<double>(previous_line[2] - previous_line[0]));
-
-    double min_distance = std::numeric_limits<double>::max();
-    cv::Vec4i selected_line = lines[0];
-
-    for (std::vector<cv::Vec4i>::size_type i = 0; i < lines.size(); ++i) {
-        double mid_x = (lines[i][0] + lines[i][2]) / 2.0;
-        double mid_y = (lines[i][1] + lines[i][3]) / 2.0;
-        double angle = std::atan2(static_cast<double>(lines[i][3] - lines[i][1]), static_cast<double>(lines[i][2] - lines[i][0]));
-
-        double distance = std::sqrt((prev_mid_x - mid_x) * (prev_mid_x - mid_x) + (prev_mid_y - mid_y) * (prev_mid_y - mid_y));
-        double angle_diff = std::abs(prev_angle - angle);
-
-        if (distance + angle_diff < min_distance) {
-            min_distance = distance + angle_diff;
-            selected_line = lines[i];
+    // Calculate the average point for each cluster
+    std::vector<cv::Vec<double, 2>> cluster_centers(clusterId, cv::Vec<double, 2>(0, 0));
+    std::vector<int> cluster_sizes(clusterId, 0);
+    for (std::size_t i = 0; i < midpoints.size(); ++i) {
+        if (labels[i] >= 0) {
+            cluster_centers[labels[i]][0] += midpoints[i].x;
+            cluster_centers[labels[i]][1] += midpoints[i].y;
+            cluster_sizes[labels[i]]++;
         }
     }
 
-    return selected_line;
+    for (std::size_t i = 0; i < cluster_centers.size(); ++i) {
+        cluster_centers[i][0] /= cluster_sizes[i];
+        cluster_centers[i][1] /= cluster_sizes[i];
+    }
+
+    return cluster_centers;
+}
+
+std::vector<cv::Vec<double, 2>> frame_relevant_points(cv::Mat& frame){
+    int minPts = 2;
+    double eps = 50.0;
+    std::vector<cv::Vec4i> lines;
+    cv::Vec<double, 4> selected_line;
+    std::vector<cv::Vec<double, 4>> converted_lines;
+    std::vector<cv::Vec<double, 2>> grouped_lines;
+
+    lines = detect_lines_hough(frame);
+    for (const auto& line : lines) {
+        converted_lines.push_back(cv::Vec<double, 4>(line[0], line[1], line[2], line[3]));
+    }
+
+    grouped_lines = group_similar_lines(converted_lines, eps, minPts);
+
+    return grouped_lines;
+} 
+
+cv::Vec<double, 2> get_average_center(int frame_width, int frame_height) {
+    cv::Vec<double, 2> center_p(0.0, 0.0);
+    int count = lane_history.size();
+
+    if (count > 0) {
+        for (auto& history : lane_history) {
+            center_p[0] += history.first[0];
+            center_p[1] += history.first[1];
+        }
+        return cv::Vec<double, 2>(center_p[0] / count, center_p[1] / count);
+    } else {
+        // Return the center of the frame if there is no history
+        return cv::Vec<double, 2>(frame_width / 2.0, frame_height / 2.0);
+    }
 }
 
 
-double calculate_angle_error(cv::Vec4i& line, int frame_width, int frame_height) {
+cv::Vec<double, 2> linear_regression(const std::vector<double>& x, const std::vector<double>& y) {
+    const size_t n = x.size();
+    double sum_x = std::accumulate(x.begin(), x.end(), 0.0);
+    double sum_y = std::accumulate(y.begin(), y.end(), 0.0);
+    double sum_xx = std::inner_product(x.begin(), x.end(), x.begin(), 0.0);
+    double sum_xy = std::inner_product(x.begin(), x.end(), y.begin(), 0.0);
+
+    double slope = (n * sum_xy - sum_x * sum_y) / (n * sum_xx - sum_x * sum_x);
+    double intercept = (sum_y - slope * sum_x) / n;
+
+    return {slope, intercept};  // slope (m), intercept (b)
+}
+
+void extrapolate_and_update_lane_history() {
+    if (lane_history.size() < 2) {
+        return;
+    }
+
+    std::vector<double> x_values, back_y_values, front_y_values;
+    for (size_t i = 0; i < lane_history.size(); ++i) {
+        x_values.push_back(i);
+        back_y_values.push_back(lane_history[i].first[1]);  // Using y-coordinate of back points
+        front_y_values.push_back(lane_history[i].second[1]);  // Using y-coordinate of front points
+    }
+
+    cv::Vec<double, 2> back_trend = linear_regression(x_values, back_y_values);
+    cv::Vec<double, 2> front_trend = linear_regression(x_values, front_y_values);
+
+    // Predict the next point using the trend
+    double next_x = x_values.back() + 1;
+    double next_back_y = back_trend[0] * next_x + back_trend[1];
+    double next_front_y = front_trend[0] * next_x + front_trend[1];
+
+    // Append the extrapolated point to the history
+    lane_history.push_back({{next_x, next_back_y}, {next_x, next_front_y}});
+}
+
+
+
+double calculate_angle_error(cv::Vec<double, 4>& line, int frame_width, int frame_height) {
     double mid_x = (line[0] + line[2]) / 2.0;
     double mid_y = (line[1] + line[3]) / 2.0;
 
@@ -120,8 +169,10 @@ double calculate_angle_error(cv::Vec4i& line, int frame_width, int frame_height)
         angle_radians = std::atan(dx / dy);
     }
 
-    // Convert radians to degrees ass
-    angle_radians = angle_radians * (180.0 / M_PI);
+    //angle_radians *= (180.0 / M_PI); // Do not convert radians to degrees ass hole :)
 
     return angle_radians;
 }
+
+
+

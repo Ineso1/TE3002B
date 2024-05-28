@@ -1,0 +1,6 @@
+/usr/bin/ld: CMakeFiles/lane_processing.dir/src/lane_detection.cpp.o: in function `LaneProcessingNode::detect_lane_center(cv::Mat&)':
+lane_detection.cpp:(.text._ZN18LaneProcessingNode18detect_lane_centerERN2cv3MatE[_ZN18LaneProcessingNode18detect_lane_centerERN2cv3MatE]+0x1ac): undefined reference to `group_similar_lines(std::vector<cv::Vec<double, 4>, std::allocator<cv::Vec<double, 4> > > const&, double, int)'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/lane_processing.dir/build.make:213: lane_processing] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/lane_processing.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

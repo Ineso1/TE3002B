@@ -16,7 +16,10 @@ std::pair<cv::Mat, cv::Size> trans_matrix(cv::Mat& frame,
 	const RealCartesianConfig& cartesian_config
 );
 
-cv::Mat perspective_trans(cv::Mat& frame, cv::Mat& matrix, cv::Size size);
+cv::Mat perspective_trans(
+    cv::Mat& frame, cv::Mat& matrix, 
+    cv::Size size
+);
 
 
 #endif // PERSPECTIVE_H

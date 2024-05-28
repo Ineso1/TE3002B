@@ -1,0 +1,16 @@
+[1.084s] Invoking command in '/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing': CMAKE_PREFIX_PATH=/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing -- -j4 -l4
+[1.401s] [35m[1mScanning dependencies of target lane_processing[0m
+[1.674s] [ 20%] [32mBuilding CXX object CMakeFiles/lane_processing.dir/src/lane_detection.cpp.o[0m
+[44.749s] [ 40%] [32m[1mLinking CXX executable lane_processing[0m
+[48.673s] /usr/bin/ld: CMakeFiles/lane_processing.dir/src/lane_detection.cpp.o: in function `LaneProcessingNode::detect_lane_center(cv::Mat&)':
+[48.673s] lane_detection.cpp:(.text._ZN18LaneProcessingNode18detect_lane_centerERN2cv3MatE[_ZN18LaneProcessingNode18detect_lane_centerERN2cv3MatE]+0x1cc): undefined reference to `lane_history'
+[48.674s] /usr/bin/ld: lane_detection.cpp:(.text._ZN18LaneProcessingNode18detect_lane_centerERN2cv3MatE[_ZN18LaneProcessingNode18detect_lane_centerERN2cv3MatE]+0x1d0): undefined reference to `lane_history'
+[48.674s] /usr/bin/ld: lane_detection.cpp:(.text._ZN18LaneProcessingNode18detect_lane_centerERN2cv3MatE[_ZN18LaneProcessingNode18detect_lane_centerERN2cv3MatE]+0x1ec): undefined reference to `lane_history'
+[48.675s] /usr/bin/ld: lane_detection.cpp:(.text._ZN18LaneProcessingNode18detect_lane_centerERN2cv3MatE[_ZN18LaneProcessingNode18detect_lane_centerERN2cv3MatE]+0x1f0): undefined reference to `lane_history'
+[48.675s] /usr/bin/ld: lane_detection.cpp:(.text._ZN18LaneProcessingNode18detect_lane_centerERN2cv3MatE[_ZN18LaneProcessingNode18detect_lane_centerERN2cv3MatE]+0x2a8): undefined reference to `lane_history'
+[48.675s] /usr/bin/ld: CMakeFiles/lane_processing.dir/src/lane_detection.cpp.o:lane_detection.cpp:(.text._ZN18LaneProcessingNode18detect_lane_centerERN2cv3MatE[_ZN18LaneProcessingNode18detect_lane_centerERN2cv3MatE]+0x2ac): more undefined references to `lane_history' follow
+[48.676s] collect2: error: ld returned 1 exit status
+[48.679s] make[2]: *** [CMakeFiles/lane_processing.dir/build.make:213: lane_processing] Error 1
+[48.680s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/lane_processing.dir/all] Error 2
+[48.681s] make: *** [Makefile:141: all] Error 2
+[48.697s] Invoked command in '/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing' returned '2': CMAKE_PREFIX_PATH=/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing -- -j4 -l4
