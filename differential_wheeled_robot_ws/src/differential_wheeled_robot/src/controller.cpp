@@ -1,3 +1,15 @@
+/*****************************
+    DEBUG MSGS DEFINITION
+******************************/
+
+//#define DEBUG_PATH_MANAGE
+//#define DEBUG_ODOMETRY
+#define DEBUG_CONTROL
+
+
+/*****************************
+    INCLUDES
+******************************/
 #include <array>
 #include <chrono>
 #include <cstddef>
@@ -18,7 +30,7 @@ class Controller : public rclcpp::Node
 public:
     Controller() :
         Node{"controller"},
-        path_{std::vector<std::array<double, 3>>{}},
+        path_{std::vector<std::array<double, 3>>{{0.0, 0.0, 0.0}}},
         odom_{std::array<double, 3>{}},
         point_counter_{0},
         vel_message_{geometry_msgs::msg::Twist()}
@@ -26,12 +38,12 @@ public:
         this->declare_parameters<double>(
             "",
             {
-                {"error_threshold_dis", 0.0},
-                {"error_threshold_ang", 0.0},
-                {"angular_vel_max", 0.0},
-                {"angular_gain", 0.0},
-                {"linear_vel_max", 0.0},
-                {"linear_gain", 0.0}
+                {"error_threshold_dis", 0.1},
+                {"error_threshold_ang", 0.1},
+                {"angular_vel_max", 0.2},
+                {"angular_gain", 0.4},
+                {"linear_vel_max", 1.0},
+                {"linear_gain", 0.5}
             }
         );
         subscription_path_ = this->create_subscription<differential_wheeled_robot::msg::Path>(
@@ -49,6 +61,10 @@ public:
             10ms,
             std::bind(&Controller::controller_callback, this)
         );
+        RCLCPP_INFO(
+            this->get_logger(),
+            "Controller node running"
+        );
     }
 private:
     void path_callback(const differential_wheeled_robot::msg::Path& path)
@@ -59,13 +75,16 @@ private:
             p_placeholder[1] = p.y;
             p_placeholder[2] = p.z;
             path_.push_back(p_placeholder);
-            RCLCPP_INFO(
-                this->get_logger(),
-                "x: %g, y: %g, z: %g",
-                p_placeholder[0],
-                p_placeholder[1],
-                p_placeholder[2]
-            );
+
+            #ifdef DEBUG_PATH_MANAGE
+                RCLCPP_INFO(
+                    this->get_logger(),
+                    "x: %g, y: %g, z: %g",
+                    p_placeholder[0],
+                    p_placeholder[1],
+                    p_placeholder[2]
+                );
+            #endif
         }
     }
 
@@ -74,21 +93,26 @@ private:
         odom_[0] = odom.x;
         odom_[1] = odom.y;
         odom_[2] = odom.theta;
-        RCLCPP_INFO(
-            this->get_logger(),
-            "x: %g, y: %g, theta: %g",
-            odom_[0],
-            odom_[1],
-            odom_[2]
-        );
+
+        #ifdef DEBUG_ODOMETRY
+            RCLCPP_INFO(
+                this->get_logger(),
+                "x: %g, y: %g, theta: %g",
+                odom_[0],
+                odom_[1],
+                odom_[2]
+            );
+        #endif
     }
 
     void controller_callback()
     {
-        /* error_threshold_dis_ = get_parameter("error_threshold_dis").as_double();
+
+        error_threshold_dis_ = get_parameter("error_threshold_dis").as_double();
         error_threshold_ang_ = get_parameter("error_threshold_ang").as_double();
 
-        target_point_ = path_[point_counter_];
+        //target_point_ = path_[point_counter_];
+        target_point_ = {0.0, 1.0, 0.0};
 
         if (
             (error_distance_ < error_threshold_dis_) &&
@@ -116,7 +140,7 @@ private:
         double linear_vel_max_ = get_parameter("linear_vel_max").as_double();
         double linear_gain_ = get_parameter("linear_gain").as_double();
 
-        linear_vel_ = -linear_vel_max_*std::tanh(linear_gain_*(error_distance_/linear_vel_max_));
+        linear_vel_ = linear_vel_max_*std::tanh(linear_gain_*(error_distance_/linear_vel_max_));
 
         vel_message_.linear.x = linear_vel_;
         vel_message_.linear.y = 0.0;
@@ -125,15 +149,20 @@ private:
         vel_message_.angular.y = 0.0;
         vel_message_.angular.z = angular_vel_;
 
-        RCLCPP_INFO(
-            this->get_logger(),
-            "linear: %g, angular: %g",
-            vel_message_.linear.x,
-            vel_message_.angular.z
-        );
+        #ifdef DEBUG_CONTROL
+            RCLCPP_INFO(
+                this->get_logger(),
+                "linear: %g, angular: %g, error distance %g",
+                vel_message_.linear.x,
+                vel_message_.angular.z,
+                error_distance_
+            );
+        #endif
 
-        publisher_->publish(vel_message_); */
+        publisher_->publish(vel_message_); 
+        
     }
+    
     rclcpp::Subscription<geometry_msgs::msg::Pose2D>::SharedPtr subscription_odom_;
     rclcpp::Subscription<differential_wheeled_robot::msg::Path>::SharedPtr subscription_path_;
 
@@ -154,6 +183,7 @@ private:
     rclcpp::TimerBase::SharedPtr timer_;
     rclcpp::Publisher<geometry_msgs::msg::Twist>::SharedPtr publisher_;
     geometry_msgs::msg::Twist vel_message_;
+    
 };
 
 int main(int argc, char* argv[])
