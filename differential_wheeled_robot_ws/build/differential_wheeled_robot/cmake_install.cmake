@@ -351,31 +351,11 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/differential_wheeled_robot/msg" TYPE FILE FILES "/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/build/differential_wheeled_robot/rosidl_adapter/differential_wheeled_robot/msg/Path.idl")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/differential_wheeled_robot/msg" TYPE FILE FILES "/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/build/differential_wheeled_robot/rosidl_adapter/differential_wheeled_robot/msg/DiffError.idl")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/differential_wheeled_robot/msg" TYPE FILE FILES "/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/src/differential_wheeled_robot/msg/Path.msg")
-endif()
-
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/differential_wheeled_robot/point_generator" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/differential_wheeled_robot/point_generator")
-    file(RPATH_CHECK
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/differential_wheeled_robot/point_generator"
-         RPATH "")
-  endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/differential_wheeled_robot" TYPE EXECUTABLE FILES "/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/build/differential_wheeled_robot/point_generator")
-  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/differential_wheeled_robot/point_generator" AND
-     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/differential_wheeled_robot/point_generator")
-    file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/differential_wheeled_robot/point_generator"
-         OLD_RPATH "/opt/ros/humble/lib:/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/build/differential_wheeled_robot:"
-         NEW_RPATH "")
-    if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/differential_wheeled_robot/point_generator")
-    endif()
-  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/differential_wheeled_robot/msg" TYPE FILE FILES "/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/src/differential_wheeled_robot/msg/DiffError.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

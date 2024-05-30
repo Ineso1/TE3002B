@@ -4,11 +4,6 @@ from launch import LaunchDescription
 from launch_ros.actions import Node
 
 def generate_launch_description():
-    point_generator_config = os.path.join(
-        get_package_share_directory('differential_wheeled_robot'),
-        'config',
-        'point_generator_params.yaml'
-    )
     controller_config = os.path.join(
         get_package_share_directory('differential_wheeled_robot'),
         'config',
@@ -31,11 +26,5 @@ def generate_launch_description():
             executable='odometry',
             name='odometry',
             parameters=[odometry_config]
-        ),
-        Node(
-            package='differential_wheeled_robot',
-            executable='point_generator',
-            name='point_generator',
-            parameters=[point_generator_config]
         )
     ])

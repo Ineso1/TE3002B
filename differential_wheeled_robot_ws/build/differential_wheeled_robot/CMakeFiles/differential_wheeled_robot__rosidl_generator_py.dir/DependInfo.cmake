@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/build/differential_wheeled_robot/rosidl_generator_py/differential_wheeled_robot/msg/_path_s.c" "/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/build/differential_wheeled_robot/CMakeFiles/differential_wheeled_robot__rosidl_generator_py.dir/rosidl_generator_py/differential_wheeled_robot/msg/_path_s.c.o"
+  "/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/build/differential_wheeled_robot/rosidl_generator_py/differential_wheeled_robot/msg/_diff_error_s.c" "/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/build/differential_wheeled_robot/CMakeFiles/differential_wheeled_robot__rosidl_generator_py.dir/rosidl_generator_py/differential_wheeled_robot/msg/_diff_error_s.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -20,7 +20,6 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "rosidl_generator_c"
   "rosidl_generator_py"
   "/usr/include/python3.8"
-  "/opt/ros/humble/include/geometry_msgs"
   "/opt/ros/humble/include/std_msgs"
   "/opt/ros/humble/include/builtin_interfaces"
   "/opt/ros/humble/include/rosidl_runtime_c"

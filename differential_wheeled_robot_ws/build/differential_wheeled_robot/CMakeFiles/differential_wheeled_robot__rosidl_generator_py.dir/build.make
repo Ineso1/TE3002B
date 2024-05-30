@@ -57,39 +57,36 @@ include CMakeFiles/differential_wheeled_robot__rosidl_generator_py.dir/progress.
 # Include the compile flags for this target's objects.
 include CMakeFiles/differential_wheeled_robot__rosidl_generator_py.dir/flags.make
 
-CMakeFiles/differential_wheeled_robot__rosidl_generator_py.dir/rosidl_generator_py/differential_wheeled_robot/msg/_path_s.c.o: CMakeFiles/differential_wheeled_robot__rosidl_generator_py.dir/flags.make
-CMakeFiles/differential_wheeled_robot__rosidl_generator_py.dir/rosidl_generator_py/differential_wheeled_robot/msg/_path_s.c.o: rosidl_generator_py/differential_wheeled_robot/msg/_path_s.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/build/differential_wheeled_robot/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/differential_wheeled_robot__rosidl_generator_py.dir/rosidl_generator_py/differential_wheeled_robot/msg/_path_s.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/differential_wheeled_robot__rosidl_generator_py.dir/rosidl_generator_py/differential_wheeled_robot/msg/_path_s.c.o   -c /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/build/differential_wheeled_robot/rosidl_generator_py/differential_wheeled_robot/msg/_path_s.c
+CMakeFiles/differential_wheeled_robot__rosidl_generator_py.dir/rosidl_generator_py/differential_wheeled_robot/msg/_diff_error_s.c.o: CMakeFiles/differential_wheeled_robot__rosidl_generator_py.dir/flags.make
+CMakeFiles/differential_wheeled_robot__rosidl_generator_py.dir/rosidl_generator_py/differential_wheeled_robot/msg/_diff_error_s.c.o: rosidl_generator_py/differential_wheeled_robot/msg/_diff_error_s.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/build/differential_wheeled_robot/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/differential_wheeled_robot__rosidl_generator_py.dir/rosidl_generator_py/differential_wheeled_robot/msg/_diff_error_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/differential_wheeled_robot__rosidl_generator_py.dir/rosidl_generator_py/differential_wheeled_robot/msg/_diff_error_s.c.o   -c /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/build/differential_wheeled_robot/rosidl_generator_py/differential_wheeled_robot/msg/_diff_error_s.c
 
-CMakeFiles/differential_wheeled_robot__rosidl_generator_py.dir/rosidl_generator_py/differential_wheeled_robot/msg/_path_s.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/differential_wheeled_robot__rosidl_generator_py.dir/rosidl_generator_py/differential_wheeled_robot/msg/_path_s.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/build/differential_wheeled_robot/rosidl_generator_py/differential_wheeled_robot/msg/_path_s.c > CMakeFiles/differential_wheeled_robot__rosidl_generator_py.dir/rosidl_generator_py/differential_wheeled_robot/msg/_path_s.c.i
+CMakeFiles/differential_wheeled_robot__rosidl_generator_py.dir/rosidl_generator_py/differential_wheeled_robot/msg/_diff_error_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/differential_wheeled_robot__rosidl_generator_py.dir/rosidl_generator_py/differential_wheeled_robot/msg/_diff_error_s.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/build/differential_wheeled_robot/rosidl_generator_py/differential_wheeled_robot/msg/_diff_error_s.c > CMakeFiles/differential_wheeled_robot__rosidl_generator_py.dir/rosidl_generator_py/differential_wheeled_robot/msg/_diff_error_s.c.i
 
-CMakeFiles/differential_wheeled_robot__rosidl_generator_py.dir/rosidl_generator_py/differential_wheeled_robot/msg/_path_s.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/differential_wheeled_robot__rosidl_generator_py.dir/rosidl_generator_py/differential_wheeled_robot/msg/_path_s.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/build/differential_wheeled_robot/rosidl_generator_py/differential_wheeled_robot/msg/_path_s.c -o CMakeFiles/differential_wheeled_robot__rosidl_generator_py.dir/rosidl_generator_py/differential_wheeled_robot/msg/_path_s.c.s
+CMakeFiles/differential_wheeled_robot__rosidl_generator_py.dir/rosidl_generator_py/differential_wheeled_robot/msg/_diff_error_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/differential_wheeled_robot__rosidl_generator_py.dir/rosidl_generator_py/differential_wheeled_robot/msg/_diff_error_s.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/build/differential_wheeled_robot/rosidl_generator_py/differential_wheeled_robot/msg/_diff_error_s.c -o CMakeFiles/differential_wheeled_robot__rosidl_generator_py.dir/rosidl_generator_py/differential_wheeled_robot/msg/_diff_error_s.c.s
 
 # Object files for target differential_wheeled_robot__rosidl_generator_py
 differential_wheeled_robot__rosidl_generator_py_OBJECTS = \
-"CMakeFiles/differential_wheeled_robot__rosidl_generator_py.dir/rosidl_generator_py/differential_wheeled_robot/msg/_path_s.c.o"
+"CMakeFiles/differential_wheeled_robot__rosidl_generator_py.dir/rosidl_generator_py/differential_wheeled_robot/msg/_diff_error_s.c.o"
 
 # External object files for target differential_wheeled_robot__rosidl_generator_py
 differential_wheeled_robot__rosidl_generator_py_EXTERNAL_OBJECTS =
 
-rosidl_generator_py/differential_wheeled_robot/libdifferential_wheeled_robot__rosidl_generator_py.so: CMakeFiles/differential_wheeled_robot__rosidl_generator_py.dir/rosidl_generator_py/differential_wheeled_robot/msg/_path_s.c.o
+rosidl_generator_py/differential_wheeled_robot/libdifferential_wheeled_robot__rosidl_generator_py.so: CMakeFiles/differential_wheeled_robot__rosidl_generator_py.dir/rosidl_generator_py/differential_wheeled_robot/msg/_diff_error_s.c.o
 rosidl_generator_py/differential_wheeled_robot/libdifferential_wheeled_robot__rosidl_generator_py.so: CMakeFiles/differential_wheeled_robot__rosidl_generator_py.dir/build.make
 rosidl_generator_py/differential_wheeled_robot/libdifferential_wheeled_robot__rosidl_generator_py.so: /usr/lib/aarch64-linux-gnu/libpython3.8.so
 rosidl_generator_py/differential_wheeled_robot/libdifferential_wheeled_robot__rosidl_generator_py.so: libdifferential_wheeled_robot__rosidl_typesupport_c.so
-rosidl_generator_py/differential_wheeled_robot/libdifferential_wheeled_robot__rosidl_generator_py.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_py.so
 rosidl_generator_py/differential_wheeled_robot/libdifferential_wheeled_robot__rosidl_generator_py.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
+rosidl_generator_py/differential_wheeled_robot/libdifferential_wheeled_robot__rosidl_generator_py.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
 rosidl_generator_py/differential_wheeled_robot/libdifferential_wheeled_robot__rosidl_generator_py.so: libdifferential_wheeled_robot__rosidl_generator_c.so
-rosidl_generator_py/differential_wheeled_robot/libdifferential_wheeled_robot__rosidl_generator_py.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so
-rosidl_generator_py/differential_wheeled_robot/libdifferential_wheeled_robot__rosidl_generator_py.so: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so
+rosidl_generator_py/differential_wheeled_robot/libdifferential_wheeled_robot__rosidl_generator_py.so: /usr/lib/aarch64-linux-gnu/libpython3.8.so
 rosidl_generator_py/differential_wheeled_robot/libdifferential_wheeled_robot__rosidl_generator_py.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
 rosidl_generator_py/differential_wheeled_robot/libdifferential_wheeled_robot__rosidl_generator_py.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
-rosidl_generator_py/differential_wheeled_robot/libdifferential_wheeled_robot__rosidl_generator_py.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
-rosidl_generator_py/differential_wheeled_robot/libdifferential_wheeled_robot__rosidl_generator_py.so: /usr/lib/aarch64-linux-gnu/libpython3.8.so
 rosidl_generator_py/differential_wheeled_robot/libdifferential_wheeled_robot__rosidl_generator_py.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
 rosidl_generator_py/differential_wheeled_robot/libdifferential_wheeled_robot__rosidl_generator_py.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 rosidl_generator_py/differential_wheeled_robot/libdifferential_wheeled_robot__rosidl_generator_py.so: /opt/ros/humble/lib/librosidl_runtime_c.so

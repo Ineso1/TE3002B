@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/build/differential_wheeled_robot/rosidl_typesupport_c/differential_wheeled_robot/msg/path__type_support.cpp" "/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/build/differential_wheeled_robot/CMakeFiles/differential_wheeled_robot__rosidl_typesupport_c.dir/rosidl_typesupport_c/differential_wheeled_robot/msg/path__type_support.cpp.o"
+  "/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/build/differential_wheeled_robot/rosidl_typesupport_c/differential_wheeled_robot/msg/diff_error__type_support.cpp" "/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/build/differential_wheeled_robot/CMakeFiles/differential_wheeled_robot__rosidl_typesupport_c.dir/rosidl_typesupport_c/differential_wheeled_robot/msg/diff_error__type_support.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -18,7 +18,6 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "rosidl_generator_c"
-  "/opt/ros/humble/include/geometry_msgs"
   "/opt/ros/humble/include/std_msgs"
   "/opt/ros/humble/include/builtin_interfaces"
   "/opt/ros/humble/include/rosidl_runtime_c"

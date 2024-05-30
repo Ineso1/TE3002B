@@ -1,4 +1,3 @@
-//#define DEBUG_TIME_STEP_ENCODERS
 #define DEBUG_POSITION
 
 #include <chrono>
@@ -10,6 +9,12 @@
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/float32.hpp"
 #include "geometry_msgs/msg/pose2_d.hpp"
+
+
+/*
+    Just receibe the angular velocity from each motor and calculates the current position
+    OK
+*/
 
 using namespace std::chrono_literals;
 
@@ -85,6 +90,7 @@ private:
             );
         #endif
     }
+
     void publisher_position_callback()
     {
         next_clock_ = std::chrono::system_clock::now();
@@ -99,8 +105,6 @@ private:
                 dt_,
             );
         #endif
-
-
 
         next_position_.x = position_x_
             + (wheel_radius_/2.0)*(angular_vel_right_ + angular_vel_left_)*dt_*std::cos(position_theta_);

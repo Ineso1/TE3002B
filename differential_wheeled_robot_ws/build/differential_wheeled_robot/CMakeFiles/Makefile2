@@ -54,7 +54,6 @@ CMAKE_BINARY_DIR = /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheel
 
 # The main recursive "all" target.
 all: CMakeFiles/odometry.dir/all
-all: CMakeFiles/point_generator.dir/all
 all: CMakeFiles/differential_wheeled_robot__rosidl_typesupport_c__pyext.dir/all
 all: CMakeFiles/differential_wheeled_robot__rosidl_typesupport_introspection_c__pyext.dir/all
 all: CMakeFiles/differential_wheeled_robot__rosidl_typesupport_fastrtps_c__pyext.dir/all
@@ -80,7 +79,6 @@ preinstall: differential_wheeled_robot__py/preinstall
 
 # The main recursive "clean" target.
 clean: CMakeFiles/odometry.dir/clean
-clean: CMakeFiles/point_generator.dir/clean
 clean: CMakeFiles/differential_wheeled_robot__rosidl_typesupport_c__pyext.dir/clean
 clean: CMakeFiles/differential_wheeled_robot__rosidl_typesupport_introspection_c__pyext.dir/clean
 clean: CMakeFiles/differential_wheeled_robot__rosidl_typesupport_fastrtps_c__pyext.dir/clean
@@ -147,34 +145,6 @@ odometry: CMakeFiles/odometry.dir/rule
 CMakeFiles/odometry.dir/clean:
 	$(MAKE) -f CMakeFiles/odometry.dir/build.make CMakeFiles/odometry.dir/clean
 .PHONY : CMakeFiles/odometry.dir/clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/point_generator.dir
-
-# All Build rule for target.
-CMakeFiles/point_generator.dir/all: CMakeFiles/differential_wheeled_robot__cpp.dir/all
-CMakeFiles/point_generator.dir/all: CMakeFiles/differential_wheeled_robot__rosidl_typesupport_cpp.dir/all
-	$(MAKE) -f CMakeFiles/point_generator.dir/build.make CMakeFiles/point_generator.dir/depend
-	$(MAKE) -f CMakeFiles/point_generator.dir/build.make CMakeFiles/point_generator.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/build/differential_wheeled_robot/CMakeFiles --progress-num=36,37 "Built target point_generator"
-.PHONY : CMakeFiles/point_generator.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/point_generator.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/build/differential_wheeled_robot/CMakeFiles 6
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/point_generator.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/build/differential_wheeled_robot/CMakeFiles 0
-.PHONY : CMakeFiles/point_generator.dir/rule
-
-# Convenience name for target.
-point_generator: CMakeFiles/point_generator.dir/rule
-
-.PHONY : point_generator
-
-# clean rule for target.
-CMakeFiles/point_generator.dir/clean:
-	$(MAKE) -f CMakeFiles/point_generator.dir/build.make CMakeFiles/point_generator.dir/clean
-.PHONY : CMakeFiles/point_generator.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/differential_wheeled_robot__rosidl_typesupport_c__pyext.dir

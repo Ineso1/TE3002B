@@ -1,0 +1,42 @@
+[01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/src/differential_wheeled_robot/src/controller.cpp:21:1:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K/[m[K’ token
+ [01;31m[K/[m[K
+ [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:152[m[K,
+                 from [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/src/differential_wheeled_robot/src/controller.cpp:22[m[K:
+[01m[K/usr/include/c++/8/csignal:52:11:[m[K [01;31m[Kerror: [m[K‘[01m[K::sig_atomic_t[m[K’ has not been declared
+   using ::[01;31m[Ksig_atomic_t[m[K;
+           [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/8/csignal:53:11:[m[K [01;31m[Kerror: [m[K‘[01m[K::signal[m[K’ has not been declared
+   using ::[01;31m[Ksignal[m[K;
+           [01;31m[K^~~~~~[m[K
+[01m[K/usr/include/c++/8/csignal:54:11:[m[K [01;31m[Kerror: [m[K‘[01m[K::raise[m[K’ has not been declared
+   using ::[01;31m[Kraise[m[K;
+           [01;31m[K^~~~~[m[K
+[01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/src/differential_wheeled_robot/src/controller.cpp:[m[K In constructor ‘[01m[KController::Controller()[m[K’:
+[01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/src/differential_wheeled_robot/src/controller.cpp:34:9:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KController[m[K’ does not have any field named ‘[01m[Kerrors_[m[K’
+         [01;31m[Kerrors_[m[K{differential_wheeled_robot::msg::DiffError{0.0, 0.0}},
+         [01;31m[K^~~~~~~[m[K
+[01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/src/differential_wheeled_robot/src/controller.cpp:34:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kdifferential_wheeled_robot[m[K’ has not been declared
+         errors_{[01;31m[Kdifferential_wheeled_robot[m[K::msg::DiffError{0.0, 0.0}},
+                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/src/differential_wheeled_robot/src/controller.cpp:34:59:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K}[m[K’ before ‘[01m[K{[m[K’ token
+         errors_[32m[K{[m[Kdifferential_wheeled_robot::msg::DiffError[01;31m[K{[m[K0.0, 0.0}},
+                [32m[K~[m[K                                          [01;31m[K^[m[K
+[01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/src/differential_wheeled_robot/src/controller.cpp:34:65:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K-Wunused-value[m[K]
+         errors_{differential_wheeled_robot::msg::DiffError{0.0, [01;35m[K0.0[m[K}},
+                                                                 [01;35m[K^~~[m[K
+[01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/src/differential_wheeled_robot/src/controller.cpp:34:68:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+         errors_{differential_wheeled_robot::msg::DiffError{0.0, 0.0[01;31m[K}[m[K},
+                                                                    [01;31m[K^[m[K
+                                                                    [32m[K;[m[K
+[01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/src/differential_wheeled_robot/src/controller.cpp:34:68:[m[K [01;35m[Kwarning: [m[Kright operand of comma operator has no effect [[01;35m[K-Wunused-value[m[K]
+[01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/src/differential_wheeled_robot/src/odometry.cpp:[m[K In constructor ‘[01m[KOdometry::Odometry()[m[K’:
+[01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/src/differential_wheeled_robot/src/odometry.cpp:27:9:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KOdometry[m[K’ does not have any field named ‘[01m[Knew_position_[m[K’
+         [01;31m[Knew_position_[m[K{geometry_msgs::msg::Pose2D()}
+         [01;31m[K^~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/controller.dir/build.make:63: CMakeFiles/controller.dir/src/controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:444: CMakeFiles/controller.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/odometry.dir/build.make:63: CMakeFiles/odometry.dir/src/odometry.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:128: CMakeFiles/odometry.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -84,6 +84,7 @@ controller: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.
 controller: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so
 controller: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
 controller: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
+controller: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
 controller: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_py.so
 controller: libdifferential_wheeled_robot__rosidl_typesupport_cpp.so
 controller: /opt/ros/humble/lib/liblibstatistics_collector.so
@@ -142,7 +143,6 @@ controller: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
 controller: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
 controller: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 controller: /usr/lib/aarch64-linux-gnu/libpython3.8.so
-controller: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
 controller: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
 controller: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
 controller: /opt/ros/humble/lib/librosidl_typesupport_cpp.so

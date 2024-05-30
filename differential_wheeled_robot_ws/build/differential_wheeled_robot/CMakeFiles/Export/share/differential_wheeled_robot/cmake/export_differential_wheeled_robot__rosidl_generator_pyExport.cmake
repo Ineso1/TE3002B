@@ -54,7 +54,7 @@ endif()
 add_library(differential_wheeled_robot::differential_wheeled_robot__rosidl_generator_py SHARED IMPORTED)
 
 set_target_properties(differential_wheeled_robot::differential_wheeled_robot__rosidl_generator_py PROPERTIES
-  INTERFACE_LINK_LIBRARIES "differential_wheeled_robot::differential_wheeled_robot__rosidl_generator_c;/usr/lib/aarch64-linux-gnu/libpython3.8.so;differential_wheeled_robot::differential_wheeled_robot__rosidl_typesupport_c;geometry_msgs::geometry_msgs__rosidl_generator_py;std_msgs::std_msgs__rosidl_generator_py"
+  INTERFACE_LINK_LIBRARIES "differential_wheeled_robot::differential_wheeled_robot__rosidl_generator_c;/usr/lib/aarch64-linux-gnu/libpython3.8.so;differential_wheeled_robot::differential_wheeled_robot__rosidl_typesupport_c;std_msgs::std_msgs__rosidl_generator_py;builtin_interfaces::builtin_interfaces__rosidl_generator_py"
 )
 
 if(CMAKE_VERSION VERSION_LESS 2.8.12)

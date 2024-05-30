@@ -21,14 +21,16 @@ memory
 -
 vector
 -
+cmath
+-
 rclcpp/rclcpp.hpp
 /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/src/differential_wheeled_robot/src/rclcpp/rclcpp.hpp
 geometry_msgs/msg/twist.hpp
 /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/src/differential_wheeled_robot/src/geometry_msgs/msg/twist.hpp
 geometry_msgs/msg/pose2_d.hpp
 /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/src/differential_wheeled_robot/src/geometry_msgs/msg/pose2_d.hpp
-differential_wheeled_robot/msg/path.hpp
-/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/src/differential_wheeled_robot/src/differential_wheeled_robot/msg/path.hpp
+differential_wheeled_robot/msg/diff_error.hpp
+/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/src/differential_wheeled_robot/src/differential_wheeled_robot/msg/diff_error.hpp
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp
 algorithm
@@ -125,36 +127,6 @@ builtin_interfaces/msg/detail/time__builder.hpp
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/builtin_interfaces/msg/detail/time__builder.hpp
 builtin_interfaces/msg/detail/time__traits.hpp
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/builtin_interfaces/msg/detail/time__traits.hpp
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp
-algorithm
--
-array
--
-memory
--
-string
--
-vector
--
-rosidl_runtime_cpp/bounded_vector.hpp
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/rosidl_runtime_cpp/bounded_vector.hpp
-rosidl_runtime_cpp/message_initialization.hpp
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/rosidl_runtime_cpp/message_initialization.hpp
-
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/point__traits.hpp
-stdint.h
--
-sstream
--
-string
--
-type_traits
--
-geometry_msgs/msg/detail/point__struct.hpp
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/geometry_msgs/msg/detail/point__struct.hpp
-rosidl_runtime_cpp/traits.hpp
-/opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/rosidl_runtime_cpp/traits.hpp
 
 /opt/ros/humble/include/geometry_msgs/geometry_msgs/msg/detail/pose2_d__builder.hpp
 algorithm
@@ -4952,17 +4924,17 @@ tracetools/config.h
 
 /opt/ros/humble/include/tracetools/tracetools/visibility_control.hpp
 
-rosidl_generator_cpp/differential_wheeled_robot/msg/detail/path__builder.hpp
+rosidl_generator_cpp/differential_wheeled_robot/msg/detail/diff_error__builder.hpp
 algorithm
 -
 utility
 -
-differential_wheeled_robot/msg/detail/path__struct.hpp
-rosidl_generator_cpp/differential_wheeled_robot/msg/detail/differential_wheeled_robot/msg/detail/path__struct.hpp
+differential_wheeled_robot/msg/detail/diff_error__struct.hpp
+rosidl_generator_cpp/differential_wheeled_robot/msg/detail/differential_wheeled_robot/msg/detail/diff_error__struct.hpp
 rosidl_runtime_cpp/message_initialization.hpp
 rosidl_generator_cpp/differential_wheeled_robot/msg/detail/rosidl_runtime_cpp/message_initialization.hpp
 
-rosidl_generator_cpp/differential_wheeled_robot/msg/detail/path__struct.hpp
+rosidl_generator_cpp/differential_wheeled_robot/msg/detail/diff_error__struct.hpp
 algorithm
 -
 array
@@ -4977,10 +4949,8 @@ rosidl_runtime_cpp/bounded_vector.hpp
 rosidl_generator_cpp/differential_wheeled_robot/msg/detail/rosidl_runtime_cpp/bounded_vector.hpp
 rosidl_runtime_cpp/message_initialization.hpp
 rosidl_generator_cpp/differential_wheeled_robot/msg/detail/rosidl_runtime_cpp/message_initialization.hpp
-geometry_msgs/msg/detail/point__struct.hpp
-rosidl_generator_cpp/differential_wheeled_robot/msg/detail/geometry_msgs/msg/detail/point__struct.hpp
 
-rosidl_generator_cpp/differential_wheeled_robot/msg/detail/path__traits.hpp
+rosidl_generator_cpp/differential_wheeled_robot/msg/detail/diff_error__traits.hpp
 stdint.h
 -
 sstream
@@ -4989,18 +4959,16 @@ string
 -
 type_traits
 -
-differential_wheeled_robot/msg/detail/path__struct.hpp
-rosidl_generator_cpp/differential_wheeled_robot/msg/detail/differential_wheeled_robot/msg/detail/path__struct.hpp
+differential_wheeled_robot/msg/detail/diff_error__struct.hpp
+rosidl_generator_cpp/differential_wheeled_robot/msg/detail/differential_wheeled_robot/msg/detail/diff_error__struct.hpp
 rosidl_runtime_cpp/traits.hpp
 rosidl_generator_cpp/differential_wheeled_robot/msg/detail/rosidl_runtime_cpp/traits.hpp
-geometry_msgs/msg/detail/point__traits.hpp
-rosidl_generator_cpp/differential_wheeled_robot/msg/detail/geometry_msgs/msg/detail/point__traits.hpp
 
-rosidl_generator_cpp/differential_wheeled_robot/msg/path.hpp
-differential_wheeled_robot/msg/detail/path__struct.hpp
-rosidl_generator_cpp/differential_wheeled_robot/msg/differential_wheeled_robot/msg/detail/path__struct.hpp
-differential_wheeled_robot/msg/detail/path__builder.hpp
-rosidl_generator_cpp/differential_wheeled_robot/msg/differential_wheeled_robot/msg/detail/path__builder.hpp
-differential_wheeled_robot/msg/detail/path__traits.hpp
-rosidl_generator_cpp/differential_wheeled_robot/msg/differential_wheeled_robot/msg/detail/path__traits.hpp
+rosidl_generator_cpp/differential_wheeled_robot/msg/diff_error.hpp
+differential_wheeled_robot/msg/detail/diff_error__struct.hpp
+rosidl_generator_cpp/differential_wheeled_robot/msg/differential_wheeled_robot/msg/detail/diff_error__struct.hpp
+differential_wheeled_robot/msg/detail/diff_error__builder.hpp
+rosidl_generator_cpp/differential_wheeled_robot/msg/differential_wheeled_robot/msg/detail/diff_error__builder.hpp
+differential_wheeled_robot/msg/detail/diff_error__traits.hpp
+rosidl_generator_cpp/differential_wheeled_robot/msg/differential_wheeled_robot/msg/detail/diff_error__traits.hpp
 

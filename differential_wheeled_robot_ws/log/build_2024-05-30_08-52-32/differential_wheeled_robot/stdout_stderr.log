@@ -1,0 +1,41 @@
+[  2%] Built target differential_wheeled_robot__cpp
+[ 11%] Built target differential_wheeled_robot__rosidl_generator_c
+[ 11%] Built target ament_cmake_python_copy_differential_wheeled_robot
+[ 17%] Built target odometry
+[ 25%] Built target differential_wheeled_robot__rosidl_typesupport_fastrtps_cpp
+[ 34%] Built target differential_wheeled_robot__rosidl_typesupport_cpp
+[ 51%] Built target differential_wheeled_robot__rosidl_typesupport_introspection_cpp
+[ 51%] Built target differential_wheeled_robot__rosidl_typesupport_introspection_c
+[ 60%] Built target differential_wheeled_robot__rosidl_typesupport_c
+[35m[1mScanning dependencies of target controller[0m
+[ 68%] Built target differential_wheeled_robot__rosidl_typesupport_fastrtps_c
+[ 68%] Built target differential_wheeled_robot
+[ 71%] [32mBuilding CXX object CMakeFiles/controller.dir/src/controller.cpp.o[0m
+[ 74%] Built target differential_wheeled_robot__py
+[ 80%] Built target differential_wheeled_robot__rosidl_generator_py
+[ 85%] Built target differential_wheeled_robot__rosidl_typesupport_c__pyext
+[ 91%] Built target differential_wheeled_robot__rosidl_typesupport_introspection_c__pyext
+[ 97%] Built target differential_wheeled_robot__rosidl_typesupport_fastrtps_c__pyext
+running egg_info
+writing differential_wheeled_robot.egg-info/PKG-INFO
+writing dependency_links to differential_wheeled_robot.egg-info/dependency_links.txt
+writing top-level names to differential_wheeled_robot.egg-info/top_level.txt
+reading manifest file 'differential_wheeled_robot.egg-info/SOURCES.txt'
+writing manifest file 'differential_wheeled_robot.egg-info/SOURCES.txt'
+[ 97%] Built target ament_cmake_python_build_differential_wheeled_robot_egg
+[01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/src/differential_wheeled_robot/src/controller.cpp:[m[K In member function ‘[01m[Kvoid Controller::controller_callback()[m[K’:
+[01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/src/differential_wheeled_robot/src/controller.cpp:128:46:[m[K [01;31m[Kerror: [m[K‘[01m[Kangle_error_[m[K’ was not declared in this scope
+         act_ = std::tanh(ke_act_ * std::abs( [01;31m[Kangle_error_[m[K - M_PI / 45)) -1 ;
+                                              [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/src/differential_wheeled_robot/src/controller.cpp:109:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kangular_vel_max_[m[K’ [[01;35m[K-Wunused-variable[m[K]
+         double [01;35m[Kangular_vel_max_[m[K = get_parameter("angular_vel_max").as_double();
+                [01;35m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/src/differential_wheeled_robot/src/controller.cpp:110:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klinear_vel_max_[m[K’ [[01;35m[K-Wunused-variable[m[K]
+         double [01;35m[Klinear_vel_max_[m[K = get_parameter("linear_vel_max").as_double();
+                [01;35m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/differential_wheeled_robot_ws/src/differential_wheeled_robot/src/controller.cpp:115:16:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kkp_distance_[m[K’ [[01;35m[K-Wunused-variable[m[K]
+         double [01;35m[Kkp_distance_[m[K = get_parameter("kp_distance").as_double();
+                [01;35m[K^~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/controller.dir/build.make:63: CMakeFiles/controller.dir/src/controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:444: CMakeFiles/controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

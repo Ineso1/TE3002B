@@ -12,15 +12,8 @@ find_package(geometry_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/Path.msg"
-  DEPENDENCIES geometry_msgs
-)
-
-add_executable(point_generator src/point_generator.cpp)
-ament_target_dependencies(
-  point_generator
-  rclcpp
-  geometry_msgs
+  "msg/DiffError.msg"
+  DEPENDENCIES std_msgs
 )
 
 add_executable(controller src/controller.cpp)
@@ -43,11 +36,9 @@ rosidl_get_typesupport_target(cpp_typesupport_target
   ${PROJECT_NAME} rosidl_typesupport_cpp  
 )
 
-target_link_libraries(point_generator "${cpp_typesupport_target}")
 target_link_libraries(controller "${cpp_typesupport_target}")
 
 install(TARGETS
-  point_generator
   controller
   odometry
   DESTINATION lib/${PROJECT_NAME}

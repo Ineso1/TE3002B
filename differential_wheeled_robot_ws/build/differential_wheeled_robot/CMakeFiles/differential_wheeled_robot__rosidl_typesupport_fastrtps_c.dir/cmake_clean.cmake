@@ -1,9 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/differential_wheeled_robot__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/differential_wheeled_robot/msg/detail/path__type_support_c.cpp.o"
+  "CMakeFiles/differential_wheeled_robot__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/differential_wheeled_robot/msg/detail/diff_error__type_support_c.cpp.o"
   "libdifferential_wheeled_robot__rosidl_typesupport_fastrtps_c.pdb"
   "libdifferential_wheeled_robot__rosidl_typesupport_fastrtps_c.so"
-  "rosidl_typesupport_fastrtps_c/differential_wheeled_robot/msg/detail/path__rosidl_typesupport_fastrtps_c.h"
-  "rosidl_typesupport_fastrtps_c/differential_wheeled_robot/msg/detail/path__type_support_c.cpp"
+  "rosidl_typesupport_fastrtps_c/differential_wheeled_robot/msg/detail/diff_error__rosidl_typesupport_fastrtps_c.h"
+  "rosidl_typesupport_fastrtps_c/differential_wheeled_robot/msg/detail/diff_error__type_support_c.cpp"
 )
 
 # Per-language clean rules from dependency scanning.

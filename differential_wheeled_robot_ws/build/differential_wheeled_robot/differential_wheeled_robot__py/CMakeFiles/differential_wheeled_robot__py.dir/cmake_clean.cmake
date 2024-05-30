@@ -3,8 +3,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/differential_wheeled_robot/_differential_wheeled_robot_s.ep.rosidl_typesupport_fastrtps_c.c"
   "../rosidl_generator_py/differential_wheeled_robot/_differential_wheeled_robot_s.ep.rosidl_typesupport_introspection_c.c"
   "../rosidl_generator_py/differential_wheeled_robot/msg/__init__.py"
-  "../rosidl_generator_py/differential_wheeled_robot/msg/_path.py"
-  "../rosidl_generator_py/differential_wheeled_robot/msg/_path_s.c"
+  "../rosidl_generator_py/differential_wheeled_robot/msg/_diff_error.py"
+  "../rosidl_generator_py/differential_wheeled_robot/msg/_diff_error_s.c"
   "CMakeFiles/differential_wheeled_robot__py"
 )
 
