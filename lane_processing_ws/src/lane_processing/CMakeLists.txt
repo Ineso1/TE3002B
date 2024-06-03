@@ -11,6 +11,14 @@ find_package(rclcpp REQUIRED)
 find_package(cv_bridge REQUIRED)
 find_package(image_transport REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/DiffError.msg"
+)
+
+ament_export_dependencies(rosidl_default_runtime)
 
 # Include directories
 include_directories(
@@ -21,29 +29,38 @@ include_directories(
 )
 
 add_executable(
-  lane_processing
+  lane_detection
   src/lane_detection.cpp 
   src/lib/cv_wrapper.cpp 
   src/lib/perspective.cpp
   src/lib/lane_funcs.cpp
 )
-
-target_include_directories(lane_processing PUBLIC
-  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
-  $<INSTALL_INTERFACE:include>
-)
-target_compile_features(lane_processing PUBLIC c_std_99 cxx_std_17)  # Require C99 and C++17
-
-# Link libraries
-ament_target_dependencies(lane_processing
+ament_target_dependencies(
+  lane_detection
   rclcpp
   cv_bridge
   image_transport
   sensor_msgs
+  std_msgs
 )
 
-install(TARGETS lane_processing
-  DESTINATION lib/${PROJECT_NAME})
+rosidl_get_typesupport_target(cpp_typesupport_target
+  ${PROJECT_NAME} rosidl_typesupport_cpp  
+)
+
+target_link_libraries(lane_detection "${cpp_typesupport_target}")
+
+
+target_include_directories(lane_detection PUBLIC
+  $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+  $<INSTALL_INTERFACE:include>
+)
+
+
+install(TARGETS 
+  lane_detection
+  DESTINATION lib/${PROJECT_NAME}
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

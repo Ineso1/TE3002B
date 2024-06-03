@@ -1,0 +1,820 @@
+[0.000000] (-) TimerEvent: {}
+[0.001143] (lane_processing) JobQueued: {'identifier': 'lane_processing', 'dependencies': OrderedDict()}
+[0.003130] (lane_processing) JobStarted: {'identifier': 'lane_processing'}
+[0.099111] (-) TimerEvent: {}
+[0.200415] (-) TimerEvent: {}
+[0.302797] (-) TimerEvent: {}
+[0.405606] (-) TimerEvent: {}
+[0.506444] (-) TimerEvent: {}
+[0.610309] (-) TimerEvent: {}
+[0.712999] (-) TimerEvent: {}
+[0.815261] (-) TimerEvent: {}
+[0.916376] (-) TimerEvent: {}
+[1.019508] (-) TimerEvent: {}
+[1.126001] (-) TimerEvent: {}
+[1.231849] (-) TimerEvent: {}
+[1.333844] (-) TimerEvent: {}
+[1.438144] (-) TimerEvent: {}
+[1.542355] (-) TimerEvent: {}
+[1.645585] (-) TimerEvent: {}
+[1.676662] (lane_processing) JobProgress: {'identifier': 'lane_processing', 'progress': 'cmake'}
+[1.681077] (lane_processing) JobProgress: {'identifier': 'lane_processing', 'progress': 'build'}
+[1.684944] (lane_processing) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing', '--', '-j4', '-l4'], 'cwd': '/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'puzzlebot'), ('SSH_CLIENT', '10.43.122.196 48500 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent/lib:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/puzzlebot'), ('OLDPWD', '/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B'), ('SSH_TTY', '/dev/pts/4'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install:/home/puzzlebot/ros2_ws/install:/home/puzzlebot/ros2_packages_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'puzzlebot'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '8'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/puzzlebot/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_GB.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/home/puzzlebot/ros2_packages_ws/install/ros_deep_learning:/home/puzzlebot/ros2_packages_ws/install/micro_ros_setup:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs:/home/puzzlebot/ros2_packages_ws/install/camera_info_publisher:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.43.122.196 48500 10.43.59.241 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib/python3.8/site-packages:/home/puzzlebot/ros2_ws/build/puzzlebot_ros:/home/puzzlebot/ros2_ws/install/puzzlebot_ros/lib/python3.8/site-packages:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:/home/puzzlebot/ros2_packages_ws/install/ros_deep_learning:/home/puzzlebot/ros2_packages_ws/install/micro_ros_setup:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs:/home/puzzlebot/ros2_packages_ws/install/camera_info_publisher')]), 'shell': False}
+[1.745837] (-) TimerEvent: {}
+[1.846627] (-) TimerEvent: {}
+[1.947322] (-) TimerEvent: {}
+[2.047955] (-) TimerEvent: {}
+[2.147411] (lane_processing) StdoutLine: {'line': b'[  2%] Built target lane_processing__cpp\n'}
+[2.148418] (-) TimerEvent: {}
+[2.190150] (lane_processing) StdoutLine: {'line': b'[ 11%] Built target lane_processing__rosidl_generator_c\n'}
+[2.196190] (lane_processing) StdoutLine: {'line': b'[ 11%] Built target ament_cmake_python_copy_lane_processing\n'}
+[2.248621] (-) TimerEvent: {}
+[2.299917] (lane_processing) StdoutLine: {'line': b'[ 19%] Built target lane_processing__rosidl_typesupport_introspection_cpp\n'}
+[2.305155] (lane_processing) StdoutLine: {'line': b'[ 27%] Built target lane_processing__rosidl_typesupport_fastrtps_cpp\n'}
+[2.322172] (lane_processing) StdoutLine: {'line': b'[ 36%] Built target lane_processing__rosidl_typesupport_cpp\n'}
+[2.348783] (-) TimerEvent: {}
+[2.449500] (-) TimerEvent: {}
+[2.456547] (lane_processing) StdoutLine: {'line': b'[ 44%] Built target lane_processing__rosidl_typesupport_fastrtps_c\n'}
+[2.465823] (lane_processing) StdoutLine: {'line': b'[ 52%] Built target lane_processing__rosidl_typesupport_introspection_c\n'}
+[2.486525] (lane_processing) StdoutLine: {'line': b'[ 61%] Built target lane_processing__rosidl_typesupport_c\n'}
+[2.549659] (-) TimerEvent: {}
+[2.589538] (lane_processing) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target lane_detection\x1b[0m\n'}
+[2.593297] (lane_processing) StdoutLine: {'line': b'[ 61%] Built target lane_processing\n'}
+[2.649826] (-) TimerEvent: {}
+[2.702947] (lane_processing) StdoutLine: {'line': b'[ 63%] Built target lane_processing__py\n'}
+[2.750032] (-) TimerEvent: {}
+[2.851172] (-) TimerEvent: {}
+[2.951829] (-) TimerEvent: {}
+[2.959998] (lane_processing) StdoutLine: {'line': b'[ 69%] Built target lane_processing__rosidl_generator_py\n'}
+[2.994907] (lane_processing) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/lane_detection.dir/src/lane_detection.cpp.o\x1b[0m\n'}
+[3.051987] (-) TimerEvent: {}
+[3.152664] (-) TimerEvent: {}
+[3.171990] (lane_processing) StdoutLine: {'line': b'[ 77%] Built target lane_processing__rosidl_typesupport_c__pyext\n'}
+[3.191991] (lane_processing) StdoutLine: {'line': b'[ 83%] Built target lane_processing__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.252879] (-) TimerEvent: {}
+[3.353935] (-) TimerEvent: {}
+[3.419193] (lane_processing) StdoutLine: {'line': b'[ 88%] Built target lane_processing__rosidl_typesupport_introspection_c__pyext\n'}
+[3.454079] (-) TimerEvent: {}
+[3.554929] (-) TimerEvent: {}
+[3.656415] (-) TimerEvent: {}
+[3.757068] (-) TimerEvent: {}
+[3.857782] (-) TimerEvent: {}
+[3.958550] (-) TimerEvent: {}
+[3.985690] (lane_processing) StdoutLine: {'line': b'running egg_info\n'}
+[3.990954] (lane_processing) StdoutLine: {'line': b'writing lane_processing.egg-info/PKG-INFO\n'}
+[3.991900] (lane_processing) StdoutLine: {'line': b'writing dependency_links to lane_processing.egg-info/dependency_links.txt\n'}
+[3.992737] (lane_processing) StdoutLine: {'line': b'writing top-level names to lane_processing.egg-info/top_level.txt\n'}
+[4.058914] (-) TimerEvent: {}
+[4.159603] (-) TimerEvent: {}
+[4.228061] (lane_processing) StdoutLine: {'line': b"reading manifest file 'lane_processing.egg-info/SOURCES.txt'\n"}
+[4.232551] (lane_processing) StdoutLine: {'line': b"writing manifest file 'lane_processing.egg-info/SOURCES.txt'\n"}
+[4.259787] (-) TimerEvent: {}
+[4.360505] (-) TimerEvent: {}
+[4.368094] (lane_processing) StdoutLine: {'line': b'[ 88%] Built target ament_cmake_python_build_lane_processing_egg\n'}
+[4.460677] (-) TimerEvent: {}
+[4.561343] (-) TimerEvent: {}
+[4.662074] (-) TimerEvent: {}
+[4.763456] (-) TimerEvent: {}
+[4.864361] (-) TimerEvent: {}
+[4.965086] (-) TimerEvent: {}
+[5.066163] (-) TimerEvent: {}
+[5.166909] (-) TimerEvent: {}
+[5.267820] (-) TimerEvent: {}
+[5.368727] (-) TimerEvent: {}
+[5.470106] (-) TimerEvent: {}
+[5.571196] (-) TimerEvent: {}
+[5.673096] (-) TimerEvent: {}
+[5.775409] (-) TimerEvent: {}
+[5.876951] (-) TimerEvent: {}
+[5.977603] (-) TimerEvent: {}
+[6.078282] (-) TimerEvent: {}
+[6.178947] (-) TimerEvent: {}
+[6.279727] (-) TimerEvent: {}
+[6.380398] (-) TimerEvent: {}
+[6.481367] (-) TimerEvent: {}
+[6.582075] (-) TimerEvent: {}
+[6.682801] (-) TimerEvent: {}
+[6.783529] (-) TimerEvent: {}
+[6.884293] (-) TimerEvent: {}
+[6.984947] (-) TimerEvent: {}
+[7.085599] (-) TimerEvent: {}
+[7.186267] (-) TimerEvent: {}
+[7.290903] (-) TimerEvent: {}
+[7.391719] (-) TimerEvent: {}
+[7.528852] (-) TimerEvent: {}
+[7.629651] (-) TimerEvent: {}
+[7.730427] (-) TimerEvent: {}
+[7.832107] (-) TimerEvent: {}
+[7.933160] (-) TimerEvent: {}
+[8.034040] (-) TimerEvent: {}
+[8.134947] (-) TimerEvent: {}
+[8.235816] (-) TimerEvent: {}
+[8.336836] (-) TimerEvent: {}
+[8.437930] (-) TimerEvent: {}
+[8.538867] (-) TimerEvent: {}
+[8.642025] (-) TimerEvent: {}
+[8.742839] (-) TimerEvent: {}
+[8.843757] (-) TimerEvent: {}
+[8.944689] (-) TimerEvent: {}
+[9.045379] (-) TimerEvent: {}
+[9.146032] (-) TimerEvent: {}
+[9.246771] (-) TimerEvent: {}
+[9.347810] (-) TimerEvent: {}
+[9.448476] (-) TimerEvent: {}
+[9.549197] (-) TimerEvent: {}
+[9.649874] (-) TimerEvent: {}
+[9.750587] (-) TimerEvent: {}
+[9.851350] (-) TimerEvent: {}
+[9.952123] (-) TimerEvent: {}
+[10.052789] (-) TimerEvent: {}
+[10.153644] (-) TimerEvent: {}
+[10.255175] (-) TimerEvent: {}
+[10.355960] (-) TimerEvent: {}
+[10.456706] (-) TimerEvent: {}
+[10.557454] (-) TimerEvent: {}
+[10.658124] (-) TimerEvent: {}
+[10.758876] (-) TimerEvent: {}
+[10.859551] (-) TimerEvent: {}
+[10.960285] (-) TimerEvent: {}
+[11.060963] (-) TimerEvent: {}
+[11.161759] (-) TimerEvent: {}
+[11.262633] (-) TimerEvent: {}
+[11.363420] (-) TimerEvent: {}
+[11.464221] (-) TimerEvent: {}
+[11.565046] (-) TimerEvent: {}
+[11.665894] (-) TimerEvent: {}
+[11.766710] (-) TimerEvent: {}
+[11.867682] (-) TimerEvent: {}
+[11.968684] (-) TimerEvent: {}
+[12.070549] (-) TimerEvent: {}
+[12.171391] (-) TimerEvent: {}
+[12.274193] (-) TimerEvent: {}
+[12.374871] (-) TimerEvent: {}
+[12.476149] (-) TimerEvent: {}
+[12.576824] (-) TimerEvent: {}
+[12.677549] (-) TimerEvent: {}
+[12.778310] (-) TimerEvent: {}
+[12.879064] (-) TimerEvent: {}
+[12.979811] (-) TimerEvent: {}
+[13.080546] (-) TimerEvent: {}
+[13.181418] (-) TimerEvent: {}
+[13.282155] (-) TimerEvent: {}
+[13.382818] (-) TimerEvent: {}
+[13.483620] (-) TimerEvent: {}
+[13.584481] (-) TimerEvent: {}
+[13.685197] (-) TimerEvent: {}
+[13.786178] (-) TimerEvent: {}
+[13.887256] (-) TimerEvent: {}
+[13.988456] (-) TimerEvent: {}
+[14.089142] (-) TimerEvent: {}
+[14.189825] (-) TimerEvent: {}
+[14.290511] (-) TimerEvent: {}
+[14.391223] (-) TimerEvent: {}
+[14.492005] (-) TimerEvent: {}
+[14.592685] (-) TimerEvent: {}
+[14.693365] (-) TimerEvent: {}
+[14.794217] (-) TimerEvent: {}
+[14.895003] (-) TimerEvent: {}
+[14.996041] (-) TimerEvent: {}
+[15.096774] (-) TimerEvent: {}
+[15.197538] (-) TimerEvent: {}
+[15.298288] (-) TimerEvent: {}
+[15.399058] (-) TimerEvent: {}
+[15.499954] (-) TimerEvent: {}
+[15.600823] (-) TimerEvent: {}
+[15.701633] (-) TimerEvent: {}
+[15.802474] (-) TimerEvent: {}
+[15.903596] (-) TimerEvent: {}
+[16.005075] (-) TimerEvent: {}
+[16.105925] (-) TimerEvent: {}
+[16.207402] (-) TimerEvent: {}
+[16.308148] (-) TimerEvent: {}
+[16.408861] (-) TimerEvent: {}
+[16.509541] (-) TimerEvent: {}
+[16.610395] (-) TimerEvent: {}
+[16.711113] (-) TimerEvent: {}
+[16.811831] (-) TimerEvent: {}
+[16.912509] (-) TimerEvent: {}
+[17.013166] (-) TimerEvent: {}
+[17.113882] (-) TimerEvent: {}
+[17.214629] (-) TimerEvent: {}
+[17.315517] (-) TimerEvent: {}
+[17.416249] (-) TimerEvent: {}
+[17.516918] (-) TimerEvent: {}
+[17.617647] (-) TimerEvent: {}
+[17.718409] (-) TimerEvent: {}
+[17.819497] (-) TimerEvent: {}
+[17.920380] (-) TimerEvent: {}
+[18.021154] (-) TimerEvent: {}
+[18.121908] (-) TimerEvent: {}
+[18.222617] (-) TimerEvent: {}
+[18.323287] (-) TimerEvent: {}
+[18.424040] (-) TimerEvent: {}
+[18.524739] (-) TimerEvent: {}
+[18.625458] (-) TimerEvent: {}
+[18.726277] (-) TimerEvent: {}
+[18.827068] (-) TimerEvent: {}
+[18.927941] (-) TimerEvent: {}
+[19.028731] (-) TimerEvent: {}
+[19.129514] (-) TimerEvent: {}
+[19.230357] (-) TimerEvent: {}
+[19.331328] (-) TimerEvent: {}
+[19.432178] (-) TimerEvent: {}
+[19.533121] (-) TimerEvent: {}
+[19.635040] (-) TimerEvent: {}
+[19.735975] (-) TimerEvent: {}
+[19.836987] (-) TimerEvent: {}
+[19.940815] (-) TimerEvent: {}
+[20.041897] (-) TimerEvent: {}
+[20.162919] (-) TimerEvent: {}
+[20.264365] (-) TimerEvent: {}
+[20.366131] (-) TimerEvent: {}
+[20.467318] (-) TimerEvent: {}
+[20.568158] (-) TimerEvent: {}
+[20.668979] (-) TimerEvent: {}
+[20.770114] (-) TimerEvent: {}
+[20.874065] (-) TimerEvent: {}
+[20.974786] (-) TimerEvent: {}
+[21.075511] (-) TimerEvent: {}
+[21.176244] (-) TimerEvent: {}
+[21.276900] (-) TimerEvent: {}
+[21.377566] (-) TimerEvent: {}
+[21.478331] (-) TimerEvent: {}
+[21.579237] (-) TimerEvent: {}
+[21.679991] (-) TimerEvent: {}
+[21.780706] (-) TimerEvent: {}
+[21.881366] (-) TimerEvent: {}
+[21.982146] (-) TimerEvent: {}
+[22.083027] (-) TimerEvent: {}
+[22.184339] (-) TimerEvent: {}
+[22.285160] (-) TimerEvent: {}
+[22.386030] (-) TimerEvent: {}
+[22.487007] (-) TimerEvent: {}
+[22.587756] (-) TimerEvent: {}
+[22.688744] (-) TimerEvent: {}
+[22.789901] (-) TimerEvent: {}
+[22.891912] (-) TimerEvent: {}
+[22.992639] (-) TimerEvent: {}
+[23.093466] (-) TimerEvent: {}
+[23.194220] (-) TimerEvent: {}
+[23.294954] (-) TimerEvent: {}
+[23.395728] (-) TimerEvent: {}
+[23.496455] (-) TimerEvent: {}
+[23.597186] (-) TimerEvent: {}
+[23.698001] (-) TimerEvent: {}
+[23.798806] (-) TimerEvent: {}
+[23.899731] (-) TimerEvent: {}
+[24.000543] (-) TimerEvent: {}
+[24.101388] (-) TimerEvent: {}
+[24.202140] (-) TimerEvent: {}
+[24.302811] (-) TimerEvent: {}
+[24.405322] (-) TimerEvent: {}
+[24.506017] (-) TimerEvent: {}
+[24.606749] (-) TimerEvent: {}
+[24.707397] (-) TimerEvent: {}
+[24.808120] (-) TimerEvent: {}
+[24.908786] (-) TimerEvent: {}
+[25.009440] (-) TimerEvent: {}
+[25.110187] (-) TimerEvent: {}
+[25.210935] (-) TimerEvent: {}
+[25.311610] (-) TimerEvent: {}
+[25.412316] (-) TimerEvent: {}
+[25.512987] (-) TimerEvent: {}
+[25.613653] (-) TimerEvent: {}
+[25.714325] (-) TimerEvent: {}
+[25.815070] (-) TimerEvent: {}
+[25.915849] (-) TimerEvent: {}
+[26.016569] (-) TimerEvent: {}
+[26.117393] (-) TimerEvent: {}
+[26.218233] (-) TimerEvent: {}
+[26.319206] (-) TimerEvent: {}
+[26.419986] (-) TimerEvent: {}
+[26.520726] (-) TimerEvent: {}
+[26.621516] (-) TimerEvent: {}
+[26.722203] (-) TimerEvent: {}
+[26.822890] (-) TimerEvent: {}
+[26.923704] (-) TimerEvent: {}
+[27.024398] (-) TimerEvent: {}
+[27.125064] (-) TimerEvent: {}
+[27.225881] (-) TimerEvent: {}
+[27.326666] (-) TimerEvent: {}
+[27.427459] (-) TimerEvent: {}
+[27.528287] (-) TimerEvent: {}
+[27.629077] (-) TimerEvent: {}
+[27.730210] (-) TimerEvent: {}
+[27.831025] (-) TimerEvent: {}
+[27.932039] (-) TimerEvent: {}
+[28.032917] (-) TimerEvent: {}
+[28.134196] (-) TimerEvent: {}
+[28.235093] (-) TimerEvent: {}
+[28.335817] (-) TimerEvent: {}
+[28.436530] (-) TimerEvent: {}
+[28.537848] (-) TimerEvent: {}
+[28.638556] (-) TimerEvent: {}
+[28.740365] (-) TimerEvent: {}
+[28.841030] (-) TimerEvent: {}
+[28.941696] (-) TimerEvent: {}
+[29.042421] (-) TimerEvent: {}
+[29.143184] (-) TimerEvent: {}
+[29.243931] (-) TimerEvent: {}
+[29.344650] (-) TimerEvent: {}
+[29.445417] (-) TimerEvent: {}
+[29.546257] (-) TimerEvent: {}
+[29.646934] (-) TimerEvent: {}
+[29.747601] (-) TimerEvent: {}
+[29.848414] (-) TimerEvent: {}
+[29.949122] (-) TimerEvent: {}
+[30.088668] (-) TimerEvent: {}
+[30.189499] (-) TimerEvent: {}
+[30.290209] (-) TimerEvent: {}
+[30.390949] (-) TimerEvent: {}
+[30.491902] (-) TimerEvent: {}
+[30.592648] (-) TimerEvent: {}
+[30.693658] (-) TimerEvent: {}
+[30.794417] (-) TimerEvent: {}
+[30.895170] (-) TimerEvent: {}
+[30.995985] (-) TimerEvent: {}
+[31.096806] (-) TimerEvent: {}
+[31.197988] (-) TimerEvent: {}
+[31.298966] (-) TimerEvent: {}
+[31.400531] (-) TimerEvent: {}
+[31.505112] (-) TimerEvent: {}
+[31.605943] (-) TimerEvent: {}
+[31.707453] (-) TimerEvent: {}
+[31.808230] (-) TimerEvent: {}
+[31.909047] (-) TimerEvent: {}
+[32.010018] (-) TimerEvent: {}
+[32.110717] (-) TimerEvent: {}
+[32.211450] (-) TimerEvent: {}
+[32.312247] (-) TimerEvent: {}
+[32.412926] (-) TimerEvent: {}
+[32.513664] (-) TimerEvent: {}
+[32.614408] (-) TimerEvent: {}
+[32.715347] (-) TimerEvent: {}
+[32.816482] (-) TimerEvent: {}
+[32.918363] (-) TimerEvent: {}
+[33.019100] (-) TimerEvent: {}
+[33.120347] (-) TimerEvent: {}
+[33.221082] (-) TimerEvent: {}
+[33.321834] (-) TimerEvent: {}
+[33.423298] (-) TimerEvent: {}
+[33.524254] (-) TimerEvent: {}
+[33.625168] (-) TimerEvent: {}
+[33.726093] (-) TimerEvent: {}
+[33.826959] (-) TimerEvent: {}
+[33.927879] (-) TimerEvent: {}
+[34.028693] (-) TimerEvent: {}
+[34.129373] (-) TimerEvent: {}
+[34.230254] (-) TimerEvent: {}
+[34.331111] (-) TimerEvent: {}
+[34.432004] (-) TimerEvent: {}
+[34.532778] (-) TimerEvent: {}
+[34.634121] (-) TimerEvent: {}
+[34.737854] (-) TimerEvent: {}
+[34.838645] (-) TimerEvent: {}
+[34.939343] (-) TimerEvent: {}
+[35.040746] (-) TimerEvent: {}
+[35.141422] (-) TimerEvent: {}
+[35.242140] (-) TimerEvent: {}
+[35.342856] (-) TimerEvent: {}
+[35.443916] (-) TimerEvent: {}
+[35.544676] (-) TimerEvent: {}
+[35.646193] (-) TimerEvent: {}
+[35.747277] (-) TimerEvent: {}
+[35.848465] (-) TimerEvent: {}
+[35.950561] (-) TimerEvent: {}
+[36.051395] (-) TimerEvent: {}
+[36.152120] (-) TimerEvent: {}
+[36.252842] (-) TimerEvent: {}
+[36.353535] (-) TimerEvent: {}
+[36.454225] (-) TimerEvent: {}
+[36.554905] (-) TimerEvent: {}
+[36.655605] (-) TimerEvent: {}
+[36.756512] (-) TimerEvent: {}
+[36.857317] (-) TimerEvent: {}
+[36.958175] (-) TimerEvent: {}
+[37.058930] (-) TimerEvent: {}
+[37.159792] (-) TimerEvent: {}
+[37.260550] (-) TimerEvent: {}
+[37.361273] (-) TimerEvent: {}
+[37.462091] (-) TimerEvent: {}
+[37.562872] (-) TimerEvent: {}
+[37.663767] (-) TimerEvent: {}
+[37.764572] (-) TimerEvent: {}
+[37.865722] (-) TimerEvent: {}
+[37.966714] (-) TimerEvent: {}
+[38.070443] (-) TimerEvent: {}
+[38.171231] (-) TimerEvent: {}
+[38.271980] (-) TimerEvent: {}
+[38.372642] (-) TimerEvent: {}
+[38.473328] (-) TimerEvent: {}
+[38.574045] (-) TimerEvent: {}
+[38.674765] (-) TimerEvent: {}
+[38.775440] (-) TimerEvent: {}
+[38.876120] (-) TimerEvent: {}
+[38.976778] (-) TimerEvent: {}
+[39.077448] (-) TimerEvent: {}
+[39.178102] (-) TimerEvent: {}
+[39.278818] (-) TimerEvent: {}
+[39.379484] (-) TimerEvent: {}
+[39.480312] (-) TimerEvent: {}
+[39.584081] (-) TimerEvent: {}
+[39.684850] (-) TimerEvent: {}
+[39.785606] (-) TimerEvent: {}
+[39.886310] (-) TimerEvent: {}
+[39.986994] (-) TimerEvent: {}
+[40.088103] (-) TimerEvent: {}
+[40.188959] (-) TimerEvent: {}
+[40.289788] (-) TimerEvent: {}
+[40.390554] (-) TimerEvent: {}
+[40.491365] (-) TimerEvent: {}
+[40.592161] (-) TimerEvent: {}
+[40.692955] (-) TimerEvent: {}
+[40.793797] (-) TimerEvent: {}
+[40.894636] (-) TimerEvent: {}
+[40.995556] (-) TimerEvent: {}
+[41.096563] (-) TimerEvent: {}
+[41.197375] (-) TimerEvent: {}
+[41.298295] (-) TimerEvent: {}
+[41.399209] (-) TimerEvent: {}
+[41.500458] (-) TimerEvent: {}
+[41.601503] (-) TimerEvent: {}
+[41.702875] (-) TimerEvent: {}
+[41.804419] (-) TimerEvent: {}
+[41.905575] (-) TimerEvent: {}
+[42.006901] (-) TimerEvent: {}
+[42.107627] (-) TimerEvent: {}
+[42.208296] (-) TimerEvent: {}
+[42.308968] (-) TimerEvent: {}
+[42.409650] (-) TimerEvent: {}
+[42.510348] (-) TimerEvent: {}
+[42.611098] (-) TimerEvent: {}
+[42.711866] (-) TimerEvent: {}
+[42.812528] (-) TimerEvent: {}
+[42.913253] (-) TimerEvent: {}
+[43.014055] (-) TimerEvent: {}
+[43.114895] (-) TimerEvent: {}
+[43.215601] (-) TimerEvent: {}
+[43.317319] (-) TimerEvent: {}
+[43.418621] (-) TimerEvent: {}
+[43.519398] (-) TimerEvent: {}
+[43.620249] (-) TimerEvent: {}
+[43.720955] (-) TimerEvent: {}
+[43.821631] (-) TimerEvent: {}
+[43.922429] (-) TimerEvent: {}
+[44.023204] (-) TimerEvent: {}
+[44.124036] (-) TimerEvent: {}
+[44.224817] (-) TimerEvent: {}
+[44.325562] (-) TimerEvent: {}
+[44.426316] (-) TimerEvent: {}
+[44.543873] (-) TimerEvent: {}
+[44.644696] (-) TimerEvent: {}
+[44.745687] (-) TimerEvent: {}
+[44.849406] (-) TimerEvent: {}
+[44.950115] (-) TimerEvent: {}
+[45.050819] (-) TimerEvent: {}
+[45.151474] (-) TimerEvent: {}
+[45.252280] (-) TimerEvent: {}
+[45.352970] (-) TimerEvent: {}
+[45.453677] (-) TimerEvent: {}
+[45.554388] (-) TimerEvent: {}
+[45.655279] (-) TimerEvent: {}
+[45.756348] (-) TimerEvent: {}
+[45.857093] (-) TimerEvent: {}
+[45.957844] (-) TimerEvent: {}
+[46.058617] (-) TimerEvent: {}
+[46.159434] (-) TimerEvent: {}
+[46.260314] (-) TimerEvent: {}
+[46.361934] (-) TimerEvent: {}
+[46.463089] (-) TimerEvent: {}
+[46.564040] (-) TimerEvent: {}
+[46.665167] (-) TimerEvent: {}
+[46.765979] (-) TimerEvent: {}
+[46.866666] (-) TimerEvent: {}
+[46.968028] (-) TimerEvent: {}
+[47.068698] (-) TimerEvent: {}
+[47.169394] (-) TimerEvent: {}
+[47.270188] (-) TimerEvent: {}
+[47.371578] (-) TimerEvent: {}
+[47.472419] (-) TimerEvent: {}
+[47.573082] (-) TimerEvent: {}
+[47.673805] (-) TimerEvent: {}
+[47.774462] (-) TimerEvent: {}
+[47.875134] (-) TimerEvent: {}
+[47.975890] (-) TimerEvent: {}
+[48.076548] (-) TimerEvent: {}
+[48.177212] (-) TimerEvent: {}
+[48.277898] (-) TimerEvent: {}
+[48.378558] (-) TimerEvent: {}
+[48.483334] (-) TimerEvent: {}
+[48.585187] (-) TimerEvent: {}
+[48.686030] (-) TimerEvent: {}
+[48.786718] (-) TimerEvent: {}
+[48.887418] (-) TimerEvent: {}
+[48.988419] (-) TimerEvent: {}
+[49.089480] (-) TimerEvent: {}
+[49.190464] (-) TimerEvent: {}
+[49.291479] (-) TimerEvent: {}
+[49.392283] (-) TimerEvent: {}
+[49.493004] (-) TimerEvent: {}
+[49.593781] (-) TimerEvent: {}
+[49.694596] (-) TimerEvent: {}
+[49.796357] (-) TimerEvent: {}
+[49.897708] (-) TimerEvent: {}
+[50.000367] (-) TimerEvent: {}
+[50.101015] (-) TimerEvent: {}
+[50.201674] (-) TimerEvent: {}
+[50.302384] (-) TimerEvent: {}
+[50.403234] (-) TimerEvent: {}
+[50.503971] (-) TimerEvent: {}
+[50.604643] (-) TimerEvent: {}
+[50.705291] (-) TimerEvent: {}
+[50.806016] (-) TimerEvent: {}
+[50.906761] (-) TimerEvent: {}
+[51.007427] (-) TimerEvent: {}
+[51.108136] (-) TimerEvent: {}
+[51.208821] (-) TimerEvent: {}
+[51.309551] (-) TimerEvent: {}
+[51.410284] (-) TimerEvent: {}
+[51.511012] (-) TimerEvent: {}
+[51.611761] (-) TimerEvent: {}
+[51.712456] (-) TimerEvent: {}
+[51.813494] (-) TimerEvent: {}
+[51.914166] (-) TimerEvent: {}
+[52.015789] (-) TimerEvent: {}
+[52.116614] (-) TimerEvent: {}
+[52.217298] (-) TimerEvent: {}
+[52.317987] (-) TimerEvent: {}
+[52.418695] (-) TimerEvent: {}
+[52.519392] (-) TimerEvent: {}
+[52.620185] (-) TimerEvent: {}
+[52.720983] (-) TimerEvent: {}
+[52.821909] (-) TimerEvent: {}
+[52.922854] (-) TimerEvent: {}
+[53.023720] (-) TimerEvent: {}
+[53.124449] (-) TimerEvent: {}
+[53.225209] (-) TimerEvent: {}
+[53.325967] (-) TimerEvent: {}
+[53.426729] (-) TimerEvent: {}
+[53.527581] (-) TimerEvent: {}
+[53.628629] (-) TimerEvent: {}
+[53.729507] (-) TimerEvent: {}
+[53.830350] (-) TimerEvent: {}
+[53.933288] (-) TimerEvent: {}
+[54.033936] (-) TimerEvent: {}
+[54.134664] (-) TimerEvent: {}
+[54.235327] (-) TimerEvent: {}
+[54.336037] (-) TimerEvent: {}
+[54.436704] (-) TimerEvent: {}
+[54.537356] (-) TimerEvent: {}
+[54.638033] (-) TimerEvent: {}
+[54.738761] (-) TimerEvent: {}
+[54.839493] (-) TimerEvent: {}
+[54.940192] (-) TimerEvent: {}
+[55.040839] (-) TimerEvent: {}
+[55.141494] (-) TimerEvent: {}
+[55.242202] (-) TimerEvent: {}
+[55.342911] (-) TimerEvent: {}
+[55.443620] (-) TimerEvent: {}
+[55.547267] (-) TimerEvent: {}
+[55.647989] (-) TimerEvent: {}
+[55.748697] (-) TimerEvent: {}
+[55.849357] (-) TimerEvent: {}
+[55.950083] (-) TimerEvent: {}
+[56.050814] (-) TimerEvent: {}
+[56.151525] (-) TimerEvent: {}
+[56.252297] (-) TimerEvent: {}
+[56.353405] (-) TimerEvent: {}
+[56.454439] (-) TimerEvent: {}
+[56.555193] (-) TimerEvent: {}
+[56.656356] (-) TimerEvent: {}
+[56.757163] (-) TimerEvent: {}
+[56.858321] (-) TimerEvent: {}
+[56.959156] (-) TimerEvent: {}
+[57.060013] (-) TimerEvent: {}
+[57.160841] (-) TimerEvent: {}
+[57.261828] (-) TimerEvent: {}
+[57.362759] (-) TimerEvent: {}
+[57.463433] (-) TimerEvent: {}
+[57.566378] (-) TimerEvent: {}
+[57.667002] (-) TimerEvent: {}
+[57.767729] (-) TimerEvent: {}
+[57.868403] (-) TimerEvent: {}
+[57.969041] (-) TimerEvent: {}
+[58.090061] (lane_processing) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking CXX executable lane_detection\x1b[0m\n'}
+[58.105922] (-) TimerEvent: {}
+[58.206500] (-) TimerEvent: {}
+[58.307215] (-) TimerEvent: {}
+[58.407950] (-) TimerEvent: {}
+[58.508633] (-) TimerEvent: {}
+[58.609408] (-) TimerEvent: {}
+[58.710098] (-) TimerEvent: {}
+[58.810907] (-) TimerEvent: {}
+[58.911798] (-) TimerEvent: {}
+[59.012538] (-) TimerEvent: {}
+[59.113433] (-) TimerEvent: {}
+[59.214078] (-) TimerEvent: {}
+[59.314828] (-) TimerEvent: {}
+[59.416111] (-) TimerEvent: {}
+[59.517342] (-) TimerEvent: {}
+[59.618115] (-) TimerEvent: {}
+[59.719037] (-) TimerEvent: {}
+[59.819929] (-) TimerEvent: {}
+[59.920684] (-) TimerEvent: {}
+[60.021489] (-) TimerEvent: {}
+[60.122350] (-) TimerEvent: {}
+[60.223103] (-) TimerEvent: {}
+[60.323844] (-) TimerEvent: {}
+[60.424693] (-) TimerEvent: {}
+[60.525489] (-) TimerEvent: {}
+[60.626303] (-) TimerEvent: {}
+[60.727148] (-) TimerEvent: {}
+[60.828012] (-) TimerEvent: {}
+[60.928795] (-) TimerEvent: {}
+[61.030087] (-) TimerEvent: {}
+[61.131383] (-) TimerEvent: {}
+[61.233031] (-) TimerEvent: {}
+[61.333932] (-) TimerEvent: {}
+[61.434572] (-) TimerEvent: {}
+[61.535248] (-) TimerEvent: {}
+[61.636038] (-) TimerEvent: {}
+[61.736778] (-) TimerEvent: {}
+[61.837494] (-) TimerEvent: {}
+[61.938236] (-) TimerEvent: {}
+[62.039020] (-) TimerEvent: {}
+[62.139750] (-) TimerEvent: {}
+[62.240398] (-) TimerEvent: {}
+[62.341101] (-) TimerEvent: {}
+[62.441785] (-) TimerEvent: {}
+[62.483688] (lane_processing) StdoutLine: {'line': b'[100%] Built target lane_detection\n'}
+[62.546466] (-) TimerEvent: {}
+[62.562280] (lane_processing) CommandEnded: {'returncode': 0}
+[62.646777] (-) TimerEvent: {}
+[62.749324] (-) TimerEvent: {}
+[62.840410] (lane_processing) JobProgress: {'identifier': 'lane_processing', 'progress': 'install'}
+[62.849637] (-) TimerEvent: {}
+[62.887268] (lane_processing) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing'], 'cwd': '/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'puzzlebot'), ('SSH_CLIENT', '10.43.122.196 48500 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent/lib:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/puzzlebot'), ('OLDPWD', '/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B'), ('SSH_TTY', '/dev/pts/4'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install:/home/puzzlebot/ros2_ws/install:/home/puzzlebot/ros2_packages_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'puzzlebot'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '8'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/puzzlebot/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_GB.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/home/puzzlebot/ros2_packages_ws/install/ros_deep_learning:/home/puzzlebot/ros2_packages_ws/install/micro_ros_setup:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs:/home/puzzlebot/ros2_packages_ws/install/camera_info_publisher:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.43.122.196 48500 10.43.59.241 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib/python3.8/site-packages:/home/puzzlebot/ros2_ws/build/puzzlebot_ros:/home/puzzlebot/ros2_ws/install/puzzlebot_ros/lib/python3.8/site-packages:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:/home/puzzlebot/ros2_packages_ws/install/ros_deep_learning:/home/puzzlebot/ros2_packages_ws/install/micro_ros_setup:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs:/home/puzzlebot/ros2_packages_ws/install/camera_info_publisher')]), 'shell': False}
+[62.930031] (lane_processing) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[62.934173] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/ament_index/resource_index/rosidl_interfaces/lane_processing\n'}
+[62.935072] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/include/lane_processing/lane_processing\n'}
+[62.938655] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/include/lane_processing/lane_processing/msg\n'}
+[62.939127] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/include/lane_processing/lane_processing/msg/rosidl_generator_c__visibility_control.h\n'}
+[62.939629] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/include/lane_processing/lane_processing/msg/detail\n'}
+[62.940205] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/include/lane_processing/lane_processing/msg/detail/diff_error__functions.c\n'}
+[62.940548] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/include/lane_processing/lane_processing/msg/detail/diff_error__type_support.h\n'}
+[62.940909] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/include/lane_processing/lane_processing/msg/detail/diff_error__struct.h\n'}
+[62.941261] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/include/lane_processing/lane_processing/msg/detail/diff_error__functions.h\n'}
+[62.941588] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/include/lane_processing/lane_processing/msg/diff_error.h\n'}
+[62.944823] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/environment/library_path.sh\n'}
+[62.945691] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/environment/library_path.dsv\n'}
+[62.947564] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib/liblane_processing__rosidl_generator_c.so\n'}
+[62.948926] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/include/lane_processing/lane_processing\n'}
+[62.949484] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/include/lane_processing/lane_processing/msg\n'}
+[62.949946] (-) TimerEvent: {}
+[62.951589] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/include/lane_processing/lane_processing/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[62.952451] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/include/lane_processing/lane_processing/msg/detail\n'}
+[62.953265] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/include/lane_processing/lane_processing/msg/detail/diff_error__rosidl_typesupport_fastrtps_c.h\n'}
+[62.953814] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib/liblane_processing__rosidl_typesupport_fastrtps_c.so\n'}
+[62.954511] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/include/lane_processing/lane_processing\n'}
+[62.965025] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/include/lane_processing/lane_processing/msg\n'}
+[62.965529] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/include/lane_processing/lane_processing/msg/diff_error.hpp\n'}
+[62.965940] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/include/lane_processing/lane_processing/msg/detail\n'}
+[62.966327] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/include/lane_processing/lane_processing/msg/detail/diff_error__traits.hpp\n'}
+[62.966797] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/include/lane_processing/lane_processing/msg/detail/diff_error__struct.hpp\n'}
+[62.967200] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/include/lane_processing/lane_processing/msg/detail/diff_error__builder.hpp\n'}
+[62.967583] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/include/lane_processing/lane_processing\n'}
+[62.968008] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/include/lane_processing/lane_processing/msg\n'}
+[62.968361] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/include/lane_processing/lane_processing/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[62.968722] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/include/lane_processing/lane_processing/msg/detail\n'}
+[62.969053] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/include/lane_processing/lane_processing/msg/detail/dds_fastrtps\n'}
+[62.969395] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/include/lane_processing/lane_processing/msg/detail/diff_error__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[62.969743] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib/liblane_processing__rosidl_typesupport_fastrtps_cpp.so\n'}
+[62.970078] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/include/lane_processing/lane_processing\n'}
+[62.970413] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/include/lane_processing/lane_processing/msg\n'}
+[62.970755] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/include/lane_processing/lane_processing/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[62.971091] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/include/lane_processing/lane_processing/msg/detail\n'}
+[62.971594] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/include/lane_processing/lane_processing/msg/detail/diff_error__rosidl_typesupport_introspection_c.h\n'}
+[62.972260] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/include/lane_processing/lane_processing/msg/detail/diff_error__type_support.c\n'}
+[62.972850] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib/liblane_processing__rosidl_typesupport_introspection_c.so\n'}
+[62.973224] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib/liblane_processing__rosidl_typesupport_c.so\n'}
+[62.973595] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/include/lane_processing/lane_processing\n'}
+[62.973975] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/include/lane_processing/lane_processing/msg\n'}
+[62.974360] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/include/lane_processing/lane_processing/msg/detail\n'}
+[62.974839] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/include/lane_processing/lane_processing/msg/detail/diff_error__type_support.cpp\n'}
+[62.975192] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/include/lane_processing/lane_processing/msg/detail/diff_error__rosidl_typesupport_introspection_cpp.hpp\n'}
+[62.975536] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib/liblane_processing__rosidl_typesupport_introspection_cpp.so\n'}
+[62.976751] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib/liblane_processing__rosidl_typesupport_cpp.so\n'}
+[62.977905] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/environment/pythonpath.sh\n'}
+[62.978539] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/environment/pythonpath.dsv\n'}
+[62.980043] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib/python3.8/site-packages/lane_processing-0.0.0-py3.8.egg-info\n'}
+[62.981334] (lane_processing) StdoutLine: {'line': b'-- Installing: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib/python3.8/site-packages/lane_processing-0.0.0-py3.8.egg-info/top_level.txt\n'}
+[62.981987] (lane_processing) StdoutLine: {'line': b'-- Installing: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib/python3.8/site-packages/lane_processing-0.0.0-py3.8.egg-info/PKG-INFO\n'}
+[62.983048] (lane_processing) StdoutLine: {'line': b'-- Installing: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib/python3.8/site-packages/lane_processing-0.0.0-py3.8.egg-info/SOURCES.txt\n'}
+[62.984156] (lane_processing) StdoutLine: {'line': b'-- Installing: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib/python3.8/site-packages/lane_processing-0.0.0-py3.8.egg-info/dependency_links.txt\n'}
+[62.986146] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib/python3.8/site-packages/lane_processing\n'}
+[62.997183] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib/python3.8/site-packages/lane_processing/liblane_processing__rosidl_generator_py.so\n'}
+[62.997870] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib/python3.8/site-packages/lane_processing/__init__.py\n'}
+[62.998469] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib/python3.8/site-packages/lane_processing/lane_processing_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[62.999018] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib/python3.8/site-packages/lane_processing/msg\n'}
+[62.999613] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib/python3.8/site-packages/lane_processing/msg/__init__.py\n'}
+[63.000036] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib/python3.8/site-packages/lane_processing/msg/_diff_error_s.c\n'}
+[63.000374] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib/python3.8/site-packages/lane_processing/msg/_diff_error.py\n'}
+[63.000698] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib/python3.8/site-packages/lane_processing/_lane_processing_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[63.001026] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib/python3.8/site-packages/lane_processing/_lane_processing_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[63.001539] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib/python3.8/site-packages/lane_processing/_lane_processing_s.ep.rosidl_typesupport_c.c\n'}
+[63.001961] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib/python3.8/site-packages/lane_processing/lane_processing_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[63.002367] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib/python3.8/site-packages/lane_processing/lane_processing_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[63.050223] (-) TimerEvent: {}
+[63.150874] (-) TimerEvent: {}
+[63.251732] (-) TimerEvent: {}
+[63.309914] (lane_processing) StdoutLine: {'line': b"Listing '/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib/python3.8/site-packages/lane_processing'...\n"}
+[63.310726] (lane_processing) StdoutLine: {'line': b"Listing '/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib/python3.8/site-packages/lane_processing/msg'...\n"}
+[63.338368] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib/python3.8/site-packages/lane_processing/lane_processing_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[63.341353] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib/python3.8/site-packages/lane_processing/lane_processing_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[63.344707] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib/python3.8/site-packages/lane_processing/lane_processing_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[63.348161] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib/liblane_processing__rosidl_generator_py.so\n'}
+[63.350441] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/msg/DiffError.idl\n'}
+[63.351777] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/msg/DiffError.msg\n'}
+[63.352737] (-) TimerEvent: {}
+[63.356278] (lane_processing) StdoutLine: {'line': b'-- Installing: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib/lane_processing/lane_detection\n'}
+[63.379805] (lane_processing) StdoutLine: {'line': b'-- Set runtime path of "/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/lib/lane_processing/lane_detection" to ""\n'}
+[63.380587] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/ament_index/resource_index/package_run_dependencies/lane_processing\n'}
+[63.381343] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/ament_index/resource_index/parent_prefix_path/lane_processing\n'}
+[63.385909] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/environment/ament_prefix_path.sh\n'}
+[63.386944] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/environment/ament_prefix_path.dsv\n'}
+[63.387979] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/environment/path.sh\n'}
+[63.388751] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/environment/path.dsv\n'}
+[63.389767] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/local_setup.bash\n'}
+[63.390477] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/local_setup.sh\n'}
+[63.391423] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/local_setup.zsh\n'}
+[63.392610] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/local_setup.dsv\n'}
+[63.393764] (lane_processing) StdoutLine: {'line': b'-- Installing: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/package.dsv\n'}
+[63.395002] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/ament_index/resource_index/packages/lane_processing\n'}
+[63.398172] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/cmake/export_lane_processing__rosidl_generator_cExport.cmake\n'}
+[63.399163] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/cmake/export_lane_processing__rosidl_generator_cExport-noconfig.cmake\n'}
+[63.399803] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/cmake/export_lane_processing__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[63.400363] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/cmake/export_lane_processing__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[63.401464] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/cmake/export_lane_processing__rosidl_generator_cppExport.cmake\n'}
+[63.403124] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/cmake/export_lane_processing__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[63.403593] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/cmake/export_lane_processing__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[63.405378] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/cmake/lane_processing__rosidl_typesupport_introspection_cExport.cmake\n'}
+[63.405873] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/cmake/lane_processing__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[63.407525] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/cmake/lane_processing__rosidl_typesupport_cExport.cmake\n'}
+[63.408125] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/cmake/lane_processing__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[63.409783] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/cmake/lane_processing__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[63.410615] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/cmake/lane_processing__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[63.412946] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/cmake/lane_processing__rosidl_typesupport_cppExport.cmake\n'}
+[63.413601] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/cmake/lane_processing__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[63.414955] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/cmake/export_lane_processing__rosidl_generator_pyExport.cmake\n'}
+[63.415596] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/cmake/export_lane_processing__rosidl_generator_pyExport-noconfig.cmake\n'}
+[63.416287] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/cmake/rosidl_cmake-extras.cmake\n'}
+[63.417171] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[63.417906] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[63.418884] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[63.419704] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[63.423430] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[63.424218] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[63.424962] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/cmake/lane_processingConfig.cmake\n'}
+[63.425673] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/cmake/lane_processingConfig-version.cmake\n'}
+[63.426426] (lane_processing) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing/share/lane_processing/package.xml\n'}
+[63.433468] (lane_processing) CommandEnded: {'returncode': 0}
+[63.458046] (-) TimerEvent: {}
+[63.559404] (-) TimerEvent: {}
+[63.661094] (-) TimerEvent: {}
+[63.765378] (-) TimerEvent: {}
+[63.866025] (-) TimerEvent: {}
+[63.966706] (-) TimerEvent: {}
+[64.067915] (-) TimerEvent: {}
+[64.168490] (-) TimerEvent: {}
+[64.269237] (-) TimerEvent: {}
+[64.371293] (-) TimerEvent: {}
+[64.473323] (-) TimerEvent: {}
+[64.574379] (-) TimerEvent: {}
+[64.675165] (-) TimerEvent: {}
+[64.777894] (-) TimerEvent: {}
+[64.882929] (-) TimerEvent: {}
+[64.984886] (-) TimerEvent: {}
+[65.092601] (-) TimerEvent: {}
+[65.197477] (-) TimerEvent: {}
+[65.299464] (-) TimerEvent: {}
+[65.402538] (-) TimerEvent: {}
+[65.503354] (-) TimerEvent: {}
+[65.604357] (-) TimerEvent: {}
+[65.706051] (-) TimerEvent: {}
+[65.806704] (-) TimerEvent: {}
+[65.909085] (-) TimerEvent: {}
+[66.011144] (-) TimerEvent: {}
+[66.114249] (-) TimerEvent: {}
+[66.217036] (-) TimerEvent: {}
+[66.318664] (-) TimerEvent: {}
+[66.421892] (-) TimerEvent: {}
+[66.526837] (-) TimerEvent: {}
+[66.630045] (-) TimerEvent: {}
+[66.735664] (-) TimerEvent: {}
+[66.838418] (-) TimerEvent: {}
+[66.942434] (-) TimerEvent: {}
+[67.046920] (-) TimerEvent: {}
+[67.149351] (-) TimerEvent: {}
+[67.251549] (-) TimerEvent: {}
+[67.257594] (lane_processing) JobEnded: {'identifier': 'lane_processing', 'rc': 0}
+[67.266594] (-) EventReactorShutdown: {}

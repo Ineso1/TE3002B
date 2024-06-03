@@ -1,0 +1,114 @@
+[01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:[m[K In constructor ‘[01m[KLaneProcessingNode::LaneProcessingNode()[m[K’:
+[01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:55:97:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Krclcpp::Subscription<lane_processing::msg::DiffError_<std::allocator<void> > >::SharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<lane_processing::msg::DiffError_<std::allocator<void> > > >[m[K’} and ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<lane_processing::msg::DiffError_<std::allocator<void> >, std::allocator<void> > >[m[K’)
+         publisher_errors_ = this->create_publisher<lane_processing::msg::DiffError>("errors", 10[01;31m[K)[m[K;
+                                                                                                 [01;31m[K^[m[K
+In file included from [01m[K/usr/include/c++/8/memory:81[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:5[m[K:
+[01m[K/usr/include/c++/8/bits/shared_ptr.h:309:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp>&) [with _Tp = rclcpp::Subscription<lane_processing::msg::DiffError_<std::allocator<void> > >][m[K’
+       shared_ptr& [01;36m[Koperator[m[K=(const shared_ptr&) noexcept = default;
+                   [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/bits/shared_ptr.h:309:19:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<lane_processing::msg::DiffError_<std::allocator<void> >, std::allocator<void> > >[m[K’ to ‘[01m[Kconst std::shared_ptr<rclcpp::Subscription<lane_processing::msg::DiffError_<std::allocator<void> > > >&[m[K’
+[01m[K/usr/include/c++/8/bits/shared_ptr.h:313:2:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<const std::shared_ptr<_Yp>&> std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Yp>&) [with _Yp = _Yp; _Tp = rclcpp::Subscription<lane_processing::msg::DiffError_<std::allocator<void> > >][m[K’
+  [01;36m[Koperator[m[K=(const shared_ptr<_Yp>& __r) noexcept
+  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/bits/shared_ptr.h:313:2:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/c++/8/bits/shared_ptr.h:324:2:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::auto_ptr<_Up> > std::shared_ptr<_Tp>::operator=(std::auto_ptr<_Up>&&) [with _Yp = _Yp; _Tp = rclcpp::Subscription<lane_processing::msg::DiffError_<std::allocator<void> > >][m[K’
+  [01;36m[Koperator[m[K=(auto_ptr<_Yp>&& __r)
+  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/bits/shared_ptr.h:324:2:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:55:97:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<lane_processing::msg::DiffError_<std::allocator<void> >, std::allocator<void> > >[m[K’ is not derived from ‘[01m[Kstd::auto_ptr<_Up>[m[K’
+         publisher_errors_ = this->create_publisher<lane_processing::msg::DiffError>("errors", 10[01;36m[K)[m[K;
+                                                                                                 [01;36m[K^[m[K
+In file included from [01m[K/usr/include/c++/8/memory:81[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:153[m[K,
+                 from [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:5[m[K:
+[01m[K/usr/include/c++/8/bits/shared_ptr.h:333:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp>&&) [with _Tp = rclcpp::Subscription<lane_processing::msg::DiffError_<std::allocator<void> > >][m[K’
+       [01;36m[Koperator[m[K=(shared_ptr&& __r) noexcept
+       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/bits/shared_ptr.h:333:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<lane_processing::msg::DiffError_<std::allocator<void> >, std::allocator<void> > >[m[K’ to ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<lane_processing::msg::DiffError_<std::allocator<void> > > >&&[m[K’
+[01m[K/usr/include/c++/8/bits/shared_ptr.h:341:2:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::shared_ptr<_Yp> > std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Yp>&&) [with _Yp = _Yp; _Tp = rclcpp::Subscription<lane_processing::msg::DiffError_<std::allocator<void> > >][m[K’
+  [01;36m[Koperator[m[K=(shared_ptr<_Yp>&& __r) noexcept
+  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/bits/shared_ptr.h:341:2:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/usr/include/c++/8/bits/shared_ptr.h:349:2:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp, class _Del> std::shared_ptr<_Tp>::_Assignable<std::unique_ptr<_Up, _Ep> > std::shared_ptr<_Tp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Yp = _Yp; _Del = _Del; _Tp = rclcpp::Subscription<lane_processing::msg::DiffError_<std::allocator<void> > >][m[K’
+  [01;36m[Koperator[m[K=(unique_ptr<_Yp, _Del>&& __r)
+  [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/bits/shared_ptr.h:349:2:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:55:97:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<rclcpp::Publisher<lane_processing::msg::DiffError_<std::allocator<void> >, std::allocator<void> > >[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<_Tp, _Dp>[m[K’
+         publisher_errors_ = this->create_publisher<lane_processing::msg::DiffError>("errors", 10[01;36m[K)[m[K;
+                                                                                                 [01;36m[K^[m[K
+[01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:[m[K In member function ‘[01m[Kvoid LaneProcessingNode::publish_errors()[m[K’:
+[01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:99:42:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Publisher<std_msgs::msg::Float32_<std::allocator<void> > >::publish(lane_processing::msg::DiffError&)[m[K’
+         angle_publisher_->publish(errors_[01;31m[K)[m[K;
+                                          [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:5[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:251:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::ros_message_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::publish(std::unique_ptr<T, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Alloc>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>::allocator_type>::rebind_alloc<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>, std::allocator<typename rclcpp::TypeAdapter<MessageT>::ros_message_type> >::value, std::default_delete<typename rclcpp::TypeAdapter<MessageT>::ros_message_type>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Alloc>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>::allocator_type> >::type>) [with T = T; MessageT = std_msgs::msg::Float32_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’
+   [01;36m[Kpublish[m[K(std::unique_ptr<T, ROSMessageTypeDeleter> msg)
+   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:251:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:99:42:[m[K [01;36m[Knote: [m[K  ‘[01m[Klane_processing::msg::DiffError_<std::allocator<void> >[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<T, std::default_delete<std_msgs::msg::Float32_<std::allocator<void> > > >[m[K’
+         angle_publisher_->publish(errors_[01;36m[K)[m[K;
+                                          [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:5[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:292:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::ros_message_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::publish(const T&) [with T = T; MessageT = std_msgs::msg::Float32_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’
+   [01;36m[Kpublish[m[K(const T & msg)
+   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:292:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:322:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(typename rclcpp::TypeAdapter<MessageT>::is_specialized::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::custom_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::publish(std::unique_ptr<T, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Alloc>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>::allocator_type>::rebind_alloc<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>, std::allocator<typename rclcpp::TypeAdapter<MessageT>::custom_type> >::value, std::default_delete<typename rclcpp::TypeAdapter<MessageT>::custom_type>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Alloc>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>::allocator_type> >::type>) [with T = T; MessageT = std_msgs::msg::Float32_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’
+   [01;36m[Kpublish[m[K(std::unique_ptr<T, PublishedTypeDeleter> msg)
+   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:322:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:99:42:[m[K [01;36m[Knote: [m[K  ‘[01m[Klane_processing::msg::DiffError_<std::allocator<void> >[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<T, std::default_delete<std_msgs::msg::Float32_<std::allocator<void> > > >[m[K’
+         angle_publisher_->publish(errors_[01;36m[K)[m[K;
+                                          [01;36m[K^[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/src/lane_processing/src/lane_detection.cpp:5[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:364:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(typename rclcpp::TypeAdapter<MessageT>::is_specialized::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::custom_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::publish(const T&) [with T = T; MessageT = std_msgs::msg::Float32_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’
+   [01;36m[Kpublish[m[K(const T & msg)
+   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:364:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:383:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::publish(const rcl_serialized_message_t&) [with MessageT = std_msgs::msg::Float32_<std::allocator<void> >; AllocatorT = std::allocator<void>; rcl_serialized_message_t = rcutils_uint8_array_s][m[K’
+   [01;36m[Kpublish[m[K(const rcl_serialized_message_t & serialized_msg)
+   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:383:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Klane_processing::msg::DiffError[m[K’ {aka ‘[01m[Klane_processing::msg::DiffError_<std::allocator<void> >[m[K’} to ‘[01m[Kconst rcl_serialized_message_t&[m[K’ {aka ‘[01m[Kconst rcutils_uint8_array_s&[m[K’}
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:389:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::publish(const rclcpp::SerializedMessage&) [with MessageT = std_msgs::msg::Float32_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K’
+   [01;36m[Kpublish[m[K(const SerializedMessage & serialized_msg)
+   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:389:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Klane_processing::msg::DiffError[m[K’ {aka ‘[01m[Klane_processing::msg::DiffError_<std::allocator<void> >[m[K’} to ‘[01m[Kconst rclcpp::SerializedMessage&[m[K’
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:403:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::publish(rclcpp::LoanedMessage<typename rclcpp::TypeAdapter<MessageT>::ros_message_type, AllocatorT>&&) [with MessageT = std_msgs::msg::Float32_<std::allocator<void> >; AllocatorT = std::allocator<void>; typename rclcpp::TypeAdapter<MessageT>::ros_message_type = std_msgs::msg::Float32_<std::allocator<void> >][m[K’
+   [01;36m[Kpublish[m[K(rclcpp::LoanedMessage<ROSMessageType, AllocatorT> && loaned_msg)
+   [01;36m[K^~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/publisher.hpp:403:3:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Klane_processing::msg::DiffError[m[K’ {aka ‘[01m[Klane_processing::msg::DiffError_<std::allocator<void> >[m[K’} to ‘[01m[Krclcpp::LoanedMessage<std_msgs::msg::Float32_<std::allocator<void> >, std::allocator<void> >&&[m[K’
+make[2]: *** [CMakeFiles/lane_detection.dir/build.make:63: CMakeFiles/lane_detection.dir/src/lane_detection.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:352: CMakeFiles/lane_detection.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

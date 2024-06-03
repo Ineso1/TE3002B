@@ -1,0 +1,62 @@
+[1.671s] Invoking command in '/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing': CMAKE_PREFIX_PATH=/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:/home/puzzlebot/ros2_packages_ws/install/ros_deep_learning:/home/puzzlebot/ros2_packages_ws/install/micro_ros_setup:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs:/home/puzzlebot/ros2_packages_ws/install/camera_info_publisher /usr/bin/cmake --build /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing -- -j4 -l4
+[1.800s] -- Found ament_cmake: 1.3.6 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.765s] -- Found rclcpp: 16.0.7 (/opt/ros/humble/share/rclcpp/cmake)
+[2.941s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.957s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.993s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.068s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.176s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.567s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.575s] -- Found rmw_fastrtps_cpp: 6.2.5 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[4.264s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.335s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[6.278s] -- Found image_transport: 3.1.7 (/opt/ros/humble/share/image_transport/cmake)
+[6.493s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[7.967s] CMake Error at /opt/ros/humble/share/rosidl_adapter/cmake/rosidl_adapt_interfaces.cmake:59 (message):
+[7.968s]   execute_process(/usr/bin/python3.8 -m rosidl_adapter --package-name
+[7.968s]   lane_processing --arguments-file
+[7.968s]   /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing/rosidl_adapter__arguments__lane_processing.json
+[7.969s]   --output-dir
+[7.969s]   /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing/rosidl_adapter/lane_processing
+[7.969s]   --output-file
+[7.970s]   /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing/rosidl_adapter/lane_processing.idls)
+[7.970s]   returned error code 1:
+[7.970s] 
+[7.971s]   Error processing 'float error_ang' of 'lane_processing/DiffError': ''float'
+[7.972s]   is an invalid message name.  It should have the pattern
+[7.972s]   '^[A-Z][A-Za-z0-9]*$''
+[7.972s] 
+[7.973s]   Traceback (most recent call last):
+[7.973s] 
+[7.973s]     File "/usr/lib/python3.8/runpy.py", line 194, in _run_module_as_main
+[7.974s]       return _run_code(code, main_globals, None,
+[7.974s]     File "/usr/lib/python3.8/runpy.py", line 87, in _run_code
+[7.976s]       exec(code, run_globals)
+[7.977s]     File "/opt/ros/humble/lib/python3.8/site-packages/rosidl_adapter/__main__.py", line 19, in <module>
+[7.977s]       sys.exit(main())
+[7.978s]     File "/opt/ros/humble/lib/python3.8/site-packages/rosidl_adapter/main.py", line 53, in main
+[7.978s]       abs_idl_file = convert_to_idl(
+[7.979s]     File "/opt/ros/humble/lib/python3.8/site-packages/rosidl_adapter/__init__.py", line 19, in convert_to_idl
+[7.979s]       return convert_msg_to_idl(
+[7.980s]     File "/opt/ros/humble/lib/python3.8/site-packages/rosidl_adapter/msg/__init__.py", line 28, in convert_msg_to_idl
+[7.981s]       msg = parse_message_string(package_name, input_file.stem, content)
+[7.981s]     File "/opt/ros/humble/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 520, in parse_message_string
+[7.982s]       Type(type_string, context_package_name=pkg_name),
+[7.982s]     File "/opt/ros/humble/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 277, in __init__
+[7.983s]       super(Type, self).__init__(
+[7.983s]     File "/opt/ros/humble/lib/python3.8/site-packages/rosidl_adapter/parser.py", line 205, in __init__
+[7.984s]       raise InvalidResourceName(
+[7.985s] 
+[7.985s]   rosidl_adapter.parser.InvalidResourceName: 'float' is an invalid message
+[7.986s]   name.  It should have the pattern '^[A-Z][A-Za-z0-9]*$'
+[7.986s] 
+[7.987s] Call Stack (most recent call first):
+[7.987s]   /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:130 (rosidl_adapt_interfaces)
+[7.988s]   CMakeLists.txt:16 (rosidl_generate_interfaces)
+[7.989s] 
+[7.989s] 
+[7.990s] -- Configuring incomplete, errors occurred!
+[7.991s] See also "/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing/CMakeFiles/CMakeOutput.log".
+[7.992s] See also "/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing/CMakeFiles/CMakeError.log".
+[8.013s] make: *** [Makefile:910: cmake_check_build_system] Error 1
+[8.019s] Invoked command in '/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing' returned '2': CMAKE_PREFIX_PATH=/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/install/lane_processing:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:/home/puzzlebot/ros2_packages_ws/install/ros_deep_learning:/home/puzzlebot/ros2_packages_ws/install/micro_ros_setup:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs:/home/puzzlebot/ros2_packages_ws/install/camera_info_publisher /usr/bin/cmake --build /home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/lane_processing_ws/build/lane_processing -- -j4 -l4

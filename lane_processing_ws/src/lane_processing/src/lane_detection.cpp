@@ -1,6 +1,7 @@
 //#define LANE_VIEW
 //#define COORDS_PRINT
 //#define ANGLE_VIEW
+//#define ERRORS_VIEW
 
 #include "rclcpp/rclcpp.hpp"
 #include "cv_bridge/cv_bridge.h"
@@ -14,6 +15,7 @@
 #include "lane_processing/perspective.h"
 #include "lane_processing/lane_params.h"
 #include "lane_processing/lane_funcs.h"
+#include "lane_processing/msg/diff_error.hpp"
 
 #include <deque>
 #include <utility>
@@ -36,7 +38,8 @@ public:
     LaneProcessingNode() : 
         Node("lane_processing_node"), 
         last_angle_(0.0), 
-        last_distance_(0.0) 
+        last_distance_(0.0),
+        errors_{lane_processing::msg::DiffError{}}
         {
 
         // Subscribe to camera image topic
@@ -50,10 +53,17 @@ public:
         angle_publisher_ = this->create_publisher<std_msgs::msg::Float32>("angle_error", 10);
         distance_publisher_ = this->create_publisher<std_msgs::msg::Float32>("distance", 10);
 
+        publisher_errors_ = this->create_publisher<lane_processing::msg::DiffError>("errors", 10);
+
         // Timers
         angle_timer_ = this->create_wall_timer(
             10ms,
             std::bind(&LaneProcessingNode::publish_angle, this)
+        );
+
+        errors_timer_ = this->create_wall_timer(
+            10ms,
+            std::bind(&LaneProcessingNode::publish_errors, this)
         );
 
         distance_timer_ = this->create_wall_timer(
@@ -77,6 +87,8 @@ private:
         cv::flip(frame, fliped_frame, 0);
 
         double angle = process_frame(fliped_frame);
+        errors_.error_ang = angle;
+
         last_angle_ = angle;
     }
 
@@ -84,6 +96,13 @@ private:
         std_msgs::msg::Float32 angle_msg;
         angle_msg.data = last_angle_;
         angle_publisher_->publish(angle_msg);
+    }
+
+    void publish_errors() {
+        #ifdef ERRORS_VIEW
+            std::cout<<"errors "<< errors_.error_ang <<" , "<< errors_.error_dist << std::endl;
+        #endif
+        publisher_errors_->publish(errors_);
     }
 
     void publish_distance() {
@@ -246,20 +265,26 @@ private:
         cv::Mat blurred = apply_gaussian_blur(cropped_frame);
         cv::Mat closed = apply_closing(blurred, cv::Size(5, 5), 3);
         cv::Mat thresholded = apply_otsu_threshold(closed);
-        double error = detect_lane_center(thresholded);
+        double error_ang = detect_lane_center(thresholded);
 
-        return error;  // Dummy return // FERCHOOOO
+        return error_ang;  // Dummy return // FERCHOOOO
     }
 
     double last_angle_;
     double last_distance_;
     std::deque<double> lane_history_;
+    lane_processing::msg::DiffError errors_;
+
 
     rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr image_subscription_;
     rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr angle_publisher_;
     rclcpp::Publisher<std_msgs::msg::Float32>::SharedPtr distance_publisher_;
+    rclcpp::Publisher<lane_processing::msg::DiffError>::SharedPtr publisher_errors_;
+
     rclcpp::TimerBase::SharedPtr angle_timer_;
     rclcpp::TimerBase::SharedPtr distance_timer_;
+    rclcpp::TimerBase::SharedPtr errors_timer_;
+
     #ifdef LANE_VIEW
         rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr processed_image_publisher_;
     #endif
