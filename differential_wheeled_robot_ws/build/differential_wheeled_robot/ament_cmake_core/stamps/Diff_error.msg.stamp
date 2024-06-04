@@ -1,2 +1,0 @@
-float64 error_ang
-float64 error_dist
