@@ -1,0 +1,39 @@
+[0.068s] Invoking command in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg': CMAKE_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:/home/puzzlebot/ros2_packages_ws/install/ros_deep_learning:/home/puzzlebot/ros2_packages_ws/install/micro_ros_setup:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs:/home/puzzlebot/ros2_packages_ws/install/camera_info_publisher /usr/bin/cmake --build /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg -- -j4 -l4
+[0.346s] [  9%] Built target puzzle_pkg__cpp
+[0.346s] [  9%] Built target puzzle_pkg__rosidl_generator_c
+[0.374s] [  9%] Built target ament_cmake_python_copy_puzzle_pkg
+[0.458s] [ 14%] Built target cam_source
+[0.475s] [ 21%] Built target puzzle_pkg__rosidl_typesupport_cpp
+[0.509s] [ 28%] Built target puzzle_pkg__rosidl_typesupport_c
+[0.559s] [ 33%] Built target odometry
+[0.583s] [ 40%] Built target puzzle_pkg__rosidl_typesupport_fastrtps_c
+[0.609s] [ 47%] Built target puzzle_pkg__rosidl_typesupport_fastrtps_cpp
+[0.638s] [ 54%] Built target puzzle_pkg__rosidl_typesupport_introspection_cpp
+[0.700s] [ 61%] Built target puzzle_pkg__rosidl_typesupport_introspection_c
+[0.705s] [35m[1mScanning dependencies of target lane_detection[0m
+[0.881s] [ 66%] Built target controller
+[0.918s] [ 69%] [32mBuilding CXX object CMakeFiles/lane_detection.dir/src/vision/lib/cv_wrapper.cpp.o[0m
+[0.927s] [ 69%] Built target puzzle_pkg
+[1.042s] [ 71%] Built target puzzle_pkg__py
+[1.210s] [ 76%] Built target puzzle_pkg__rosidl_generator_py
+[1.378s] [ 80%] Built target puzzle_pkg__rosidl_typesupport_introspection_c__pyext
+[1.383s] [ 85%] Built target puzzle_pkg__rosidl_typesupport_c__pyext
+[1.525s] [ 90%] Built target puzzle_pkg__rosidl_typesupport_fastrtps_c__pyext
+[1.997s] running egg_info
+[2.003s] writing puzzle_pkg.egg-info/PKG-INFO
+[2.004s] writing dependency_links to puzzle_pkg.egg-info/dependency_links.txt
+[2.004s] writing top-level names to puzzle_pkg.egg-info/top_level.txt
+[2.210s] reading manifest file 'puzzle_pkg.egg-info/SOURCES.txt'
+[2.214s] writing manifest file 'puzzle_pkg.egg-info/SOURCES.txt'
+[2.350s] [ 90%] Built target ament_cmake_python_build_puzzle_pkg_egg
+[6.448s] [ 92%] [32m[1mLinking CXX executable lane_detection[0m
+[10.250s] /usr/bin/ld: warning: libopencv_imgcodecs.so.4.2, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.405
+[10.251s] /usr/bin/ld: warning: libopencv_imgproc.so.4.2, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.405
+[10.252s] /usr/bin/ld: warning: libopencv_core.so.4.2, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.405
+[10.252s] /usr/bin/ld: CMakeFiles/lane_detection.dir/src/vision/lane_detection.cpp.o: in function `LaneProcessingNode::process_frame(cv::Mat&)':
+[10.252s] lane_detection.cpp:(.text._ZN18LaneProcessingNode13process_frameERN2cv3MatE[_ZN18LaneProcessingNode13process_frameERN2cv3MatE]+0x110): undefined reference to `apply_closing(cv::Mat&, cv::Size_<int>, int)'
+[10.253s] collect2: error: ld returned 1 exit status
+[10.259s] make[2]: *** [CMakeFiles/lane_detection.dir/build.make:280: lane_detection] Error 1
+[10.261s] make[1]: *** [CMakeFiles/Makefile2:160: CMakeFiles/lane_detection.dir/all] Error 2
+[10.268s] make: *** [Makefile:141: all] Error 2
+[10.270s] Invoked command in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg' returned '2': CMAKE_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:/home/puzzlebot/ros2_packages_ws/install/ros_deep_learning:/home/puzzlebot/ros2_packages_ws/install/micro_ros_setup:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs:/home/puzzlebot/ros2_packages_ws/install/camera_info_publisher /usr/bin/cmake --build /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg -- -j4 -l4

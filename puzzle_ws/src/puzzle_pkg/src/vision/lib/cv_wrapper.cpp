@@ -43,11 +43,27 @@ cv::Mat apply_closing(
     cv::Size kernel_size, 
     int iterations
 ) {
+    if (image.empty()) {
+        throw std::runtime_error("Input image is empty.");
+    }
+    if (kernel_size.width <= 0 || kernel_size.height <= 0) {
+        throw std::runtime_error("Kernel size must be positive.");
+    }
+    if (iterations < 0) {
+        throw std::runtime_error("Iterations cannot be negative.");
+    }
+
     cv::Mat closed_image;
     cv::Mat kernel = cv::getStructuringElement(cv::MORPH_RECT, kernel_size);
     cv::morphologyEx(image, closed_image, cv::MORPH_CLOSE, kernel, cv::Point(-1, -1), iterations);
+
+    if (closed_image.empty()) {
+        throw std::runtime_error("Closed image was not created successfully.");
+    }
+
     return closed_image;
 }
+
 
 std::vector<cv::Vec4i> detect_lines_hough(
     cv::Mat& frame, 

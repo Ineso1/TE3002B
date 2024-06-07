@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg/rosidl_typesupport_cpp/puzzle_pkg/msg/diff_error__type_support.cpp" "/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg/CMakeFiles/puzzle_pkg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/puzzle_pkg/msg/diff_error__type_support.cpp.o"
+  "/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg/rosidl_typesupport_cpp/puzzle_pkg/msg/diff_error__type_support.cpp" "/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg/CMakeFiles/puzzle_pkg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/puzzle_pkg/msg/diff_error__type_support.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,7 +17,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/puzzlebot/Desktop/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/include"
+  "/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/include"
   "/usr/include/opencv4"
   "/opt/ros/humble/include/sensor_msgs"
   "/opt/ros/humble/include/message_filters"

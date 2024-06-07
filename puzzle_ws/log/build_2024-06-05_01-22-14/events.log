@@ -1,0 +1,758 @@
+[0.000000] (-) TimerEvent: {}
+[0.001718] (puzzle_pkg) JobQueued: {'identifier': 'puzzle_pkg', 'dependencies': OrderedDict()}
+[0.002512] (puzzle_pkg) JobStarted: {'identifier': 'puzzle_pkg'}
+[0.059242] (puzzle_pkg) JobProgress: {'identifier': 'puzzle_pkg', 'progress': 'cmake'}
+[0.064004] (puzzle_pkg) JobProgress: {'identifier': 'puzzle_pkg', 'progress': 'build'}
+[0.067193] (puzzle_pkg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg', '--', '-j4', '-l4'], 'cwd': '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'puzzlebot'), ('SSH_CLIENT', '10.43.121.207 57766 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/puzzlebot'), ('OLDPWD', '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/launch'), ('SSH_TTY', '/dev/pts/0'), ('JETSON_L4T', '32.7.4'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Nano 2GB Developer Kit'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'puzzlebot'), ('JETSON_MODULE', 'NVIDIA Jetson Nano (2 GB ram)'), ('JETSON_SERIAL_NUMBER', '1423122034228'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'Batuu'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_GB.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra210'), ('AMENT_PREFIX_PATH', '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', 'p3448'), ('JETSON_CUDA_ARCH_BIN', '5.3'), ('PWD', '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.43.121.207 57766 10.43.100.6 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages'), ('COLCON', '1'), ('JETSON_JETPACK', '4.6.4'), ('CMAKE_PREFIX_PATH', '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3448-0003')]), 'shell': False}
+[0.100200] (-) TimerEvent: {}
+[0.202986] (-) TimerEvent: {}
+[0.303737] (-) TimerEvent: {}
+[0.404457] (-) TimerEvent: {}
+[0.500575] (puzzle_pkg) StdoutLine: {'line': b'[  2%] Built target puzzle_pkg__cpp\n'}
+[0.504620] (-) TimerEvent: {}
+[0.545103] (puzzle_pkg) StdoutLine: {'line': b'[  9%] Built target puzzle_pkg__rosidl_generator_c\n'}
+[0.566738] (puzzle_pkg) StdoutLine: {'line': b'[  9%] Built target ament_cmake_python_copy_puzzle_pkg\n'}
+[0.604819] (-) TimerEvent: {}
+[0.684008] (puzzle_pkg) StdoutLine: {'line': b'[ 16%] Built target puzzle_pkg__rosidl_typesupport_cpp\n'}
+[0.705030] (-) TimerEvent: {}
+[0.735311] (puzzle_pkg) StdoutLine: {'line': b'[ 26%] Built target cam_source\n'}
+[0.740537] (puzzle_pkg) StdoutLine: {'line': b'[ 23%] Built target odometry\n'}
+[0.751604] (puzzle_pkg) StdoutLine: {'line': b'[ 33%] Built target puzzle_pkg__rosidl_typesupport_c\n'}
+[0.805257] (-) TimerEvent: {}
+[0.812218] (puzzle_pkg) StdoutLine: {'line': b'[ 40%] Built target puzzle_pkg__rosidl_typesupport_fastrtps_c\n'}
+[0.868575] (puzzle_pkg) StdoutLine: {'line': b'[ 47%] Built target puzzle_pkg__rosidl_typesupport_fastrtps_cpp\n'}
+[0.876590] (puzzle_pkg) StdoutLine: {'line': b'[ 54%] Built target puzzle_pkg__rosidl_typesupport_introspection_c\n'}
+[0.905407] (-) TimerEvent: {}
+[0.930432] (puzzle_pkg) StdoutLine: {'line': b'[ 61%] Built target puzzle_pkg__rosidl_typesupport_introspection_cpp\n'}
+[0.983428] (puzzle_pkg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target lane_detection\x1b[0m\n'}
+[1.005593] (-) TimerEvent: {}
+[1.079768] (puzzle_pkg) StdoutLine: {'line': b'[ 66%] Built target controller\n'}
+[1.105777] (-) TimerEvent: {}
+[1.116157] (puzzle_pkg) StdoutLine: {'line': b'[ 66%] Built target puzzle_pkg\n'}
+[1.205985] (-) TimerEvent: {}
+[1.291851] (puzzle_pkg) StdoutLine: {'line': b'[ 69%] Built target puzzle_pkg__py\n'}
+[1.306277] (-) TimerEvent: {}
+[1.407335] (-) TimerEvent: {}
+[1.414631] (puzzle_pkg) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/lane_detection.dir/src/vision/lane_detection.cpp.o\x1b[0m\n'}
+[1.507506] (-) TimerEvent: {}
+[1.543568] (puzzle_pkg) StdoutLine: {'line': b'[ 76%] Built target puzzle_pkg__rosidl_generator_py\n'}
+[1.607680] (-) TimerEvent: {}
+[1.708358] (-) TimerEvent: {}
+[1.762225] (puzzle_pkg) StdoutLine: {'line': b'[ 80%] Built target puzzle_pkg__rosidl_typesupport_c__pyext\n'}
+[1.808526] (-) TimerEvent: {}
+[1.844923] (puzzle_pkg) StdoutLine: {'line': b'[ 85%] Built target puzzle_pkg__rosidl_typesupport_introspection_c__pyext\n'}
+[1.908860] (-) TimerEvent: {}
+[1.911107] (puzzle_pkg) StdoutLine: {'line': b'[ 90%] Built target puzzle_pkg__rosidl_typesupport_fastrtps_c__pyext\n'}
+[2.009020] (-) TimerEvent: {}
+[2.110236] (-) TimerEvent: {}
+[2.165694] (puzzle_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[2.169979] (puzzle_pkg) StdoutLine: {'line': b'writing puzzle_pkg.egg-info/PKG-INFO\n'}
+[2.174263] (puzzle_pkg) StdoutLine: {'line': b'writing dependency_links to puzzle_pkg.egg-info/dependency_links.txt\n'}
+[2.176476] (puzzle_pkg) StdoutLine: {'line': b'writing top-level names to puzzle_pkg.egg-info/top_level.txt\n'}
+[2.210393] (-) TimerEvent: {}
+[2.311420] (-) TimerEvent: {}
+[2.385284] (puzzle_pkg) StdoutLine: {'line': b"reading manifest file 'puzzle_pkg.egg-info/SOURCES.txt'\n"}
+[2.390419] (puzzle_pkg) StdoutLine: {'line': b"writing manifest file 'puzzle_pkg.egg-info/SOURCES.txt'\n"}
+[2.411667] (-) TimerEvent: {}
+[2.512372] (-) TimerEvent: {}
+[2.520180] (puzzle_pkg) StdoutLine: {'line': b'[ 90%] Built target ament_cmake_python_build_puzzle_pkg_egg\n'}
+[2.612537] (-) TimerEvent: {}
+[2.713232] (-) TimerEvent: {}
+[2.814387] (-) TimerEvent: {}
+[2.915045] (-) TimerEvent: {}
+[3.015705] (-) TimerEvent: {}
+[3.116441] (-) TimerEvent: {}
+[3.217582] (-) TimerEvent: {}
+[3.318302] (-) TimerEvent: {}
+[3.419000] (-) TimerEvent: {}
+[3.519750] (-) TimerEvent: {}
+[3.621228] (-) TimerEvent: {}
+[3.722100] (-) TimerEvent: {}
+[3.822820] (-) TimerEvent: {}
+[3.923654] (-) TimerEvent: {}
+[4.024848] (-) TimerEvent: {}
+[4.125885] (-) TimerEvent: {}
+[4.226570] (-) TimerEvent: {}
+[4.327344] (-) TimerEvent: {}
+[4.428735] (-) TimerEvent: {}
+[4.529930] (-) TimerEvent: {}
+[4.631144] (-) TimerEvent: {}
+[4.732374] (-) TimerEvent: {}
+[4.833106] (-) TimerEvent: {}
+[4.934383] (-) TimerEvent: {}
+[5.035643] (-) TimerEvent: {}
+[5.137039] (-) TimerEvent: {}
+[5.239032] (-) TimerEvent: {}
+[5.340078] (-) TimerEvent: {}
+[5.441108] (-) TimerEvent: {}
+[5.541851] (-) TimerEvent: {}
+[5.643022] (-) TimerEvent: {}
+[5.743742] (-) TimerEvent: {}
+[5.846922] (-) TimerEvent: {}
+[5.947680] (-) TimerEvent: {}
+[6.048763] (-) TimerEvent: {}
+[6.150045] (-) TimerEvent: {}
+[6.250731] (-) TimerEvent: {}
+[6.351481] (-) TimerEvent: {}
+[6.452219] (-) TimerEvent: {}
+[6.553684] (-) TimerEvent: {}
+[6.654486] (-) TimerEvent: {}
+[6.755776] (-) TimerEvent: {}
+[6.857206] (-) TimerEvent: {}
+[6.958764] (-) TimerEvent: {}
+[7.059736] (-) TimerEvent: {}
+[7.160407] (-) TimerEvent: {}
+[7.261660] (-) TimerEvent: {}
+[7.362430] (-) TimerEvent: {}
+[7.463735] (-) TimerEvent: {}
+[7.565508] (-) TimerEvent: {}
+[7.666583] (-) TimerEvent: {}
+[7.767844] (-) TimerEvent: {}
+[7.869164] (-) TimerEvent: {}
+[7.970643] (-) TimerEvent: {}
+[8.071472] (-) TimerEvent: {}
+[8.172274] (-) TimerEvent: {}
+[8.273069] (-) TimerEvent: {}
+[8.374044] (-) TimerEvent: {}
+[8.475393] (-) TimerEvent: {}
+[8.576668] (-) TimerEvent: {}
+[8.677520] (-) TimerEvent: {}
+[8.779124] (-) TimerEvent: {}
+[8.879877] (-) TimerEvent: {}
+[8.981149] (-) TimerEvent: {}
+[9.081903] (-) TimerEvent: {}
+[9.182600] (-) TimerEvent: {}
+[9.283655] (-) TimerEvent: {}
+[9.384974] (-) TimerEvent: {}
+[9.485841] (-) TimerEvent: {}
+[9.587564] (-) TimerEvent: {}
+[9.688687] (-) TimerEvent: {}
+[9.790313] (-) TimerEvent: {}
+[9.891491] (-) TimerEvent: {}
+[9.992801] (-) TimerEvent: {}
+[10.094862] (-) TimerEvent: {}
+[10.196738] (-) TimerEvent: {}
+[10.298190] (-) TimerEvent: {}
+[10.399990] (-) TimerEvent: {}
+[10.501062] (-) TimerEvent: {}
+[10.603245] (-) TimerEvent: {}
+[10.704747] (-) TimerEvent: {}
+[10.806356] (-) TimerEvent: {}
+[10.907471] (-) TimerEvent: {}
+[11.008156] (-) TimerEvent: {}
+[11.108880] (-) TimerEvent: {}
+[11.209615] (-) TimerEvent: {}
+[11.311075] (-) TimerEvent: {}
+[11.411751] (-) TimerEvent: {}
+[11.512755] (-) TimerEvent: {}
+[11.614016] (-) TimerEvent: {}
+[11.715007] (-) TimerEvent: {}
+[11.816101] (-) TimerEvent: {}
+[11.918131] (-) TimerEvent: {}
+[12.019530] (-) TimerEvent: {}
+[12.123907] (-) TimerEvent: {}
+[12.224985] (-) TimerEvent: {}
+[12.325673] (-) TimerEvent: {}
+[12.426492] (-) TimerEvent: {}
+[12.527157] (-) TimerEvent: {}
+[12.628469] (-) TimerEvent: {}
+[12.729589] (-) TimerEvent: {}
+[12.830863] (-) TimerEvent: {}
+[12.932110] (-) TimerEvent: {}
+[13.033351] (-) TimerEvent: {}
+[13.136106] (-) TimerEvent: {}
+[13.239580] (-) TimerEvent: {}
+[13.340260] (-) TimerEvent: {}
+[13.441313] (-) TimerEvent: {}
+[13.542491] (-) TimerEvent: {}
+[13.643328] (-) TimerEvent: {}
+[13.745380] (-) TimerEvent: {}
+[13.846807] (-) TimerEvent: {}
+[13.948068] (-) TimerEvent: {}
+[14.049306] (-) TimerEvent: {}
+[14.150978] (-) TimerEvent: {}
+[14.252870] (-) TimerEvent: {}
+[14.354243] (-) TimerEvent: {}
+[14.455518] (-) TimerEvent: {}
+[14.557252] (-) TimerEvent: {}
+[14.658684] (-) TimerEvent: {}
+[14.759811] (-) TimerEvent: {}
+[14.862274] (-) TimerEvent: {}
+[14.962985] (-) TimerEvent: {}
+[15.064205] (-) TimerEvent: {}
+[15.164895] (-) TimerEvent: {}
+[15.265986] (-) TimerEvent: {}
+[15.367179] (-) TimerEvent: {}
+[15.467853] (-) TimerEvent: {}
+[15.569088] (-) TimerEvent: {}
+[15.670782] (-) TimerEvent: {}
+[15.771522] (-) TimerEvent: {}
+[15.872255] (-) TimerEvent: {}
+[15.973058] (-) TimerEvent: {}
+[16.074258] (-) TimerEvent: {}
+[16.175007] (-) TimerEvent: {}
+[16.277064] (-) TimerEvent: {}
+[16.378944] (-) TimerEvent: {}
+[16.480692] (-) TimerEvent: {}
+[16.581946] (-) TimerEvent: {}
+[16.683922] (-) TimerEvent: {}
+[16.784640] (-) TimerEvent: {}
+[16.885660] (-) TimerEvent: {}
+[16.986977] (-) TimerEvent: {}
+[17.088097] (-) TimerEvent: {}
+[17.188895] (-) TimerEvent: {}
+[17.290386] (-) TimerEvent: {}
+[17.392371] (-) TimerEvent: {}
+[17.476817] (puzzle_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/lane_detection.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kdouble LaneProcessingNode::detect_lane_center(cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[17.483259] (puzzle_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/lane_detection.cpp:243:60:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[K(cropped_width / 2)\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 inside { } [\x1b[01;35m\x1b[K-Wnarrowing\x1b[m\x1b[K]\n'}
+[17.485341] (puzzle_pkg) StderrLine: {'line': b'             cv::Vec<double, 4> angle_line = { \x1b[01;35m\x1b[Kcropped_width/2\x1b[m\x1b[K , cropped_height, last_line.second[0], last_line.second[1]};\n'}
+[17.489924] (puzzle_pkg) StderrLine: {'line': b'                                               \x1b[01;35m\x1b[K~~~~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[17.490619] (puzzle_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/lane_detection.cpp:243:60:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[K(cropped_width / 2)\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 inside { } [\x1b[01;35m\x1b[K-Wnarrowing\x1b[m\x1b[K]\n'}
+[17.491121] (puzzle_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/lane_detection.cpp:243:121:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[Kcropped_height\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 inside { } [\x1b[01;35m\x1b[K-Wnarrowing\x1b[m\x1b[K]\n'}
+[17.491616] (puzzle_pkg) StderrLine: {'line': b'             cv::Vec<double, 4> angle_line = { cropped_width/2 , cropped_height, last_line.second[0], last_line.second[1]\x1b[01;35m\x1b[K}\x1b[m\x1b[K;\n'}
+[17.492073] (puzzle_pkg) StderrLine: {'line': b'                                                                                                                         \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[17.492490] (-) TimerEvent: {}
+[17.497960] (puzzle_pkg) StderrLine: {'line': b'\x1b[01m\x1b[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/lane_detection.cpp:243:121:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[Kcropped_height\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 inside { } [\x1b[01;35m\x1b[K-Wnarrowing\x1b[m\x1b[K]\n'}
+[17.592685] (-) TimerEvent: {}
+[17.693853] (-) TimerEvent: {}
+[17.795063] (-) TimerEvent: {}
+[17.896259] (-) TimerEvent: {}
+[17.996978] (-) TimerEvent: {}
+[18.097663] (-) TimerEvent: {}
+[18.198797] (-) TimerEvent: {}
+[18.299489] (-) TimerEvent: {}
+[18.400719] (-) TimerEvent: {}
+[18.501957] (-) TimerEvent: {}
+[18.602655] (-) TimerEvent: {}
+[18.704179] (-) TimerEvent: {}
+[18.806033] (-) TimerEvent: {}
+[18.908259] (-) TimerEvent: {}
+[19.009466] (-) TimerEvent: {}
+[19.110236] (-) TimerEvent: {}
+[19.211190] (-) TimerEvent: {}
+[19.311881] (-) TimerEvent: {}
+[19.412641] (-) TimerEvent: {}
+[19.513340] (-) TimerEvent: {}
+[19.615163] (-) TimerEvent: {}
+[19.715868] (-) TimerEvent: {}
+[19.816562] (-) TimerEvent: {}
+[19.918279] (-) TimerEvent: {}
+[20.018940] (-) TimerEvent: {}
+[20.120092] (-) TimerEvent: {}
+[20.221469] (-) TimerEvent: {}
+[20.322227] (-) TimerEvent: {}
+[20.422910] (-) TimerEvent: {}
+[20.524080] (-) TimerEvent: {}
+[20.626451] (-) TimerEvent: {}
+[20.727128] (-) TimerEvent: {}
+[20.828389] (-) TimerEvent: {}
+[20.929663] (-) TimerEvent: {}
+[21.030747] (-) TimerEvent: {}
+[21.132976] (-) TimerEvent: {}
+[21.234244] (-) TimerEvent: {}
+[21.335453] (-) TimerEvent: {}
+[21.436580] (-) TimerEvent: {}
+[21.537355] (-) TimerEvent: {}
+[21.638405] (-) TimerEvent: {}
+[21.739570] (-) TimerEvent: {}
+[21.840691] (-) TimerEvent: {}
+[21.941922] (-) TimerEvent: {}
+[22.042606] (-) TimerEvent: {}
+[22.143289] (-) TimerEvent: {}
+[22.244040] (-) TimerEvent: {}
+[22.344726] (-) TimerEvent: {}
+[22.445432] (-) TimerEvent: {}
+[22.546690] (-) TimerEvent: {}
+[22.647891] (-) TimerEvent: {}
+[22.749098] (-) TimerEvent: {}
+[22.850289] (-) TimerEvent: {}
+[22.952104] (-) TimerEvent: {}
+[23.056161] (-) TimerEvent: {}
+[23.156964] (-) TimerEvent: {}
+[23.258136] (-) TimerEvent: {}
+[23.359409] (-) TimerEvent: {}
+[23.460085] (-) TimerEvent: {}
+[23.560787] (-) TimerEvent: {}
+[23.662085] (-) TimerEvent: {}
+[23.763808] (-) TimerEvent: {}
+[23.864500] (-) TimerEvent: {}
+[23.965194] (-) TimerEvent: {}
+[24.067050] (-) TimerEvent: {}
+[24.168306] (-) TimerEvent: {}
+[24.270296] (-) TimerEvent: {}
+[24.373097] (-) TimerEvent: {}
+[24.474354] (-) TimerEvent: {}
+[24.575627] (-) TimerEvent: {}
+[24.676931] (-) TimerEvent: {}
+[24.779530] (-) TimerEvent: {}
+[24.880209] (-) TimerEvent: {}
+[24.980892] (-) TimerEvent: {}
+[25.081644] (-) TimerEvent: {}
+[25.182429] (-) TimerEvent: {}
+[25.284162] (-) TimerEvent: {}
+[25.384842] (-) TimerEvent: {}
+[25.485525] (-) TimerEvent: {}
+[25.587308] (-) TimerEvent: {}
+[25.688052] (-) TimerEvent: {}
+[25.789463] (-) TimerEvent: {}
+[25.890416] (-) TimerEvent: {}
+[25.991550] (-) TimerEvent: {}
+[26.092274] (-) TimerEvent: {}
+[26.194207] (-) TimerEvent: {}
+[26.295449] (-) TimerEvent: {}
+[26.397006] (-) TimerEvent: {}
+[26.498311] (-) TimerEvent: {}
+[26.599343] (-) TimerEvent: {}
+[26.700003] (-) TimerEvent: {}
+[26.801327] (-) TimerEvent: {}
+[26.903573] (-) TimerEvent: {}
+[27.004354] (-) TimerEvent: {}
+[27.105150] (-) TimerEvent: {}
+[27.205997] (-) TimerEvent: {}
+[27.307006] (-) TimerEvent: {}
+[27.407713] (-) TimerEvent: {}
+[27.508393] (-) TimerEvent: {}
+[27.609074] (-) TimerEvent: {}
+[27.710539] (-) TimerEvent: {}
+[27.812333] (-) TimerEvent: {}
+[27.913731] (-) TimerEvent: {}
+[28.014482] (-) TimerEvent: {}
+[28.115168] (-) TimerEvent: {}
+[28.216147] (-) TimerEvent: {}
+[28.317547] (-) TimerEvent: {}
+[28.418837] (-) TimerEvent: {}
+[28.520132] (-) TimerEvent: {}
+[28.621449] (-) TimerEvent: {}
+[28.722521] (-) TimerEvent: {}
+[28.823543] (-) TimerEvent: {}
+[28.924658] (-) TimerEvent: {}
+[29.025859] (-) TimerEvent: {}
+[29.126846] (-) TimerEvent: {}
+[29.228034] (-) TimerEvent: {}
+[29.329810] (-) TimerEvent: {}
+[29.430916] (-) TimerEvent: {}
+[29.532147] (-) TimerEvent: {}
+[29.633932] (-) TimerEvent: {}
+[29.735206] (-) TimerEvent: {}
+[29.836545] (-) TimerEvent: {}
+[29.937313] (-) TimerEvent: {}
+[30.054763] (-) TimerEvent: {}
+[30.187168] (-) TimerEvent: {}
+[30.288414] (-) TimerEvent: {}
+[30.389126] (-) TimerEvent: {}
+[30.490523] (-) TimerEvent: {}
+[30.591803] (-) TimerEvent: {}
+[30.692991] (-) TimerEvent: {}
+[30.794657] (-) TimerEvent: {}
+[30.896888] (-) TimerEvent: {}
+[30.998803] (-) TimerEvent: {}
+[31.099769] (-) TimerEvent: {}
+[31.200539] (-) TimerEvent: {}
+[31.301936] (-) TimerEvent: {}
+[31.402609] (-) TimerEvent: {}
+[31.506154] (-) TimerEvent: {}
+[31.607146] (-) TimerEvent: {}
+[31.707880] (-) TimerEvent: {}
+[31.808980] (-) TimerEvent: {}
+[31.910945] (-) TimerEvent: {}
+[32.012192] (-) TimerEvent: {}
+[32.113411] (-) TimerEvent: {}
+[32.214533] (-) TimerEvent: {}
+[32.315537] (-) TimerEvent: {}
+[32.416276] (-) TimerEvent: {}
+[32.517449] (-) TimerEvent: {}
+[32.622905] (-) TimerEvent: {}
+[32.723955] (-) TimerEvent: {}
+[32.826323] (-) TimerEvent: {}
+[32.928121] (-) TimerEvent: {}
+[33.029426] (-) TimerEvent: {}
+[33.131097] (-) TimerEvent: {}
+[33.232298] (-) TimerEvent: {}
+[33.333332] (-) TimerEvent: {}
+[33.434091] (-) TimerEvent: {}
+[33.535313] (-) TimerEvent: {}
+[33.636820] (-) TimerEvent: {}
+[33.739124] (-) TimerEvent: {}
+[33.840241] (-) TimerEvent: {}
+[33.940931] (-) TimerEvent: {}
+[34.042193] (-) TimerEvent: {}
+[34.143170] (-) TimerEvent: {}
+[34.243863] (-) TimerEvent: {}
+[34.344566] (-) TimerEvent: {}
+[34.445408] (-) TimerEvent: {}
+[34.547271] (-) TimerEvent: {}
+[34.648488] (-) TimerEvent: {}
+[34.749704] (-) TimerEvent: {}
+[34.850488] (-) TimerEvent: {}
+[34.951223] (-) TimerEvent: {}
+[35.052816] (-) TimerEvent: {}
+[35.154259] (-) TimerEvent: {}
+[35.255498] (-) TimerEvent: {}
+[35.356224] (-) TimerEvent: {}
+[35.458389] (-) TimerEvent: {}
+[35.559442] (-) TimerEvent: {}
+[35.661544] (-) TimerEvent: {}
+[35.763363] (-) TimerEvent: {}
+[35.865191] (-) TimerEvent: {}
+[35.966283] (-) TimerEvent: {}
+[36.067336] (-) TimerEvent: {}
+[36.168111] (-) TimerEvent: {}
+[36.270048] (-) TimerEvent: {}
+[36.371305] (-) TimerEvent: {}
+[36.472506] (-) TimerEvent: {}
+[36.573339] (-) TimerEvent: {}
+[36.674421] (-) TimerEvent: {}
+[36.775084] (-) TimerEvent: {}
+[36.876763] (-) TimerEvent: {}
+[36.978927] (-) TimerEvent: {}
+[37.079576] (-) TimerEvent: {}
+[37.180457] (-) TimerEvent: {}
+[37.281163] (-) TimerEvent: {}
+[37.382294] (-) TimerEvent: {}
+[37.483862] (-) TimerEvent: {}
+[37.584537] (-) TimerEvent: {}
+[37.685218] (-) TimerEvent: {}
+[37.786383] (-) TimerEvent: {}
+[37.887612] (-) TimerEvent: {}
+[37.988379] (-) TimerEvent: {}
+[38.089510] (-) TimerEvent: {}
+[38.190461] (-) TimerEvent: {}
+[38.291823] (-) TimerEvent: {}
+[38.393753] (-) TimerEvent: {}
+[38.494983] (-) TimerEvent: {}
+[38.596190] (-) TimerEvent: {}
+[38.697451] (-) TimerEvent: {}
+[38.798248] (-) TimerEvent: {}
+[38.899026] (-) TimerEvent: {}
+[39.000886] (-) TimerEvent: {}
+[39.102191] (-) TimerEvent: {}
+[39.203448] (-) TimerEvent: {}
+[39.304831] (-) TimerEvent: {}
+[39.406181] (-) TimerEvent: {}
+[39.506966] (-) TimerEvent: {}
+[39.607801] (-) TimerEvent: {}
+[39.708467] (-) TimerEvent: {}
+[39.809509] (-) TimerEvent: {}
+[39.910643] (-) TimerEvent: {}
+[40.011979] (-) TimerEvent: {}
+[40.113985] (-) TimerEvent: {}
+[40.214733] (-) TimerEvent: {}
+[40.315407] (-) TimerEvent: {}
+[40.416089] (-) TimerEvent: {}
+[40.517396] (-) TimerEvent: {}
+[40.618578] (-) TimerEvent: {}
+[40.720836] (-) TimerEvent: {}
+[40.822175] (-) TimerEvent: {}
+[40.922987] (-) TimerEvent: {}
+[41.024620] (-) TimerEvent: {}
+[41.125545] (-) TimerEvent: {}
+[41.226497] (-) TimerEvent: {}
+[41.327186] (-) TimerEvent: {}
+[41.429038] (-) TimerEvent: {}
+[41.529745] (-) TimerEvent: {}
+[41.631029] (-) TimerEvent: {}
+[41.732841] (-) TimerEvent: {}
+[41.835254] (-) TimerEvent: {}
+[41.935929] (-) TimerEvent: {}
+[42.036677] (-) TimerEvent: {}
+[42.139313] (-) TimerEvent: {}
+[42.240112] (-) TimerEvent: {}
+[42.341003] (-) TimerEvent: {}
+[42.441964] (-) TimerEvent: {}
+[42.542697] (-) TimerEvent: {}
+[42.644100] (-) TimerEvent: {}
+[42.744836] (-) TimerEvent: {}
+[42.846127] (-) TimerEvent: {}
+[42.947122] (-) TimerEvent: {}
+[43.048077] (-) TimerEvent: {}
+[43.150375] (-) TimerEvent: {}
+[43.251039] (-) TimerEvent: {}
+[43.352755] (-) TimerEvent: {}
+[43.456643] (-) TimerEvent: {}
+[43.557426] (-) TimerEvent: {}
+[43.658716] (-) TimerEvent: {}
+[43.760623] (-) TimerEvent: {}
+[43.861303] (-) TimerEvent: {}
+[43.962108] (-) TimerEvent: {}
+[44.063350] (-) TimerEvent: {}
+[44.164540] (-) TimerEvent: {}
+[44.266214] (-) TimerEvent: {}
+[44.367520] (-) TimerEvent: {}
+[44.468810] (-) TimerEvent: {}
+[44.570322] (-) TimerEvent: {}
+[44.671820] (-) TimerEvent: {}
+[44.772609] (-) TimerEvent: {}
+[44.873344] (-) TimerEvent: {}
+[44.975643] (-) TimerEvent: {}
+[45.076595] (-) TimerEvent: {}
+[45.177430] (-) TimerEvent: {}
+[45.278145] (-) TimerEvent: {}
+[45.379372] (-) TimerEvent: {}
+[45.480486] (-) TimerEvent: {}
+[45.581647] (-) TimerEvent: {}
+[45.682521] (-) TimerEvent: {}
+[45.783520] (-) TimerEvent: {}
+[45.907742] (-) TimerEvent: {}
+[46.008421] (-) TimerEvent: {}
+[46.109146] (-) TimerEvent: {}
+[46.210463] (-) TimerEvent: {}
+[46.311372] (-) TimerEvent: {}
+[46.412580] (-) TimerEvent: {}
+[46.513861] (-) TimerEvent: {}
+[46.615387] (-) TimerEvent: {}
+[46.716669] (-) TimerEvent: {}
+[46.818665] (-) TimerEvent: {}
+[46.920124] (-) TimerEvent: {}
+[47.020833] (-) TimerEvent: {}
+[47.121607] (-) TimerEvent: {}
+[47.222898] (-) TimerEvent: {}
+[47.323693] (-) TimerEvent: {}
+[47.424507] (-) TimerEvent: {}
+[47.525833] (-) TimerEvent: {}
+[47.626479] (-) TimerEvent: {}
+[47.727138] (-) TimerEvent: {}
+[47.828335] (-) TimerEvent: {}
+[47.929497] (-) TimerEvent: {}
+[48.030221] (-) TimerEvent: {}
+[48.131515] (-) TimerEvent: {}
+[48.232528] (-) TimerEvent: {}
+[48.353553] (-) TimerEvent: {}
+[48.456434] (-) TimerEvent: {}
+[48.557237] (-) TimerEvent: {}
+[48.658415] (-) TimerEvent: {}
+[48.759629] (-) TimerEvent: {}
+[48.860689] (-) TimerEvent: {}
+[48.962699] (-) TimerEvent: {}
+[49.064342] (-) TimerEvent: {}
+[49.165388] (-) TimerEvent: {}
+[49.266634] (-) TimerEvent: {}
+[49.367831] (-) TimerEvent: {}
+[49.469032] (-) TimerEvent: {}
+[49.571809] (-) TimerEvent: {}
+[49.672948] (-) TimerEvent: {}
+[49.774095] (-) TimerEvent: {}
+[49.875160] (-) TimerEvent: {}
+[49.975825] (-) TimerEvent: {}
+[50.076783] (-) TimerEvent: {}
+[50.177501] (-) TimerEvent: {}
+[50.278910] (-) TimerEvent: {}
+[50.379647] (-) TimerEvent: {}
+[50.480380] (-) TimerEvent: {}
+[50.581621] (-) TimerEvent: {}
+[50.683070] (-) TimerEvent: {}
+[50.783785] (-) TimerEvent: {}
+[50.884478] (-) TimerEvent: {}
+[50.985932] (-) TimerEvent: {}
+[51.086826] (-) TimerEvent: {}
+[51.187566] (-) TimerEvent: {}
+[51.288310] (-) TimerEvent: {}
+[51.389305] (-) TimerEvent: {}
+[51.490083] (-) TimerEvent: {}
+[51.559596] (puzzle_pkg) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking CXX executable lane_detection\x1b[0m\n'}
+[51.593447] (-) TimerEvent: {}
+[51.694088] (-) TimerEvent: {}
+[51.794753] (-) TimerEvent: {}
+[51.895470] (-) TimerEvent: {}
+[51.996693] (-) TimerEvent: {}
+[52.097642] (-) TimerEvent: {}
+[52.199380] (-) TimerEvent: {}
+[52.300659] (-) TimerEvent: {}
+[52.401853] (-) TimerEvent: {}
+[52.503313] (-) TimerEvent: {}
+[52.604931] (-) TimerEvent: {}
+[52.706448] (-) TimerEvent: {}
+[52.808237] (-) TimerEvent: {}
+[52.908927] (-) TimerEvent: {}
+[53.010451] (-) TimerEvent: {}
+[53.111896] (-) TimerEvent: {}
+[53.213364] (-) TimerEvent: {}
+[53.316009] (-) TimerEvent: {}
+[53.417341] (-) TimerEvent: {}
+[53.518103] (-) TimerEvent: {}
+[53.619018] (-) TimerEvent: {}
+[53.720779] (-) TimerEvent: {}
+[53.821688] (-) TimerEvent: {}
+[53.923334] (-) TimerEvent: {}
+[54.024524] (-) TimerEvent: {}
+[54.125636] (-) TimerEvent: {}
+[54.226898] (-) TimerEvent: {}
+[54.327794] (-) TimerEvent: {}
+[54.428469] (-) TimerEvent: {}
+[54.529927] (-) TimerEvent: {}
+[54.631741] (-) TimerEvent: {}
+[54.732616] (-) TimerEvent: {}
+[54.833276] (-) TimerEvent: {}
+[54.934239] (-) TimerEvent: {}
+[55.034894] (-) TimerEvent: {}
+[55.135566] (-) TimerEvent: {}
+[55.237507] (-) TimerEvent: {}
+[55.338310] (-) TimerEvent: {}
+[55.439020] (-) TimerEvent: {}
+[55.539768] (-) TimerEvent: {}
+[55.640912] (-) TimerEvent: {}
+[55.741653] (-) TimerEvent: {}
+[55.842732] (-) TimerEvent: {}
+[55.945264] (-) TimerEvent: {}
+[56.046304] (-) TimerEvent: {}
+[56.147534] (-) TimerEvent: {}
+[56.248640] (-) TimerEvent: {}
+[56.350106] (-) TimerEvent: {}
+[56.452838] (-) TimerEvent: {}
+[56.553828] (-) TimerEvent: {}
+[56.654556] (-) TimerEvent: {}
+[56.755495] (-) TimerEvent: {}
+[56.838107] (puzzle_pkg) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_imgcodecs.so.4.2, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgcodecs.so.405\n'}
+[56.841138] (puzzle_pkg) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_imgproc.so.4.2, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.405\n'}
+[56.841666] (puzzle_pkg) StderrLine: {'line': b'/usr/bin/ld: warning: libopencv_core.so.4.2, needed by /opt/ros/humble/lib/libcv_bridge.so, may conflict with libopencv_core.so.405\n'}
+[56.855666] (-) TimerEvent: {}
+[56.880752] (puzzle_pkg) StdoutLine: {'line': b'[100%] Built target lane_detection\n'}
+[56.956159] (-) TimerEvent: {}
+[56.961144] (puzzle_pkg) CommandEnded: {'returncode': 0}
+[57.056432] (-) TimerEvent: {}
+[57.157329] (-) TimerEvent: {}
+[57.253428] (puzzle_pkg) JobProgress: {'identifier': 'puzzle_pkg', 'progress': 'install'}
+[57.257742] (-) TimerEvent: {}
+[57.299539] (puzzle_pkg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg'], 'cwd': '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_GB:en'), ('USER', 'puzzlebot'), ('SSH_CLIENT', '10.43.121.207 57766 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/puzzlebot'), ('OLDPWD', '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/launch'), ('SSH_TTY', '/dev/pts/0'), ('JETSON_L4T', '32.7.4'), ('ROS_PYTHON_VERSION', '3'), ('JETSON_MODEL', 'NVIDIA Jetson Nano 2GB Developer Kit'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'puzzlebot'), ('JETSON_MODULE', 'NVIDIA Jetson Nano (2 GB ram)'), ('JETSON_SERIAL_NUMBER', '1423122034228'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'Batuu'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_GB.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra210'), ('AMENT_PREFIX_PATH', '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', 'p3448'), ('JETSON_CUDA_ARCH_BIN', '5.3'), ('PWD', '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '10.43.121.207 57766 10.43.100.6 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages'), ('COLCON', '1'), ('JETSON_JETPACK', '4.6.4'), ('CMAKE_PREFIX_PATH', '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg:/opt/ros/humble'), ('JETSON_P_NUMBER', 'p3448-0003')]), 'shell': False}
+[57.336350] (puzzle_pkg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[57.341404] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/ament_index/resource_index/rosidl_interfaces/puzzle_pkg\n'}
+[57.346237] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg\n'}
+[57.348580] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg\n'}
+[57.348995] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/rosidl_generator_c__visibility_control.h\n'}
+[57.349357] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail\n'}
+[57.349692] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__functions.c\n'}
+[57.350119] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__type_support.h\n'}
+[57.365431] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__struct.h\n'}
+[57.366207] (-) TimerEvent: {}
+[57.366955] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__functions.h\n'}
+[57.367543] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/diff_error.h\n'}
+[57.367973] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/environment/library_path.sh\n'}
+[57.368418] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/environment/library_path.dsv\n'}
+[57.368856] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/libpuzzle_pkg__rosidl_generator_c.so\n'}
+[57.369277] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg\n'}
+[57.369860] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg\n'}
+[57.371173] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[57.371595] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail\n'}
+[57.371991] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__rosidl_typesupport_fastrtps_c.h\n'}
+[57.372679] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/libpuzzle_pkg__rosidl_typesupport_fastrtps_c.so\n'}
+[57.373855] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg\n'}
+[57.374797] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg\n'}
+[57.375786] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/diff_error.hpp\n'}
+[57.376453] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail\n'}
+[57.377026] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__traits.hpp\n'}
+[57.377552] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__struct.hpp\n'}
+[57.378306] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__builder.hpp\n'}
+[57.378758] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg\n'}
+[57.379199] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg\n'}
+[57.379635] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[57.380146] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail\n'}
+[57.380720] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/dds_fastrtps\n'}
+[57.381111] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[57.381489] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/libpuzzle_pkg__rosidl_typesupport_fastrtps_cpp.so\n'}
+[57.381898] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg\n'}
+[57.382281] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg\n'}
+[57.382778] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[57.383146] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail\n'}
+[57.383501] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__rosidl_typesupport_introspection_c.h\n'}
+[57.383845] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__type_support.c\n'}
+[57.384324] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/libpuzzle_pkg__rosidl_typesupport_introspection_c.so\n'}
+[57.384787] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/libpuzzle_pkg__rosidl_typesupport_c.so\n'}
+[57.385157] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg\n'}
+[57.385564] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg\n'}
+[57.386055] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail\n'}
+[57.386652] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__type_support.cpp\n'}
+[57.387242] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__rosidl_typesupport_introspection_cpp.hpp\n'}
+[57.391170] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/libpuzzle_pkg__rosidl_typesupport_introspection_cpp.so\n'}
+[57.401886] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/libpuzzle_pkg__rosidl_typesupport_cpp.so\n'}
+[57.402450] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/environment/pythonpath.sh\n'}
+[57.402927] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/environment/pythonpath.dsv\n'}
+[57.403473] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg-0.0.0-py3.8.egg-info\n'}
+[57.404037] (puzzle_pkg) StdoutLine: {'line': b'-- Installing: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg-0.0.0-py3.8.egg-info/top_level.txt\n'}
+[57.404479] (puzzle_pkg) StdoutLine: {'line': b'-- Installing: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg-0.0.0-py3.8.egg-info/PKG-INFO\n'}
+[57.405404] (puzzle_pkg) StdoutLine: {'line': b'-- Installing: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg-0.0.0-py3.8.egg-info/SOURCES.txt\n'}
+[57.406007] (puzzle_pkg) StdoutLine: {'line': b'-- Installing: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg-0.0.0-py3.8.egg-info/dependency_links.txt\n'}
+[57.406531] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg\n'}
+[57.407160] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/puzzle_pkg_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[57.408141] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/__init__.py\n'}
+[57.408952] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/_puzzle_pkg_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[57.409515] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/msg\n'}
+[57.409962] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/msg/__init__.py\n'}
+[57.410521] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/msg/_diff_error_s.c\n'}
+[57.410972] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/msg/_diff_error.py\n'}
+[57.411439] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/_puzzle_pkg_s.ep.rosidl_typesupport_c.c\n'}
+[57.411831] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/puzzle_pkg_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[57.412181] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/puzzle_pkg_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[57.412511] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/_puzzle_pkg_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[57.412845] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/libpuzzle_pkg__rosidl_generator_py.so\n'}
+[57.466375] (-) TimerEvent: {}
+[57.567257] (-) TimerEvent: {}
+[57.667912] (-) TimerEvent: {}
+[57.761674] (puzzle_pkg) StdoutLine: {'line': b"Listing '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg'...\n"}
+[57.765030] (puzzle_pkg) StdoutLine: {'line': b"Listing '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/msg'...\n"}
+[57.768070] (-) TimerEvent: {}
+[57.787068] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/puzzle_pkg_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[57.790896] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/puzzle_pkg_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[57.795549] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/puzzle_pkg_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[57.796920] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/libpuzzle_pkg__rosidl_generator_py.so\n'}
+[57.802929] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/msg/DiffError.idl\n'}
+[57.803785] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/msg/DiffError.msg\n'}
+[57.810945] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/puzzle_pkg/controller\n'}
+[57.815756] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/puzzle_pkg/odometry\n'}
+[57.820516] (puzzle_pkg) StdoutLine: {'line': b'-- Installing: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/puzzle_pkg/lane_detection\n'}
+[57.841993] (puzzle_pkg) StdoutLine: {'line': b'-- Set runtime path of "/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/puzzle_pkg/lane_detection" to ""\n'}
+[57.845355] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/puzzle_pkg/cam_source\n'}
+[57.846395] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg//launch\n'}
+[57.847748] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg//launch/__pycache__\n'}
+[57.848729] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg//launch/__pycache__/launch.cpython-310.pyc\n'}
+[57.849238] (puzzle_pkg) StdoutLine: {'line': b'-- Installing: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg//launch/__pycache__/launch.cpython-38.pyc\n'}
+[57.850066] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg//launch/launch.py\n'}
+[57.850659] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg//config\n'}
+[57.855005] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg//config/odometry_params.yaml\n'}
+[57.855778] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg//config/controller_params.yaml\n'}
+[57.856478] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/ament_index/resource_index/package_run_dependencies/puzzle_pkg\n'}
+[57.858215] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/ament_index/resource_index/parent_prefix_path/puzzle_pkg\n'}
+[57.865844] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/environment/ament_prefix_path.sh\n'}
+[57.866565] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/environment/ament_prefix_path.dsv\n'}
+[57.867073] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/environment/path.sh\n'}
+[57.867507] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/environment/path.dsv\n'}
+[57.867947] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/local_setup.bash\n'}
+[57.868406] (-) TimerEvent: {}
+[57.869072] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/local_setup.sh\n'}
+[57.869604] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/local_setup.zsh\n'}
+[57.870295] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/local_setup.dsv\n'}
+[57.873618] (puzzle_pkg) StdoutLine: {'line': b'-- Installing: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/package.dsv\n'}
+[57.875663] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/ament_index/resource_index/packages/puzzle_pkg\n'}
+[57.879921] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/export_puzzle_pkg__rosidl_generator_cExport.cmake\n'}
+[57.880516] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/export_puzzle_pkg__rosidl_generator_cExport-noconfig.cmake\n'}
+[57.882167] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/export_puzzle_pkg__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[57.882687] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/export_puzzle_pkg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[57.884336] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/export_puzzle_pkg__rosidl_generator_cppExport.cmake\n'}
+[57.890629] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/export_puzzle_pkg__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[57.891457] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/export_puzzle_pkg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[57.894212] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/puzzle_pkg__rosidl_typesupport_introspection_cExport.cmake\n'}
+[57.895117] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/puzzle_pkg__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[57.899039] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/puzzle_pkg__rosidl_typesupport_cExport.cmake\n'}
+[57.899703] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/puzzle_pkg__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[57.901133] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/puzzle_pkg__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[57.901647] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/puzzle_pkg__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[57.903246] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/puzzle_pkg__rosidl_typesupport_cppExport.cmake\n'}
+[57.903918] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/puzzle_pkg__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[57.905649] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/export_puzzle_pkg__rosidl_generator_pyExport.cmake\n'}
+[57.907192] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/export_puzzle_pkg__rosidl_generator_pyExport-noconfig.cmake\n'}
+[57.907880] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/rosidl_cmake-extras.cmake\n'}
+[57.909360] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[57.910823] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[57.912159] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[57.913438] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[57.914610] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[57.915468] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[57.916743] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/puzzle_pkgConfig.cmake\n'}
+[57.917583] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/puzzle_pkgConfig-version.cmake\n'}
+[57.919018] (puzzle_pkg) StdoutLine: {'line': b'-- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/package.xml\n'}
+[57.930966] (puzzle_pkg) CommandEnded: {'returncode': 0}
+[57.968553] (-) TimerEvent: {}
+[58.069555] (-) TimerEvent: {}
+[58.171191] (-) TimerEvent: {}
+[58.272708] (-) TimerEvent: {}
+[58.375097] (-) TimerEvent: {}
+[58.405451] (puzzle_pkg) JobEnded: {'identifier': 'puzzle_pkg', 'rc': 0}
+[58.410274] (-) EventReactorShutdown: {}

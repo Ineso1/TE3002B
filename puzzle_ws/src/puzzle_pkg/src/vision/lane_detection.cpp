@@ -1,4 +1,4 @@
-//#define LANE_VIEW
+#define LANE_VIEW
 //#define COORDS_PRINT
 //#define ANGLE_VIEW
 //#define ERRORS_VIEW
@@ -85,11 +85,14 @@ private:
         cv::Mat frame, fliped_frame;
         cv::cvtColor(color_frame, frame, cv::COLOR_BGR2GRAY);
         cv::flip(frame, fliped_frame, 0);
-
-        double angle = process_frame(fliped_frame);
-        errors_.error_ang = angle;
-
-        last_angle_ = angle;
+        try{
+            double angle = process_frame(fliped_frame);
+            errors_.error_ang = angle;
+            last_angle_ = angle;
+        }
+        catch(...){
+            RCLCPP_INFO(this->get_logger(), "No jala XD");
+        }
     }
 
     void publish_angle() {
@@ -259,15 +262,21 @@ private:
         std::pair<cv::Mat, cv::Size> transform_data = trans_matrix(frame, PERSPECTIVE_CONFIG, REAL_CARTESIAN_CONFIG);
         cv::Mat transformed = perspective_trans(frame, transform_data.first, transform_data.second);
         
+        
         CropParams crop_params = CROP_PARAMS["crossing_line_detection"];
         
         cv::Mat cropped_frame = crop_frame(transformed, crop_params);
+        
         cv::Mat blurred = apply_gaussian_blur(cropped_frame);
+
         cv::Mat closed = apply_closing(blurred, cv::Size(5, 5), 3);
+        publish_processed_image(closed);
+        
         cv::Mat thresholded = apply_otsu_threshold(closed);
         double error_ang = detect_lane_center(thresholded);
 
         return error_ang;  // Dummy return // FERCHOOOO
+        
     }
 
     double last_angle_;
