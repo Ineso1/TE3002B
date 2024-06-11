@@ -1,0 +1,725 @@
+[2.241s] Invoking command in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg': AMENT_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib:/usr/local/cuda/lib64:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent/lib:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg -- -j4 -l4
+[2.958s] [  6%] Built target puzzle_pkg__rosidl_generator_c
+[3.464s] [  6%] Built target ament_cmake_python_copy_puzzle_pkg
+[4.127s] [ 11%] Built target cam_source
+[4.696s] [ 15%] Built target signal_handle
+[4.965s] [ 22%] Built target puzzle_pkg__rosidl_typesupport_c
+[5.287s] [ 29%] Built target puzzle_pkg__rosidl_typesupport_introspection_c
+[5.611s] [ 36%] Built target puzzle_pkg__rosidl_typesupport_fastrtps_c
+[8.906s] running egg_info
+[8.910s] writing puzzle_pkg.egg-info/PKG-INFO
+[8.911s] writing dependency_links to puzzle_pkg.egg-info/dependency_links.txt
+[8.911s] writing top-level names to puzzle_pkg.egg-info/top_level.txt
+[9.283s] reading manifest file 'puzzle_pkg.egg-info/SOURCES.txt'
+[9.288s] writing manifest file 'puzzle_pkg.egg-info/SOURCES.txt'
+[9.655s] [ 36%] Built target ament_cmake_python_build_puzzle_pkg_egg
+[10.140s] [ 40%] Built target odometry
+[10.485s] [ 43%] Built target puzzle_pkg__cpp
+[10.786s] [ 50%] Built target puzzle_pkg__rosidl_typesupport_cpp
+[11.023s] [ 56%] Built target puzzle_pkg__rosidl_typesupport_fastrtps_cpp
+[11.366s] [ 68%] Built target lane_detection
+[11.507s] [35m[1mScanning dependencies of target controller[0m
+[11.989s] [ 70%] [32mBuilding CXX object CMakeFiles/controller.dir/src/control/controller.cpp.o[0m
+[29.409s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:260:9:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kelse[m[K’
+[29.411s]          [01;31m[Kelse[m[K {
+[29.414s]          [01;31m[K^~~~[m[K
+[29.417s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:263:6:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+[29.417s]      }
+[29.421s]       [01;31m[K^[m[K
+[29.422s]       [32m[K;[m[K
+[29.423s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:[m[K In constructor ‘[01m[KController::Controller()[m[K’:
+[29.423s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:62:9:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KController[m[K’ does not have any field named ‘[01m[Kodom_[m[K’
+[29.424s]          [01;31m[Kodom_[m[K({}),
+[29.425s]          [01;31m[K^~~~~[m[K
+[29.426s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:63:9:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KController[m[K’ does not have any field named ‘[01m[Kerrors_[m[K’
+[29.427s]          [01;31m[Kerrors_[m[K{},
+[29.427s]          [01;31m[K^~~~~~~[m[K
+[29.428s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:64:9:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KController[m[K’ does not have any field named ‘[01m[Kcurrent_state_[m[K’
+[29.429s]          [01;31m[Kcurrent_state_[m[K(State::Idle),
+[29.429s]          [01;31m[K^~~~~~~~~~~~~~[m[K
+[29.430s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:65:9:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KController[m[K’ does not have any field named ‘[01m[Klast_processed_state_[m[K’
+[29.430s]          [01;31m[Klast_processed_state_[m[K(State::Init),
+[29.431s]          [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[29.431s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:66:9:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KController[m[K’ does not have any field named ‘[01m[Kerror_angle_[m[K’
+[29.431s]          [01;31m[Kerror_angle_[m[K(0.0),
+[29.432s]          [01;31m[K^~~~~~~~~~~~[m[K
+[29.432s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:67:9:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KController[m[K’ does not have any field named ‘[01m[Kerror_angle_integral_[m[K’
+[29.433s]          [01;31m[Kerror_angle_integral_[m[K(0.0),
+[29.434s]          [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[29.434s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:68:9:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KController[m[K’ does not have any field named ‘[01m[Kerror_distance_[m[K’
+[29.435s]          [01;31m[Kerror_distance_[m[K(0.0),
+[29.435s]          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[29.436s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:69:9:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KController[m[K’ does not have any field named ‘[01m[Kcross_walk_[m[K’
+[29.453s]          [01;31m[Kcross_walk_[m[K(false),
+[29.454s]          [01;31m[K^~~~~~~~~~~[m[K
+[29.455s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:70:9:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KController[m[K’ does not have any field named ‘[01m[Ktarget_point_[m[K’
+[29.455s]          [01;31m[Ktarget_point_[m[K({0.0, 0.0}),
+[29.456s]          [01;31m[K^~~~~~~~~~~~~[m[K
+[29.456s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:71:9:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KController[m[K’ does not have any field named ‘[01m[Kact_[m[K’
+[29.457s]          [01;31m[Kact_[m[K(0.0),
+[29.461s]          [01;31m[K^~~~[m[K
+[29.462s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:72:9:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KController[m[K’ does not have any field named ‘[01m[Ktarget_angle_[m[K’
+[29.463s]          [01;31m[Ktarget_angle_[m[K(0.0),
+[29.463s]          [01;31m[K^~~~~~~~~~~~~[m[K
+[29.464s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:73:9:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KController[m[K’ does not have any field named ‘[01m[Kangular_vel_[m[K’
+[29.464s]          [01;31m[Kangular_vel_[m[K(0.0),
+[29.465s]          [01;31m[K^~~~~~~~~~~~[m[K
+[29.465s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:74:9:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KController[m[K’ does not have any field named ‘[01m[Klinear_vel_[m[K’
+[29.466s]          [01;31m[Klinear_vel_[m[K(0.0),
+[29.467s]          [01;31m[K^~~~~~~~~~~[m[K
+[29.467s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:75:9:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KController[m[K’ does not have any field named ‘[01m[Kcontrol_manage_[m[K’
+[29.468s]          [01;31m[Kcontrol_manage_[m[K(ControlManage::Idle),
+[29.468s]          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[29.469s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:76:9:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KController[m[K’ does not have any field named ‘[01m[Kcontrol_type_[m[K’
+[29.470s]          [01;31m[Kcontrol_type_[m[K(ControlType::Line),
+[29.470s]          [01;31m[K^~~~~~~~~~~~~[m[K
+[29.471s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:77:9:[m[K [01;31m[Kerror: [m[Kclass ‘[01m[KController[m[K’ does not have any field named ‘[01m[Kvel_message_[m[K’
+[29.479s]          [01;31m[Kvel_message_[m[K(geometry_msgs::msg::Twist())
+[29.490s]          [01;31m[K^~~~~~~~~~~~[m[K
+[29.602s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:98:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_errors_[m[K’ was not declared in this scope
+[29.603s]          [01;31m[Ksubscription_errors_[m[K = this->create_subscription<puzzle_pkg::msg::DiffError>(
+[29.604s]          [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[29.621s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:98:9:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Krcl_subscription_options_t[m[K’
+[29.621s]          [01;36m[Ksubscription_errors_[m[K = this->create_subscription<puzzle_pkg::msg::DiffError>(
+[29.622s]          [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[29.622s]          [32m[Krcl_subscription_options_t[m[K
+[29.986s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:104:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_odom_[m[K’ was not declared in this scope
+[29.987s]          [01;31m[Ksubscription_odom_[m[K = this->create_subscription<geometry_msgs::msg::Pose2D>(
+[29.987s]          [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[30.002s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:104:9:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Krcl_subscription_fini[m[K’
+[30.003s]          [01;36m[Ksubscription_odom_[m[K = this->create_subscription<geometry_msgs::msg::Pose2D>(
+[30.003s]          [01;36m[K^~~~~~~~~~~~~~~~~~[m[K
+[30.004s]          [32m[Krcl_subscription_fini[m[K
+[30.316s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:110:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_state_[m[K’ was not declared in this scope
+[30.318s]          [01;31m[Ksubscription_state_[m[K = this->create_subscription<std_msgs::msg::Int32>(
+[30.319s]          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[30.328s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:110:9:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Krcl_subscription_init[m[K’
+[30.329s]          [01;36m[Ksubscription_state_[m[K = this->create_subscription<std_msgs::msg::Int32>(
+[30.329s]          [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[30.330s]          [32m[Krcl_subscription_init[m[K
+[30.629s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:116:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope
+[30.631s]          [01;31m[Kpublisher_[m[K = this->create_publisher<geometry_msgs::msg::Twist>("/cmd_vel", 10);
+[30.634s]          [01;31m[K^~~~~~~~~~[m[K
+[30.639s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:116:9:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Krcl_publisher_t[m[K’
+[30.640s]          [01;36m[Kpublisher_[m[K = this->create_publisher<geometry_msgs::msg::Twist>("/cmd_vel", 10);
+[30.640s]          [01;36m[K^~~~~~~~~~[m[K
+[30.641s]          [32m[Krcl_publisher_t[m[K
+[30.660s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:118:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kstack_release_publisher_[m[K’ was not declared in this scope
+[30.660s]          [01;31m[Kstack_release_publisher_[m[K = this->create_publisher<std_msgs::msg::String>("/stack_release", 10);
+[30.660s]          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[30.669s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:118:9:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kcreate_publisher[m[K’
+[30.669s]          [01;36m[Kstack_release_publisher_[m[K = this->create_publisher<std_msgs::msg::String>("/stack_release", 10);
+[30.670s]          [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[30.670s]          [32m[Kcreate_publisher[m[K
+[30.683s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:120:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktimer_[m[K’ was not declared in this scope
+[30.684s]          [01;31m[Ktimer_[m[K = this->create_wall_timer(
+[30.684s]          [01;31m[K^~~~~~[m[K
+[30.692s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:120:9:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Ktimer_t[m[K’
+[30.694s]          [01;36m[Ktimer_[m[K = this->create_wall_timer(
+[30.694s]          [01;36m[K^~~~~~[m[K
+[30.696s]          [32m[Ktimer_t[m[K
+[30.697s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:122:36:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontroller_callback[m[K’ is not a member of ‘[01m[KController[m[K’
+[30.709s]              std::bind(&Controller::[01;31m[Kcontroller_callback[m[K, this)
+[30.710s]                                     [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[30.711s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:[m[K In member function ‘[01m[Kvoid Controller::errors_callback(const DiffError&)[m[K’:
+[30.712s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:134:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kerrors_[m[K’ was not declared in this scope
+[30.713s]          [01;31m[Kerrors_[m[K = errors;
+[30.714s]          [01;31m[K^~~~~~~[m[K
+[30.714s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:134:9:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kerrors[m[K’
+[30.715s]          [01;36m[Kerrors_[m[K = errors;
+[30.716s]          [01;36m[K^~~~~~~[m[K
+[30.717s]          [32m[Kerrors[m[K
+[30.718s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:[m[K In member function ‘[01m[Kvoid Controller::odom_callback(const Pose2D&)[m[K’:
+[30.719s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:147:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_[m[K’ was not declared in this scope
+[30.724s]          [01;31m[Kodom_[m[K[0] = odom.x;
+[30.724s]          [01;31m[K^~~~~[m[K
+[30.725s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:147:9:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kodom[m[K’
+[30.725s]          [01;36m[Kodom_[m[K[0] = odom.x;
+[30.726s]          [01;36m[K^~~~~[m[K
+[30.727s]          [32m[Kodom[m[K
+[30.727s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:[m[K In member function ‘[01m[Kvoid Controller::state_callback(std_msgs::msg::Int32_<std::allocator<void> >::SharedPtr)[m[K’:
+[30.728s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:166:53:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_processed_state_[m[K’ was not declared in this scope
+[30.731s]          } else if (static_cast<State>(msg->data) != [01;31m[Klast_processed_state_[m[K) {
+[30.748s]                                                      [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[30.749s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:168:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_state_[m[K’ was not declared in this scope
+[30.750s]              [01;31m[Kcurrent_state_[m[K = last_processed_state_;
+[30.754s]              [01;31m[K^~~~~~~~~~~~~~[m[K
+[30.756s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:168:13:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Ksetstate_r[m[K’
+[30.757s]              [01;36m[Kcurrent_state_[m[K = last_processed_state_;
+[30.757s]              [01;36m[K^~~~~~~~~~~~~~[m[K
+[30.758s]              [32m[Ksetstate_r[m[K
+[30.758s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:[m[K In member function ‘[01m[Kvoid Controller::select_control()[m[K’:
+[30.761s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:176:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_state_[m[K’ was not declared in this scope
+[30.762s]          if ([01;31m[Kcurrent_state_[m[K != last_processed_state_) {
+[30.763s]              [01;31m[K^~~~~~~~~~~~~~[m[K
+[30.764s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:176:13:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Ksetstate_r[m[K’
+[30.770s]          if ([01;36m[Kcurrent_state_[m[K != last_processed_state_) {
+[30.771s]              [01;36m[K^~~~~~~~~~~~~~[m[K
+[30.772s]              [32m[Ksetstate_r[m[K
+[30.773s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:176:31:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_processed_state_[m[K’ was not declared in this scope
+[30.775s]          if (current_state_ != [01;31m[Klast_processed_state_[m[K) {
+[30.779s]                                [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[30.780s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:178:29:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[KInit[m[K’ from ‘[01m[KState[m[K’ to ‘[01m[K<type error>[m[K’
+[30.781s]                  case State::[01;31m[KInit[m[K:
+[30.782s]                              [01;31m[K^~~~[m[K
+[30.785s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:180:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_type_[m[K’ was not declared in this scope
+[30.785s]                          [01;31m[Kcontrol_type_[m[K = ControlType::Line;
+[30.786s]                          [01;31m[K^~~~~~~~~~~~~[m[K
+[30.805s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:180:25:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KControlType[m[K’
+[30.806s]                          [01;36m[Kcontrol_type_[m[K = ControlType::Line;
+[30.807s]                          [01;36m[K^~~~~~~~~~~~~[m[K
+[30.811s]                          [32m[KControlType[m[K
+[30.812s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:181:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_manage_[m[K’ was not declared in this scope
+[30.813s]                          [01;31m[Kcontrol_manage_[m[K = ControlManage::Stop;
+[30.813s]                          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[30.815s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:181:25:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KControlManage[m[K’
+[30.816s]                          [01;36m[Kcontrol_manage_[m[K = ControlManage::Stop;
+[30.817s]                          [01;36m[K^~~~~~~~~~~~~~~[m[K
+[30.817s]                          [32m[KControlManage[m[K
+[30.818s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:183:21:[m[K [01;31m[Kerror: [m[Kbreak statement not within loop or switch
+[30.818s]                      [01;31m[Kbreak[m[K;
+[30.818s]                      [01;31m[K^~~~~[m[K
+[30.819s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:184:17:[m[K [01;31m[Kerror: [m[Kcase label ‘[01m[KIdle[m[K’ not within a switch statement
+[30.819s]                  [01;31m[Kcase[m[K State::Idle:
+[30.820s]                  [01;31m[K^~~~[m[K
+[30.820s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:185:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcross_walk_[m[K’ was not declared in this scope
+[30.821s]                      if ([01;31m[Kcross_walk_[m[K) {
+[30.821s]                          [01;31m[K^~~~~~~~~~~[m[K
+[30.827s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:187:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_type_[m[K’ was not declared in this scope
+[30.827s]                          [01;31m[Kcontrol_type_[m[K = ControlType::Position;
+[30.828s]                          [01;31m[K^~~~~~~~~~~~~[m[K
+[30.837s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:187:25:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KControlType[m[K’
+[30.837s]                          [01;36m[Kcontrol_type_[m[K = ControlType::Position;
+[30.838s]                          [01;36m[K^~~~~~~~~~~~~[m[K
+[30.839s]                          [32m[KControlType[m[K
+[30.840s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:188:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_manage_[m[K’ was not declared in this scope
+[30.840s]                          [01;31m[Kcontrol_manage_[m[K = ControlManage::Stop;
+[30.841s]                          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[30.847s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:188:25:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KControlManage[m[K’
+[30.847s]                          [01;36m[Kcontrol_manage_[m[K = ControlManage::Stop;
+[30.848s]                          [01;36m[K^~~~~~~~~~~~~~~[m[K
+[30.848s]                          [32m[KControlManage[m[K
+[30.849s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:189:25:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_point_[m[K’ was not declared in this scope
+[30.850s]                          [01;31m[Ktarget_point_[m[K[0] = 0.1;
+[30.850s]                          [01;31m[K^~~~~~~~~~~~~[m[K
+[30.862s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:193:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_type_[m[K’ was not declared in this scope
+[30.862s]                          [01;31m[Kcontrol_type_[m[K = ControlType::Line;
+[30.863s]                          [01;31m[K^~~~~~~~~~~~~[m[K
+[30.871s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:193:25:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KControlType[m[K’
+[30.872s]                          [01;36m[Kcontrol_type_[m[K = ControlType::Line;
+[30.873s]                          [01;36m[K^~~~~~~~~~~~~[m[K
+[30.873s]                          [32m[KControlType[m[K
+[30.874s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:194:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_manage_[m[K’ was not declared in this scope
+[30.875s]                          [01;31m[Kcontrol_manage_[m[K = ControlManage::Idle;
+[30.875s]                          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[30.884s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:194:25:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KControlManage[m[K’
+[30.884s]                          [01;36m[Kcontrol_manage_[m[K = ControlManage::Idle;
+[30.885s]                          [01;36m[K^~~~~~~~~~~~~~~[m[K
+[30.885s]                          [32m[KControlManage[m[K
+[30.886s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:196:21:[m[K [01;31m[Kerror: [m[Kbreak statement not within loop or switch
+[30.886s]                      [01;31m[Kbreak[m[K;
+[30.887s]                      [01;31m[K^~~~~[m[K
+[30.887s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:198:17:[m[K [01;31m[Kerror: [m[Kcase label ‘[01m[KStop[m[K’ not within a switch statement
+[30.887s]                  [01;31m[Kcase[m[K State::Stop:
+[30.888s]                  [01;31m[K^~~~[m[K
+[30.888s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:199:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcross_walk_[m[K’ was not declared in this scope
+[30.889s]                      if ([01;31m[Kcross_walk_[m[K) {
+[30.889s]                          [01;31m[K^~~~~~~~~~~[m[K
+[30.897s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:201:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_manage_[m[K’ was not declared in this scope
+[30.898s]                          [01;31m[Kcontrol_manage_[m[K = ControlManage::Stop;
+[30.898s]                          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[30.907s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:201:25:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KControlManage[m[K’
+[30.907s]                          [01;36m[Kcontrol_manage_[m[K = ControlManage::Stop;
+[30.908s]                          [01;36m[K^~~~~~~~~~~~~~~[m[K
+[30.912s]                          [32m[KControlManage[m[K
+[30.912s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:202:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_type_[m[K’ was not declared in this scope
+[30.913s]                          [01;31m[Kcontrol_type_[m[K = ControlType::Position;
+[30.913s]                          [01;31m[K^~~~~~~~~~~~~[m[K
+[30.917s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:202:25:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KControlType[m[K’
+[30.918s]                          [01;36m[Kcontrol_type_[m[K = ControlType::Position;
+[30.918s]                          [01;36m[K^~~~~~~~~~~~~[m[K
+[30.918s]                          [32m[KControlType[m[K
+[30.919s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:203:25:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_point_[m[K’ was not declared in this scope
+[30.919s]                          [01;31m[Ktarget_point_[m[K[0] = 0.1;
+[30.920s]                          [01;31m[K^~~~~~~~~~~~~[m[K
+[30.933s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:207:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_manage_[m[K’ was not declared in this scope
+[30.934s]                          [01;31m[Kcontrol_manage_[m[K = ControlManage::Stop;
+[30.935s]                          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[30.942s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:207:25:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KControlManage[m[K’
+[30.944s]                          [01;36m[Kcontrol_manage_[m[K = ControlManage::Stop;
+[30.944s]                          [01;36m[K^~~~~~~~~~~~~~~[m[K
+[30.945s]                          [32m[KControlManage[m[K
+[30.945s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:208:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_type_[m[K’ was not declared in this scope
+[30.946s]                          [01;31m[Kcontrol_type_[m[K = ControlType::Line;
+[30.946s]                          [01;31m[K^~~~~~~~~~~~~[m[K
+[30.955s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:208:25:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KControlType[m[K’
+[30.955s]                          [01;36m[Kcontrol_type_[m[K = ControlType::Line;
+[30.956s]                          [01;36m[K^~~~~~~~~~~~~[m[K
+[30.956s]                          [32m[KControlType[m[K
+[30.957s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:210:21:[m[K [01;31m[Kerror: [m[Kbreak statement not within loop or switch
+[30.958s]                      [01;31m[Kbreak[m[K;
+[30.958s]                      [01;31m[K^~~~~[m[K
+[30.959s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:212:17:[m[K [01;31m[Kerror: [m[Kcase label ‘[01m[KSlow[m[K’ not within a switch statement
+[30.959s]                  [01;31m[Kcase[m[K State::Slow:
+[30.959s]                  [01;31m[K^~~~[m[K
+[30.960s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:213:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcross_walk_[m[K’ was not declared in this scope
+[30.961s]                      if ([01;31m[Kcross_walk_[m[K) {
+[30.962s]                          [01;31m[K^~~~~~~~~~~[m[K
+[30.969s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:215:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_manage_[m[K’ was not declared in this scope
+[30.970s]                          [01;31m[Kcontrol_manage_[m[K = ControlManage::Slow;
+[30.971s]                          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[30.979s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:215:25:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KControlManage[m[K’
+[30.980s]                          [01;36m[Kcontrol_manage_[m[K = ControlManage::Slow;
+[30.980s]                          [01;36m[K^~~~~~~~~~~~~~~[m[K
+[30.981s]                          [32m[KControlManage[m[K
+[30.981s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:216:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_type_[m[K’ was not declared in this scope
+[30.982s]                          [01;31m[Kcontrol_type_[m[K = ControlType::Position;
+[30.982s]                          [01;31m[K^~~~~~~~~~~~~[m[K
+[30.988s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:216:25:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KControlType[m[K’
+[30.989s]                          [01;36m[Kcontrol_type_[m[K = ControlType::Position;
+[30.993s]                          [01;36m[K^~~~~~~~~~~~~[m[K
+[30.993s]                          [32m[KControlType[m[K
+[30.994s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:217:25:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_point_[m[K’ was not declared in this scope
+[30.994s]                          [01;31m[Ktarget_point_[m[K[0] = 0.1;
+[30.995s]                          [01;31m[K^~~~~~~~~~~~~[m[K
+[31.005s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:221:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_manage_[m[K’ was not declared in this scope
+[31.006s]                          [01;31m[Kcontrol_manage_[m[K = ControlManage::Slow;
+[31.007s]                          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[31.010s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:221:25:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KControlManage[m[K’
+[31.011s]                          [01;36m[Kcontrol_manage_[m[K = ControlManage::Slow;
+[31.012s]                          [01;36m[K^~~~~~~~~~~~~~~[m[K
+[31.012s]                          [32m[KControlManage[m[K
+[31.013s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:222:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_type_[m[K’ was not declared in this scope
+[31.014s]                          [01;31m[Kcontrol_type_[m[K = ControlType::Line;
+[31.014s]                          [01;31m[K^~~~~~~~~~~~~[m[K
+[31.020s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:222:25:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KControlType[m[K’
+[31.020s]                          [01;36m[Kcontrol_type_[m[K = ControlType::Line;
+[31.021s]                          [01;36m[K^~~~~~~~~~~~~[m[K
+[31.021s]                          [32m[KControlType[m[K
+[31.022s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:224:21:[m[K [01;31m[Kerror: [m[Kbreak statement not within loop or switch
+[31.023s]                      [01;31m[Kbreak[m[K;
+[31.023s]                      [01;31m[K^~~~~[m[K
+[31.024s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:226:17:[m[K [01;31m[Kerror: [m[Kcase label ‘[01m[KTurnLeft[m[K’ not within a switch statement
+[31.024s]                  [01;31m[Kcase[m[K State::TurnLeft:
+[31.025s]                  [01;31m[K^~~~[m[K
+[31.025s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:227:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kcross_walk_[m[K’ was not declared in this scope
+[31.026s]                      if (![01;31m[Kcross_walk_[m[K) {
+[31.027s]                           [01;31m[K^~~~~~~~~~~[m[K
+[31.037s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:229:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_manage_[m[K’ was not declared in this scope
+[31.038s]                          [01;31m[Kcontrol_manage_[m[K = ControlManage::Idle;
+[31.039s]                          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[31.049s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:229:25:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KControlManage[m[K’
+[31.050s]                          [01;36m[Kcontrol_manage_[m[K = ControlManage::Idle;
+[31.050s]                          [01;36m[K^~~~~~~~~~~~~~~[m[K
+[31.051s]                          [32m[KControlManage[m[K
+[31.052s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:230:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_type_[m[K’ was not declared in this scope
+[31.053s]                          [01;31m[Kcontrol_type_[m[K = ControlType::Position;
+[31.053s]                          [01;31m[K^~~~~~~~~~~~~[m[K
+[31.061s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:230:25:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KControlType[m[K’
+[31.062s]                          [01;36m[Kcontrol_type_[m[K = ControlType::Position;
+[31.063s]                          [01;36m[K^~~~~~~~~~~~~[m[K
+[31.064s]                          [32m[KControlType[m[K
+[31.065s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:231:25:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_point_[m[K’ was not declared in this scope
+[31.066s]                          [01;31m[Ktarget_point_[m[K[0] = 0.1;
+[31.067s]                          [01;31m[K^~~~~~~~~~~~~[m[K
+[31.082s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:235:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_manage_[m[K’ was not declared in this scope
+[31.083s]                          [01;31m[Kcontrol_manage_[m[K = ControlManage::Slow;
+[31.083s]                          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[31.093s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:235:25:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KControlManage[m[K’
+[31.094s]                          [01;36m[Kcontrol_manage_[m[K = ControlManage::Slow;
+[31.095s]                          [01;36m[K^~~~~~~~~~~~~~~[m[K
+[31.095s]                          [32m[KControlManage[m[K
+[31.096s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:236:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_type_[m[K’ was not declared in this scope
+[31.096s]                          [01;31m[Kcontrol_type_[m[K = ControlType::Line;
+[31.097s]                          [01;31m[K^~~~~~~~~~~~~[m[K
+[31.101s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:236:25:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KControlType[m[K’
+[31.101s]                          [01;36m[Kcontrol_type_[m[K = ControlType::Line;
+[31.102s]                          [01;36m[K^~~~~~~~~~~~~[m[K
+[31.102s]                          [32m[KControlType[m[K
+[31.103s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:238:21:[m[K [01;31m[Kerror: [m[Kbreak statement not within loop or switch
+[31.103s]                      [01;31m[Kbreak[m[K;
+[31.104s]                      [01;31m[K^~~~~[m[K
+[31.105s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:240:17:[m[K [01;31m[Kerror: [m[Kcase label ‘[01m[KTurnRight[m[K’ not within a switch statement
+[31.105s]                  [01;31m[Kcase[m[K State::TurnRight:
+[31.106s]                  [01;31m[K^~~~[m[K
+[31.107s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:241:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcross_walk_[m[K’ was not declared in this scope
+[31.108s]                      if ([01;31m[Kcross_walk_[m[K) {
+[31.108s]                          [01;31m[K^~~~~~~~~~~[m[K
+[31.126s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:243:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_manage_[m[K’ was not declared in this scope
+[31.129s]                          [01;31m[Kcontrol_manage_[m[K = ControlManage::Idle;
+[31.130s]                          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[31.135s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:243:25:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KControlManage[m[K’
+[31.136s]                          [01;36m[Kcontrol_manage_[m[K = ControlManage::Idle;
+[31.136s]                          [01;36m[K^~~~~~~~~~~~~~~[m[K
+[31.137s]                          [32m[KControlManage[m[K
+[31.137s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:244:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_type_[m[K’ was not declared in this scope
+[31.138s]                          [01;31m[Kcontrol_type_[m[K = ControlType::Position;
+[31.138s]                          [01;31m[K^~~~~~~~~~~~~[m[K
+[31.154s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:244:25:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KControlType[m[K’
+[31.155s]                          [01;36m[Kcontrol_type_[m[K = ControlType::Position;
+[31.155s]                          [01;36m[K^~~~~~~~~~~~~[m[K
+[31.156s]                          [32m[KControlType[m[K
+[31.157s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:245:25:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_point_[m[K’ was not declared in this scope
+[31.158s]                          [01;31m[Ktarget_point_[m[K[0] = 0.1;
+[31.158s]                          [01;31m[K^~~~~~~~~~~~~[m[K
+[31.167s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:249:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_manage_[m[K’ was not declared in this scope
+[31.168s]                          [01;31m[Kcontrol_manage_[m[K = ControlManage::Slow;
+[31.168s]                          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[31.184s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:249:25:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KControlManage[m[K’
+[31.184s]                          [01;36m[Kcontrol_manage_[m[K = ControlManage::Slow;
+[31.185s]                          [01;36m[K^~~~~~~~~~~~~~~[m[K
+[31.185s]                          [32m[KControlManage[m[K
+[31.186s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:250:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_type_[m[K’ was not declared in this scope
+[31.186s]                          [01;31m[Kcontrol_type_[m[K = ControlType::Line;
+[31.187s]                          [01;31m[K^~~~~~~~~~~~~[m[K
+[31.194s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:250:25:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KControlType[m[K’
+[31.195s]                          [01;36m[Kcontrol_type_[m[K = ControlType::Line;
+[31.196s]                          [01;36m[K^~~~~~~~~~~~~[m[K
+[31.197s]                          [32m[KControlType[m[K
+[31.198s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:252:21:[m[K [01;31m[Kerror: [m[Kbreak statement not within loop or switch
+[31.198s]                      [01;31m[Kbreak[m[K;
+[31.199s]                      [01;31m[K^~~~~[m[K
+[31.199s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:254:17:[m[K [01;31m[Kerror: [m[Kcase label not within a switch statement
+[31.200s]                  [01;31m[Kdefault[m[K:
+[31.201s]                  [01;31m[K^~~~~~~[m[K
+[31.202s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:256:21:[m[K [01;31m[Kerror: [m[Kbreak statement not within loop or switch
+[31.203s]                      [01;31m[Kbreak[m[K;
+[31.203s]                      [01;31m[K^~~~~[m[K
+[31.204s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:258:13:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_processed_state_[m[K’ was not declared in this scope
+[31.204s]              [01;31m[Klast_processed_state_[m[K = current_state_;
+[31.205s]              [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[31.225s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:258:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_state_[m[K’ was not declared in this scope
+[31.226s]              last_processed_state_ = [01;31m[Kcurrent_state_[m[K;
+[31.227s]                                      [01;31m[K^~~~~~~~~~~~~~[m[K
+[31.236s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:258:37:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Ksetstate_r[m[K’
+[31.236s]              last_processed_state_ = [01;36m[Kcurrent_state_[m[K;
+[31.237s]                                      [01;36m[K^~~~~~~~~~~~~~[m[K
+[31.238s]                                      [32m[Ksetstate_r[m[K
+[31.238s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:[m[K In function ‘[01m[Kvoid line_control()[m[K’:
+[31.239s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:267:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_parameter[m[K’ was not declared in this scope
+[31.240s]          double error_threshold_ang = [01;31m[Kget_parameter[m[K("error_threshold_ang").as_double();
+[31.240s]                                       [01;31m[K^~~~~~~~~~~~~[m[K
+[31.260s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:277:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kerror_angle_[m[K’ was not declared in this scope
+[31.260s]          [01;31m[Kerror_angle_[m[K = errors_.error_ang;
+[31.261s]          [01;31m[K^~~~~~~~~~~~[m[K
+[31.265s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:277:9:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kki_angle[m[K’
+[31.266s]          [01;36m[Kerror_angle_[m[K = errors_.error_ang;
+[31.267s]          [01;36m[K^~~~~~~~~~~~[m[K
+[31.276s]          [32m[Kki_angle[m[K
+[31.277s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:277:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kerrors_[m[K’ was not declared in this scope
+[31.278s]          error_angle_ = [01;31m[Kerrors_[m[K.error_ang;
+[31.279s]                         [01;31m[K^~~~~~~[m[K
+[31.281s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:277:24:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kerror_t[m[K’
+[31.282s]          error_angle_ = [01;36m[Kerrors_[m[K.error_ang;
+[31.282s]                         [01;36m[K^~~~~~~[m[K
+[31.283s]                         [32m[Kerror_t[m[K
+[31.283s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:278:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kerror_distance_[m[K’ was not declared in this scope
+[31.284s]          [01;31m[Kerror_distance_[m[K = errors_.error_dist;
+[31.284s]          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[31.294s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:281:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kangular_vel_[m[K’ was not declared in this scope
+[31.294s]              [01;31m[Kangular_vel_[m[K = 0;
+[31.295s]              [01;31m[K^~~~~~~~~~~~[m[K
+[31.313s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:281:13:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kangular_vel_max[m[K’
+[31.314s]              [01;36m[Kangular_vel_[m[K = 0;
+[31.314s]              [01;36m[K^~~~~~~~~~~~[m[K
+[31.315s]              [32m[Kangular_vel_max[m[K
+[31.315s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:283:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kangular_vel_[m[K’ was not declared in this scope
+[31.316s]              [01;31m[Kangular_vel_[m[K = -kp_angle * error_angle_ + ki_angle * error_angle_integral_;
+[31.319s]              [01;31m[K^~~~~~~~~~~~[m[K
+[31.320s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:283:13:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kangular_vel_max[m[K’
+[31.321s]              [01;36m[Kangular_vel_[m[K = -kp_angle * error_angle_ + ki_angle * error_angle_integral_;
+[31.321s]              [01;36m[K^~~~~~~~~~~~[m[K
+[31.322s]              [32m[Kangular_vel_max[m[K
+[31.327s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:283:66:[m[K [01;31m[Kerror: [m[K‘[01m[Kerror_angle_integral_[m[K’ was not declared in this scope
+[31.328s]              angular_vel_ = -kp_angle * error_angle_ + ki_angle * [01;31m[Kerror_angle_integral_[m[K;
+[31.329s]                                                                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[31.332s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:291:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kact_[m[K’ was not declared in this scope
+[31.333s]          [01;31m[Kact_[m[K = - (std::tanh(ke_act * (std::abs(error_angle_) - M_PI / angle_sensitivity)) - 1) / 2;
+[31.334s]          [01;31m[K^~~~[m[K
+[31.348s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:291:9:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kacos[m[K’
+[31.349s]          [01;36m[Kact_[m[K = - (std::tanh(ke_act * (std::abs(error_angle_) - M_PI / angle_sensitivity)) - 1) / 2;
+[31.349s]          [01;36m[K^~~~[m[K
+[31.350s]          [32m[Kacos[m[K
+[31.350s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:297:9:[m[K [01;31m[Kerror: [m[K‘[01m[Klinear_vel_[m[K’ was not declared in this scope
+[31.350s]          [01;31m[Klinear_vel_[m[K = linear_vel_max * act_;
+[31.351s]          [01;31m[K^~~~~~~~~~~[m[K
+[31.354s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:297:9:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Klinear_vel_max[m[K’
+[31.354s]          [01;36m[Klinear_vel_[m[K = linear_vel_max * act_;
+[31.355s]          [01;36m[K^~~~~~~~~~~[m[K
+[31.355s]          [32m[Klinear_vel_max[m[K
+[31.356s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:298:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_manage_[m[K’ was not declared in this scope
+[31.358s]          if ([01;31m[Kcontrol_manage_[m[K == ControlManage::Slow) {
+[31.358s]              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[31.364s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:298:13:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KControlManage[m[K’
+[31.364s]          if ([01;36m[Kcontrol_manage_[m[K == ControlManage::Slow) {
+[31.366s]              [01;36m[K^~~~~~~~~~~~~~~[m[K
+[31.366s]              [32m[KControlManage[m[K
+[31.367s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:304:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kvel_message_[m[K’ was not declared in this scope
+[31.368s]          [01;31m[Kvel_message_[m[K.linear.x = linear_vel_;
+[31.369s]          [01;31m[K^~~~~~~~~~~~[m[K
+[31.394s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:305:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kangular_vel_[m[K’ was not declared in this scope
+[31.394s]          vel_message_.angular.z = -[01;31m[Kangular_vel_[m[K;
+[31.395s]                                    [01;31m[K^~~~~~~~~~~~[m[K
+[31.396s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:305:35:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kangular_vel_max[m[K’
+[31.396s]          vel_message_.angular.z = -[01;36m[Kangular_vel_[m[K;
+[31.397s]                                    [01;36m[K^~~~~~~~~~~~[m[K
+[31.397s]                                    [32m[Kangular_vel_max[m[K
+[31.398s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:311:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope
+[31.398s]          [01;31m[Kpublisher_[m[K->publish(vel_message_);
+[31.399s]          [01;31m[K^~~~~~~~~~[m[K
+[31.402s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:311:9:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Krcl_publisher_t[m[K’
+[31.403s]          [01;36m[Kpublisher_[m[K->publish(vel_message_);
+[31.404s]          [01;36m[K^~~~~~~~~~[m[K
+[31.430s]          [32m[Krcl_publisher_t[m[K
+[31.433s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:[m[K In function ‘[01m[Kvoid pos_control()[m[K’:
+[31.434s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:315:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_parameter[m[K’ was not declared in this scope
+[31.434s]          double error_threshold_dis = [01;31m[Kget_parameter[m[K("error_threshold_dis").as_double();
+[31.454s]                                       [01;31m[K^~~~~~~~~~~~~[m[K
+[31.454s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:326:9:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_angle_[m[K’ was not declared in this scope
+[31.477s]          [01;31m[Ktarget_angle_[m[K = std::atan2(target_point_[1] - odom_[1], target_point_[0] - odom_[0]);
+[31.478s]          [01;31m[K^~~~~~~~~~~~~[m[K
+[31.498s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:326:36:[m[K [01;31m[Kerror: [m[K‘[01m[Ktarget_point_[m[K’ was not declared in this scope
+[31.499s]          target_angle_ = std::atan2([01;31m[Ktarget_point_[m[K[1] - odom_[1], target_point_[0] - odom_[0]);
+[31.499s]                                     [01;31m[K^~~~~~~~~~~~~[m[K
+[31.500s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:326:55:[m[K [01;31m[Kerror: [m[K‘[01m[Kodom_[m[K’ was not declared in this scope
+[31.500s]          target_angle_ = std::atan2(target_point_[1] - [01;31m[Kodom_[m[K[1], target_point_[0] - odom_[0]);
+[31.518s]                                                        [01;31m[K^~~~~[m[K
+[31.519s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:330:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kerror_angle_[m[K’ was not declared in this scope
+[31.519s]          [01;31m[Kerror_angle_[m[K = odom_[2] - target_angle_;
+[31.520s]          [01;31m[K^~~~~~~~~~~~[m[K
+[31.521s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:330:9:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kki_angle[m[K’
+[31.521s]          [01;36m[Kerror_angle_[m[K = odom_[2] - target_angle_;
+[31.523s]          [01;36m[K^~~~~~~~~~~~[m[K
+[31.523s]          [32m[Kki_angle[m[K
+[31.524s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:332:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kerror_distance_[m[K’ was not declared in this scope
+[31.525s]          [01;31m[Kerror_distance_[m[K = std::sqrt(
+[31.530s]          [01;31m[K^~~~~~~~~~~~~~~[m[K
+[31.530s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:332:9:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kkp_distance[m[K’
+[31.530s]          [01;36m[Kerror_distance_[m[K = std::sqrt(
+[31.531s]          [01;36m[K^~~~~~~~~~~~~~~[m[K
+[31.531s]          [32m[Kkp_distance[m[K
+[31.532s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:338:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kangular_vel_[m[K’ was not declared in this scope
+[31.545s]              [01;31m[Kangular_vel_[m[K = 0;
+[31.546s]              [01;31m[K^~~~~~~~~~~~[m[K
+[31.546s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:338:13:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kangular_vel_max[m[K’
+[31.547s]              [01;36m[Kangular_vel_[m[K = 0;
+[31.547s]              [01;36m[K^~~~~~~~~~~~[m[K
+[31.548s]              [32m[Kangular_vel_max[m[K
+[31.548s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:340:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kangular_vel_[m[K’ was not declared in this scope
+[31.549s]              [01;31m[Kangular_vel_[m[K = -kp_angle * error_angle_ + ki_angle * error_angle_integral_;
+[31.549s]              [01;31m[K^~~~~~~~~~~~[m[K
+[31.550s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:340:13:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kangular_vel_max[m[K’
+[31.550s]              [01;36m[Kangular_vel_[m[K = -kp_angle * error_angle_ + ki_angle * error_angle_integral_;
+[31.551s]              [01;36m[K^~~~~~~~~~~~[m[K
+[31.551s]              [32m[Kangular_vel_max[m[K
+[31.551s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:340:66:[m[K [01;31m[Kerror: [m[K‘[01m[Kerror_angle_integral_[m[K’ was not declared in this scope
+[31.552s]              angular_vel_ = -kp_angle * error_angle_ + ki_angle * [01;31m[Kerror_angle_integral_[m[K;
+[31.552s]                                                                   [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[31.559s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:348:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kact_[m[K’ was not declared in this scope
+[31.559s]          [01;31m[Kact_[m[K = - (std::tanh(ke_act * (std::abs(error_angle_) - M_PI / angle_sensitivity)) - 1) / 2;
+[31.560s]          [01;31m[K^~~~[m[K
+[31.567s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:348:9:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kacos[m[K’
+[31.568s]          [01;36m[Kact_[m[K = - (std::tanh(ke_act * (std::abs(error_angle_) - M_PI / angle_sensitivity)) - 1) / 2;
+[31.568s]          [01;36m[K^~~~[m[K
+[31.569s]          [32m[Kacos[m[K
+[31.569s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:355:13:[m[K [01;31m[Kerror: [m[K‘[01m[Klinear_vel_[m[K’ was not declared in this scope
+[31.570s]              [01;31m[Klinear_vel_[m[K = 0;
+[31.570s]              [01;31m[K^~~~~~~~~~~[m[K
+[31.579s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:355:13:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Klinear_vel_max[m[K’
+[31.580s]              [01;36m[Klinear_vel_[m[K = 0;
+[31.580s]              [01;36m[K^~~~~~~~~~~[m[K
+[31.581s]              [32m[Klinear_vel_max[m[K
+[31.583s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:359:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kstack_release_publisher_[m[K’ was not declared in this scope
+[31.584s]              [01;31m[Kstack_release_publisher_[m[K->publish(release_msg);
+[31.584s]              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[31.595s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:359:13:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Krmw_create_publisher[m[K’
+[31.596s]              [01;36m[Kstack_release_publisher_[m[K->publish(release_msg);
+[31.596s]              [01;36m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[31.597s]              [32m[Krmw_create_publisher[m[K
+[31.597s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:361:13:[m[K [01;31m[Kerror: [m[K‘[01m[Klinear_vel_[m[K’ was not declared in this scope
+[31.598s]              [01;31m[Klinear_vel_[m[K = linear_vel_max * std::tanh(kp_distance * (error_distance_ / linear_vel_max));
+[31.599s]              [01;31m[K^~~~~~~~~~~[m[K
+[31.612s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:361:13:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Klinear_vel_max[m[K’
+[31.612s]              [01;36m[Klinear_vel_[m[K = linear_vel_max * std::tanh(kp_distance * (error_distance_ / linear_vel_max));
+[31.613s]              [01;36m[K^~~~~~~~~~~[m[K
+[31.614s]              [32m[Klinear_vel_max[m[K
+[31.614s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:364:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kvel_message_[m[K’ was not declared in this scope
+[31.615s]          [01;31m[Kvel_message_[m[K.linear.x = linear_vel_;
+[31.615s]          [01;31m[K^~~~~~~~~~~~[m[K
+[31.616s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:364:33:[m[K [01;31m[Kerror: [m[K‘[01m[Klinear_vel_[m[K’ was not declared in this scope
+[31.616s]          vel_message_.linear.x = [01;31m[Klinear_vel_[m[K;
+[31.617s]                                  [01;31m[K^~~~~~~~~~~[m[K
+[31.623s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:364:33:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Klinear_vel_max[m[K’
+[31.623s]          vel_message_.linear.x = [01;36m[Klinear_vel_[m[K;
+[31.624s]                                  [01;36m[K^~~~~~~~~~~[m[K
+[31.624s]                                  [32m[Klinear_vel_max[m[K
+[31.625s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:365:35:[m[K [01;31m[Kerror: [m[K‘[01m[Kangular_vel_[m[K’ was not declared in this scope
+[31.625s]          vel_message_.angular.z = -[01;31m[Kangular_vel_[m[K;
+[31.626s]                                    [01;31m[K^~~~~~~~~~~~[m[K
+[31.630s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:365:35:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kangular_vel_max[m[K’
+[31.631s]          vel_message_.angular.z = -[01;36m[Kangular_vel_[m[K;
+[31.631s]                                    [01;36m[K^~~~~~~~~~~~[m[K
+[31.632s]                                    [32m[Kangular_vel_max[m[K
+[31.635s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:371:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_[m[K’ was not declared in this scope
+[31.637s]          [01;31m[Kpublisher_[m[K->publish(vel_message_);
+[31.638s]          [01;31m[K^~~~~~~~~~[m[K
+[31.648s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:371:9:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Krcl_publisher_t[m[K’
+[31.649s]          [01;36m[Kpublisher_[m[K->publish(vel_message_);
+[31.649s]          [01;36m[K^~~~~~~~~~[m[K
+[31.650s]          [32m[Krcl_publisher_t[m[K
+[31.650s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[31.651s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[31.651s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[31.651s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[31.652s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[31.652s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[31.660s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[31.660s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[31.663s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[31.663s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[31.664s]                  from [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:25[m[K:
+[31.664s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:[m[K In function ‘[01m[Kvoid controller_callback()[m[K’:
+[31.665s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:375:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[31.666s]          RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "C State: %d, P State: %d", static_cast<int>(current_state_), static_cast<int>(last_processed_state_));
+[31.673s]                      [01;31m[K^~~~[m[K
+[31.673s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:375:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[31.674s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:375:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[31.674s]          [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "C State: %d, P State: %d", static_cast<int>(current_state_), static_cast<int>(last_processed_state_));
+[31.675s]          [01;31m[K^~~~~~~~~~~[m[K
+[31.676s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:375:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[31.676s]          [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "C State: %d, P State: %d", static_cast<int>(current_state_), static_cast<int>(last_processed_state_));
+[31.677s]          [01;31m[K^~~~~~~~~~~[m[K
+[31.690s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:375:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[31.694s]          [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "C State: %d, P State: %d", static_cast<int>(current_state_), static_cast<int>(last_processed_state_));
+[31.694s]          [01;31m[K^~~~~~~~~~~[m[K
+[31.695s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[31.695s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[31.696s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[31.696s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[31.697s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[31.697s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[31.698s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[31.698s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[31.698s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[31.699s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[31.700s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[31.700s]                  from [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:25[m[K:
+[31.702s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:375:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[31.702s]          RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "C State: %d, P State: %d", static_cast<int>(current_state_), static_cast<int>(last_processed_state_));
+[31.703s]                      [01;31m[K^~~~[m[K
+[31.703s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:375:21:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[31.704s]          RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "C State: %d, P State: %d", static_cast<int>(current_state_), static_cast<int>(last_processed_state_));
+[31.718s]                      [01;31m[K^~~~[m[K
+[31.718s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:375:86:[m[K [01;31m[Kerror: [m[K‘[01m[Kcurrent_state_[m[K’ was not declared in this scope
+[31.720s]          RCLCPP_INFO(this->get_logger(), "C State: %d, P State: %d", static_cast<int>([01;31m[Kcurrent_state_[m[K), static_cast<int>(last_processed_state_));
+[31.720s]                                                                                       [01;31m[K^~~~~~~~~~~~~~[m[K
+[31.721s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:375:86:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Ksetstate_r[m[K’
+[31.721s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:375:120:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_processed_state_[m[K’ was not declared in this scope
+[31.722s]          RCLCPP_INFO(this->get_logger(), "C State: %d, P State: %d", static_cast<int>(current_state_), static_cast<int>([01;31m[Klast_processed_state_[m[K));
+[31.722s]                                                                                                                         [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[31.723s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:376:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kselect_control[m[K’ was not declared in this scope
+[31.724s]          [01;31m[Kselect_control[m[K();
+[31.725s]          [01;31m[K^~~~~~~~~~~~~~[m[K
+[31.725s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:376:9:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kline_control[m[K’
+[31.726s]          [01;36m[Kselect_control[m[K();
+[31.727s]          [01;36m[K^~~~~~~~~~~~~~[m[K
+[31.727s]          [32m[Kline_control[m[K
+[31.728s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:377:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_type_[m[K’ was not declared in this scope
+[31.730s]          if ([01;31m[Kcontrol_type_[m[K == ControlType::Line) {
+[31.730s]              [01;31m[K^~~~~~~~~~~~~[m[K
+[31.740s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:377:13:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[KControlType[m[K’
+[31.748s]          if ([01;36m[Kcontrol_type_[m[K == ControlType::Line) {
+[31.750s]              [01;36m[K^~~~~~~~~~~~~[m[K
+[31.750s]              [32m[KControlType[m[K
+[31.761s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[31.762s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[31.763s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[31.764s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[31.768s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[31.768s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[31.769s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[31.770s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[31.770s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[31.771s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[31.772s]                  from [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:25[m[K:
+[31.773s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:378:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[31.774s]              RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "LINE");
+[31.780s]                          [01;31m[K^~~~[m[K
+[31.780s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:378:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[31.781s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:378:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[31.781s]              [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "LINE");
+[31.782s]              [01;31m[K^~~~~~~~~~~[m[K
+[31.782s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:378:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[31.782s]              [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "LINE");
+[31.782s]              [01;31m[K^~~~~~~~~~~[m[K
+[31.783s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:378:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[31.783s]              [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "LINE");
+[31.784s]              [01;31m[K^~~~~~~~~~~[m[K
+[31.787s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[31.788s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[31.789s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[31.790s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[31.790s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[31.791s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[31.791s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[31.792s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[31.793s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[31.793s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[31.794s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[31.794s]                  from [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:25[m[K:
+[31.797s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:378:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[31.798s]              RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "LINE");
+[31.798s]                          [01;31m[K^~~~[m[K
+[31.799s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:378:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[31.800s]              RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "LINE");
+[31.801s]                          [01;31m[K^~~~[m[K
+[31.801s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[31.802s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[31.802s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[31.803s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[31.804s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[31.804s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[31.806s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[31.810s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[31.811s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[31.812s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[31.812s]                  from [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:25[m[K:
+[31.813s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:381:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[31.814s]              RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "POS");
+[31.814s]                          [01;31m[K^~~~[m[K
+[31.821s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:381:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[31.821s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:381:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[31.827s]              [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "POS");
+[31.827s]              [01;31m[K^~~~~~~~~~~[m[K
+[31.828s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:381:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[31.828s]              [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "POS");
+[31.829s]              [01;31m[K^~~~~~~~~~~[m[K
+[31.829s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:381:13:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[31.830s]              [01;31m[KRCLCPP_INFO[m[K(this->get_logger(), "POS");
+[31.831s]              [01;31m[K^~~~~~~~~~~[m[K
+[31.832s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[31.832s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[31.833s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[31.834s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[31.834s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[31.835s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[31.836s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[31.837s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[31.837s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[31.838s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[31.838s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[31.839s]                  from [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:25[m[K:
+[31.840s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:381:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[31.846s]              RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "POS");
+[31.847s]                          [01;31m[K^~~~[m[K
+[31.847s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:381:25:[m[K [01;31m[Kerror: [m[Kinvalid use of ‘[01m[Kthis[m[K’ in non-member function
+[31.847s]              RCLCPP_INFO([01;31m[Kthis[m[K->get_logger(), "POS");
+[31.848s]                          [01;31m[K^~~~[m[K
+[31.849s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:[m[K At global scope:
+[31.849s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:419:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[31.850s]  [01;31m[K}[m[K;
+[31.850s]  [01;31m[K^[m[K
+[51.352s] make[2]: *** [CMakeFiles/controller.dir/build.make:63: CMakeFiles/controller.dir/src/control/controller.cpp.o] Error 1
+[51.354s] make[1]: *** [CMakeFiles/Makefile2:324: CMakeFiles/controller.dir/all] Error 2
+[51.355s] make: *** [Makefile:141: all] Error 2
+[51.786s] Invoked command in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg' returned '2': AMENT_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib:/usr/local/cuda/lib64:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent/lib:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg -- -j4 -l4

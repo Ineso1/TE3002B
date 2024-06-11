@@ -22,6 +22,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/opt/ros/humble/include/sensor_msgs"
   "/opt/ros/humble/include/message_filters"
   "/opt/ros/humble/include/pluginlib"
+  "/usr/local/cuda/include"
   "rosidl_generator_cpp"
   "/opt/ros/humble/include/rclcpp"
   "/opt/ros/humble/include/builtin_interfaces"

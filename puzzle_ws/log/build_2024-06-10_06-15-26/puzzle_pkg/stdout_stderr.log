@@ -1,0 +1,103 @@
+[  6%] Built target puzzle_pkg__rosidl_generator_c
+[  9%] Built target puzzle_pkg__cpp
+[ 13%] Built target odometry
+[ 13%] Built target ament_cmake_python_copy_puzzle_pkg
+[ 18%] Built target signal_handle
+[ 25%] Built target puzzle_pkg__rosidl_typesupport_c
+[ 31%] Built target puzzle_pkg__rosidl_typesupport_cpp
+[ 36%] Built target cam_source
+[ 43%] Built target puzzle_pkg__rosidl_typesupport_introspection_cpp
+[ 50%] Built target puzzle_pkg__rosidl_typesupport_fastrtps_cpp
+[ 56%] Built target puzzle_pkg__rosidl_typesupport_fastrtps_c
+[ 63%] Built target puzzle_pkg__rosidl_typesupport_introspection_c
+[ 63%] Built target puzzle_pkg
+[ 65%] [32mBuilding CXX object CMakeFiles/controller.dir/src/control/controller.cpp.o[0m
+[ 68%] Built target puzzle_pkg__py
+[ 79%] Built target lane_detection
+[ 84%] Built target puzzle_pkg__rosidl_generator_py
+[ 88%] Built target puzzle_pkg__rosidl_typesupport_fastrtps_c__pyext
+[ 93%] Built target puzzle_pkg__rosidl_typesupport_introspection_c__pyext
+[ 97%] Built target puzzle_pkg__rosidl_typesupport_c__pyext
+running egg_info
+writing puzzle_pkg.egg-info/PKG-INFO
+writing dependency_links to puzzle_pkg.egg-info/dependency_links.txt
+writing top-level names to puzzle_pkg.egg-info/top_level.txt
+reading manifest file 'puzzle_pkg.egg-info/SOURCES.txt'
+writing manifest file 'puzzle_pkg.egg-info/SOURCES.txt'
+[ 97%] Built target ament_cmake_python_build_puzzle_pkg_egg
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:159:46:[m[K [01;31m[Kerror: [m[K‘[01m[KInt32[m[K’ in namespace ‘[01m[Kstd_msgs::msg[m[K’ does not name a type
+     void state_callback(const std_msgs::msg::[01;31m[KInt32[m[K::SharedPtr msg)
+                                              [01;31m[K^~~~~[m[K
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:159:63:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kmsg[m[K’
+     void state_callback(const std_msgs::msg::Int32::SharedPtr [01;31m[Kmsg[m[K)
+                                                               [01;31m[K^~~[m[K
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:159:62:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[Kmsg[m[K’
+     void state_callback[34m[K([m[Kconst std_msgs::msg::Int32::SharedPtr[01;31m[K [m[K[32m[Kmsg[m[K)
+                        [34m[K~[m[K                                     [01;31m[K^[m[K[32m[K~~~[m[K
+                                                              [32m[K)[m[K
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:159:53:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+     void state_callback(const std_msgs::msg::Int32::[01;31m[KSharedPtr[m[K msg)
+                                                     [01;31m[K^~~~~~~~~[m[K
+                                                              [32m[K;[m[K
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:159:63:[m[K [01;31m[Kerror: [m[K‘[01m[Kmsg[m[K’ does not name a type
+     void state_callback(const std_msgs::msg::Int32::SharedPtr [01;31m[Kmsg[m[K)
+                                                               [01;31m[K^~~[m[K
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:[m[K In constructor ‘[01m[KController::Controller()[m[K’:
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:385:31:[m[K [01;35m[Kwarning: [m[K‘[01m[KController::vel_message_[m[K’ will be initialized after [[01;35m[K-Wreorder[m[K]
+     geometry_msgs::msg::Twist [01;35m[Kvel_message_[m[K;
+                               [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:365:17:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kstd::__cxx11::string Controller::current_state_[m[K’ [[01;35m[K-Wreorder[m[K]
+     std::string [01;35m[Kcurrent_state_[m[K;
+                 [01;35m[K^~~~~~~~~~~~~~[m[K
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:58:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K-Wreorder[m[K]
+     [01;35m[KController[m[K() :
+     [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:372:28:[m[K [01;35m[Kwarning: [m[K‘[01m[KController::target_point_[m[K’ will be initialized after [[01;35m[K-Wreorder[m[K]
+     double target_point_ [2[01;35m[K][m[K;
+                            [01;35m[K^[m[K
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:368:12:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kdouble Controller::error_angle_[m[K’ [[01;35m[K-Wreorder[m[K]
+     double [01;35m[Kerror_angle_[m[K;
+            [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:58:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K-Wreorder[m[K]
+     [01;35m[KController[m[K() :
+     [01;35m[K^~~~~~~~~~[m[K
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:107:72:[m[K [01;31m[Kerror: [m[K‘[01m[KInt32[m[K’ is not a member of ‘[01m[Kstd_msgs::msg[m[K’
+         subscription_state_ = this->create_subscription<std_msgs::msg::[01;31m[KInt32[m[K>(
+                                                                        [01;31m[K^~~~~[m[K
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:111:9:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KController::create_subscription<<expression error> >(const char [15], rclcpp::QoS&, std::_Bind_helper<false, void (Controller::*)(...), Controller*, const std::_Placeholder<1>&>::type)[m[K’
+         [01;31m[K)[m[K;
+         [01;31m[K^[m[K
+In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:25[m[K:
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:92:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+ [01;36m[KNode[m[K::create_subscription(
+ [01;36m[K^~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:92:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:111:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+         [01;31m[K)[m[K;
+         [01;31m[K^[m[K
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:[m[K In member function ‘[01m[Kvoid Controller::select_control()[m[K’:
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:169:50:[m[K [01;31m[Kerror: [m[Kinvalid static_cast from type ‘[01m[Kstd::__cxx11::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} to type ‘[01m[KState[m[K’
+         switch (static_cast<State>(current_state_[01;31m[K)[m[K) {
+                                                  [01;31m[K^[m[K
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:170:25:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[KIdle[m[K’ from ‘[01m[KState[m[K’ to ‘[01m[K<type error>[m[K’
+             case State::[01;31m[KIdle[m[K:
+                         [01;31m[K^~~~[m[K
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:182:25:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[KStop[m[K’ from ‘[01m[KState[m[K’ to ‘[01m[K<type error>[m[K’
+             case State::[01;31m[KStop[m[K:
+                         [01;31m[K^~~~[m[K
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:195:25:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[KSlow[m[K’ from ‘[01m[KState[m[K’ to ‘[01m[K<type error>[m[K’
+             case State::[01;31m[KSlow[m[K:
+                         [01;31m[K^~~~[m[K
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:207:25:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[KTurnLeft[m[K’ from ‘[01m[KState[m[K’ to ‘[01m[K<type error>[m[K’
+             case State::[01;31m[KTurnLeft[m[K:
+                         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:219:25:[m[K [01;31m[Kerror: [m[Kcould not convert ‘[01m[KTurnRight[m[K’ from ‘[01m[KState[m[K’ to ‘[01m[K<type error>[m[K’
+             case State::[01;31m[KTurnRight[m[K:
+                         [01;31m[K^~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/controller.dir/build.make:63: CMakeFiles/controller.dir/src/control/controller.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:324: CMakeFiles/controller.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

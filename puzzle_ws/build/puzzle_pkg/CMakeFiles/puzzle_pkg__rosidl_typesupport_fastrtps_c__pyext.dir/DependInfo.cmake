@@ -29,6 +29,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "/opt/ros/humble/include/geometry_msgs"
   "/opt/ros/humble/include/rosidl_typesupport_cpp"
   "/opt/ros/humble/include/rcpputils"
+  "/usr/local/cuda/include"
   "rosidl_typesupport_fastrtps_c"
   "/opt/ros/humble/include/rosidl_runtime_c"
   "/opt/ros/humble/include/rosidl_typesupport_c"

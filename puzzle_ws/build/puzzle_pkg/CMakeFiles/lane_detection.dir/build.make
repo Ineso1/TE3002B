@@ -124,7 +124,7 @@ lane_detection: CMakeFiles/lane_detection.dir/src/vision/lib/cv_wrapper.cpp.o
 lane_detection: CMakeFiles/lane_detection.dir/src/vision/lib/perspective.cpp.o
 lane_detection: CMakeFiles/lane_detection.dir/src/vision/lib/lane_funcs.cpp.o
 lane_detection: CMakeFiles/lane_detection.dir/build.make
-lane_detection: /opt/ros/humble/lib/libcv_bridge.so
+lane_detection: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib/libcv_bridge.so
 lane_detection: /opt/ros/humble/lib/aarch64-linux-gnu/libimage_transport.so
 lane_detection: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
 lane_detection: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so
@@ -173,6 +173,8 @@ lane_detection: /usr/lib/aarch64-linux-gnu/libopencv_xfeatures2d.so.4.5.5
 lane_detection: /usr/lib/aarch64-linux-gnu/libopencv_xobjdetect.so.4.5.5
 lane_detection: /usr/lib/aarch64-linux-gnu/libopencv_xphoto.so.4.5.5
 lane_detection: libpuzzle_pkg__rosidl_typesupport_cpp.so
+lane_detection: /usr/local/cuda/lib64/libcudart_static.a
+lane_detection: /usr/lib/aarch64-linux-gnu/librt.so
 lane_detection: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
 lane_detection: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
 lane_detection: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so

@@ -1,0 +1,89 @@
+[1.421s] Invoking command in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg': AMENT_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib:/usr/local/cuda/lib64:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent/lib:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg -- -j4 -l4
+[1.852s] [  6%] Built target puzzle_pkg__rosidl_generator_c
+[2.010s] [  9%] Built target puzzle_pkg__cpp
+[2.048s] [ 13%] Built target odometry
+[2.081s] [ 13%] Built target ament_cmake_python_copy_puzzle_pkg
+[2.292s] [ 20%] Built target puzzle_pkg__rosidl_typesupport_c
+[2.352s] [ 25%] Built target cam_source
+[2.414s] [ 31%] Built target puzzle_pkg__rosidl_typesupport_cpp
+[2.473s] [ 36%] Built target signal_handle
+[2.597s] [ 43%] Built target puzzle_pkg__rosidl_typesupport_introspection_cpp
+[2.670s] [ 50%] Built target puzzle_pkg__rosidl_typesupport_fastrtps_cpp
+[2.800s] [ 56%] Built target puzzle_pkg__rosidl_typesupport_introspection_c
+[2.821s] [ 63%] Built target puzzle_pkg__rosidl_typesupport_fastrtps_c
+[3.024s] [35m[1mScanning dependencies of target controller[0m
+[3.178s] [ 63%] Built target puzzle_pkg
+[3.231s] [ 75%] Built target lane_detection
+[3.425s] [ 77%] Built target puzzle_pkg__py
+[3.516s] [ 79%] [32mBuilding CXX object CMakeFiles/controller.dir/src/control/controller.cpp.o[0m
+[3.693s] [ 84%] Built target puzzle_pkg__rosidl_generator_py
+[3.996s] [ 88%] Built target puzzle_pkg__rosidl_typesupport_fastrtps_c__pyext
+[4.023s] [ 93%] Built target puzzle_pkg__rosidl_typesupport_introspection_c__pyext
+[4.196s] [ 97%] Built target puzzle_pkg__rosidl_typesupport_c__pyext
+[5.056s] running egg_info
+[5.060s] writing puzzle_pkg.egg-info/PKG-INFO
+[5.062s] writing dependency_links to puzzle_pkg.egg-info/dependency_links.txt
+[5.063s] writing top-level names to puzzle_pkg.egg-info/top_level.txt
+[5.298s] reading manifest file 'puzzle_pkg.egg-info/SOURCES.txt'
+[5.301s] writing manifest file 'puzzle_pkg.egg-info/SOURCES.txt'
+[5.451s] [ 97%] Built target ament_cmake_python_build_puzzle_pkg_egg
+[16.709s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:[m[K In constructor ‘[01m[KController::Controller()[m[K’:
+[16.710s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:390:31:[m[K [01;35m[Kwarning: [m[K‘[01m[KController::vel_message_[m[K’ will be initialized after [[01;35m[K-Wreorder[m[K]
+[16.711s]      geometry_msgs::msg::Twist [01;35m[Kvel_message_[m[K;
+[16.711s]                                [01;35m[K^~~~~~~~~~~~[m[K
+[16.712s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:370:11:[m[K [01;35m[Kwarning: [m[K  ‘[01m[KState Controller::current_state_[m[K’ [[01;35m[K-Wreorder[m[K]
+[16.712s]      State [01;35m[Kcurrent_state_[m[K;
+[16.713s]            [01;35m[K^~~~~~~~~~~~~~[m[K
+[16.713s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:59:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K-Wreorder[m[K]
+[16.714s]      [01;35m[KController[m[K() :
+[16.714s]      [01;35m[K^~~~~~~~~~[m[K
+[16.715s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:377:28:[m[K [01;35m[Kwarning: [m[K‘[01m[KController::target_point_[m[K’ will be initialized after [[01;35m[K-Wreorder[m[K]
+[16.715s]      double target_point_ [2[01;35m[K][m[K;
+[16.716s]                             [01;35m[K^[m[K
+[16.716s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:373:12:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kdouble Controller::error_angle_[m[K’ [[01;35m[K-Wreorder[m[K]
+[16.717s]      double [01;35m[Kerror_angle_[m[K;
+[16.717s]             [01;35m[K^~~~~~~~~~~~[m[K
+[16.718s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:59:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K-Wreorder[m[K]
+[16.718s]      [01;35m[KController[m[K() :
+[16.735s]      [01;35m[K^~~~~~~~~~[m[K
+[17.158s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:112:9:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Krclcpp::Subscription<std_msgs::msg::String_<std::allocator<void> > >::SharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<std_msgs::msg::String_<std::allocator<void> > > >[m[K’} and ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<std_msgs::msg::Int32_<std::allocator<void> >, std::allocator<void>, std_msgs::msg::Int32_<std::allocator<void> >, std_msgs::msg::Int32_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Int32_<std::allocator<void> >, std::allocator<void> > > >[m[K’)
+[17.158s]          [01;31m[K)[m[K;
+[17.159s]          [01;31m[K^[m[K
+[17.160s] In file included from [01m[K/usr/include/c++/8/memory:81[m[K,
+[17.160s]                  from [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:19[m[K:
+[17.167s] [01m[K/usr/include/c++/8/bits/shared_ptr.h:309:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Tp>&) [with _Tp = rclcpp::Subscription<std_msgs::msg::String_<std::allocator<void> > >][m[K’
+[17.177s]        shared_ptr& [01;36m[Koperator[m[K=(const shared_ptr&) noexcept = default;
+[17.177s]                    [01;36m[K^~~~~~~~[m[K
+[17.180s] [01m[K/usr/include/c++/8/bits/shared_ptr.h:309:19:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<std_msgs::msg::Int32_<std::allocator<void> >, std::allocator<void>, std_msgs::msg::Int32_<std::allocator<void> >, std_msgs::msg::Int32_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Int32_<std::allocator<void> >, std::allocator<void> > > >[m[K’ to ‘[01m[Kconst std::shared_ptr<rclcpp::Subscription<std_msgs::msg::String_<std::allocator<void> > > >&[m[K’
+[17.180s] [01m[K/usr/include/c++/8/bits/shared_ptr.h:313:2:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<const std::shared_ptr<_Yp>&> std::shared_ptr<_Tp>::operator=(const std::shared_ptr<_Yp>&) [with _Yp = _Yp; _Tp = rclcpp::Subscription<std_msgs::msg::String_<std::allocator<void> > >][m[K’
+[17.181s]   [01;36m[Koperator[m[K=(const shared_ptr<_Yp>& __r) noexcept
+[17.182s]   [01;36m[K^~~~~~~~[m[K
+[17.182s] [01m[K/usr/include/c++/8/bits/shared_ptr.h:313:2:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.183s] [01m[K/usr/include/c++/8/bits/shared_ptr.h:324:2:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::auto_ptr<_Up> > std::shared_ptr<_Tp>::operator=(std::auto_ptr<_Up>&&) [with _Yp = _Yp; _Tp = rclcpp::Subscription<std_msgs::msg::String_<std::allocator<void> > >][m[K’
+[17.183s]   [01;36m[Koperator[m[K=(auto_ptr<_Yp>&& __r)
+[17.183s]   [01;36m[K^~~~~~~~[m[K
+[17.184s] [01m[K/usr/include/c++/8/bits/shared_ptr.h:324:2:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.184s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:112:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<std_msgs::msg::Int32_<std::allocator<void> >, std::allocator<void>, std_msgs::msg::Int32_<std::allocator<void> >, std_msgs::msg::Int32_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Int32_<std::allocator<void> >, std::allocator<void> > > >[m[K’ is not derived from ‘[01m[Kstd::auto_ptr<_Up>[m[K’
+[17.185s]          [01;36m[K)[m[K;
+[17.185s]          [01;36m[K^[m[K
+[17.186s] In file included from [01m[K/usr/include/c++/8/memory:81[m[K,
+[17.186s]                  from [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:19[m[K:
+[17.201s] [01m[K/usr/include/c++/8/bits/shared_ptr.h:333:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::shared_ptr<_Tp>& std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Tp>&&) [with _Tp = rclcpp::Subscription<std_msgs::msg::String_<std::allocator<void> > >][m[K’
+[17.202s]        [01;36m[Koperator[m[K=(shared_ptr&& __r) noexcept
+[17.203s]        [01;36m[K^~~~~~~~[m[K
+[17.204s] [01m[K/usr/include/c++/8/bits/shared_ptr.h:333:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<std_msgs::msg::Int32_<std::allocator<void> >, std::allocator<void>, std_msgs::msg::Int32_<std::allocator<void> >, std_msgs::msg::Int32_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Int32_<std::allocator<void> >, std::allocator<void> > > >[m[K’ to ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<std_msgs::msg::String_<std::allocator<void> > > >&&[m[K’
+[17.204s] [01m[K/usr/include/c++/8/bits/shared_ptr.h:341:2:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp> std::shared_ptr<_Tp>::_Assignable<std::shared_ptr<_Yp> > std::shared_ptr<_Tp>::operator=(std::shared_ptr<_Yp>&&) [with _Yp = _Yp; _Tp = rclcpp::Subscription<std_msgs::msg::String_<std::allocator<void> > >][m[K’
+[17.205s]   [01;36m[Koperator[m[K=(shared_ptr<_Yp>&& __r) noexcept
+[17.205s]   [01;36m[K^~~~~~~~[m[K
+[17.206s] [01m[K/usr/include/c++/8/bits/shared_ptr.h:341:2:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.209s] [01m[K/usr/include/c++/8/bits/shared_ptr.h:349:2:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Yp, class _Del> std::shared_ptr<_Tp>::_Assignable<std::unique_ptr<_Up, _Ep> > std::shared_ptr<_Tp>::operator=(std::unique_ptr<_Up, _Ep>&&) [with _Yp = _Yp; _Del = _Del; _Tp = rclcpp::Subscription<std_msgs::msg::String_<std::allocator<void> > >][m[K’
+[17.210s]   [01;36m[Koperator[m[K=(unique_ptr<_Yp, _Del>&& __r)
+[17.211s]   [01;36m[K^~~~~~~~[m[K
+[17.212s] [01m[K/usr/include/c++/8/bits/shared_ptr.h:349:2:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[17.212s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:112:9:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<rclcpp::Subscription<std_msgs::msg::Int32_<std::allocator<void> >, std::allocator<void>, std_msgs::msg::Int32_<std::allocator<void> >, std_msgs::msg::Int32_<std::allocator<void> >, rclcpp::message_memory_strategy::MessageMemoryStrategy<std_msgs::msg::Int32_<std::allocator<void> >, std::allocator<void> > > >[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<_Tp, _Dp>[m[K’
+[17.213s]          [01;36m[K)[m[K;
+[17.213s]          [01;36m[K^[m[K
+[35.101s] make[2]: *** [CMakeFiles/controller.dir/build.make:63: CMakeFiles/controller.dir/src/control/controller.cpp.o] Error 1
+[35.102s] make[1]: *** [CMakeFiles/Makefile2:324: CMakeFiles/controller.dir/all] Error 2
+[35.102s] make: *** [Makefile:141: all] Error 2
+[36.033s] Invoked command in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg' returned '2': AMENT_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib:/usr/local/cuda/lib64:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent/lib:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg -- -j4 -l4

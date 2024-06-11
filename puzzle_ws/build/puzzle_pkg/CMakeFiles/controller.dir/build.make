@@ -87,6 +87,8 @@ controller: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspecti
 controller: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
 controller: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_py.so
 controller: libpuzzle_pkg__rosidl_typesupport_cpp.so
+controller: /usr/local/cuda/lib64/libcudart_static.a
+controller: /usr/lib/aarch64-linux-gnu/librt.so
 controller: /opt/ros/humble/lib/liblibstatistics_collector.so
 controller: /opt/ros/humble/lib/librcl.so
 controller: /opt/ros/humble/lib/librmw_implementation.so

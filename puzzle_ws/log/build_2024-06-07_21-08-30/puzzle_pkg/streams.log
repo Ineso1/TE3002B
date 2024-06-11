@@ -1,0 +1,55 @@
+[1.332s] Invoking command in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg': CMAKE_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/vision_opencv:/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg:/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry:/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/opencv_tests:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:/home/puzzlebot/ros2_packages_ws/install/ros_deep_learning:/home/puzzlebot/ros2_packages_ws/install/micro_ros_setup:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs:/home/puzzlebot/ros2_packages_ws/install/camera_info_publisher LD_LIBRARY_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib:/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib:/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/lib:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent/lib:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib/python3.8/site-packages:/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages:/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/opencv_tests/lib/python3.8/site-packages:/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/lib/python3.8/site-packages:/home/puzzlebot/ros2_ws/build/puzzlebot_ros:/home/puzzlebot/ros2_ws/install/puzzlebot_ros/lib/python3.8/site-packages:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages /usr/bin/cmake --build /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg -- -j4 -l4
+[1.674s] [  2%] Built target puzzle_pkg__cpp
+[1.688s] [  9%] Built target puzzle_pkg__rosidl_generator_c
+[1.736s] [  9%] Built target ament_cmake_python_copy_puzzle_pkg
+[1.861s] [ 16%] Built target puzzle_pkg__rosidl_typesupport_cpp
+[1.894s] [ 21%] Built target cam_source
+[1.911s] [ 26%] Built target odometry
+[1.936s] [ 33%] Built target puzzle_pkg__rosidl_typesupport_c
+[2.023s] [ 40%] Built target puzzle_pkg__rosidl_typesupport_fastrtps_c
+[2.064s] [ 47%] Built target puzzle_pkg__rosidl_typesupport_introspection_cpp
+[2.076s] [ 54%] Built target puzzle_pkg__rosidl_typesupport_introspection_c
+[2.108s] [ 61%] Built target puzzle_pkg__rosidl_typesupport_fastrtps_cpp
+[2.160s] [35m[1mScanning dependencies of target lane_detection[0m
+[2.311s] [ 66%] Built target controller
+[2.326s] [ 66%] Built target puzzle_pkg
+[2.411s] [ 69%] [32mBuilding CXX object CMakeFiles/lane_detection.dir/src/vision/lib/cv_wrapper.cpp.o[0m
+[2.584s] [ 71%] Built target puzzle_pkg__py
+[2.728s] [ 76%] Built target puzzle_pkg__rosidl_generator_py
+[2.867s] [ 80%] Built target puzzle_pkg__rosidl_typesupport_introspection_c__pyext
+[2.919s] [ 85%] Built target puzzle_pkg__rosidl_typesupport_c__pyext
+[3.019s] [ 90%] Built target puzzle_pkg__rosidl_typesupport_fastrtps_c__pyext
+[3.445s] running egg_info
+[3.451s] writing puzzle_pkg.egg-info/PKG-INFO
+[3.451s] writing dependency_links to puzzle_pkg.egg-info/dependency_links.txt
+[3.452s] writing top-level names to puzzle_pkg.egg-info/top_level.txt
+[3.626s] reading manifest file 'puzzle_pkg.egg-info/SOURCES.txt'
+[3.629s] writing manifest file 'puzzle_pkg.egg-info/SOURCES.txt'
+[3.755s] [ 90%] Built target ament_cmake_python_build_puzzle_pkg_egg
+[6.581s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/lib/cv_wrapper.cpp:[m[K In function ‘[01m[Kcv::Mat apply_closing(cv::Mat&, cv::Size, int)[m[K’:
+[6.582s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/lib/cv_wrapper.cpp:47:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ is not a member of ‘[01m[Kstd[m[K’
+[6.582s]          std::[01;31m[Kcout[m[K << "Empty!";
+[6.583s]               [01;31m[K^~~~[m[K
+[6.583s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/lib/cv_wrapper.cpp:47:14:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::cout[m[K’ is defined in header ‘[01m[K<iostream>[m[K’; did you forget to ‘[01m[K#include <iostream>[m[K’?
+[6.584s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/lib/cv_wrapper.cpp:2:1:[m[K
+[6.584s] +[32m[K#include <iostream>[m[K
+[6.584s]  
+[6.585s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/lib/cv_wrapper.cpp:47:14:[m[K
+[6.585s]          std::[01;36m[Kcout[m[K << "Empty!";
+[6.585s]               [01;36m[K^~~~[m[K
+[6.586s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/lib/cv_wrapper.cpp:51:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ is not a member of ‘[01m[Kstd[m[K’
+[6.586s]          std::[01;31m[Kcout[m[K << "Wrong Kernel!";
+[6.587s]               [01;31m[K^~~~[m[K
+[6.587s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/lib/cv_wrapper.cpp:51:14:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::cout[m[K’ is defined in header ‘[01m[K<iostream>[m[K’; did you forget to ‘[01m[K#include <iostream>[m[K’?
+[6.587s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/lib/cv_wrapper.cpp:55:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ is not a member of ‘[01m[Kstd[m[K’
+[6.588s]          std::[01;31m[Kcout[m[K << "Bro wtf!";
+[6.588s]               [01;31m[K^~~~[m[K
+[6.589s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/lib/cv_wrapper.cpp:55:14:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::cout[m[K’ is defined in header ‘[01m[K<iostream>[m[K’; did you forget to ‘[01m[K#include <iostream>[m[K’?
+[6.589s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/lib/cv_wrapper.cpp:64:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ is not a member of ‘[01m[Kstd[m[K’
+[6.589s]          std::[01;31m[Kcout[m[K << "Error closing";
+[6.590s]               [01;31m[K^~~~[m[K
+[6.590s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/lib/cv_wrapper.cpp:64:14:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::cout[m[K’ is defined in header ‘[01m[K<iostream>[m[K’; did you forget to ‘[01m[K#include <iostream>[m[K’?
+[7.141s] make[2]: *** [CMakeFiles/lane_detection.dir/build.make:76: CMakeFiles/lane_detection.dir/src/vision/lib/cv_wrapper.cpp.o] Error 1
+[7.142s] make[1]: *** [CMakeFiles/Makefile2:160: CMakeFiles/lane_detection.dir/all] Error 2
+[7.143s] make: *** [Makefile:141: all] Error 2
+[7.149s] Invoked command in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg' returned '2': CMAKE_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/vision_opencv:/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg:/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry:/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/opencv_tests:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:/home/puzzlebot/ros2_packages_ws/install/ros_deep_learning:/home/puzzlebot/ros2_packages_ws/install/micro_ros_setup:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs:/home/puzzlebot/ros2_packages_ws/install/camera_info_publisher LD_LIBRARY_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib:/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib:/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/lib:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent/lib:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib/python3.8/site-packages:/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages:/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/opencv_tests/lib/python3.8/site-packages:/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/lib/python3.8/site-packages:/home/puzzlebot/ros2_ws/build/puzzlebot_ros:/home/puzzlebot/ros2_ws/install/puzzlebot_ros/lib/python3.8/site-packages:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs/lib/python3.8/site-packages:/opt/ros/humble/lib/python3.8/site-packages /usr/bin/cmake --build /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg -- -j4 -l4

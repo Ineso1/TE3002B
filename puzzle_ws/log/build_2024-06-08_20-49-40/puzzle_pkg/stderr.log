@@ -1,0 +1,41 @@
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/signal_classification.cpp:[m[K In constructor ‘[01m[KClassificationNode::ClassificationNode()[m[K’:
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/signal_classification.cpp:19:55:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> >[m[K’ and ‘[01m[Kstd::vector<int>[m[K’)
+         output_layers_ = net_.getUnconnectedOutLayers([01;31m[K)[m[K;
+                                                       [01;31m[K^[m[K
+In file included from [01m[K/usr/include/c++/8/vector:69[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/signal_classification.cpp:1[m[K:
+[01m[K/usr/include/c++/8/bits/vector.tcc:186:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >][m[K’
+     [01;36m[Kvector<_Tp, _Alloc>[m[K::
+     [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/8/bits/vector.tcc:186:5:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<int>[m[K’ to ‘[01m[Kconst std::vector<std::__cxx11::basic_string<char> >&[m[K’
+In file included from [01m[K/usr/include/c++/8/vector:64[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:28[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+                 from [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/signal_classification.cpp:1[m[K:
+[01m[K/usr/include/c++/8/bits/stl_vector.h:596:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::vector<_Tp, _Alloc>&&) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >][m[K’
+       [01;36m[Koperator[m[K=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())
+       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/bits/stl_vector.h:596:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<int>[m[K’ to ‘[01m[Kstd::vector<std::__cxx11::basic_string<char> >&&[m[K’
+[01m[K/usr/include/c++/8/bits/stl_vector.h:617:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::initializer_list<_Tp>) [with _Tp = std::__cxx11::basic_string<char>; _Alloc = std::allocator<std::__cxx11::basic_string<char> >][m[K’
+       [01;36m[Koperator[m[K=(initializer_list<value_type> __l)
+       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/8/bits/stl_vector.h:617:7:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kstd::vector<int>[m[K’ to ‘[01m[Kstd::initializer_list<std::__cxx11::basic_string<char> >[m[K’
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/lane_detection.cpp:[m[K In member function ‘[01m[Kdouble LaneProcessingNode::detect_lane_center(cv::Mat&)[m[K’:
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/lane_detection.cpp:246:60:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(cropped_width / 2)[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kdouble[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+             cv::Vec<double, 4> angle_line = { [01;35m[Kcropped_width/2[m[K , cropped_height, last_line.second[0], last_line.second[1]};
+                                               [01;35m[K~~~~~~~~~~~~~^~[m[K
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/lane_detection.cpp:246:60:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(cropped_width / 2)[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kdouble[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/lane_detection.cpp:246:121:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kcropped_height[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kdouble[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+             cv::Vec<double, 4> angle_line = { cropped_width/2 , cropped_height, last_line.second[0], last_line.second[1][01;35m[K}[m[K;
+                                                                                                                         [01;35m[K^[m[K
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/lane_detection.cpp:246:121:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kcropped_height[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kdouble[m[K’ inside { } [[01;35m[K-Wnarrowing[m[K]
+make[2]: *** [CMakeFiles/signal_classification.dir/build.make:63: CMakeFiles/signal_classification.dir/src/vision/signal_classification.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:723: CMakeFiles/signal_classification.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:141: all] Error 2

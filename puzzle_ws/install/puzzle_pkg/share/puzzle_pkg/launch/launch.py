@@ -39,11 +39,17 @@ def generate_launch_description():
         Node(
             package='puzzle_pkg',
             executable='lane_detection',
-            name='lane_detection'
+            name='lane_detection',
+            output='screen'
         ),
         Node(
             package='puzzle_pkg',
             executable='cam_source',
             name='cam_source'
+        ),
+        Node(
+            package='puzzle_pkg',
+            executable='signal_handle',
+            name='signal_handle'
         )
     ])

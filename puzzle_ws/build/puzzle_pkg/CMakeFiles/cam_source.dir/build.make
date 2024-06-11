@@ -79,7 +79,7 @@ cam_source_EXTERNAL_OBJECTS =
 
 cam_source: CMakeFiles/cam_source.dir/src/vision/cam_source.cpp.o
 cam_source: CMakeFiles/cam_source.dir/build.make
-cam_source: /opt/ros/humble/lib/libcv_bridge.so
+cam_source: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib/libcv_bridge.so
 cam_source: /opt/ros/humble/lib/aarch64-linux-gnu/libimage_transport.so
 cam_source: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_c.so
 cam_source: /opt/ros/humble/lib/libsensor_msgs__rosidl_typesupport_fastrtps_cpp.so
@@ -127,6 +127,8 @@ cam_source: /usr/lib/aarch64-linux-gnu/libopencv_wechat_qrcode.so.4.5.5
 cam_source: /usr/lib/aarch64-linux-gnu/libopencv_xfeatures2d.so.4.5.5
 cam_source: /usr/lib/aarch64-linux-gnu/libopencv_xobjdetect.so.4.5.5
 cam_source: /usr/lib/aarch64-linux-gnu/libopencv_xphoto.so.4.5.5
+cam_source: /usr/local/cuda/lib64/libcudart_static.a
+cam_source: /usr/lib/aarch64-linux-gnu/librt.so
 cam_source: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so
 cam_source: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
 cam_source: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so

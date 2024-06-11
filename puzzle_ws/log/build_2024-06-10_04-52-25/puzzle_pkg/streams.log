@@ -1,0 +1,82 @@
+[1.464s] Invoking command in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg': AMENT_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent/lib:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg -- -j4 -l4
+[2.002s] [  2%] Built target puzzle_pkg__cpp
+[2.025s] [  9%] Built target puzzle_pkg__rosidl_generator_c
+[2.099s] [  9%] Built target ament_cmake_python_copy_puzzle_pkg
+[2.224s] [ 13%] Built target odometry
+[2.379s] [ 20%] Built target puzzle_pkg__rosidl_typesupport_c
+[2.436s] [ 25%] Built target cam_source
+[2.443s] [ 29%] Built target signal_handle
+[2.601s] [ 36%] Built target puzzle_pkg__rosidl_typesupport_introspection_cpp
+[2.616s] [ 43%] Built target puzzle_pkg__rosidl_typesupport_cpp
+[2.668s] [ 50%] Built target puzzle_pkg__rosidl_typesupport_fastrtps_cpp
+[2.718s] [ 56%] Built target puzzle_pkg__rosidl_typesupport_introspection_c
+[2.824s] [ 63%] Built target puzzle_pkg__rosidl_typesupport_fastrtps_c
+[2.889s] [35m[1mScanning dependencies of target controller[0m
+[3.038s] [ 75%] Built target lane_detection
+[3.077s] [ 75%] Built target puzzle_pkg
+[3.332s] [ 77%] Built target puzzle_pkg__py
+[3.337s] [ 79%] [32mBuilding CXX object CMakeFiles/controller.dir/src/control/controller.cpp.o[0m
+[3.562s] [ 84%] Built target puzzle_pkg__rosidl_generator_py
+[3.717s] [ 88%] Built target puzzle_pkg__rosidl_typesupport_fastrtps_c__pyext
+[3.802s] [ 93%] Built target puzzle_pkg__rosidl_typesupport_introspection_c__pyext
+[3.896s] [ 97%] Built target puzzle_pkg__rosidl_typesupport_c__pyext
+[4.158s] running egg_info
+[4.163s] writing puzzle_pkg.egg-info/PKG-INFO
+[4.166s] writing dependency_links to puzzle_pkg.egg-info/dependency_links.txt
+[4.167s] writing top-level names to puzzle_pkg.egg-info/top_level.txt
+[4.359s] reading manifest file 'puzzle_pkg.egg-info/SOURCES.txt'
+[4.363s] writing manifest file 'puzzle_pkg.egg-info/SOURCES.txt'
+[4.509s] [ 97%] Built target ament_cmake_python_build_puzzle_pkg_egg
+[16.847s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:[m[K In constructor ‘[01m[KController::Controller()[m[K’:
+[16.847s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:365:31:[m[K [01;35m[Kwarning: [m[K‘[01m[KController::vel_message_[m[K’ will be initialized after [[01;35m[K-Wreorder[m[K]
+[16.848s]      geometry_msgs::msg::Twist [01;35m[Kvel_message_[m[K;
+[16.848s]                                [01;35m[K^~~~~~~~~~~~[m[K
+[16.849s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:345:17:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kstd::__cxx11::string Controller::current_state_[m[K’ [[01;35m[K-Wreorder[m[K]
+[16.850s]      std::string [01;35m[Kcurrent_state_[m[K;
+[16.850s]                  [01;35m[K^~~~~~~~~~~~~~[m[K
+[16.851s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:50:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K-Wreorder[m[K]
+[16.851s]      [01;35m[KController[m[K() :
+[16.852s]      [01;35m[K^~~~~~~~~~[m[K
+[16.853s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:352:28:[m[K [01;35m[Kwarning: [m[K‘[01m[KController::target_point_[m[K’ will be initialized after [[01;35m[K-Wreorder[m[K]
+[16.853s]      double target_point_ [2[01;35m[K][m[K;
+[16.853s]                             [01;35m[K^[m[K
+[16.854s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:348:12:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kdouble Controller::error_angle_[m[K’ [[01;35m[K-Wreorder[m[K]
+[16.854s]      double [01;35m[Kerror_angle_[m[K;
+[16.855s]             [01;35m[K^~~~~~~~~~~~[m[K
+[16.855s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:50:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K-Wreorder[m[K]
+[16.856s]      [01;35m[KController[m[K() :
+[16.856s]      [01;35m[K^~~~~~~~~~[m[K
+[17.314s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[17.314s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/client.hpp:40[m[K,
+[17.315s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/callback_group.hpp:24[m[K,
+[17.315s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/any_executable.hpp:20[m[K,
+[17.315s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[17.316s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[17.316s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor_options.hpp:20[m[K,
+[17.317s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:37[m[K,
+[17.318s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[17.318s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[17.319s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.319s]                  from [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:25[m[K:
+[17.320s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:[m[K In member function ‘[01m[Kvoid Controller::state_callback(std_msgs::msg::String_<std::allocator<void> >::SharedPtr)[m[K’:
+[17.320s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:154:41:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::__cxx11::string[m[K’ {aka ‘[01m[Kstd::__cxx11::basic_string<char>[m[K’} to ‘[01m[Kconst char*[m[K’
+[17.320s]          RCLCPP_INFO(this->get_logger(), [01;31m[Kcurrent_state_[m[K);
+[17.321s]                                          [01;31m[K^~~~~~~~~~~~~~[m[K
+[17.331s] In file included from [01m[K/opt/ros/humble/include/rmw/rmw/types.h:28[m[K,
+[17.331s]                  from [01m[K/opt/ros/humble/include/rcl/rcl/types.h:20[m[K,
+[17.332s]                  from [01m[K/opt/ros/humble/include/rcl/rcl/log_level.h:22[m[K,
+[17.332s]                  from [01m[K/opt/ros/humble/include/rcl/rcl/arguments.h:21[m[K,
+[17.333s]                  from [01m[K/opt/ros/humble/include/rcl/rcl/context.h:28[m[K,
+[17.333s]                  from [01m[K/opt/ros/humble/include/rcl/rcl/guard_condition.h:26[m[K,
+[17.335s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executor.hpp:30[m[K,
+[17.336s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[17.337s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[17.338s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[17.338s]                  from [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:25[m[K:
+[17.339s] [01m[K/opt/ros/humble/include/rcutils/rcutils/logging.h:479:16:[m[K [01;36m[Knote: [m[K  initializing argument 4 of ‘[01m[Kvoid rcutils_log(const rcutils_log_location_t*, int, const char*, const char*, ...)[m[K’
+[17.339s]    [01;36m[Kconst char * format[m[K,
+[17.340s]    [01;36m[K~~~~~~~~~~~~~^~~~~~[m[K
+[35.162s] make[2]: *** [CMakeFiles/controller.dir/build.make:63: CMakeFiles/controller.dir/src/control/controller.cpp.o] Error 1
+[35.163s] make[1]: *** [CMakeFiles/Makefile2:324: CMakeFiles/controller.dir/all] Error 2
+[35.163s] make: *** [Makefile:141: all] Error 2
+[35.626s] Invoked command in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg' returned '2': AMENT_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent/lib:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg -- -j4 -l4

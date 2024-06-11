@@ -1,4 +1,5 @@
 #include "puzzle_pkg/cv_wrapper.h"
+#include <iostream>
 
 
 cv::Mat crop_frame(cv::Mat& frame, int y_start, int height, int width) {
@@ -43,10 +44,13 @@ cv::Mat apply_closing(
     cv::Size kernel_size, 
     int iterations
 ) {
+    
     if (image.empty()) {
+        std::cout << "Empty!";
         throw std::runtime_error("Input image is empty.");
     }
     if (kernel_size.width <= 0 || kernel_size.height <= 0) {
+        std::cout << "Wrong Kernel!";
         throw std::runtime_error("Kernel size must be positive.");
     }
     if (iterations < 0) {
@@ -58,6 +62,7 @@ cv::Mat apply_closing(
     cv::morphologyEx(image, closed_image, cv::MORPH_CLOSE, kernel, cv::Point(-1, -1), iterations);
 
     if (closed_image.empty()) {
+        std::cout << "Error closing";
         throw std::runtime_error("Closed image was not created successfully.");
     }
 

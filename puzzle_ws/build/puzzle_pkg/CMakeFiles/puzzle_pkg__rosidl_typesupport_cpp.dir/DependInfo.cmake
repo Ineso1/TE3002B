@@ -30,6 +30,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/opt/ros/humble/include/rcpputils"
   "/opt/ros/humble/include/rosidl_typesupport_introspection_c"
   "/opt/ros/humble/include/rosidl_typesupport_introspection_cpp"
+  "/usr/local/cuda/include"
   "rosidl_generator_cpp"
   "/opt/ros/humble/include/builtin_interfaces"
   "/opt/ros/humble/include/std_msgs"

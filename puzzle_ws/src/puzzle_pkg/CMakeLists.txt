@@ -16,6 +16,8 @@ find_package(image_transport REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(OpenCV REQUIRED)
+find_package(CUDA REQUIRED)
+
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/DiffError.msg"
@@ -30,6 +32,7 @@ include_directories(
   ${cv_bridge_INCLUDE_DIRS}
   ${image_transport_INCLUDE_DIRS}
   ${sensor_msgs_INCLUDE_DIRS}
+  ${CUDA_INCLUDE_DIRS}
 )
 
 add_executable(
@@ -39,7 +42,6 @@ add_executable(
   src/vision/lib/perspective.cpp
   src/vision/lib/lane_funcs.cpp
 )
-
 ament_target_dependencies(
   lane_detection
   rclcpp
@@ -53,6 +55,17 @@ ament_target_dependencies(
 add_executable(cam_source src/vision/cam_source.cpp)
 ament_target_dependencies(
   cam_source
+  rclcpp
+  cv_bridge
+  image_transport
+  sensor_msgs
+  std_msgs
+  OpenCV
+)
+
+add_executable(signal_handle src/vision/signal_handle.cpp)
+ament_target_dependencies(
+  signal_handle
   rclcpp
   cv_bridge
   image_transport
@@ -77,12 +90,18 @@ ament_target_dependencies(
   geometry_msgs
 )
 
+
+
 rosidl_get_typesupport_target(cpp_typesupport_target
   ${PROJECT_NAME} rosidl_typesupport_cpp  
 )
 
 target_link_libraries(controller "${cpp_typesupport_target}")
 target_link_libraries(lane_detection "${cpp_typesupport_target}")
+
+target_link_libraries(lane_detection ${CUDA_LIBRARIES})
+target_link_libraries(cam_source ${CUDA_LIBRARIES})
+target_link_libraries(controller ${CUDA_LIBRARIES})
 
 target_include_directories(lane_detection PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
@@ -99,6 +118,7 @@ install(TARGETS
   odometry
   lane_detection
   cam_source
+  signal_handle
   DESTINATION lib/${PROJECT_NAME}
 )
 
