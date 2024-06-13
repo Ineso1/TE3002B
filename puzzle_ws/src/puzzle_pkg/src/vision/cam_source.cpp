@@ -25,10 +25,9 @@ public:
         : Node("camera"),
           filename_{
             "nvarguscamerasrc sensor-id=0 ! "
-            "video/x-raw(memory:NVMM), width=(int)854, height=(int)480, framerate=15/1, format=(string)NV12 ! "
-            "nvvidconv flip-method=2 ! "
-            "video/x-raw, format=(string)BGRx ! "
-            "videoconvert ! "
+            "video/x-raw(memory:NVMM), width=(int)1280, height=(int)720, framerate=12/1, format=(string)NV12 ! "
+            "nvvidconv flip-method=2 !"
+            "videoconvert ! " 
             "video/x-raw, format=(string)BGR ! appsink"
           },
           cap_(cv::VideoCapture(filename_, cv::CAP_GSTREAMER)),
@@ -50,6 +49,8 @@ private:
         while (rclcpp::ok()) {
             cap_.read(frame_);
             if (!frame_.empty()) {
+                //cv::Mat frame_resized;
+                //cv::resize(frame, frame_resized, Size(854, 480));
                 // Publish raw image
                 auto img_msg = cv_bridge::CvImage(std_msgs::msg::Header(), "bgr8", frame_).toImageMsg();
                 image_publisher_->publish(*img_msg);

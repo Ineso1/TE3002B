@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/signal_handle.cpp" "/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg/CMakeFiles/signal_handle.dir/src/vision/signal_handle.cpp.o"
+  "/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/signal_handle.cpp" "/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/build/puzzle_pkg/CMakeFiles/signal_handle.dir/src/vision/signal_handle.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,9 +17,8 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/include"
+  "/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/src/puzzle_pkg/include"
   "/opt/ros/humble/include/pluginlib"
-  "/usr/local/cuda/include"
   "/usr/include/opencv4"
   "/opt/ros/humble/include/sensor_msgs"
   "/opt/ros/humble/include/message_filters"
@@ -39,7 +38,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/opt/ros/humble/include/rcpputils"
   "/opt/ros/humble/include/rosidl_typesupport_introspection_c"
   "/opt/ros/humble/include/rosidl_typesupport_introspection_cpp"
-  "/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/include/cv_bridge"
+  "/opt/ros/humble/include/cv_bridge"
   "/opt/ros/humble/include/image_transport"
   "/opt/ros/humble/include/ament_index_cpp"
   "/opt/ros/humble/include/libstatistics_collector"

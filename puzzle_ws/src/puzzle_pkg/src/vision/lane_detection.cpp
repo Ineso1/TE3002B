@@ -22,7 +22,7 @@
 #include <utility>
 #include <functional>
 
-const PerspectiveConfig PERSPECTIVE_CONFIG = {1086, 270, 200};
+const PerspectiveConfig PERSPECTIVE_CONFIG = {1086, 325, 200};
 const RealCartesianConfig REAL_CARTESIAN_CONFIG = {0.3, 0.3, 0.4};
 std::map<std::string, CropParams> CROP_PARAMS = {
     {"lane_detection_back", {0, 160, 35}},
@@ -296,16 +296,7 @@ private:
 
         cv::Mat closed = apply_closing(blurred, cv::Size(5, 5), 3);
         cv::Mat thresholded = apply_otsu_threshold(closed);
-        double error_ang = 0.0;
-        try{
-            double error_ang = detect_lane_center(thresholded);
-        }
-        catch(...){
-            RCLCPP_INFO(this->get_logger(), "Failed to detect lanes");
-            double error_ang = 0.0;
-            return error_ang;
-        }
-        
+        double error_ang = detect_lane_center(thresholded);
         
         return error_ang;  // Dummy return // FERCHOOOO
     }

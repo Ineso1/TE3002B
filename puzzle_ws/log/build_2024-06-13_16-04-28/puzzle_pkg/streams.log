@@ -1,0 +1,250 @@
+[1.091s] Invoking command in '/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/build/puzzle_pkg': CMAKE_PREFIX_PATH=/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/build/puzzle_pkg -- -j4 -l4
+[1.395s] [  6%] Built target puzzle_pkg__rosidl_generator_c
+[1.401s] [  9%] Built target puzzle_pkg__cpp
+[1.423s] [ 11%] [32mBuilding CXX object CMakeFiles/odometry.dir/src/control/odometry.cpp.o[0m
+[1.429s] [ 11%] Built target ament_cmake_python_copy_puzzle_pkg
+[1.465s] [35m[1mScanning dependencies of target cam_source[0m
+[1.531s] [ 18%] Built target puzzle_pkg__rosidl_typesupport_c
+[1.570s] [ 20%] [32mBuilding CXX object CMakeFiles/signal_handle.dir/src/vision/signal_handle.cpp.o[0m
+[1.661s] make[2]: Warning: File '/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/cam_source.cpp' has modification time 897 s in the future
+[1.715s] [ 27%] Built target puzzle_pkg__rosidl_typesupport_cpp
+[1.773s] [ 29%] [32mBuilding CXX object CMakeFiles/cam_source.dir/src/vision/cam_source.cpp.o[0m
+[1.932s] [ 36%] Built target puzzle_pkg__rosidl_typesupport_introspection_cpp
+[2.001s] [35m[1mScanning dependencies of target controller[0m
+[2.407s] [ 38%] [32mBuilding CXX object CMakeFiles/controller.dir/src/control/controller.cpp.o[0m
+[17.351s] [01m[K/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/signal_handle.cpp:[m[K In member function ‘[01m[Kvoid SignalHandlerNode::update_history(const std::vector<int>&)[m[K’:
+[17.354s] [01m[K/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/signal_handle.cpp:92:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kstd::deque<std::vector<int> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K-Wsign-compare[m[K]
+[17.355s]          if ([01;35m[Ksignal_history.size() >= history_size[m[K) {
+[17.355s]              [01;35m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~[m[K
+[17.356s] [01m[K/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/signal_handle.cpp:[m[K In member function ‘[01m[Kvoid SignalHandlerNode::execute_state_action(int)[m[K’:
+[17.356s] [01m[K/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/signal_handle.cpp:192:35:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kstate_code[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[17.357s]      void execute_state_action([01;35m[Kint state_code[m[K) {
+[17.358s]                                [01;35m[K~~~~^~~~~~~~~~[m[K
+[18.563s] [01m[K/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:[m[K In constructor ‘[01m[KController::Controller()[m[K’:
+[18.563s] [01m[K/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:444:27:[m[K [01;35m[Kwarning: [m[K‘[01m[KController::odom_[m[K’ will be initialized after [[01;35m[K-Wreorder[m[K]
+[18.564s]      std::array<double, 3> [01;35m[Kodom_[m[K;
+[18.564s]                            [01;35m[K^~~~~[m[K
+[18.565s] [01m[K/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:443:32:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kpuzzle_pkg::msg::DiffError Controller::errors_[m[K’ [[01;35m[K-Wreorder[m[K]
+[18.565s]      puzzle_pkg::msg::DiffError [01;35m[Kerrors_[m[K;
+[18.565s]                                 [01;35m[K^~~~~~~[m[K
+[18.566s] [01m[K/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:64:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K-Wreorder[m[K]
+[18.566s]      [01;35m[KController[m[K() :
+[18.567s]      [01;35m[K^~~~~~~~~~[m[K
+[18.567s] [01m[K/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:469:17:[m[K [01;35m[Kwarning: [m[K‘[01m[KController::control_type_[m[K’ will be initialized after [[01;35m[K-Wreorder[m[K]
+[18.568s]      ControlType [01;35m[Kcontrol_type_[m[K;
+[18.568s]                  [01;35m[K^~~~~~~~~~~~~[m[K
+[18.569s] [01m[K/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:464:9:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kint Controller::counter_[m[K’ [[01;35m[K-Wreorder[m[K]
+[18.569s]      int [01;35m[Kcounter_[m[K;
+[18.570s]          [01;35m[K^~~~~~~~[m[K
+[18.570s] [01m[K/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:64:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K-Wreorder[m[K]
+[18.583s]      [01;35m[KController[m[K() :
+[18.584s]      [01;35m[K^~~~~~~~~~[m[K
+[18.584s] [01m[K/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:83:49:[m[K [01;35m[Kwarning: [m[Klist-initializer for non-class type must not be parenthesized
+[18.585s]          vel_message_(geometry_msgs::msg::Twist()[01;35m[K)[m[K
+[18.585s]                                                  [01;35m[K^[m[K
+[165.107s] [ 40%] [32m[1mLinking CXX executable signal_handle[0m
+[165.815s] [ 43%] [32m[1mLinking CXX executable odometry[0m
+[168.047s] [ 43%] Built target odometry
+[168.444s] [ 43%] Built target signal_handle
+[169.683s] [ 45%] [32m[1mLinking CXX executable cam_source[0m
+[172.921s] make[2]: warning: Clock skew detected. Your build may be incomplete.
+[172.950s] [ 45%] Built target cam_source
+[204.895s] [ 47%] [32m[1mLinking CXX executable controller[0m
+[205.043s] [ 50%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[206.502s] [35m[1mScanning dependencies of target puzzle_pkg__rosidl_typesupport_fastrtps_c[0m
+[206.577s] [ 52%] [32mBuilding CXX object CMakeFiles/puzzle_pkg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/puzzle_pkg/msg/detail/diff_error__type_support_c.cpp.o[0m
+[207.586s] [ 54%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[207.857s] [ 54%] Built target controller
+[207.905s] [ 56%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[208.132s] [ 59%] [32m[1mLinking CXX shared library libpuzzle_pkg__rosidl_typesupport_fastrtps_c.so[0m
+[208.407s] [ 59%] Built target puzzle_pkg__rosidl_typesupport_fastrtps_c
+[208.698s] [35m[1mScanning dependencies of target puzzle_pkg__rosidl_typesupport_introspection_c[0m
+[208.750s] [ 61%] [32mBuilding C object CMakeFiles/puzzle_pkg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/puzzle_pkg/msg/detail/diff_error__type_support.c.o[0m
+[209.130s] [35m[1mScanning dependencies of target puzzle_pkg__rosidl_typesupport_fastrtps_cpp[0m
+[209.145s] [ 63%] [32m[1mLinking C shared library libpuzzle_pkg__rosidl_typesupport_introspection_c.so[0m
+[209.200s] [ 65%] [32mBuilding CXX object CMakeFiles/puzzle_pkg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/puzzle_pkg/msg/detail/dds_fastrtps/diff_error__type_support.cpp.o[0m
+[209.251s] [ 65%] Built target puzzle_pkg__rosidl_typesupport_introspection_c
+[209.313s] [35m[1mScanning dependencies of target lane_detection[0m
+[209.710s] [ 68%] [32mBuilding CXX object CMakeFiles/lane_detection.dir/src/vision/lane_detection.cpp.o[0m
+[209.711s] [ 70%] [32mBuilding CXX object CMakeFiles/lane_detection.dir/src/vision/lib/cv_wrapper.cpp.o[0m
+[210.671s] [ 72%] [32m[1mLinking CXX shared library libpuzzle_pkg__rosidl_typesupport_fastrtps_cpp.so[0m
+[210.949s] [ 72%] Built target puzzle_pkg__rosidl_typesupport_fastrtps_cpp
+[210.995s] [35m[1mScanning dependencies of target ament_cmake_python_build_puzzle_pkg_egg[0m
+[211.987s] [ 75%] [32mBuilding CXX object CMakeFiles/lane_detection.dir/src/vision/lib/perspective.cpp.o[0m
+[213.156s] running egg_info
+[213.163s] writing puzzle_pkg.egg-info/PKG-INFO
+[213.168s] writing dependency_links to puzzle_pkg.egg-info/dependency_links.txt
+[213.172s] writing top-level names to puzzle_pkg.egg-info/top_level.txt
+[213.399s] reading manifest file 'puzzle_pkg.egg-info/SOURCES.txt'
+[213.406s] writing manifest file 'puzzle_pkg.egg-info/SOURCES.txt'
+[213.546s] [ 75%] Built target ament_cmake_python_build_puzzle_pkg_egg
+[213.599s] [35m[1mScanning dependencies of target puzzle_pkg[0m
+[213.649s] [ 75%] Built target puzzle_pkg
+[213.700s] [35m[1mScanning dependencies of target puzzle_pkg__py[0m
+[213.757s] [ 77%] [34m[1mGenerating Python code for ROS interfaces[0m
+[215.080s] [ 79%] [32mBuilding CXX object CMakeFiles/lane_detection.dir/src/vision/lib/lane_funcs.cpp.o[0m
+[215.543s] [ 79%] Built target puzzle_pkg__py
+[215.590s] [35m[1mScanning dependencies of target puzzle_pkg__rosidl_generator_py[0m
+[215.780s] [ 81%] [32mBuilding C object CMakeFiles/puzzle_pkg__rosidl_generator_py.dir/rosidl_generator_py/puzzle_pkg/msg/_diff_error_s.c.o[0m
+[216.289s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/puzzle_pkg/libpuzzle_pkg__rosidl_generator_py.so[0m
+[216.463s] [ 84%] Built target puzzle_pkg__rosidl_generator_py
+[216.514s] [35m[1mScanning dependencies of target puzzle_pkg__rosidl_typesupport_fastrtps_c__pyext[0m
+[216.700s] [ 86%] [32mBuilding C object CMakeFiles/puzzle_pkg__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/puzzle_pkg/_puzzle_pkg_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[217.117s] [ 88%] [32m[1mLinking C shared library rosidl_generator_py/puzzle_pkg/puzzle_pkg_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so[0m
+[217.315s] [ 88%] Built target puzzle_pkg__rosidl_typesupport_fastrtps_c__pyext
+[217.370s] [35m[1mScanning dependencies of target puzzle_pkg__rosidl_typesupport_introspection_c__pyext[0m
+[217.568s] [ 90%] [32mBuilding C object CMakeFiles/puzzle_pkg__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/puzzle_pkg/_puzzle_pkg_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[217.993s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/puzzle_pkg/puzzle_pkg_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so[0m
+[218.189s] [ 93%] Built target puzzle_pkg__rosidl_typesupport_introspection_c__pyext
+[218.240s] [35m[1mScanning dependencies of target puzzle_pkg__rosidl_typesupport_c__pyext[0m
+[218.433s] [ 95%] [32mBuilding C object CMakeFiles/puzzle_pkg__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/puzzle_pkg/_puzzle_pkg_s.ep.rosidl_typesupport_c.c.o[0m
+[218.851s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/puzzle_pkg/puzzle_pkg_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so[0m
+[219.061s] [ 97%] Built target puzzle_pkg__rosidl_typesupport_c__pyext
+[253.333s] [100%] [32m[1mLinking CXX executable lane_detection[0m
+[256.376s] [100%] Built target lane_detection
+[256.445s] Invoked command in '/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/build/puzzle_pkg' returned '0': CMAKE_PREFIX_PATH=/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/build/puzzle_pkg -- -j4 -l4
+[256.733s] Invoking command in '/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/build/puzzle_pkg': CMAKE_PREFIX_PATH=/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/build/puzzle_pkg
+[256.763s] -- Install configuration: ""
+[256.767s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/ament_index/resource_index/rosidl_interfaces/puzzle_pkg
+[256.768s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg
+[256.769s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg
+[256.769s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/rosidl_generator_c__visibility_control.h
+[256.770s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail
+[256.770s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__functions.c
+[256.771s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__type_support.h
+[256.771s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__struct.h
+[256.772s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__functions.h
+[256.772s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/diff_error.h
+[256.773s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/environment/library_path.sh
+[256.773s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/environment/library_path.dsv
+[256.775s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/libpuzzle_pkg__rosidl_generator_c.so
+[256.776s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg
+[256.776s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg
+[256.777s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[256.777s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail
+[256.777s] -- Installing: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__rosidl_typesupport_fastrtps_c.h
+[256.778s] -- Installing: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/libpuzzle_pkg__rosidl_typesupport_fastrtps_c.so
+[256.780s] -- Set runtime path of "/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/libpuzzle_pkg__rosidl_typesupport_fastrtps_c.so" to ""
+[256.781s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg
+[256.781s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg
+[256.782s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/diff_error.hpp
+[256.782s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail
+[256.783s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__traits.hpp
+[256.783s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__struct.hpp
+[256.783s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__builder.hpp
+[256.784s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg
+[256.784s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg
+[256.784s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[256.785s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail
+[256.785s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/dds_fastrtps
+[256.785s] -- Installing: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__rosidl_typesupport_fastrtps_cpp.hpp
+[256.786s] -- Installing: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/libpuzzle_pkg__rosidl_typesupport_fastrtps_cpp.so
+[256.786s] -- Set runtime path of "/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/libpuzzle_pkg__rosidl_typesupport_fastrtps_cpp.so" to ""
+[256.788s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg
+[256.788s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg
+[256.789s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[256.789s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail
+[256.790s] -- Installing: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__rosidl_typesupport_introspection_c.h
+[256.790s] -- Installing: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__type_support.c
+[256.791s] -- Installing: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/libpuzzle_pkg__rosidl_typesupport_introspection_c.so
+[256.792s] -- Set runtime path of "/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/libpuzzle_pkg__rosidl_typesupport_introspection_c.so" to ""
+[256.793s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/libpuzzle_pkg__rosidl_typesupport_c.so
+[256.794s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg
+[256.795s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg
+[256.795s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail
+[256.796s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__type_support.cpp
+[256.796s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__rosidl_typesupport_introspection_cpp.hpp
+[256.796s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/libpuzzle_pkg__rosidl_typesupport_introspection_cpp.so
+[256.798s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/libpuzzle_pkg__rosidl_typesupport_cpp.so
+[256.799s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/environment/pythonpath.sh
+[256.800s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/environment/pythonpath.dsv
+[256.800s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg-0.0.0-py3.8.egg-info
+[256.801s] -- Installing: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg-0.0.0-py3.8.egg-info/top_level.txt
+[256.801s] -- Installing: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg-0.0.0-py3.8.egg-info/PKG-INFO
+[256.802s] -- Installing: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg-0.0.0-py3.8.egg-info/SOURCES.txt
+[256.802s] -- Installing: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg-0.0.0-py3.8.egg-info/dependency_links.txt
+[256.803s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg
+[256.804s] -- Installing: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/puzzle_pkg_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+[256.804s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/__init__.py
+[256.805s] -- Installing: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/_puzzle_pkg_s.ep.rosidl_typesupport_fastrtps_c.c
+[256.805s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/msg
+[256.806s] -- Installing: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/msg/__init__.py
+[256.806s] -- Installing: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/msg/_diff_error_s.c
+[256.807s] -- Installing: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/msg/_diff_error.py
+[256.807s] -- Installing: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/_puzzle_pkg_s.ep.rosidl_typesupport_c.c
+[256.808s] -- Installing: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/puzzle_pkg_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+[256.808s] -- Installing: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/puzzle_pkg_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+[256.809s] -- Installing: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/_puzzle_pkg_s.ep.rosidl_typesupport_introspection_c.c
+[256.810s] -- Installing: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/libpuzzle_pkg__rosidl_generator_py.so
+[256.951s] Listing '/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg'...
+[256.951s] Listing '/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/msg'...
+[256.952s] Compiling '/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/msg/__init__.py'...
+[256.952s] Compiling '/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/msg/_diff_error.py'...
+[256.972s] -- Installing: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/puzzle_pkg_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+[256.974s] -- Set runtime path of "/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/puzzle_pkg_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so" to ""
+[256.975s] -- Installing: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/puzzle_pkg_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+[256.977s] -- Set runtime path of "/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/puzzle_pkg_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so" to ""
+[256.978s] -- Installing: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/puzzle_pkg_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+[256.980s] -- Set runtime path of "/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/puzzle_pkg_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so" to ""
+[256.982s] -- Installing: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/libpuzzle_pkg__rosidl_generator_py.so
+[256.984s] -- Set runtime path of "/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/libpuzzle_pkg__rosidl_generator_py.so" to ""
+[256.984s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/msg/DiffError.idl
+[256.985s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/msg/DiffError.msg
+[256.988s] -- Installing: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/puzzle_pkg/controller
+[257.018s] -- Set runtime path of "/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/puzzle_pkg/controller" to ""
+[257.025s] -- Installing: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/puzzle_pkg/odometry
+[257.040s] -- Set runtime path of "/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/puzzle_pkg/odometry" to ""
+[257.043s] -- Installing: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/puzzle_pkg/lane_detection
+[257.062s] -- Set runtime path of "/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/puzzle_pkg/lane_detection" to ""
+[257.065s] -- Installing: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/puzzle_pkg/cam_source
+[257.073s] -- Set runtime path of "/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/puzzle_pkg/cam_source" to ""
+[257.077s] -- Installing: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/puzzle_pkg/signal_handle
+[257.094s] -- Set runtime path of "/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/lib/puzzle_pkg/signal_handle" to ""
+[257.094s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg//launch
+[257.095s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg//launch/__pycache__
+[257.096s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg//launch/__pycache__/launch.cpython-310.pyc
+[257.096s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg//launch/__pycache__/launch.cpython-38.pyc
+[257.097s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg//launch/launch.py
+[257.097s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg//config
+[257.097s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg//config/odometry_params.yaml
+[257.098s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg//config/controller_params.yaml
+[257.098s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/ament_index/resource_index/package_run_dependencies/puzzle_pkg
+[257.099s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/ament_index/resource_index/parent_prefix_path/puzzle_pkg
+[257.100s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/environment/ament_prefix_path.sh
+[257.101s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/environment/ament_prefix_path.dsv
+[257.101s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/environment/path.sh
+[257.101s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/environment/path.dsv
+[257.102s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/local_setup.bash
+[257.102s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/local_setup.sh
+[257.103s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/local_setup.zsh
+[257.103s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/local_setup.dsv
+[257.103s] -- Installing: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/package.dsv
+[257.104s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/ament_index/resource_index/packages/puzzle_pkg
+[257.107s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/export_puzzle_pkg__rosidl_generator_cExport.cmake
+[257.107s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/export_puzzle_pkg__rosidl_generator_cExport-noconfig.cmake
+[257.109s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/export_puzzle_pkg__rosidl_typesupport_fastrtps_cExport.cmake
+[257.110s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/export_puzzle_pkg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[257.111s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/export_puzzle_pkg__rosidl_generator_cppExport.cmake
+[257.112s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/export_puzzle_pkg__rosidl_typesupport_fastrtps_cppExport.cmake
+[257.113s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/export_puzzle_pkg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[257.114s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/puzzle_pkg__rosidl_typesupport_introspection_cExport.cmake
+[257.115s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/puzzle_pkg__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[257.116s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/puzzle_pkg__rosidl_typesupport_cExport.cmake
+[257.117s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/puzzle_pkg__rosidl_typesupport_cExport-noconfig.cmake
+[257.119s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/puzzle_pkg__rosidl_typesupport_introspection_cppExport.cmake
+[257.119s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/puzzle_pkg__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[257.121s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/puzzle_pkg__rosidl_typesupport_cppExport.cmake
+[257.121s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/puzzle_pkg__rosidl_typesupport_cppExport-noconfig.cmake
+[257.122s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/export_puzzle_pkg__rosidl_generator_pyExport.cmake
+[257.123s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/export_puzzle_pkg__rosidl_generator_pyExport-noconfig.cmake
+[257.123s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/rosidl_cmake-extras.cmake
+[257.124s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/ament_cmake_export_dependencies-extras.cmake
+[257.124s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/ament_cmake_export_include_directories-extras.cmake
+[257.125s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/ament_cmake_export_libraries-extras.cmake
+[257.125s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/ament_cmake_export_targets-extras.cmake
+[257.126s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[257.126s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[257.127s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/puzzle_pkgConfig.cmake
+[257.127s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/puzzle_pkgConfig-version.cmake
+[257.128s] -- Up-to-date: /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/package.xml
+[257.137s] Invoked command in '/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/build/puzzle_pkg' returned '0': CMAKE_PREFIX_PATH=/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/build/puzzle_pkg
