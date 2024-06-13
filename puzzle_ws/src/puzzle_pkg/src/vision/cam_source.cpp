@@ -25,7 +25,7 @@ public:
         : Node("camera"),
           filename_{
             "nvarguscamerasrc sensor-id=0 ! "
-            "video/x-raw(memory:NVMM), width=(int)1280, height=(int)720, framerate=30/1, format=(string)NV12 ! "
+            "video/x-raw(memory:NVMM), width=(int)854, height=(int)480, framerate=15/1, format=(string)NV12 ! "
             "nvvidconv flip-method=2 ! "
             "video/x-raw, format=(string)BGRx ! "
             "videoconvert ! "

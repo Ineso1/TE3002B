@@ -7,6 +7,7 @@
 //#define DEBUG_CONTROL
 //#define DEBUG_ACT
 //#define DEBUG_STATE
+//#define DEBUG_POS_ERROR
 
 //#define DEBUG_POS_CONTROL
 
@@ -77,6 +78,9 @@ public:
         linear_vel_(0.0),
         control_manage_(ControlManage::Idle),
         control_type_(ControlType::Line),
+        counter_(0),
+        busy_(0),
+        release_last_(false),
         vel_message_(geometry_msgs::msg::Twist())
     {
         this->declare_parameters<double>(
@@ -94,7 +98,7 @@ public:
             }
         );
 
-        rclcpp::QoS qos_settings(10);  // Adjust buffer size as needed
+        rclcpp::QoS qos_settings(10);  // Adjust buffer size as needed //before 10
         qos_settings.reliability(RMW_QOS_POLICY_RELIABILITY_RELIABLE);
         qos_settings.durability(RMW_QOS_POLICY_DURABILITY_VOLATILE);
         
@@ -124,6 +128,8 @@ public:
             10ms,
             std::bind(&Controller::controller_callback, this)
         );
+
+        busy_ = false;
         
         RCLCPP_INFO(
             this->get_logger(),
@@ -135,6 +141,34 @@ private:
     void errors_callback(const puzzle_pkg::msg::DiffError& errors)
     {
         errors_ = errors;
+
+        if(errors_.error_dist != 0){
+
+        // RCLCPP_INFO(
+        //     this->get_logger(),
+        //     "crosss things"
+        // );
+            cross_walk_ = true;
+            counter_ ++;
+        }
+        else{
+            cross_walk_ = false;
+        }
+
+        // if(counter_ == 1){
+        //     RCLCPP_INFO(this->get_logger(), "foewaaaaaaard xd");
+        //     control_manage_ = ControlManage::Forward;
+        //     release_last_ = false;
+        //     calculate_translation(1.0, 0.0);
+        // }
+        // if (counter_ == 2)
+        // {
+        //     RCLCPP_INFO(this->get_logger(), "foewaaaaaaard xd");
+        //     control_manage_ = ControlManage::TurnRight;
+        //     release_last_ = false;
+        //     calculate_translation(1.0, 0.0);
+        // }
+
         #ifdef DEBUG_ERRORS
             RCLCPP_INFO(
                 this->get_logger(),
@@ -169,7 +203,9 @@ private:
                 RCLCPP_ERROR(this->get_logger(), "Received invalid state value: %d", msg->data);
             #endif
         } else if (static_cast<State>(msg->data) != last_processed_state_) {
-            current_state_ = static_cast<State>(msg->data);
+            if(release_last_){
+                current_state_ = static_cast<State>(msg->data);
+            }
             #ifdef DEBUG_STATE
                 RCLCPP_INFO(this->get_logger(), "Current state updated to: %d", static_cast<int>(current_state_));
             #endif
@@ -189,20 +225,49 @@ private:
     }
 
     void select_control() {
-        //RCLCPP_INFO(this->get_logger(), "Tambien aqui ");
+
         if (current_state_ != last_processed_state_) {
+
             switch (current_state_) {
                 case State::Init:
                         RCLCPP_INFO(this->get_logger(), "Idle");
                         control_type_ = ControlType::Line;
                         control_manage_ = ControlManage::Stop;
                     break;
+                    
                 case State::Idle:
+
                     if (cross_walk_) {
                         RCLCPP_INFO(this->get_logger(), "Cross walk Idle");
-                        control_type_ = ControlType::Position;
-                        control_manage_ = ControlManage::Stop;
-                        calculate_translation(0.2, 0.0);
+                        // Pasados
+                        if(last_processed_state_ == State::Idle){
+                            RCLCPP_INFO(this->get_logger(), "Idle xd");
+                            control_manage_ = ControlManage::Forward;
+                            control_type_ = ControlType::Position;
+                            release_last_ = false;
+                            calculate_translation(1.0, 0.0);
+                        }
+                        else if(last_processed_state_ == State::TurnLeft){
+                            RCLCPP_INFO(this->get_logger(), "Turn Left xd");
+                            control_manage_ = ControlManage::TurnLeft;
+                            control_type_ = ControlType::Position;
+                            release_last_ = false;
+                            calculate_translation(0.2, 0.25);
+                        }
+                        else if(last_processed_state_ == State::TurnRight){
+                            RCLCPP_INFO(this->get_logger(), "Turn Right xd");
+                            control_manage_ = ControlManage::TurnRight;
+                            control_type_ = ControlType::Position;
+                            release_last_ = false;
+                            calculate_translation(0.2, -0.25);
+                        }
+                        else{
+                            control_manage_ = ControlManage::Forward;
+                            control_type_ = ControlType::Position;
+                            RCLCPP_INFO(this->get_logger(), "Idle xd");
+                            calculate_translation(1.0, 0.0);
+                        }
+
                     } else {
                         RCLCPP_INFO(this->get_logger(), "Idle");
                         control_type_ = ControlType::Line;
@@ -211,11 +276,11 @@ private:
                     break;
 
                 case State::Stop:
+
                     if (cross_walk_) {
                         RCLCPP_INFO(this->get_logger(), "Cross walk Stop ");
                         control_manage_ = ControlManage::Stop;
-                        control_type_ = ControlType::Position;
-                        calculate_translation(0.2, 0.0);
+                        control_type_ = ControlType::Line;
                     } else {
                         RCLCPP_INFO(this->get_logger(), "Stop ");
                         control_manage_ = ControlManage::Stop;
@@ -224,42 +289,37 @@ private:
                     break;
 
                 case State::Slow:
-                    if (cross_walk_) {
-                        RCLCPP_INFO(this->get_logger(), "Cross walk Slow");
-                        control_manage_ = ControlManage::Slow;
-                        control_type_ = ControlType::Position;
-                        calculate_translation(0.3, 0.0);
-                        
-                    } else {
-                        RCLCPP_INFO(this->get_logger(), "Slow ");
-                        control_manage_ = ControlManage::Slow;
-                        control_type_ = ControlType::Line;
-                    }
+
+                    RCLCPP_INFO(this->get_logger(), "Slow ");
+                    control_manage_ = ControlManage::Slow;
+                    control_type_ = ControlType::Line;
                     break;
 
                 case State::TurnLeft:
-                    if (!cross_walk_) {
+
+                    if (cross_walk_) {
                         RCLCPP_INFO(this->get_logger(), "Cross walk TurnLeft ");
-                        control_manage_ = ControlManage::Idle;
+                        control_manage_ = ControlManage::TurnLeft;
                         control_type_ = ControlType::Position;
-                        calculate_translation(0.2, 0.2);
+                        calculate_translation(0.2, 0.25);
 
                     } else {
                         RCLCPP_INFO(this->get_logger(), "TurnLeft ");
-                        control_manage_ = ControlManage::Slow;
+                        control_manage_ = ControlManage::TurnLeft;
                         control_type_ = ControlType::Line;
                     }
                     break;
 
                 case State::TurnRight:
-                    if (!cross_walk_) {
+
+                    if (cross_walk_) {
                         RCLCPP_INFO(this->get_logger(), "Cross walk TurnRight ");
-                        control_manage_ = ControlManage::Idle;
+                        control_manage_ = ControlManage::TurnRight;
                         control_type_ = ControlType::Position;
-                        calculate_translation(0.2, -0.2);
+                        calculate_translation(0.2, -0.25);
                     } else {
                         RCLCPP_INFO(this->get_logger(), "TurnRight ");
-                        control_manage_ = ControlManage::Slow;
+                        control_manage_ = ControlManage::TurnRight;
                         control_type_ = ControlType::Line;
                     }
                     break;
@@ -269,10 +329,13 @@ private:
                     break;
             }
             last_processed_state_ = current_state_;
+            RCLCPP_INFO(this->get_logger(), "cambio");
+            
         }
         else {
             //RCLCPP_INFO(this->get_logger(), ".");
         }
+
     }
 
     void line_control() {
@@ -291,7 +354,7 @@ private:
         if (std::abs(error_angle_) < error_threshold_ang) {
             angular_vel_ = 0;
         } else {
-            angular_vel_ = -kp_angle * error_angle_ + ki_angle * error_angle_integral_;
+            angular_vel_ = -(kp_angle * 0.8) * error_angle_ + ki_angle * error_angle_integral_;
             if (angular_vel_ >= angular_vel_max) {
                 angular_vel_ = angular_vel_max;
             } else if (angular_vel_ <= -angular_vel_max) {
@@ -317,13 +380,16 @@ private:
         vel_message_.angular.z = -angular_vel_;
 
         #ifdef DEBUG_CONTROL
-            RCLCPP_INFO(this->get_logger(), "Linear vel: %g, Angular vel: %g, Error distance: %g", linear_vel_, angular_vel_, error_distance_);
+            RCLCPP_INFO(this->get_logger(), "Linear vel: %g, Angular vel: %g, Error distance: %g, Error angular: %g", linear_vel_, angular_vel_, error_distance_, error_angle_);
         #endif
 
         publisher_->publish(vel_message_);
     }
 
     void pos_control() {
+        
+        busy_ = true;
+
         double error_threshold_dis = get_parameter("error_threshold_dis").as_double();
         double error_threshold_ang = get_parameter("error_threshold_ang").as_double();
         double angular_vel_max = get_parameter("angular_vel_max").as_double();
@@ -362,7 +428,6 @@ private:
             }
         }
 
-        //act_ = - (std::tanh(ke_act * (std::abs(error_angle_) - M_PI / (angle_sensitivity - 2))) - 1) / 2;
         act_ = 1;
 
         #ifdef DEBUG_ACT
@@ -371,11 +436,10 @@ private:
 
         if (error_distance_ < error_threshold_dis) {
             linear_vel_ = 0;
+            busy_ = false;
+            release_last_ = true;
+
             RCLCPP_INFO(this->get_logger(), "pos ok");
-            // Example of publishing to stack_release maybe later is use xd
-            std_msgs::msg::String release_msg;
-            release_msg.data = "1";
-            stack_release_publisher_->publish(release_msg);
             control_manage_ = ControlManage::Idle;
             control_type_ = ControlType::Line;
 
@@ -386,11 +450,13 @@ private:
         vel_message_.linear.x = linear_vel_;
         vel_message_.angular.z = -angular_vel_;
 
-        #ifdef DEBUG_CONTROL
+        #if defined(DEBUG_CONTROL)  || defined(DEBUG_POS_ERROR)
         RCLCPP_INFO(this->get_logger(), "Linear vel: %g, Angular vel: %g, Error distance: %g", linear_vel_, angular_vel_, error_distance_);
+        RCLCPP_INFO(this->get_logger(), "tx: %g, ty: %g", target_point_[0], target_point_[1]);
         #endif
 
         publisher_->publish(vel_message_);
+        
     }
 
     void controller_callback() {
@@ -433,6 +499,11 @@ private:
     // Velocity vars
     double angular_vel_;
     double linear_vel_;
+
+    int counter_;
+
+    bool busy_;
+    bool release_last_;
 
     ControlManage control_manage_;
     ControlType control_type_;

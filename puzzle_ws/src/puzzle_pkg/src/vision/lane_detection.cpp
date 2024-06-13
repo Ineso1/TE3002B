@@ -2,6 +2,7 @@
 //#define COORDS_PRINT
 //#define ANGLE_VIEW
 //#define ERRORS_VIEW
+//#define DEBUG_FRAME
 
 #include "rclcpp/rclcpp.hpp"
 #include "cv_bridge/cv_bridge.h"
@@ -29,7 +30,9 @@ std::map<std::string, CropParams> CROP_PARAMS = {
     {"lane_detection", {0, 160, 70}},
     {"crossing_line_detection", {0, 160, 280}}
 };
+cv::Vec<double, 2> average_center; 
 std::deque<std::pair<cv::Vec<double, 2>, cv::Vec<double, 2>>> lane_history;
+
 
 using namespace std::chrono_literals;
 
@@ -75,6 +78,10 @@ public:
             processed_image_publisher_ = this->create_publisher<sensor_msgs::msg::Image>("processed_image", 10);
         #endif
 
+        #ifdef DEBUG_FRAME
+            transform_image_publisher_ = this->create_publisher<sensor_msgs::msg::Image>("transform_image", 10);
+        #endif
+
         RCLCPP_INFO(this->get_logger(), "Lane Processing Node has started :)");
     }
 
@@ -114,7 +121,7 @@ private:
         distance_publisher_->publish(distance_msg);
     }
 
-    #ifdef LANE_VIEW
+    #if defined(LANE_VIEW) || defined(DEBUG_FRAME)
         void publish_processed_image(const cv::Mat &frame) {
             cv_bridge::CvImage cv_image;
             cv_image.header.stamp = this->now();  
@@ -131,7 +138,11 @@ private:
             cv_image.image = frame;
 
             sensor_msgs::msg::Image::SharedPtr msg = cv_image.toImageMsg();
-            processed_image_publisher_->publish(*msg);
+            #ifdef LANE_VIEW
+                processed_image_publisher_->publish(*msg);
+            #else
+                transform_image_publisher_->publish(*msg);
+            #endif
         }
     #endif
 
@@ -150,17 +161,26 @@ private:
 
         int cropped_width = cropped.cols;
         int cropped_height = cropped.rows;
+        bool cross_line = false;
 
-        grouped_centers_back = frame_relevant_points(cropped_back);
+        grouped_centers_back = frame_relevant_points(cropped_back, average_center, cross_line);
         //std::cout<<"BACK "<<grouped_centers_back.size()<<std::endl;
 
         grouped_centers_front = frame_relevant_points(cropped_front);
         //std::cout<<"FRONT "<<grouped_centers_front.size()<<std::endl;
 
+        //std::cout<<"this shit cross"<<cross_line<<std::endl;
+        if(cross_line){
+            errors_.error_dist = 1.0;
+        }
+        else{
+            errors_.error_dist = -1.0;
+        }
+
         int cropped_back_width = cropped_back.cols;
         int cropped_back_height = cropped_back.rows;
         
-        cv::Vec<double, 2> average_center = get_average_center(cropped_back_width, cropped_back_height);
+        average_center = get_average_center(cropped_back_width, cropped_back_height);
         if (!lane_history.empty() && lane_history.size() >= 3) {
             lane_history.pop_front();
         }
@@ -262,6 +282,9 @@ private:
         std::pair<cv::Mat, cv::Size> transform_data = trans_matrix(frame, PERSPECTIVE_CONFIG, REAL_CARTESIAN_CONFIG);
         cv::Mat transformed = perspective_trans(frame, transform_data.first, transform_data.second);
         
+        #ifdef DEBUG_FRAME
+            publish_processed_image(frame);
+        #endif
         
         CropParams crop_params = CROP_PARAMS["crossing_line_detection"];
         
@@ -295,6 +318,10 @@ private:
 
     #ifdef LANE_VIEW
         rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr processed_image_publisher_;
+    #endif
+
+    #ifdef DEBUG_FRAME
+        rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr transform_image_publisher_;
     #endif
 };
 

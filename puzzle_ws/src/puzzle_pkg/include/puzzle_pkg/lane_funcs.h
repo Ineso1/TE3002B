@@ -26,6 +26,13 @@ std::vector<cv::Vec<double, 2>> group_similar_lines(
     std::size_t minPts
 );
 
+double calculate_angle(const cv::Vec<double, 4>& line);
+
+bool is_horizontal(const cv::Vec<double, 4>& line, double angle_threshold);
+
+cv::Vec<double, 4> detect_cross_and_return_mean_line(const std::vector<cv::Vec<double, 4>>& lines, double centerX, double minWidth);
+
+std::vector<cv::Vec<double, 2>> frame_relevant_points(cv::Mat& frame, cv::Vec<double, 2> average_center, bool& cross_line);
 std::vector<cv::Vec<double, 2>> frame_relevant_points(cv::Mat& frame);
 
 cv::Vec<double, 2> get_average_center(int frame_width, int frame_height);

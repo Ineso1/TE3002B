@@ -2,6 +2,7 @@
 #include "puzzle_pkg/lane_funcs.h"
 #include "puzzle_pkg/cv_wrapper.h"
 
+
 double point_distance(const cv::Point2d& p1, const cv::Point2d& p2) {
     return cv::norm(p1 - p2);
 }
@@ -75,6 +76,79 @@ std::vector<cv::Vec<double, 2>> group_similar_lines(
 
     return cluster_centers;
 }
+
+
+double calculate_angle(const cv::Vec<double, 4>& line) {
+    return std::atan2(line[3] - line[1], line[2] - line[0]) * 180.0 / CV_PI;
+}
+
+bool is_horizontal(const cv::Vec<double, 4>& line, double angle_threshold) {
+    double angle = std::fabs(calculate_angle(line));
+    return angle < angle_threshold || angle > 180 - angle_threshold;
+}
+
+cv::Vec<double, 4> detect_cross_and_return_mean_line(const std::vector<cv::Vec<double, 4>>& lines, double centerX, double minWidth) {
+    std::vector<cv::Vec<double, 4>> cross_lines;
+    double angle_threshold = 10; // Ángulo máximo en grados para considerar una línea horizontal XD
+
+    for (const cv::Vec<double, 4>& line : lines) {
+        if (is_horizontal(line, angle_threshold)) {
+            double min_x = std::min(line[0], line[2]);
+            double max_x = std::max(line[0], line[2]);
+            if (min_x <= centerX && max_x >= centerX) {  // La línea cruza el centro de lado a lado
+                double line_width = max_x - min_x;
+                if (line_width >= minWidth) {  // La línea tiene el ancho mínimo, igual habra que ver si jala 
+                    cross_lines.push_back(line);
+                }
+            }
+        }
+    }
+
+    //Promediazo xd
+    double sum_x1 = 0, sum_y1 = 0, sum_x2 = 0, sum_y2 = 0;
+    for (const auto& line : cross_lines) {
+        sum_x1 += line[0];
+        sum_y1 += line[1];
+        sum_x2 += line[2];
+        sum_y2 += line[3];
+    }
+    int count = cross_lines.size();
+    if (count > 0) {
+        return cv::Vec<double, 4>(sum_x1 / count, sum_y1 / count, sum_x2 / count, sum_y2 / count);
+    } else {
+        // Return an empty como el tanque del march :(
+        return cv::Vec<double, 4>(0, 0, 0, 0);
+    }
+}
+
+std::vector<cv::Vec<double, 2>> frame_relevant_points(cv::Mat& frame, cv::Vec<double, 2> average_center, bool& cross_line){
+    int minPts = 2;
+    double eps = 50.0;
+    std::vector<cv::Vec4i> lines;
+    cv::Vec<double, 4> selected_line;
+    std::vector<cv::Vec<double, 4>> converted_lines;
+    std::vector<cv::Vec<double, 2>> grouped_lines;
+
+    lines = detect_lines_hough(frame);
+    for (const auto& line : lines) {
+        converted_lines.push_back(cv::Vec<double, 4>(line[0], line[1], line[2], line[3]));
+    }
+
+    cv::Vec<double, 4> cross_lines = detect_cross_and_return_mean_line(converted_lines, average_center[0], 100);
+
+    if (cross_lines[0] && cross_lines[1] && cross_lines[2] && cross_lines[3])
+    {
+        cross_line = true;
+    }
+    else{
+        cross_line = false;
+    }
+    
+    //std::cout << "Number of lines that form a cross: " << cross_lines[0] << " , " << cross_lines[1] << cross_lines[2] << " , " << cross_lines[3] << std::endl;
+    grouped_lines = group_similar_lines(converted_lines, eps, minPts);
+
+    return grouped_lines;
+} 
 
 std::vector<cv::Vec<double, 2>> frame_relevant_points(cv::Mat& frame){
     int minPts = 2;

@@ -13,9 +13,12 @@ class SignalHandlerNode : public rclcpp::Node
 public:
     SignalHandlerNode() : Node("signal_handler")
     {
+        rclcpp::QoS qos_settings(2);  // Buffer size
+        qos_settings.reliability(RMW_QOS_POLICY_RELIABILITY_RELIABLE);
+        qos_settings.durability(RMW_QOS_POLICY_DURABILITY_VOLATILE);
         subscriber_ = this->create_subscription<std_msgs::msg::Int32MultiArray>(
             "classification_results",
-            10,
+            qos_settings,
             std::bind(&SignalHandlerNode::handle_signal, this, std::placeholders::_1));
 
         publisher_ = this->create_publisher<std_msgs::msg::Int32>("current_state", 10);
@@ -37,13 +40,13 @@ private:
         // Initialize signal priorities and voting thresholds
         priority_map[0] = 2; vote_threshold[0] = 3; // Turn Right
         priority_map[1] = 2; vote_threshold[1] = 3; // Turn Left
-        priority_map[2] = 3; vote_threshold[2] = 3; // Semaphore (Yellow)
-        priority_map[3] = 3; vote_threshold[3] = 3; // SlowByConstruction
-        priority_map[4] = 1; vote_threshold[4] = 4; // Semaphore (Red)
+        priority_map[2] = 3; vote_threshold[2] = 1; // Semaphore (Yellow)
+        priority_map[3] = 3; vote_threshold[3] = 1; // SlowByConstruction
+        priority_map[4] = 1; vote_threshold[4] = 1; // Semaphore (Red)
         priority_map[5] = 4; vote_threshold[5] = 4; // Rond
-        priority_map[6] = 1; vote_threshold[6] = 4; // Stop
-        priority_map[7] = 3; vote_threshold[7] = 3; // Forward
-        priority_map[8] = 3; vote_threshold[8] = 3; // SlowByConstruction
+        priority_map[6] = 1; vote_threshold[6] = 1; // Stop
+        priority_map[7] = 2; vote_threshold[7] = 1; // Forward
+        priority_map[8] = 3; vote_threshold[8] = 2; // SlowByConstruction
         priority_map[9] = 3; vote_threshold[9] = 2; // Semaphore (Green)
 
     }
@@ -128,7 +131,7 @@ private:
         switch(signal) {
             case 0: return 5; // Turn Right         // TurnRight
             case 1: return 4; // Turn Left          // TurnLeft
-            case 2: return 3; // Semaphore(Yellow)  // Slow
+            case 2: return 1; // Semaphore(Yellow)  // Idle
             case 3: return 3; // SlowByConstruction // Slow
             case 4: return 2; // Semaphore (Red)    // Stop
             case 5: return 3; // Rond               // Slow

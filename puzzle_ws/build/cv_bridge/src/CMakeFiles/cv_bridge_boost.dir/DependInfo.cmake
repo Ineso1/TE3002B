@@ -40,7 +40,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/opt/ros/humble/include/rosidl_typesupport_introspection_c"
   "/opt/ros/humble/include/rosidl_typesupport_introspection_cpp"
   "/usr/include/opencv4"
-  "/usr/lib/python3/dist-packages/numpy/core/include"
+  "/home/puzzlebot/.local/lib/python3.8/site-packages/numpy/core/include"
   )
 
 # Targets to which this target links.
