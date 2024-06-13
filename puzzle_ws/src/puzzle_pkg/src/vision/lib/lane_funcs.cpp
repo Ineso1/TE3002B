@@ -130,6 +130,7 @@ std::vector<cv::Vec<double, 2>> frame_relevant_points(cv::Mat& frame, cv::Vec<do
     std::vector<cv::Vec<double, 2>> grouped_lines;
 
     lines = detect_lines_hough(frame);
+    
     for (const auto& line : lines) {
         converted_lines.push_back(cv::Vec<double, 4>(line[0], line[1], line[2], line[3]));
     }

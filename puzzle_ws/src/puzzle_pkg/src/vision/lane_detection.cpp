@@ -87,11 +87,19 @@ public:
 
 private:
     void image_callback(const sensor_msgs::msg::Image::SharedPtr msg) {
-        cv_bridge::CvImagePtr cv_ptr = cv_bridge::toCvCopy(msg, sensor_msgs::image_encodings::BGR8);
+        cv_bridge::CvImagePtr cv_ptr; 
+        try{
+            cv_ptr = cv_bridge::toCvCopy(msg, sensor_msgs::image_encodings::BGR8);
+        }
+        catch(cv_bridge::Exception& e){
+            RCLCPP_INFO(this->get_logger(), "Error parsing frame %s", e.what());
+            return;
+        }
         cv::Mat color_frame = cv_ptr->image;
         cv::Mat frame, fliped_frame;
         cv::cvtColor(color_frame, frame, cv::COLOR_BGR2GRAY);
         cv::flip(frame, fliped_frame, 0);
+        
         try{
             double angle = process_frame(fliped_frame);
             errors_.error_ang = angle;
@@ -162,7 +170,7 @@ private:
         int cropped_width = cropped.cols;
         int cropped_height = cropped.rows;
         bool cross_line = false;
-
+        
         grouped_centers_back = frame_relevant_points(cropped_back, average_center, cross_line);
         //std::cout<<"BACK "<<grouped_centers_back.size()<<std::endl;
 
@@ -243,12 +251,6 @@ private:
             
             lane_history.push_back({{mean_back_point_x, mean_back_point_y}, {mean_front_point_x, mean_front_point_y}});
         }
-        else if (min_index_back != -1 ) {
-            /*Handle*/
-        }
-        else if(min_index_front != -1) {
-            /*Handle*/
-        }
         else{
             extrapolate_and_update_lane_history();
         }
@@ -279,24 +281,31 @@ private:
     }
 
     double process_frame(cv::Mat &frame) {
+
         std::pair<cv::Mat, cv::Size> transform_data = trans_matrix(frame, PERSPECTIVE_CONFIG, REAL_CARTESIAN_CONFIG);
         cv::Mat transformed = perspective_trans(frame, transform_data.first, transform_data.second);
         
         #ifdef DEBUG_FRAME
             publish_processed_image(frame);
         #endif
-        
         CropParams crop_params = CROP_PARAMS["crossing_line_detection"];
         
         cv::Mat cropped_frame = crop_frame(transformed, crop_params);
         
         cv::Mat blurred = apply_gaussian_blur(cropped_frame);
 
-        
         cv::Mat closed = apply_closing(blurred, cv::Size(5, 5), 3);
-                
         cv::Mat thresholded = apply_otsu_threshold(closed);
-        double error_ang = detect_lane_center(thresholded);
+        double error_ang = 0.0;
+        try{
+            double error_ang = detect_lane_center(thresholded);
+        }
+        catch(...){
+            RCLCPP_INFO(this->get_logger(), "Failed to detect lanes");
+            double error_ang = 0.0;
+            return error_ang;
+        }
+        
         
         return error_ang;  // Dummy return // FERCHOOOO
     }
@@ -326,7 +335,7 @@ private:
 };
 
 int main(int argc, char **argv) {
-    std::cout << "Bro wtf";
+    std::cout << "Hello! \n";
     rclcpp::init(argc, argv);
     rclcpp::spin(std::make_shared<LaneProcessingNode>());
     rclcpp::shutdown();

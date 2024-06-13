@@ -1,0 +1,48 @@
+[  2%] Built target puzzle_pkg__cpp
+[  6%] Built target odometry
+[ 13%] Built target puzzle_pkg__rosidl_generator_c
+[ 13%] Built target ament_cmake_python_copy_puzzle_pkg
+[ 18%] Built target cam_source
+[ 25%] Built target puzzle_pkg__rosidl_typesupport_c
+[ 31%] Built target puzzle_pkg__rosidl_typesupport_cpp
+[ 36%] Built target signal_handle
+[ 43%] Built target puzzle_pkg__rosidl_typesupport_introspection_cpp
+[ 50%] Built target puzzle_pkg__rosidl_typesupport_introspection_c
+[ 56%] Built target puzzle_pkg__rosidl_typesupport_fastrtps_cpp
+[ 63%] Built target puzzle_pkg__rosidl_typesupport_fastrtps_c
+[35m[1mScanning dependencies of target lane_detection[0m
+[ 63%] Built target puzzle_pkg
+[ 68%] Built target controller
+[ 70%] Built target puzzle_pkg__py
+[ 72%] [32mBuilding CXX object CMakeFiles/lane_detection.dir/src/vision/lane_detection.cpp.o[0m
+[ 75%] [32mBuilding CXX object CMakeFiles/lane_detection.dir/src/vision/lib/lane_funcs.cpp.o[0m
+[ 79%] Built target puzzle_pkg__rosidl_generator_py
+[ 84%] Built target puzzle_pkg__rosidl_typesupport_fastrtps_c__pyext
+[ 88%] Built target puzzle_pkg__rosidl_typesupport_introspection_c__pyext
+running egg_info
+writing puzzle_pkg.egg-info/PKG-INFO
+writing dependency_links to puzzle_pkg.egg-info/dependency_links.txt
+writing top-level names to puzzle_pkg.egg-info/top_level.txt
+[ 93%] Built target puzzle_pkg__rosidl_typesupport_c__pyext
+reading manifest file 'puzzle_pkg.egg-info/SOURCES.txt'
+writing manifest file 'puzzle_pkg.egg-info/SOURCES.txt'
+[ 93%] Built target ament_cmake_python_build_puzzle_pkg_egg
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/lib/lane_funcs.cpp:[m[K In function ‘[01m[Kstd::vector<cv::Vec<double, 2> > frame_relevant_points(cv::Mat&, cv::Vec<double, 2>, bool&)[m[K’:
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/lib/lane_funcs.cpp:133:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kcout[m[K’ was not declared in this scope
+     std:[01;31m[Kcout[m[K << "Hi from frame_points\n";
+         [01;31m[K^~~~[m[K
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/lib/lane_funcs.cpp:133:9:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kcosl[m[K’
+     std:[01;36m[Kcout[m[K << "Hi from frame_points\n";
+         [01;36m[K^~~~[m[K
+         [32m[Kcosl[m[K
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/lib/lane_funcs.cpp:133:5:[m[K [01;35m[Kwarning: [m[Klabel ‘[01m[Kstd[m[K’ defined but not used [[01;35m[K-Wunused-label[m[K]
+     [01;35m[Kstd[m[K:cout << "Hi from frame_points\n";
+     [01;35m[K^~~[m[K
+make[2]: *** [CMakeFiles/lane_detection.dir/build.make:102: CMakeFiles/lane_detection.dir/src/vision/lib/lane_funcs.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/lane_detection.cpp:[m[K In member function ‘[01m[Kdouble LaneProcessingNode::process_frame(cv::Mat&)[m[K’:
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/lane_detection.cpp:301:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kerror_ang[m[K’ [[01;35m[K-Wunused-variable[m[K]
+             double [01;35m[Kerror_ang[m[K = detect_lane_center(thresholded);
+                    [01;35m[K^~~~~~~~~[m[K
+make[1]: *** [CMakeFiles/Makefile2:608: CMakeFiles/lane_detection.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

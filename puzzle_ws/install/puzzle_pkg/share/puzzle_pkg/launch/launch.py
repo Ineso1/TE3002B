@@ -26,9 +26,8 @@ def generate_launch_description():
         # ),
         Node(
             package='puzzle_pkg',
-            executable='controller',
-            name='controller',
-            parameters=[controller_config]
+            executable='cam_source',
+            name='cam_source'
         ),
         Node(
             package='puzzle_pkg',
@@ -38,18 +37,19 @@ def generate_launch_description():
         ),
         Node(
             package='puzzle_pkg',
-            executable='lane_detection',
-            name='lane_detection',
-            output='screen'
-        ),
-        Node(
-            package='puzzle_pkg',
-            executable='cam_source',
-            name='cam_source'
+            executable='controller',
+            name='controller',
+            parameters=[controller_config]
         ),
         Node(
             package='puzzle_pkg',
             executable='signal_handle',
             name='signal_handle'
+        ),
+        Node(
+            package='puzzle_pkg',
+            executable='lane_detection',
+            name='lane_detection',
+            output='screen'
         )
     ])

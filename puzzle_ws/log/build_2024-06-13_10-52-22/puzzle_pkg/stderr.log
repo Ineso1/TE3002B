@@ -1,0 +1,17 @@
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/lane_detection.cpp:[m[K In member function ‘[01m[Kdouble LaneProcessingNode::process_frame(cv::Mat&)[m[K’:
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/lane_detection.cpp:300:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kerror_ang[m[K’ [[01;35m[K-Wunused-variable[m[K]
+             double [01;35m[Kerror_ang[m[K = detect_lane_center(thresholded);
+                    [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/lane_detection.cpp:304:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kerror_ang[m[K’ [[01;35m[K-Wunused-variable[m[K]
+             double [01;35m[Kerror_ang[m[K = 0.0;
+                    [01;35m[K^~~~~~~~~[m[K
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/lane_detection.cpp:308:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kerror_ang[m[K’ was not declared in this scope
+         return [01;31m[Kerror_ang[m[K;  // Dummy return // FERCHOOOO
+                [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/vision/lane_detection.cpp:308:16:[m[K [01;36m[Knote: [m[Ksuggested alternative: ‘[01m[Kerror_t[m[K’
+         return [01;36m[Kerror_ang[m[K;  // Dummy return // FERCHOOOO
+                [01;36m[K^~~~~~~~~[m[K
+                [32m[Kerror_t[m[K
+make[2]: *** [CMakeFiles/lane_detection.dir/build.make:63: CMakeFiles/lane_detection.dir/src/vision/lane_detection.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:608: CMakeFiles/lane_detection.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -144,30 +144,12 @@ private:
 
         if(errors_.error_dist != 0){
 
-        // RCLCPP_INFO(
-        //     this->get_logger(),
-        //     "crosss things"
-        // );
             cross_walk_ = true;
             counter_ ++;
         }
         else{
             cross_walk_ = false;
         }
-
-        // if(counter_ == 1){
-        //     RCLCPP_INFO(this->get_logger(), "foewaaaaaaard xd");
-        //     control_manage_ = ControlManage::Forward;
-        //     release_last_ = false;
-        //     calculate_translation(1.0, 0.0);
-        // }
-        // if (counter_ == 2)
-        // {
-        //     RCLCPP_INFO(this->get_logger(), "foewaaaaaaard xd");
-        //     control_manage_ = ControlManage::TurnRight;
-        //     release_last_ = false;
-        //     calculate_translation(1.0, 0.0);
-        // }
 
         #ifdef DEBUG_ERRORS
             RCLCPP_INFO(
@@ -197,19 +179,8 @@ private:
     }
 
     void state_callback(const std_msgs::msg::Int32::SharedPtr msg)
-    {
-        if (msg->data < static_cast<int>(State::Init) || msg->data > static_cast<int>(State::TurnRight)) {
-            #ifdef DEBUG_STATE
-                RCLCPP_ERROR(this->get_logger(), "Received invalid state value: %d", msg->data);
-            #endif
-        } else if (static_cast<State>(msg->data) != last_processed_state_) {
-            if(release_last_){
-                current_state_ = static_cast<State>(msg->data);
-            }
-            #ifdef DEBUG_STATE
-                RCLCPP_INFO(this->get_logger(), "Current state updated to: %d", static_cast<int>(current_state_));
-            #endif
-        }
+    {   
+        current_state_ = static_cast<State>(msg->data);
     }
 
     void calculate_translation(double x, double y){
@@ -225,115 +196,103 @@ private:
     }
 
     void select_control() {
-
-        if (current_state_ != last_processed_state_) {
-
-            switch (current_state_) {
-                case State::Init:
-                        RCLCPP_INFO(this->get_logger(), "Idle");
-                        control_type_ = ControlType::Line;
-                        control_manage_ = ControlManage::Stop;
-                    break;
-                    
-                case State::Idle:
-
-                    if (cross_walk_) {
-                        RCLCPP_INFO(this->get_logger(), "Cross walk Idle");
-                        // Pasados
-                        if(last_processed_state_ == State::Idle){
-                            RCLCPP_INFO(this->get_logger(), "Idle xd");
-                            control_manage_ = ControlManage::Forward;
-                            control_type_ = ControlType::Position;
-                            release_last_ = false;
-                            calculate_translation(1.0, 0.0);
-                        }
-                        else if(last_processed_state_ == State::TurnLeft){
-                            RCLCPP_INFO(this->get_logger(), "Turn Left xd");
-                            control_manage_ = ControlManage::TurnLeft;
-                            control_type_ = ControlType::Position;
-                            release_last_ = false;
-                            calculate_translation(0.2, 0.25);
-                        }
-                        else if(last_processed_state_ == State::TurnRight){
-                            RCLCPP_INFO(this->get_logger(), "Turn Right xd");
-                            control_manage_ = ControlManage::TurnRight;
-                            control_type_ = ControlType::Position;
-                            release_last_ = false;
-                            calculate_translation(0.2, -0.25);
-                        }
-                        else{
-                            control_manage_ = ControlManage::Forward;
-                            control_type_ = ControlType::Position;
-                            RCLCPP_INFO(this->get_logger(), "Idle xd");
-                            calculate_translation(1.0, 0.0);
-                        }
-
-                    } else {
-                        RCLCPP_INFO(this->get_logger(), "Idle");
-                        control_type_ = ControlType::Line;
-                        control_manage_ = ControlManage::Idle;
-                    }
-                    break;
-
-                case State::Stop:
-
-                    if (cross_walk_) {
-                        RCLCPP_INFO(this->get_logger(), "Cross walk Stop ");
-                        control_manage_ = ControlManage::Stop;
-                        control_type_ = ControlType::Line;
-                    } else {
-                        RCLCPP_INFO(this->get_logger(), "Stop ");
-                        control_manage_ = ControlManage::Stop;
-                        control_type_ = ControlType::Line;
-                    }
-                    break;
-
-                case State::Slow:
-
-                    RCLCPP_INFO(this->get_logger(), "Slow ");
-                    control_manage_ = ControlManage::Slow;
+        switch (current_state_) {
+            case State::Init:
+                    RCLCPP_INFO(this->get_logger(), "Idle");
                     control_type_ = ControlType::Line;
-                    break;
-
-                case State::TurnLeft:
-
-                    if (cross_walk_) {
-                        RCLCPP_INFO(this->get_logger(), "Cross walk TurnLeft ");
+                    control_manage_ = ControlManage::Stop;
+                break;
+                
+            case State::Idle:
+                if (cross_walk_) {
+                    RCLCPP_INFO(this->get_logger(), "Cross walk Idle");
+                    // Pasados
+                    if(last_processed_state_ == State::Idle){
+                        RCLCPP_INFO(this->get_logger(), "Idle xd");
+                        control_manage_ = ControlManage::Forward;
+                        control_type_ = ControlType::Position;
+                        release_last_ = false;
+                        calculate_translation(1.0, 0.0);
+                    }
+                    else if(last_processed_state_ == State::TurnLeft){
+                        RCLCPP_INFO(this->get_logger(), "Turn Left xd");
                         control_manage_ = ControlManage::TurnLeft;
                         control_type_ = ControlType::Position;
+                        release_last_ = false;
                         calculate_translation(0.2, 0.25);
-
-                    } else {
-                        RCLCPP_INFO(this->get_logger(), "TurnLeft ");
-                        control_manage_ = ControlManage::TurnLeft;
-                        control_type_ = ControlType::Line;
                     }
-                    break;
-
-                case State::TurnRight:
-
-                    if (cross_walk_) {
-                        RCLCPP_INFO(this->get_logger(), "Cross walk TurnRight ");
+                    else if(last_processed_state_ == State::TurnRight){
+                        RCLCPP_INFO(this->get_logger(), "Turn Right xd");
                         control_manage_ = ControlManage::TurnRight;
                         control_type_ = ControlType::Position;
+                        release_last_ = false;
                         calculate_translation(0.2, -0.25);
-                    } else {
-                        RCLCPP_INFO(this->get_logger(), "TurnRight ");
-                        control_manage_ = ControlManage::TurnRight;
-                        control_type_ = ControlType::Line;
                     }
-                    break;
+                    else{
+                        control_manage_ = ControlManage::Forward;
+                        control_type_ = ControlType::Position;
+                        RCLCPP_INFO(this->get_logger(), "Idle xd");
+                        calculate_translation(1.0, 0.0);
+                    }
 
-                default:
-                    RCLCPP_INFO(this->get_logger(), "Unhandled state");
-                    break;
-            }
-            last_processed_state_ = current_state_;
-            RCLCPP_INFO(this->get_logger(), "cambio");
-            
-        }
-        else {
-            //RCLCPP_INFO(this->get_logger(), ".");
+                } else {
+                    RCLCPP_INFO(this->get_logger(), "Idle");
+                    control_type_ = ControlType::Line;
+                    control_manage_ = ControlManage::Idle;
+                }
+                break;
+
+            case State::Stop:
+                if (cross_walk_) {
+                    RCLCPP_INFO(this->get_logger(), "Cross walk Stop ");
+                    control_manage_ = ControlManage::Stop;
+                    control_type_ = ControlType::Line;
+                } else {
+                    RCLCPP_INFO(this->get_logger(), "Stop ");
+                    control_manage_ = ControlManage::Stop;
+                    control_type_ = ControlType::Line;
+                }
+                break;
+
+            case State::Slow:
+
+                RCLCPP_INFO(this->get_logger(), "Slow ");
+                control_manage_ = ControlManage::Slow;
+                control_type_ = ControlType::Line;
+                break;
+
+            case State::TurnLeft:
+
+                if (cross_walk_) {
+                    RCLCPP_INFO(this->get_logger(), "Cross walk TurnLeft ");
+                    control_manage_ = ControlManage::TurnLeft;
+                    control_type_ = ControlType::Position;
+                    calculate_translation(0.2, 0.25);
+
+                } else {
+                    RCLCPP_INFO(this->get_logger(), "TurnLeft ");
+                    control_manage_ = ControlManage::TurnLeft;
+                    control_type_ = ControlType::Line;
+                }
+                break;
+
+            case State::TurnRight:
+
+                if (cross_walk_) {
+                    RCLCPP_INFO(this->get_logger(), "Cross walk TurnRight ");
+                    control_manage_ = ControlManage::TurnRight;
+                    control_type_ = ControlType::Position;
+                    calculate_translation(0.2, -0.25);
+                } else {
+                    RCLCPP_INFO(this->get_logger(), "TurnRight ");
+                    control_manage_ = ControlManage::TurnRight;
+                    control_type_ = ControlType::Line;
+                }
+                break;
+
+            default:
+                RCLCPP_INFO(this->get_logger(), "Unhandled state");
+                break;
         }
 
     }

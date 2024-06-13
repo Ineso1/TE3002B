@@ -1,4 +1,5 @@
 //#define DEBUG_PRIORITY
+#define MODEL_SIM
 
 #include "rclcpp/rclcpp.hpp"
 #include "std_msgs/msg/int32_multi_array.hpp"
@@ -37,17 +38,34 @@ private:
     rclcpp::Publisher<std_msgs::msg::Int32>::SharedPtr publisher_;
 
     void initialize_priorities_and_votes() {
-        // Initialize signal priorities and voting thresholds
-        priority_map[0] = 2; vote_threshold[0] = 3; // Turn Right
-        priority_map[1] = 2; vote_threshold[1] = 3; // Turn Left
-        priority_map[2] = 3; vote_threshold[2] = 1; // Semaphore (Yellow)
-        priority_map[3] = 3; vote_threshold[3] = 1; // SlowByConstruction
-        priority_map[4] = 1; vote_threshold[4] = 1; // Semaphore (Red)
-        priority_map[5] = 4; vote_threshold[5] = 4; // Rond
-        priority_map[6] = 1; vote_threshold[6] = 1; // Stop
-        priority_map[7] = 2; vote_threshold[7] = 1; // Forward
-        priority_map[8] = 3; vote_threshold[8] = 2; // SlowByConstruction
-        priority_map[9] = 3; vote_threshold[9] = 2; // Semaphore (Green)
+        #ifdef MODEL_SIM
+
+            // Initialize signal priorities and voting thresholds
+            priority_map[0] = 3; vote_threshold[0] = 2; // SlowByConstruction
+            priority_map[1] = 2; vote_threshold[1] = 1; // Forward
+            priority_map[2] = 3; vote_threshold[2] = 1; // Give way
+            priority_map[3] = 3; vote_threshold[3] = 2; // Semaphore (Green)
+            priority_map[4] = 2; vote_threshold[4] = 3; // Turn Left
+            priority_map[5] = 1; vote_threshold[5] = 1; // Semaphore (Red)
+            priority_map[6] = 2; vote_threshold[6] = 3; // Turn Right
+            priority_map[7] = 4; vote_threshold[7] = 4; // Rond
+            priority_map[8] = 1; vote_threshold[8] = 1; // Stop
+            priority_map[9] = 3; vote_threshold[9] = 1; // Semaphore (Yellow)
+        
+        #else
+
+            // Initialize signal priorities and voting thresholds
+            priority_map[0] = 2; vote_threshold[0] = 3; // Turn Right
+            priority_map[1] = 2; vote_threshold[1] = 3; // Turn Left
+            priority_map[2] = 3; vote_threshold[2] = 1; // Semaphore (Yellow)
+            priority_map[3] = 3; vote_threshold[3] = 1; // SlowByConstruction
+            priority_map[4] = 1; vote_threshold[4] = 1; // Semaphore (Red)
+            priority_map[5] = 4; vote_threshold[5] = 4; // Rond
+            priority_map[6] = 1; vote_threshold[6] = 1; // Stop
+            priority_map[7] = 2; vote_threshold[7] = 1; // Forward
+            priority_map[8] = 3; vote_threshold[8] = 2; // SlowByConstruction
+            priority_map[9] = 3; vote_threshold[9] = 2; // Semaphore (Green)
+        #endif
 
     }
 
@@ -128,19 +146,38 @@ private:
     }
 
     int signal_to_state_code(int signal) {
-        switch(signal) {
-            case 0: return 5; // Turn Right         // TurnRight
-            case 1: return 4; // Turn Left          // TurnLeft
-            case 2: return 1; // Semaphore(Yellow)  // Idle
-            case 3: return 3; // SlowByConstruction // Slow
-            case 4: return 2; // Semaphore (Red)    // Stop
-            case 5: return 3; // Rond               // Slow
-            case 6: return 2; // Stop               // Stop
-            case 7: return 1; // Forward            // Idle
-            case 8: return 3; // SlowByConstruction // Slow
-            case 9: return 1; // Semaphore (Green)  // Idle
-            default: return 1; // None              // Idle      
-        }
+
+        #ifdef MODEL_SIM
+
+            switch(signal) {
+                case 0: return 3; // SlowByConstruction // Slow
+                case 1: return 1; // Forward            // Idle
+                case 2: return 3; // Give way           // Slow
+                case 3: return 1; // Semaphore (Green)  // Idle
+                case 4: return 4; // Turn Left          // TurnLeft
+                case 5: return 2; // Semaphore (Red)    // Stop
+                case 6: return 5; // Turn Right         // TurnRight
+                case 7: return 3; // Rond               // Slow
+                case 8: return 2; // Stop               // Stop
+                case 9: return 3; // Semaphore(Yellow)  // Slow
+                default: return 1; // None              // Idle      
+            }
+        #else
+            switch(signal) {
+                case 0: return 5; // Turn Right         // TurnRight
+                case 1: return 4; // Turn Left          // TurnLeft
+                case 2: return 1; // Semaphore(Yellow)  // Idle
+                case 3: return 3; // SlowByConstruction // Slow
+                case 4: return 2; // Semaphore (Red)    // Stop
+                case 5: return 3; // Rond               // Slow
+                case 6: return 2; // Stop               // Stop
+                case 7: return 1; // Forward            // Idle
+                case 8: return 3; // SlowByConstruction // Slow
+                case 9: return 1; // Semaphore (Green)  // Idle
+                default: return 1; // None              // Idle      
+            }
+        #endif
+        
     }
 
     void process_state_queue() {
