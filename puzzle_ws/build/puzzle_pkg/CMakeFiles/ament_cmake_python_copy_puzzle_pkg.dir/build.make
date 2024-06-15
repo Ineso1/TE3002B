@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/src/puzzle_pkg
+CMAKE_SOURCE_DIR = /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/build/puzzle_pkg
+CMAKE_BINARY_DIR = /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg
 
 # Utility rule file for ament_cmake_python_copy_puzzle_pkg.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/build/puz
 include CMakeFiles/ament_cmake_python_copy_puzzle_pkg.dir/progress.make
 
 CMakeFiles/ament_cmake_python_copy_puzzle_pkg:
-	/usr/bin/cmake -E copy_directory /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/build/puzzle_pkg/rosidl_generator_py/puzzle_pkg /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/build/puzzle_pkg/ament_cmake_python/puzzle_pkg/puzzle_pkg
+	/usr/bin/cmake -E copy_directory /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg/rosidl_generator_py/puzzle_pkg /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg/ament_cmake_python/puzzle_pkg/puzzle_pkg
 
 ament_cmake_python_copy_puzzle_pkg: CMakeFiles/ament_cmake_python_copy_puzzle_pkg
 ament_cmake_python_copy_puzzle_pkg: CMakeFiles/ament_cmake_python_copy_puzzle_pkg.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/ament_cmake_python_copy_puzzle_pkg.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_copy_puzzle_pkg.dir/clean
 
 CMakeFiles/ament_cmake_python_copy_puzzle_pkg.dir/depend:
-	cd /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/build/puzzle_pkg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/src/puzzle_pkg /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/src/puzzle_pkg /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/build/puzzle_pkg /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/build/puzzle_pkg /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/build/puzzle_pkg/CMakeFiles/ament_cmake_python_copy_puzzle_pkg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg/CMakeFiles/ament_cmake_python_copy_puzzle_pkg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_copy_puzzle_pkg.dir/depend
 

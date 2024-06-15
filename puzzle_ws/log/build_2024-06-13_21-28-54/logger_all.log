@@ -1,0 +1,454 @@
+[1.722s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[1.722s] DEBUG:colcon:Parsed command line arguments: Namespace(allow_overriding=[], ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f8e5ce640>>, merge_install=False, metas=['./colcon.meta'], mixin=None, mixin_files=None, mixin_verb=('build',), packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=4, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f8e5ce640>, verb_name='build', verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x7f8e5ceb20>)
+[2.685s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[2.685s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[2.685s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[2.686s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[2.686s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[2.686s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[2.686s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws'
+[2.687s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[2.687s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[2.687s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[2.688s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[2.688s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[2.688s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[2.688s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[2.688s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[2.689s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[2.751s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[2.751s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[2.751s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[2.751s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[2.752s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[2.752s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[2.752s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[2.753s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[2.753s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[2.754s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[2.754s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[2.754s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[2.754s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[2.755s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[2.755s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[2.755s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[2.755s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[2.756s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[2.756s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[2.756s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[2.756s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[2.757s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[2.757s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[2.757s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[2.757s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[2.757s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[2.758s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[2.758s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[2.758s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzle_pkg) by extensions ['ignore', 'ignore_ament_install']
+[2.758s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzle_pkg) by extension 'ignore'
+[2.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzle_pkg) by extension 'ignore_ament_install'
+[2.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzle_pkg) by extensions ['colcon_pkg']
+[2.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzle_pkg) by extension 'colcon_pkg'
+[2.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzle_pkg) by extensions ['colcon_meta']
+[2.759s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzle_pkg) by extension 'colcon_meta'
+[2.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzle_pkg) by extensions ['ros']
+[2.760s] Level 1:colcon.colcon_core.package_identification:_identify(src/puzzle_pkg) by extension 'ros'
+[2.777s] DEBUG:colcon.colcon_core.package_identification:Package 'src/puzzle_pkg' with type 'ros.ament_cmake' and name 'puzzle_pkg'
+[2.777s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extensions ['ignore', 'ignore_ament_install']
+[2.778s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extension 'ignore'
+[2.778s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extension 'ignore_ament_install'
+[2.778s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extensions ['colcon_pkg']
+[2.778s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extension 'colcon_pkg'
+[2.778s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extensions ['colcon_meta']
+[2.779s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extension 'colcon_meta'
+[2.779s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extensions ['ros']
+[2.779s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extension 'ros'
+[2.779s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extensions ['cmake', 'python']
+[2.780s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extension 'cmake'
+[2.780s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extension 'python'
+[2.780s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extensions ['python_setup_py']
+[2.780s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv) by extension 'python_setup_py'
+[2.781s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/cv_bridge) by extensions ['ignore', 'ignore_ament_install']
+[2.781s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/cv_bridge) by extension 'ignore'
+[2.781s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/cv_bridge) by extension 'ignore_ament_install'
+[2.781s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/cv_bridge) by extensions ['colcon_pkg']
+[2.782s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/cv_bridge) by extension 'colcon_pkg'
+[2.782s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/cv_bridge) by extensions ['colcon_meta']
+[2.782s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/cv_bridge) by extension 'colcon_meta'
+[2.782s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/cv_bridge) by extensions ['ros']
+[2.782s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/cv_bridge) by extension 'ros'
+[2.788s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vision_opencv/cv_bridge' with type 'ros.ament_cmake' and name 'cv_bridge'
+[2.789s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/image_geometry) by extensions ['ignore', 'ignore_ament_install']
+[2.789s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/image_geometry) by extension 'ignore'
+[2.789s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/image_geometry) by extension 'ignore_ament_install'
+[2.790s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/image_geometry) by extensions ['colcon_pkg']
+[2.790s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/image_geometry) by extension 'colcon_pkg'
+[2.790s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/image_geometry) by extensions ['colcon_meta']
+[2.790s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/image_geometry) by extension 'colcon_meta'
+[2.790s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/image_geometry) by extensions ['ros']
+[2.790s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/image_geometry) by extension 'ros'
+[2.794s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vision_opencv/image_geometry' with type 'ros.ament_cmake' and name 'image_geometry'
+[2.794s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/opencv_tests) by extensions ['ignore', 'ignore_ament_install']
+[2.795s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/opencv_tests) by extension 'ignore'
+[2.795s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/opencv_tests) by extension 'ignore_ament_install'
+[2.795s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/opencv_tests) by extensions ['colcon_pkg']
+[2.795s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/opencv_tests) by extension 'colcon_pkg'
+[2.796s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/opencv_tests) by extensions ['colcon_meta']
+[2.796s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/opencv_tests) by extension 'colcon_meta'
+[2.796s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/opencv_tests) by extensions ['ros']
+[2.796s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/opencv_tests) by extension 'ros'
+[2.799s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vision_opencv/opencv_tests' with type 'ros.ament_python' and name 'opencv_tests'
+[2.799s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/vision_opencv) by extensions ['ignore', 'ignore_ament_install']
+[2.800s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/vision_opencv) by extension 'ignore'
+[2.800s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/vision_opencv) by extension 'ignore_ament_install'
+[2.800s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/vision_opencv) by extensions ['colcon_pkg']
+[2.800s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/vision_opencv) by extension 'colcon_pkg'
+[2.801s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/vision_opencv) by extensions ['colcon_meta']
+[2.801s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/vision_opencv) by extension 'colcon_meta'
+[2.801s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/vision_opencv) by extensions ['ros']
+[2.801s] Level 1:colcon.colcon_core.package_identification:_identify(src/vision_opencv/vision_opencv) by extension 'ros'
+[2.804s] DEBUG:colcon.colcon_core.package_identification:Package 'src/vision_opencv/vision_opencv' with type 'ros.ament_cmake' and name 'vision_opencv'
+[2.804s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[2.804s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[2.805s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[2.805s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[2.805s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[2.962s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[2.962s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[2.981s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 1 installed packages in /home/puzzlebot/ros2_ws/install
+[2.985s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 5 installed packages in /home/puzzlebot/ros2_packages_ws/install
+[2.993s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 276 installed packages in /opt/ros/humble
+[3.002s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[3.476s] WARNING:colcon.colcon_core.package_selection:Some selected packages are already built in one or more underlay workspaces:
+	'cv_bridge' is in: /opt/ros/humble
+	'image_geometry' is in: /opt/ros/humble
+If a package in a merged underlay workspace is overridden and it installs headers, then all packages in the overlay must sort their include directories by workspace order. Failure to do so may result in build failures or undefined behavior at run time.
+If the overridden package is used by another package in any underlay, then the overriding package in the overlay must be API and ABI compatible or undefined behavior at run time may occur.
+
+If you understand the risks and want to override a package anyways, add the following to the command line:
+	--allow-overriding cv_bridge image_geometry
+
+This may be promoted to an error in a future release of colcon-override-check.
+[3.481s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'cmake_args' from command line to 'None'
+[3.481s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'cmake_target' from command line to 'None'
+[3.481s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.481s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'cmake_clean_cache' from command line to 'False'
+[3.481s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'cmake_clean_first' from command line to 'False'
+[3.482s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'cmake_force_configure' from command line to 'False'
+[3.482s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'ament_cmake_args' from command line to 'None'
+[3.482s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'catkin_cmake_args' from command line to 'None'
+[3.482s] Level 5:colcon.colcon_core.verb:set package 'cv_bridge' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.482s] DEBUG:colcon.colcon_core.verb:Building package 'cv_bridge' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/cv_bridge', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge', 'merge_install': False, 'path': '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/vision_opencv/cv_bridge', 'symlink_install': False, 'test_result_base': None}
+[3.485s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'cmake_args' from command line to 'None'
+[3.485s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'cmake_target' from command line to 'None'
+[3.485s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.486s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'cmake_clean_cache' from command line to 'False'
+[3.486s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'cmake_clean_first' from command line to 'False'
+[3.486s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'cmake_force_configure' from command line to 'False'
+[3.487s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'ament_cmake_args' from command line to 'None'
+[3.487s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'catkin_cmake_args' from command line to 'None'
+[3.487s] Level 5:colcon.colcon_core.verb:set package 'image_geometry' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.487s] DEBUG:colcon.colcon_core.verb:Building package 'image_geometry' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/image_geometry', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry', 'merge_install': False, 'path': '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/vision_opencv/image_geometry', 'symlink_install': False, 'test_result_base': None}
+[3.490s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'cmake_args' from command line to 'None'
+[3.490s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'cmake_target' from command line to 'None'
+[3.490s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.490s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'cmake_clean_cache' from command line to 'False'
+[3.490s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'cmake_clean_first' from command line to 'False'
+[3.491s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'cmake_force_configure' from command line to 'False'
+[3.491s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'ament_cmake_args' from command line to 'None'
+[3.491s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'catkin_cmake_args' from command line to 'None'
+[3.491s] Level 5:colcon.colcon_core.verb:set package 'opencv_tests' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.491s] DEBUG:colcon.colcon_core.verb:Building package 'opencv_tests' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/opencv_tests', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/opencv_tests', 'merge_install': False, 'path': '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/vision_opencv/opencv_tests', 'symlink_install': False, 'test_result_base': None}
+[3.493s] Level 5:colcon.colcon_core.verb:set package 'puzzle_pkg' build argument 'cmake_args' from command line to 'None'
+[3.494s] Level 5:colcon.colcon_core.verb:set package 'puzzle_pkg' build argument 'cmake_target' from command line to 'None'
+[3.494s] Level 5:colcon.colcon_core.verb:set package 'puzzle_pkg' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.494s] Level 5:colcon.colcon_core.verb:set package 'puzzle_pkg' build argument 'cmake_clean_cache' from command line to 'False'
+[3.494s] Level 5:colcon.colcon_core.verb:set package 'puzzle_pkg' build argument 'cmake_clean_first' from command line to 'False'
+[3.494s] Level 5:colcon.colcon_core.verb:set package 'puzzle_pkg' build argument 'cmake_force_configure' from command line to 'False'
+[3.495s] Level 5:colcon.colcon_core.verb:set package 'puzzle_pkg' build argument 'ament_cmake_args' from command line to 'None'
+[3.495s] Level 5:colcon.colcon_core.verb:set package 'puzzle_pkg' build argument 'catkin_cmake_args' from command line to 'None'
+[3.495s] Level 5:colcon.colcon_core.verb:set package 'puzzle_pkg' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.495s] DEBUG:colcon.colcon_core.verb:Building package 'puzzle_pkg' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg', 'merge_install': False, 'path': '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg', 'symlink_install': False, 'test_result_base': None}
+[3.497s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'cmake_args' from command line to 'None'
+[3.497s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'cmake_target' from command line to 'None'
+[3.498s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[3.498s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'cmake_clean_cache' from command line to 'False'
+[3.498s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'cmake_clean_first' from command line to 'False'
+[3.498s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'cmake_force_configure' from command line to 'False'
+[3.498s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'ament_cmake_args' from command line to 'None'
+[3.498s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'catkin_cmake_args' from command line to 'None'
+[3.498s] Level 5:colcon.colcon_core.verb:set package 'vision_opencv' build argument 'catkin_skip_building_tests' from command line to 'False'
+[3.499s] DEBUG:colcon.colcon_core.verb:Building package 'vision_opencv' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/vision_opencv', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/vision_opencv', 'merge_install': False, 'path': '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/vision_opencv/vision_opencv', 'symlink_install': False, 'test_result_base': None}
+[3.499s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[3.504s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[3.505s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/vision_opencv/cv_bridge' with build type 'ament_cmake'
+[3.506s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/vision_opencv/cv_bridge'
+[3.529s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[3.530s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.530s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.569s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/vision_opencv/image_geometry' with build type 'ament_cmake'
+[3.570s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/vision_opencv/image_geometry'
+[3.572s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.572s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.623s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/cv_bridge': CMAKE_PREFIX_PATH=/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/cv_bridge -- -j4 -l4
+[3.682s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/image_geometry': CMAKE_PREFIX_PATH=/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/image_geometry -- -j4 -l4
+[6.083s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/image_geometry' returned '0': CMAKE_PREFIX_PATH=/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/image_geometry -- -j4 -l4
+[6.095s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/cv_bridge' returned '0': CMAKE_PREFIX_PATH=/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/cv_bridge -- -j4 -l4
+[6.236s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/cv_bridge': CMAKE_PREFIX_PATH=/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/cv_bridge
+[6.250s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/image_geometry': CMAKE_PREFIX_PATH=/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/image_geometry
+[6.470s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cv_bridge)
+[6.486s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/cv_bridge' returned '0': CMAKE_PREFIX_PATH=/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/cv_bridge
+[6.500s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge' for CMake module files
+[6.503s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge' for CMake config files
+[6.504s] Level 1:colcon.colcon_core.shell:create_environment_hook('cv_bridge', 'cmake_prefix_path')
+[6.505s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/share/cv_bridge/hook/cmake_prefix_path.ps1'
+[6.509s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/share/cv_bridge/hook/cmake_prefix_path.dsv'
+[6.514s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/share/cv_bridge/hook/cmake_prefix_path.sh'
+[6.519s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib'
+[6.520s] Level 1:colcon.colcon_core.shell:create_environment_hook('cv_bridge', 'ld_library_path_lib')
+[6.521s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/share/cv_bridge/hook/ld_library_path_lib.ps1'
+[6.522s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/share/cv_bridge/hook/ld_library_path_lib.dsv'
+[6.524s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/share/cv_bridge/hook/ld_library_path_lib.sh'
+[6.526s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/bin'
+[6.526s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib/pkgconfig/cv_bridge.pc'
+[6.527s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib/python3.8/site-packages'
+[6.527s] Level 1:colcon.colcon_core.shell:create_environment_hook('cv_bridge', 'pythonpath')
+[6.528s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/share/cv_bridge/hook/pythonpath.ps1'
+[6.530s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/share/cv_bridge/hook/pythonpath.dsv'
+[6.531s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/share/cv_bridge/hook/pythonpath.sh'
+[6.533s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/bin'
+[6.536s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/share/cv_bridge/package.ps1'
+[6.540s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/share/cv_bridge/package.dsv'
+[6.544s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/share/cv_bridge/package.sh'
+[6.550s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/share/cv_bridge/package.bash'
+[6.555s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/share/cv_bridge/package.zsh'
+[6.561s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/share/colcon-core/packages/cv_bridge)
+[6.573s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(image_geometry)
+[6.575s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry' for CMake module files
+[6.578s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/image_geometry' returned '0': CMAKE_PREFIX_PATH=/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/image_geometry
+[6.581s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry' for CMake config files
+[6.583s] Level 1:colcon.colcon_core.shell:create_environment_hook('image_geometry', 'cmake_prefix_path')
+[6.585s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/share/image_geometry/hook/cmake_prefix_path.ps1'
+[6.587s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/share/image_geometry/hook/cmake_prefix_path.dsv'
+[6.588s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/share/image_geometry/hook/cmake_prefix_path.sh'
+[6.591s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/lib'
+[6.591s] Level 1:colcon.colcon_core.shell:create_environment_hook('image_geometry', 'ld_library_path_lib')
+[6.593s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/share/image_geometry/hook/ld_library_path_lib.ps1'
+[6.594s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/share/image_geometry/hook/ld_library_path_lib.dsv'
+[6.596s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/share/image_geometry/hook/ld_library_path_lib.sh'
+[6.597s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/bin'
+[6.598s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/lib/pkgconfig/image_geometry.pc'
+[6.599s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/lib/python3.8/site-packages'
+[6.599s] Level 1:colcon.colcon_core.shell:create_environment_hook('image_geometry', 'pythonpath')
+[6.601s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/share/image_geometry/hook/pythonpath.ps1'
+[6.602s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/share/image_geometry/hook/pythonpath.dsv'
+[6.604s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/share/image_geometry/hook/pythonpath.sh'
+[6.606s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/bin'
+[6.608s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/share/image_geometry/package.ps1'
+[6.611s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/share/image_geometry/package.dsv'
+[6.613s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/share/image_geometry/package.sh'
+[6.615s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/share/image_geometry/package.bash'
+[6.617s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/share/image_geometry/package.zsh'
+[6.619s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/share/colcon-core/packages/image_geometry)
+[6.670s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(cv_bridge)
+[6.671s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge' for CMake module files
+[6.674s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge' for CMake config files
+[6.675s] Level 1:colcon.colcon_core.shell:create_environment_hook('cv_bridge', 'cmake_prefix_path')
+[6.677s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/share/cv_bridge/hook/cmake_prefix_path.ps1'
+[6.679s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/share/cv_bridge/hook/cmake_prefix_path.dsv'
+[6.680s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/share/cv_bridge/hook/cmake_prefix_path.sh'
+[6.682s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib'
+[6.683s] Level 1:colcon.colcon_core.shell:create_environment_hook('cv_bridge', 'ld_library_path_lib')
+[6.684s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/share/cv_bridge/hook/ld_library_path_lib.ps1'
+[6.685s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/share/cv_bridge/hook/ld_library_path_lib.dsv'
+[6.687s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/share/cv_bridge/hook/ld_library_path_lib.sh'
+[6.688s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/bin'
+[6.689s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib/pkgconfig/cv_bridge.pc'
+[6.690s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib/python3.8/site-packages'
+[6.690s] Level 1:colcon.colcon_core.shell:create_environment_hook('cv_bridge', 'pythonpath')
+[6.691s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/share/cv_bridge/hook/pythonpath.ps1'
+[6.693s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/share/cv_bridge/hook/pythonpath.dsv'
+[6.694s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/share/cv_bridge/hook/pythonpath.sh'
+[6.696s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/bin'
+[6.698s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/share/cv_bridge/package.ps1'
+[6.701s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/share/cv_bridge/package.dsv'
+[6.704s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/share/cv_bridge/package.sh'
+[6.706s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/share/cv_bridge/package.bash'
+[6.708s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/share/cv_bridge/package.zsh'
+[6.709s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/share/colcon-core/packages/cv_bridge)
+[6.712s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/vision_opencv/opencv_tests' with build type 'ament_python'
+[6.713s] Level 1:colcon.colcon_core.shell:create_environment_hook('opencv_tests', 'ament_prefix_path')
+[6.714s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/opencv_tests/share/opencv_tests/hook/ament_prefix_path.ps1'
+[6.717s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/opencv_tests/share/opencv_tests/hook/ament_prefix_path.dsv'
+[6.719s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/opencv_tests/share/opencv_tests/hook/ament_prefix_path.sh'
+[6.721s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.721s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.747s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg' with build type 'ament_cmake'
+[6.748s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg'
+[6.749s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[6.750s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[6.779s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(image_geometry)
+[6.781s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry' for CMake module files
+[6.784s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry' for CMake config files
+[6.786s] Level 1:colcon.colcon_core.shell:create_environment_hook('image_geometry', 'cmake_prefix_path')
+[6.787s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/share/image_geometry/hook/cmake_prefix_path.ps1'
+[6.789s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/share/image_geometry/hook/cmake_prefix_path.dsv'
+[6.790s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/share/image_geometry/hook/cmake_prefix_path.sh'
+[6.792s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/lib'
+[6.793s] Level 1:colcon.colcon_core.shell:create_environment_hook('image_geometry', 'ld_library_path_lib')
+[6.794s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/share/image_geometry/hook/ld_library_path_lib.ps1'
+[6.795s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/share/image_geometry/hook/ld_library_path_lib.dsv'
+[6.796s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/share/image_geometry/hook/ld_library_path_lib.sh'
+[6.798s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/bin'
+[6.798s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/lib/pkgconfig/image_geometry.pc'
+[6.799s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/lib/python3.8/site-packages'
+[6.799s] Level 1:colcon.colcon_core.shell:create_environment_hook('image_geometry', 'pythonpath')
+[6.800s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/share/image_geometry/hook/pythonpath.ps1'
+[6.801s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/share/image_geometry/hook/pythonpath.dsv'
+[6.803s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/share/image_geometry/hook/pythonpath.sh'
+[6.804s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/bin'
+[6.806s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/share/image_geometry/package.ps1'
+[6.809s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/share/image_geometry/package.dsv'
+[6.811s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/share/image_geometry/package.sh'
+[6.813s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/share/image_geometry/package.bash'
+[6.815s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/share/image_geometry/package.zsh'
+[6.816s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/share/colcon-core/packages/image_geometry)
+[8.025s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/vision_opencv/opencv_tests'
+[8.026s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.027s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.051s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/vision_opencv/vision_opencv' with build type 'ament_cmake'
+[8.052s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/vision_opencv/vision_opencv'
+[8.054s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[8.055s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[8.102s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg': AMENT_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib:/usr/local/cuda/lib64:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent/lib:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg -- -j4 -l4
+[8.145s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/vision_opencv': AMENT_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry:/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry:/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/lib:/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib:/usr/local/cuda/lib64:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent/lib:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/lib/python3.8/site-packages:/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/vision_opencv -- -j4 -l4
+[8.314s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/vision_opencv' returned '0': AMENT_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry:/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry:/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/lib:/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib:/usr/local/cuda/lib64:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent/lib:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/lib/python3.8/site-packages:/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/vision_opencv -- -j4 -l4
+[8.604s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/vision_opencv': AMENT_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry:/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry:/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/lib:/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib:/usr/local/cuda/lib64:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent/lib:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/lib/python3.8/site-packages:/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/vision_opencv
+[8.734s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vision_opencv)
+[8.735s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/vision_opencv' for CMake module files
+[8.738s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/vision_opencv' for CMake config files
+[8.739s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision_opencv', 'cmake_prefix_path')
+[8.741s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/vision_opencv/share/vision_opencv/hook/cmake_prefix_path.ps1'
+[8.743s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/vision_opencv/share/vision_opencv/hook/cmake_prefix_path.dsv'
+[8.748s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/vision_opencv' returned '0': AMENT_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry:/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry:/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/lib:/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib:/usr/local/cuda/lib64:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent/lib:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/image_geometry/lib/python3.8/site-packages:/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/vision_opencv
+[8.753s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/vision_opencv/share/vision_opencv/hook/cmake_prefix_path.sh'
+[8.755s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/vision_opencv/bin'
+[8.755s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/vision_opencv/lib/pkgconfig/vision_opencv.pc'
+[8.756s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/vision_opencv/lib/python3.8/site-packages'
+[8.757s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/vision_opencv/bin'
+[8.759s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/vision_opencv/share/vision_opencv/package.ps1'
+[8.778s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/vision_opencv/share/vision_opencv/package.dsv'
+[8.780s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/vision_opencv/share/vision_opencv/package.sh'
+[8.782s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/vision_opencv/share/vision_opencv/package.bash'
+[8.783s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/vision_opencv/share/vision_opencv/package.zsh'
+[8.801s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/vision_opencv/share/colcon-core/packages/vision_opencv)
+[9.105s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(vision_opencv)
+[9.107s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/vision_opencv' for CMake module files
+[9.112s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/vision_opencv' for CMake config files
+[9.113s] Level 1:colcon.colcon_core.shell:create_environment_hook('vision_opencv', 'cmake_prefix_path')
+[9.116s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/vision_opencv/share/vision_opencv/hook/cmake_prefix_path.ps1'
+[9.123s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/vision_opencv/share/vision_opencv/hook/cmake_prefix_path.dsv'
+[9.128s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/vision_opencv/share/vision_opencv/hook/cmake_prefix_path.sh'
+[9.134s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/vision_opencv/bin'
+[9.135s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/vision_opencv/lib/pkgconfig/vision_opencv.pc'
+[9.140s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/vision_opencv/lib/python3.8/site-packages'
+[9.141s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/vision_opencv/bin'
+[9.143s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/vision_opencv/share/vision_opencv/package.ps1'
+[9.158s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/vision_opencv/share/vision_opencv/package.dsv'
+[9.163s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/vision_opencv/share/vision_opencv/package.sh'
+[9.166s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/vision_opencv/share/vision_opencv/package.bash'
+[9.175s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/vision_opencv/share/vision_opencv/package.zsh'
+[9.182s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/vision_opencv/share/colcon-core/packages/vision_opencv)
+[11.036s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/vision_opencv/opencv_tests': AMENT_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib:/usr/local/cuda/lib64:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent/lib:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/opencv_tests/prefix_override:/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/opencv_tests/lib/python3.8/site-packages:/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/opencv_tests build --build-base /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/opencv_tests/build install --record /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/opencv_tests/install.log --single-version-externally-managed install_data
+[11.148s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg' returned '0': AMENT_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib:/usr/local/cuda/lib64:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent/lib:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg -- -j4 -l4
+[11.454s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg': AMENT_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib:/usr/local/cuda/lib64:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent/lib:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg
+[11.794s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(puzzle_pkg)
+[11.795s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg' for CMake module files
+[11.799s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg' for CMake config files
+[11.802s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg' returned '0': AMENT_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib:/usr/local/cuda/lib64:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent/lib:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg
+[11.806s] Level 1:colcon.colcon_core.shell:create_environment_hook('puzzle_pkg', 'cmake_prefix_path')
+[11.807s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/hook/cmake_prefix_path.ps1'
+[11.813s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/hook/cmake_prefix_path.dsv'
+[11.815s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/hook/cmake_prefix_path.sh'
+[11.817s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib'
+[11.818s] Level 1:colcon.colcon_core.shell:create_environment_hook('puzzle_pkg', 'ld_library_path_lib')
+[11.819s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/hook/ld_library_path_lib.ps1'
+[11.821s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/hook/ld_library_path_lib.dsv'
+[11.822s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/hook/ld_library_path_lib.sh'
+[11.824s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/bin'
+[11.825s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/pkgconfig/puzzle_pkg.pc'
+[11.826s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages'
+[11.826s] Level 1:colcon.colcon_core.shell:create_environment_hook('puzzle_pkg', 'pythonpath')
+[11.827s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/hook/pythonpath.ps1'
+[11.829s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/hook/pythonpath.dsv'
+[11.831s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/hook/pythonpath.sh'
+[11.833s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/bin'
+[11.835s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/package.ps1'
+[11.838s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/package.dsv'
+[11.840s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/package.sh'
+[11.842s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/package.bash'
+[11.844s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/package.zsh'
+[11.846s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/colcon-core/packages/puzzle_pkg)
+[12.180s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(puzzle_pkg)
+[12.182s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg' for CMake module files
+[12.186s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg' for CMake config files
+[12.189s] Level 1:colcon.colcon_core.shell:create_environment_hook('puzzle_pkg', 'cmake_prefix_path')
+[12.190s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/hook/cmake_prefix_path.ps1'
+[12.193s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/hook/cmake_prefix_path.dsv'
+[12.194s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/hook/cmake_prefix_path.sh'
+[12.197s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib'
+[12.197s] Level 1:colcon.colcon_core.shell:create_environment_hook('puzzle_pkg', 'ld_library_path_lib')
+[12.198s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/hook/ld_library_path_lib.ps1'
+[12.200s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/hook/ld_library_path_lib.dsv'
+[12.202s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/hook/ld_library_path_lib.sh'
+[12.203s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/bin'
+[12.204s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/pkgconfig/puzzle_pkg.pc'
+[12.205s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages'
+[12.205s] Level 1:colcon.colcon_core.shell:create_environment_hook('puzzle_pkg', 'pythonpath')
+[12.206s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/hook/pythonpath.ps1'
+[12.209s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/hook/pythonpath.dsv'
+[12.213s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/hook/pythonpath.sh'
+[12.216s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/bin'
+[12.218s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/package.ps1'
+[12.221s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/package.dsv'
+[12.223s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/package.sh'
+[12.226s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/package.bash'
+[12.228s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/package.zsh'
+[12.229s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/colcon-core/packages/puzzle_pkg)
+[12.785s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/opencv_tests' for CMake module files
+[12.788s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/vision_opencv/opencv_tests' returned '0': AMENT_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib:/usr/local/cuda/lib64:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent/lib:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/opencv_tests/prefix_override:/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/opencv_tests/lib/python3.8/site-packages:/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../../build/opencv_tests build --build-base /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/opencv_tests/build install --record /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/opencv_tests/install.log --single-version-externally-managed install_data
+[12.790s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/opencv_tests' for CMake config files
+[12.792s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/opencv_tests/lib'
+[12.793s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/opencv_tests/bin'
+[12.793s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/opencv_tests/lib/pkgconfig/opencv_tests.pc'
+[12.794s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/opencv_tests/lib/python3.8/site-packages'
+[12.794s] Level 1:colcon.colcon_core.shell:create_environment_hook('opencv_tests', 'pythonpath')
+[12.795s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/opencv_tests/share/opencv_tests/hook/pythonpath.ps1'
+[12.797s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/opencv_tests/share/opencv_tests/hook/pythonpath.dsv'
+[12.799s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/opencv_tests/share/opencv_tests/hook/pythonpath.sh'
+[12.801s] Level 1:colcon.colcon_core.environment:checking '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/opencv_tests/bin'
+[12.802s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(opencv_tests)
+[12.804s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/opencv_tests/share/opencv_tests/package.ps1'
+[12.806s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/opencv_tests/share/opencv_tests/package.dsv'
+[12.808s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/opencv_tests/share/opencv_tests/package.sh'
+[12.811s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/opencv_tests/share/opencv_tests/package.bash'
+[12.812s] INFO:colcon.colcon_core.shell:Creating package script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/opencv_tests/share/opencv_tests/package.zsh'
+[12.814s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/opencv_tests/share/colcon-core/packages/opencv_tests)
+[12.815s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[12.817s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[12.817s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[12.819s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[12.854s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[12.854s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[12.855s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[12.954s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[12.956s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/local_setup.ps1'
+[12.963s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/_local_setup_util_ps1.py'
+[12.972s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/setup.ps1'
+[12.979s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/local_setup.sh'
+[12.987s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/_local_setup_util_sh.py'
+[12.990s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/setup.sh'
+[12.999s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/local_setup.bash'
+[13.003s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/setup.bash'
+[13.011s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/local_setup.zsh'
+[13.016s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/setup.zsh'

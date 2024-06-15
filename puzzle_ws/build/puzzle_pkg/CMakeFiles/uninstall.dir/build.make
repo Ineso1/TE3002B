@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/src/puzzle_pkg
+CMAKE_SOURCE_DIR = /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/build/puzzle_pkg
+CMAKE_BINARY_DIR = /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg
 
 # Utility rule file for uninstall.
 
@@ -67,6 +67,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/build/puzzle_pkg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/src/puzzle_pkg /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/src/puzzle_pkg /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/build/puzzle_pkg /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/build/puzzle_pkg /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/build/puzzle_pkg/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

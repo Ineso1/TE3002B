@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp" "/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/build/puzzle_pkg/CMakeFiles/controller.dir/src/control/controller.cpp.o"
+  "/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp" "/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg/CMakeFiles/controller.dir/src/control/controller.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,11 +17,12 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/src/puzzle_pkg/include"
+  "/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/include"
   "/usr/include/opencv4"
   "/opt/ros/humble/include/sensor_msgs"
   "/opt/ros/humble/include/message_filters"
   "/opt/ros/humble/include/pluginlib"
+  "/usr/local/cuda/include"
   "rosidl_generator_cpp"
   "/opt/ros/humble/include/rclcpp"
   "/opt/ros/humble/include/builtin_interfaces"
@@ -54,7 +55,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/build/puzzle_pkg/CMakeFiles/puzzle_pkg__rosidl_typesupport_cpp.dir/DependInfo.cmake"
+  "/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg/CMakeFiles/puzzle_pkg__rosidl_typesupport_cpp.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

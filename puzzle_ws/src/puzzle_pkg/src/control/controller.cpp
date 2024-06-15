@@ -220,13 +220,13 @@ private:
                             RCLCPP_INFO(this->get_logger(), "Turn Left xd");
                             control_manage_ = ControlManage::TurnLeft;
                             control_type_ = ControlType::Position;
-                            calculate_translation(0.2, 0.25);
+                            calculate_translation(0.4, 0.25);
                         }
                         else if(last_processed_state_ == State::TurnRight){
                             RCLCPP_INFO(this->get_logger(), "Turn Right xd");
                             control_manage_ = ControlManage::TurnRight;
                             control_type_ = ControlType::Position;
-                            calculate_translation(0.2, -0.25);
+                            calculate_translation(0.4, -0.25);
                         }
                         else{
                             control_manage_ = ControlManage::Forward;
@@ -267,7 +267,7 @@ private:
                         RCLCPP_INFO(this->get_logger(), "Cross walk TurnLeft ");
                         control_manage_ = ControlManage::TurnLeft;
                         control_type_ = ControlType::Position;
-                        calculate_translation(0.2, 0.25);
+                        calculate_translation(0.4, 0.25);
 
                     } else {
                         RCLCPP_INFO(this->get_logger(), "TurnLeft ");
@@ -282,7 +282,7 @@ private:
                         RCLCPP_INFO(this->get_logger(), "Cross walk TurnRight ");
                         control_manage_ = ControlManage::TurnRight;
                         control_type_ = ControlType::Position;
-                        calculate_translation(0.2, -0.25);
+                        calculate_translation(0.4, -0.25);
                     } else {
                         RCLCPP_INFO(this->get_logger(), "TurnRight ");
                         control_manage_ = ControlManage::TurnRight;

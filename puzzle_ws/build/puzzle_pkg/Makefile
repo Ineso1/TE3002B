@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/src/puzzle_pkg
+CMAKE_SOURCE_DIR = /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/build/puzzle_pkg
+CMAKE_BINARY_DIR = /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,9 +137,9 @@ install/local/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/build/puzzle_pkg/CMakeFiles /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/build/puzzle_pkg/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg/CMakeFiles /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/puzzlebot/Documents/PUXX_WS/TE3002B/puzzle_ws/build/puzzle_pkg/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

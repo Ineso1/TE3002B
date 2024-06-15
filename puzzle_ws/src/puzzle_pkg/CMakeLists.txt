@@ -16,7 +16,7 @@ find_package(image_transport REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(OpenCV REQUIRED)
-# find_package(CUDA REQUIRED)
+find_package(CUDA REQUIRED)
 
 
 rosidl_generate_interfaces(${PROJECT_NAME}
@@ -32,7 +32,7 @@ include_directories(
   ${cv_bridge_INCLUDE_DIRS}
   ${image_transport_INCLUDE_DIRS}
   ${sensor_msgs_INCLUDE_DIRS}
-  # ${CUDA_INCLUDE_DIRS}
+  ${CUDA_INCLUDE_DIRS}
 )
 
 add_executable(
@@ -99,9 +99,9 @@ rosidl_get_typesupport_target(cpp_typesupport_target
 target_link_libraries(controller "${cpp_typesupport_target}")
 target_link_libraries(lane_detection "${cpp_typesupport_target}")
 
-# target_link_libraries(lane_detection ${CUDA_LIBRARIES})
-# target_link_libraries(cam_source ${CUDA_LIBRARIES})
-# target_link_libraries(controller ${CUDA_LIBRARIES})
+target_link_libraries(lane_detection ${CUDA_LIBRARIES})
+target_link_libraries(cam_source ${CUDA_LIBRARIES})
+target_link_libraries(controller ${CUDA_LIBRARIES})
 
 target_include_directories(lane_detection PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
