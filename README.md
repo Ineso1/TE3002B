@@ -58,8 +58,8 @@ The project is configured to control a differential robot by sending appropriate
 ![image](https://github.com/paulramirez19/TE3002B/assets/84602829/30f1bdbe-a98e-4cdc-8ff5-0580b4c853f3)
 
 # Video
-
-[![Watch the Video](https://github.com/paulramirez19/TE3002B/blob/main/imgs/WorkTraffic.png?raw=true)](https://www.youtube.com/watch?v=5agHRD6gWp8 "Watch the Video")
+Click to view the video!!
+[![Watch the Video](https://github.com/paulramirez19/TE3002B/blob/main/imgs/puzzle_green_light.jpeg?raw=true)](https://www.youtube.com/watch?v=5agHRD6gWp8 "Watch the Video")
 
 
 
