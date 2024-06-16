@@ -1,0 +1,194 @@
+[1.381s] Invoking command in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg': AMENT_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib:/usr/local/cuda/lib64:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent/lib:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg -- -j4 -l4
+[1.728s] [  6%] Built target puzzle_pkg__rosidl_generator_c
+[1.766s] [  9%] Built target puzzle_pkg__cpp
+[1.872s] [35m[1mScanning dependencies of target cam_source[0m
+[1.984s] [  9%] Built target ament_cmake_python_copy_puzzle_pkg
+[2.082s] [ 13%] Built target odometry
+[2.300s] [ 18%] Built target signal_handle
+[2.362s] [ 25%] Built target puzzle_pkg__rosidl_typesupport_c
+[2.394s] [ 27%] [32mBuilding CXX object CMakeFiles/cam_source.dir/src/vision/cam_source.cpp.o[0m
+[2.457s] [ 34%] Built target puzzle_pkg__rosidl_typesupport_cpp
+[2.593s] [ 40%] Built target puzzle_pkg__rosidl_typesupport_fastrtps_cpp
+[2.625s] [ 47%] Built target puzzle_pkg__rosidl_typesupport_introspection_cpp
+[2.765s] [ 54%] Built target puzzle_pkg__rosidl_typesupport_introspection_c
+[2.897s] [35m[1mScanning dependencies of target lane_detection[0m
+[2.999s] [ 61%] Built target puzzle_pkg__rosidl_typesupport_fastrtps_c
+[3.174s] [35m[1mScanning dependencies of target controller[0m
+[3.234s] [ 63%] [32mBuilding CXX object CMakeFiles/lane_detection.dir/src/vision/lib/lane_funcs.cpp.o[0m
+[3.666s] [ 65%] [32mBuilding CXX object CMakeFiles/controller.dir/src/control/controller.cpp.o[0m
+[6.453s] running egg_info
+[6.462s] writing puzzle_pkg.egg-info/PKG-INFO
+[6.464s] writing dependency_links to puzzle_pkg.egg-info/dependency_links.txt
+[6.468s] writing top-level names to puzzle_pkg.egg-info/top_level.txt
+[6.986s] reading manifest file 'puzzle_pkg.egg-info/SOURCES.txt'
+[6.990s] writing manifest file 'puzzle_pkg.egg-info/SOURCES.txt'
+[7.555s] [ 65%] Built target ament_cmake_python_build_puzzle_pkg_egg
+[7.791s] [ 65%] Built target puzzle_pkg
+[8.106s] [ 68%] Built target puzzle_pkg__py
+[8.553s] [ 72%] Built target puzzle_pkg__rosidl_generator_py
+[8.972s] [ 77%] Built target puzzle_pkg__rosidl_typesupport_fastrtps_c__pyext
+[9.341s] [ 81%] Built target puzzle_pkg__rosidl_typesupport_introspection_c__pyext
+[9.867s] [ 86%] Built target puzzle_pkg__rosidl_typesupport_c__pyext
+[15.266s] [ 88%] [32m[1mLinking CXX executable lane_detection[0m
+[21.155s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:[m[K In constructor ‘[01m[KController::Controller()[m[K’:
+[21.164s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:444:27:[m[K [01;35m[Kwarning: [m[K‘[01m[KController::odom_[m[K’ will be initialized after [[01;35m[K-Wreorder[m[K]
+[21.165s]      std::array<double, 3> [01;35m[Kodom_[m[K;
+[21.167s]                            [01;35m[K^~~~~[m[K
+[21.168s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:443:32:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kpuzzle_pkg::msg::DiffError Controller::errors_[m[K’ [[01;35m[K-Wreorder[m[K]
+[21.168s]      puzzle_pkg::msg::DiffError [01;35m[Kerrors_[m[K;
+[21.169s]                                 [01;35m[K^~~~~~~[m[K
+[21.169s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:64:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K-Wreorder[m[K]
+[21.170s]      [01;35m[KController[m[K() :
+[21.170s]      [01;35m[K^~~~~~~~~~[m[K
+[21.171s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:469:17:[m[K [01;35m[Kwarning: [m[K‘[01m[KController::control_type_[m[K’ will be initialized after [[01;35m[K-Wreorder[m[K]
+[21.171s]      ControlType [01;35m[Kcontrol_type_[m[K;
+[21.172s]                  [01;35m[K^~~~~~~~~~~~~[m[K
+[21.172s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:464:9:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kint Controller::counter_[m[K’ [[01;35m[K-Wreorder[m[K]
+[21.173s]      int [01;35m[Kcounter_[m[K;
+[21.185s]          [01;35m[K^~~~~~~~[m[K
+[21.186s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:64:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K-Wreorder[m[K]
+[21.187s]      [01;35m[KController[m[K() :
+[21.187s]      [01;35m[K^~~~~~~~~~[m[K
+[21.188s] [01m[K/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/src/puzzle_pkg/src/control/controller.cpp:83:49:[m[K [01;35m[Kwarning: [m[Klist-initializer for non-class type must not be parenthesized
+[21.188s]          vel_message_(geometry_msgs::msg::Twist()[01;35m[K)[m[K
+[21.189s]                                                  [01;35m[K^[m[K
+[81.851s] [ 95%] Built target lane_detection
+[1724.790s] [ 97%] [32m[1mLinking CXX executable cam_source[0m
+[1724.870s] [ 97%] Built target cam_source
+[1724.874s] [100%] [32m[1mLinking CXX executable controller[0m
+[1724.878s] [100%] Built target controller
+[1724.905s] Invoked command in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg' returned '0': AMENT_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib:/usr/local/cuda/lib64:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent/lib:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg -- -j4 -l4
+[1725.283s] Invoking command in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg': AMENT_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib:/usr/local/cuda/lib64:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent/lib:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg
+[1725.336s] -- Install configuration: ""
+[1725.348s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/ament_index/resource_index/rosidl_interfaces/puzzle_pkg
+[1725.350s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg
+[1725.355s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg
+[1725.357s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/rosidl_generator_c__visibility_control.h
+[1725.359s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail
+[1725.360s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__functions.c
+[1725.362s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__type_support.h
+[1725.366s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__struct.h
+[1725.367s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__functions.h
+[1725.367s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/diff_error.h
+[1725.368s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/environment/library_path.sh
+[1725.368s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/environment/library_path.dsv
+[1725.368s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/libpuzzle_pkg__rosidl_generator_c.so
+[1725.369s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg
+[1725.374s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg
+[1725.374s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1725.375s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail
+[1725.375s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__rosidl_typesupport_fastrtps_c.h
+[1725.375s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/libpuzzle_pkg__rosidl_typesupport_fastrtps_c.so
+[1725.376s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg
+[1725.376s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg
+[1725.377s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/diff_error.hpp
+[1725.377s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail
+[1725.384s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__traits.hpp
+[1725.384s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__struct.hpp
+[1725.384s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__builder.hpp
+[1725.385s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg
+[1725.385s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg
+[1725.386s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1725.386s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail
+[1725.386s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/dds_fastrtps
+[1725.387s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__rosidl_typesupport_fastrtps_cpp.hpp
+[1725.387s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/libpuzzle_pkg__rosidl_typesupport_fastrtps_cpp.so
+[1725.388s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg
+[1725.388s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg
+[1725.388s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1725.389s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail
+[1725.390s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__rosidl_typesupport_introspection_c.h
+[1725.390s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__type_support.c
+[1725.391s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/libpuzzle_pkg__rosidl_typesupport_introspection_c.so
+[1725.391s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/libpuzzle_pkg__rosidl_typesupport_c.so
+[1725.391s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg
+[1725.392s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg
+[1725.393s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail
+[1725.394s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__type_support.cpp
+[1725.394s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/include/puzzle_pkg/puzzle_pkg/msg/detail/diff_error__rosidl_typesupport_introspection_cpp.hpp
+[1725.395s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/libpuzzle_pkg__rosidl_typesupport_introspection_cpp.so
+[1725.395s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/libpuzzle_pkg__rosidl_typesupport_cpp.so
+[1725.396s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/environment/pythonpath.sh
+[1725.396s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/environment/pythonpath.dsv
+[1725.397s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg-0.0.0-py3.8.egg-info
+[1725.398s] -- Installing: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg-0.0.0-py3.8.egg-info/top_level.txt
+[1725.401s] -- Installing: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg-0.0.0-py3.8.egg-info/PKG-INFO
+[1725.402s] -- Installing: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg-0.0.0-py3.8.egg-info/SOURCES.txt
+[1725.403s] -- Installing: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg-0.0.0-py3.8.egg-info/dependency_links.txt
+[1725.404s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg
+[1725.404s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/puzzle_pkg_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+[1725.405s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/__init__.py
+[1725.405s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/_puzzle_pkg_s.ep.rosidl_typesupport_fastrtps_c.c
+[1725.406s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/msg
+[1725.406s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/msg/__init__.py
+[1725.407s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/msg/_diff_error_s.c
+[1725.407s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/msg/_diff_error.py
+[1725.407s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/_puzzle_pkg_s.ep.rosidl_typesupport_c.c
+[1725.408s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/puzzle_pkg_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+[1725.408s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/puzzle_pkg_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+[1725.408s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/_puzzle_pkg_s.ep.rosidl_typesupport_introspection_c.c
+[1725.409s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/libpuzzle_pkg__rosidl_generator_py.so
+[1725.693s] Listing '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg'...
+[1725.700s] Listing '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/msg'...
+[1725.745s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/puzzle_pkg_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+[1725.751s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/puzzle_pkg_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+[1725.762s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/python3.8/site-packages/puzzle_pkg/puzzle_pkg_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+[1725.827s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/libpuzzle_pkg__rosidl_generator_py.so
+[1725.837s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/msg/DiffError.idl
+[1725.837s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/msg/DiffError.msg
+[1725.846s] -- Installing: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/puzzle_pkg/controller
+[1725.882s] -- Set runtime path of "/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/puzzle_pkg/controller" to ""
+[1725.889s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/puzzle_pkg/odometry
+[1725.900s] -- Installing: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/puzzle_pkg/lane_detection
+[1725.954s] -- Set runtime path of "/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/puzzle_pkg/lane_detection" to ""
+[1726.031s] -- Installing: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/puzzle_pkg/cam_source
+[1726.039s] -- Set runtime path of "/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/puzzle_pkg/cam_source" to ""
+[1726.163s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/lib/puzzle_pkg/signal_handle
+[1726.164s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg//launch
+[1726.165s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg//launch/__pycache__
+[1726.166s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg//launch/__pycache__/launch.cpython-310.pyc
+[1726.167s] -- Installing: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg//launch/__pycache__/launch.cpython-38.pyc
+[1726.214s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg//launch/launch.py
+[1726.215s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg//config
+[1726.215s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg//config/odometry_params.yaml
+[1726.216s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg//config/controller_params.yaml
+[1726.217s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/ament_index/resource_index/package_run_dependencies/puzzle_pkg
+[1726.218s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/ament_index/resource_index/parent_prefix_path/puzzle_pkg
+[1726.234s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/environment/ament_prefix_path.sh
+[1726.237s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/environment/ament_prefix_path.dsv
+[1726.237s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/environment/path.sh
+[1726.238s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/environment/path.dsv
+[1726.238s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/local_setup.bash
+[1726.239s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/local_setup.sh
+[1726.239s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/local_setup.zsh
+[1726.239s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/local_setup.dsv
+[1726.239s] -- Installing: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/package.dsv
+[1726.244s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/ament_index/resource_index/packages/puzzle_pkg
+[1726.263s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/export_puzzle_pkg__rosidl_generator_cExport.cmake
+[1726.263s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/export_puzzle_pkg__rosidl_generator_cExport-noconfig.cmake
+[1726.281s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/export_puzzle_pkg__rosidl_typesupport_fastrtps_cExport.cmake
+[1726.282s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/export_puzzle_pkg__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1726.285s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/export_puzzle_pkg__rosidl_generator_cppExport.cmake
+[1726.287s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/export_puzzle_pkg__rosidl_typesupport_fastrtps_cppExport.cmake
+[1726.288s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/export_puzzle_pkg__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1726.291s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/puzzle_pkg__rosidl_typesupport_introspection_cExport.cmake
+[1726.293s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/puzzle_pkg__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1726.297s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/puzzle_pkg__rosidl_typesupport_cExport.cmake
+[1726.297s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/puzzle_pkg__rosidl_typesupport_cExport-noconfig.cmake
+[1726.301s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/puzzle_pkg__rosidl_typesupport_introspection_cppExport.cmake
+[1726.302s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/puzzle_pkg__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1726.303s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/puzzle_pkg__rosidl_typesupport_cppExport.cmake
+[1726.305s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/puzzle_pkg__rosidl_typesupport_cppExport-noconfig.cmake
+[1726.308s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/export_puzzle_pkg__rosidl_generator_pyExport.cmake
+[1726.309s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/export_puzzle_pkg__rosidl_generator_pyExport-noconfig.cmake
+[1726.313s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/rosidl_cmake-extras.cmake
+[1726.314s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/ament_cmake_export_dependencies-extras.cmake
+[1726.315s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/ament_cmake_export_include_directories-extras.cmake
+[1726.315s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/ament_cmake_export_libraries-extras.cmake
+[1726.315s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/ament_cmake_export_targets-extras.cmake
+[1726.316s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1726.316s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1726.317s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/puzzle_pkgConfig.cmake
+[1726.317s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/cmake/puzzle_pkgConfig-version.cmake
+[1726.318s] -- Up-to-date: /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/puzzle_pkg/share/puzzle_pkg/package.xml
+[1726.376s] Invoked command in '/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg' returned '0': AMENT_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge:/home/puzzlebot/ros2_ws/install/puzzlebot_ros:/opt/ros/humble:${CMAKE_PREFIX_PATH} LD_LIBRARY_PATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib:/usr/local/cuda/lib64:/home/puzzlebot/ros2_packages_ws/install/micro_ros_agent/lib:/home/puzzlebot/ros2_packages_ws/install/micro_ros_msgs/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/local/cuda/lib64 PYTHONPATH=/home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/install/cv_bridge/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/puzzlebot/Documents/PUXXY_NODE/TE3002B/puzzle_ws/build/puzzle_pkg
